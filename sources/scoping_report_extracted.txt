@@ -1,0 +1,129 @@
+PAGE 1
+Scoping Report: Optimizing 
+Metal-Organic Frameworks for Direct 
+Air Capture using an SNN-QP 
+Framework 
+ 
+1. Scope of Research & Novelty 
+This research proposes leveraging a Spiking Neural Network (SNN) based Quadratic 
+Programming (QP) framework to optimize the structural design of Metal-Organic Frameworks 
+(MOFs) for Direct Air Capture (DAC) of CO2. The primary bottleneck in reticular chemistry is 
+the "combinatorial explosion" of potential metal nodes and organic linkers, rendering traditional 
+screening methods computationally intractable for large-scale discovery. 
+What we are claiming to do: Given pairwise interaction parameters ({h_i, J_ij}) sourced from 
+DFT databases and heuristics, we aim to find the MOF building-block combination that 
+minimizes the total Hamiltonian. We will then verify if our SNN-QP derived configurations match 
+known, high-performing MOFs from databases like CoRE.  
+Novelty: While traditional High-Throughput Screening evaluates materials iteratively, our 
+approach maps the combinatorial design space into a continuous neuromorphic architecture. 
+By utilizing continuous relaxation on the SNN-QP solver and comparing it against recent 
+quantum-annealing material discovery methods, we aim to offer a highly parallel, 
+energy-efficient paradigm for isolating low-energy structural configurations.  
+2. Target Material Class 
+We will target Amine-functionalized Zirconium-based MOFs (e.g., UiO-66 derivatives). 
+Zirconium-based MOFs are renowned for their exceptional hydrothermal stability, which is a 
+strict prerequisite for DAC applications where moisture is prevalent. By focusing on 
+amine-functionalized linkers, we introduce chemisorption sites that selectively bind CO2 at 
+ultra-low concentrations (400 ppm), while the optimization framework will tune the steric 
+
+PAGE 2
+hindrance and pore geometry. 
+3. Core Formulation & QUBO Mapping 
+To interface with the SNN-QP framework, the chemical configuration must be mapped to a 
+Quadratic Unconstrained Binary Optimization (QUBO) problem. The objective is to minimize 
+the pseudo-energy Hamiltonian (H) of the system. 
+Decision Variables & Continuous Relaxation  
+While the strict QUBO formulation treats building block selection as a discrete binary choice, 
+our SNN-QP framework operates continuously. Therefore, we apply continuous relaxation, 
+defining the variable as a fractional inclusion: x_i in [0, 1]. 
+The variable x_i represents the continuous state of a specific building block (e.g., an 
+amine-tagged BDC linker or a Zirconium cluster node). The lab's SNN-QP solver will process 
+these continuous variables to find the optimal approximate state. Post-optimization, we will 
+threshold the continuous output back to the discrete domain {0, 1} to yield the final physical 
+MOF configuration. 
+Objective Function 
+Minimize H(x) = ∑(i) h_i * x_i + ∑(i < j) J_ij * x_i * x_j 
+Parameter Definitions 
+●​ Linear Bias (h_i): Represents the intrinsic CO2 binding affinity (adsorption enthalpy) of 
+the individual component i. Favorable CO2 binding translates to a negative (low energy) 
+h_i penalty. 
+●​ Quadratic Interaction (J_ij): Represents the structural and geometric compatibility 
+between component i and component j. 
+○​ Steric Clash: If the two components cannot physically co-exist due to size 
+constraints, J_ij is assigned a massive positive penalty. 
+○​ Synergistic Pore Formation: If the combination yields a pore size precisely tuned to 
+the kinetic diameter of CO2 (approx. 3.3 Å), J_ij acts as an energetic reward 
+(negative value). 
+4. Baseline Comparison Methods 
+
+PAGE 3
+To validate the efficacy and speed of the SNN-QP solver, our results will be benchmarked 
+against the following classical baselines: 
+●​ Simulated Annealing (SA): A standard heuristic classical algorithm for solving QUBO 
+formulations, used to compare Time-to-Solution (TTS). 
+●​ Gurobi Optimizer: An industry-standard mathematical programming solver for 
+quadratic optimization, providing exact solutions for smaller combinatorial subsets to 
+verify the SNN's accuracy. 
+●​ Surrogate-Model-Driven Screening: We will use Graph Neural Network (GNN) 
+potentials (such as MOFTransformer or CGCNN) as our primary competitive baseline. 
+These machine learning models rank candidate structures rapidly, after which the top-K 
+candidates are validated by DFT. We will benchmark our SNN-QP optimization speed and 
+accuracy against these GNN ranking methods.  
+5. Tentative Timetable 
+The project is structured across a 12-week timeline to ensure systematic progression from 
+mathematical formulation to publication drafting. 
+Phase 
+Weeks 
+Key Deliverables & 
+Milestones 
+  
+Phase 1: Formulation & 
+Literature 
+Weeks 1 - 3 
+Finalize building block 
+library. Assign accurate h_i 
+and J_ij values derived from 
+existing DFT databases 
+(e.g., CoRE MOF database). 
+Finalize the explicit QUBO 
+matrix. 
+Phase 2: Algorithm & 
+Integration 
+Weeks 4 - 6 
+Map the QUBO matrix to 
+the SNN-QP framework. 
+Run initial small-scale 
+simulations (e.g., 
+50-variable subset) to 
+calibrate the solver's 
+
+PAGE 4
+Phase 
+Weeks 
+Key Deliverables & 
+Milestones 
+  
+hyperparameters. 
+Phase 3: Scaling & 
+Benchmarking 
+Weeks 7 - 9 
+Scale to the full 
+combinatorial design space. 
+Extract the lowest-energy 
+MOF configurations. Run 
+baseline comparisons 
+against Simulated 
+Annealing and Gurobi. 
+Phase 4: Analysis & 
+Drafting 
+Weeks 10 - 12 
+Validate the top predicted 
+MOFs using standard 
+chemical principles. Draft 
+the manuscript detailing the 
+methodology, 
+computational efficiency 
+gains, and material insights. 
+ 
+This approach inherently utilizes deep chemical insight to construct the penalty matrices, while 
+fully exploiting the computational advantages of neuromorphic hardware. 

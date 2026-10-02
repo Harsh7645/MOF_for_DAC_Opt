@@ -1,0 +1,380 @@
+{
+  "created_utc": "2026-10-02T04:49:18.624500+00:00",
+  "graphify_version": "0.9.54",
+  "detected_files": 64,
+  "detected_words": 67702,
+  "represented_files": 64,
+  "unrepresented_files": [],
+  "nodes": 442,
+  "edges": 750,
+  "raw_edges": 765,
+  "communities": 54,
+  "cohesion": {
+    "0": 0.08345428156748912,
+    "1": 0.0653061224489796,
+    "2": 0.0821256038647343,
+    "3": 0.08282828282828283,
+    "4": 0.06439393939393939,
+    "5": 0.07142857142857142,
+    "6": 0.07692307692307693,
+    "7": 0.13,
+    "8": 0.09523809523809523,
+    "9": 0.13725490196078433,
+    "10": 0.1437908496732026,
+    "11": 0.15384615384615385,
+    "12": 0.15384615384615385,
+    "13": 0.5,
+    "14": 0.6666666666666666,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0
+  },
+  "external_reference_stubs_added": [
+    "argparse",
+    "json",
+    "collections",
+    "pathlib",
+    "numpy",
+    "os",
+    "shutil",
+    "subprocess",
+    "sys",
+    "tarfile",
+    "urllib_request",
+    "kaggle_secrets",
+    "torch",
+    "hashlib",
+    "re",
+    "time",
+    "platform",
+    "datetime",
+    "scipy",
+    "dataclasses",
+    "csv",
+    "scipy_stats",
+    "scipy_linalg",
+    "scipy_optimize",
+    "importlib_metadata",
+    "itertools",
+    "pkg_numpy",
+    "pkg_scipy",
+    "fnmatch",
+    "zipfile",
+    "copy",
+    "io",
+    "pytest"
+  ],
+  "directed_local_import_cycles": [],
+  "diagnostics": {
+    "node_count": 442,
+    "unverified_node_count": 0,
+    "raw_edge_count": 765,
+    "non_object_edges": 0,
+    "missing_endpoint_edges": 0,
+    "dangling_endpoint_edges": 0,
+    "self_loop_edges": 0,
+    "valid_candidate_edges": 765,
+    "exact_duplicate_edges": 0,
+    "directed_unique_endpoint_pairs": 752,
+    "directed_same_endpoint_collapsed_edges": 13,
+    "undirected_unique_endpoint_pairs": 750,
+    "undirected_same_endpoint_collapsed_edges": 15,
+    "same_endpoint_group_count": 13,
+    "relation_variant_groups": 12,
+    "source_file_variant_groups": 0,
+    "source_location_variant_groups": 0,
+    "context_variant_groups": 0,
+    "post_build_graph_type": "Graph",
+    "post_build_node_count": 442,
+    "post_build_edge_count": 750,
+    "post_build_error": "",
+    "producer_suppression": {
+      "path": "C:\\Users\\hp\\AppData\\Roaming\\uv\\tools\\graphifyy\\Lib\\site-packages\\graphify\\extract.py",
+      "total_sites": 12,
+      "sites": [
+        {
+          "line": 1204,
+          "name": "seen_ids",
+          "tuple_arity": 0,
+          "sample": "seen_ids = {n[\"id\"] for n in nodes}"
+        },
+        {
+          "line": 1520,
+          "name": "seen_ids",
+          "tuple_arity": 0,
+          "sample": "seen_ids = {n[\"id\"] for n in nodes}"
+        },
+        {
+          "line": 1522,
+          "name": "seen_doc_refs",
+          "tuple_arity": 0,
+          "sample": "seen_doc_refs: set[str] = set()"
+        },
+        {
+          "line": 1885,
+          "name": "seen_ids",
+          "tuple_arity": 0,
+          "sample": "seen_ids: set[str] = {n[\"id\"] for n in nodes}"
+        },
+        {
+          "line": 2032,
+          "name": "seen_ids",
+          "tuple_arity": 0,
+          "sample": "seen_ids = {n.get(\"id\") for n in nodes}"
+        },
+        {
+          "line": 2670,
+          "name": "seen_keys",
+          "tuple_arity": 0,
+          "sample": "seen_keys: set[tuple] = set()"
+        },
+        {
+          "line": 2839,
+          "name": "seen_keys",
+          "tuple_arity": 0,
+          "sample": "seen_keys: set[tuple] = set()"
+        },
+        {
+          "line": 4531,
+          "name": "seen_ids",
+          "tuple_arity": 0,
+          "sample": "seen_ids: set[str] = set()"
+        },
+        {
+          "line": 4639,
+          "name": "seen_ids",
+          "tuple_arity": 0,
+          "sample": "seen_ids: set[str] = set()"
+        },
+        {
+          "line": 4718,
+          "name": "seen_ids",
+          "tuple_arity": 0,
+          "sample": "seen_ids: set[str] = set()"
+        },
+        {
+          "line": 5233,
+          "name": "seen_ids",
+          "tuple_arity": 0,
+          "sample": "seen_ids: set[str] = set()"
+        },
+        {
+          "line": 5234,
+          "name": "seen_edges",
+          "tuple_arity": 4,
+          "sample": "seen_edges: set[tuple[str, str, str, str | None]] = set()"
+        }
+      ],
+      "error": ""
+    },
+    "examples": [
+      {
+        "source": "mof_dac_optimizers_feasible_batches",
+        "target": "mof_dac_formulation_problem",
+        "edge_count": 2,
+        "relations": [
+          "references",
+          "uses"
+        ],
+        "source_files": [
+          "mof_dac/optimizers.py"
+        ],
+        "source_locations": [
+          "L22"
+        ],
+        "contexts": [
+          "",
+          "parameter_type"
+        ]
+      },
+      {
+        "source": "mof_dac_main_run",
+        "target": "mof_dac_optimizers_result",
+        "edge_count": 2,
+        "relations": [
+          "calls",
+          "uses"
+        ],
+        "source_files": [
+          "mof_dac/__main__.py"
+        ],
+        "source_locations": [
+          "L50"
+        ],
+        "contexts": [
+          "",
+          "call"
+        ]
+      },
+      {
+        "source": "mof_dac_data_load_instance",
+        "target": "mof_dac_formulation_problem",
+        "edge_count": 2,
+        "relations": [
+          "calls",
+          "uses"
+        ],
+        "source_files": [
+          "mof_dac/data.py"
+        ],
+        "source_locations": [
+          "L89"
+        ],
+        "contexts": [
+          "",
+          "call"
+        ]
+      },
+      {
+        "source": "mof_dac_gurobi_solve_gurobi",
+        "target": "mof_dac_optimizers_result",
+        "edge_count": 2,
+        "relations": [
+          "calls",
+          "uses"
+        ],
+        "source_files": [
+          "mof_dac/gurobi.py"
+        ],
+        "source_locations": [
+          "L46"
+        ],
+        "contexts": [
+          "",
+          "call"
+        ]
+      },
+      {
+        "source": "mof_dac_instances_slot_problem",
+        "target": "mof_dac_formulation_problem",
+        "edge_count": 2,
+        "relations": [
+          "calls",
+          "uses"
+        ],
+        "source_files": [
+          "mof_dac/instances.py"
+        ],
+        "source_locations": [
+          "L50"
+        ],
+        "contexts": [
+          "",
+          "call"
+        ]
+      }
+    ]
+  },
+  "agent_input_tokens": null,
+  "agent_output_tokens": null,
+  "token_savings": "Not measured; graphify benchmark estimates corpus vs retrieval size only",
+  "query_checks": {
+    "repair_rounding": "Located repair_nearest at mof_dac/optimizers.py:L47",
+    "slot_charge_phase": "Located Phase1 document and equality-rank constraint rationale",
+    "explain_charge_audit": "Returned one node with three source-grounded neighbors",
+    "budget_limit": "Advisory: requested 1500, tool estimated 3238 tokens"
+  },
+  "html_external_script": "https://unpkg.com/vis-network@9.1.6/standalone/umd/vis-network.min.js",
+  "source_sha256": {
+    "data\\design\\uio66_provisional.json": "8d19dc2dee46b1f8ac864517435a2cf223457ded7011d498e31ad2f5b9c03a6d",
+    "data\\synthetic\\toy.json": "1cc713cc2cb3fc2553b9847463758665ac047e48b70a64ddbf04e6a47030be83",
+    "docs\\phase1_results.json": "66541a67e214bf841bef7cfd830c295904c2ced5473270442ec87eddb24d6321",
+    "docs\\phase2_results.json": "ad47a031caf3ed9bc6b64ab1c819732d73ce23efa92c11ad5c45851d440789dd",
+    "docs\\phase3_results.json": "431443ff3404ce64d8648a8c1f5c2dec38dda820529256803b53c8b2caac397f",
+    "kaggle\\audit_odac25_references.py": "8774501462a5b6d824355d8ab2bc5cb44311d99564e446326ad395f4cb662ec8",
+    "kaggle\\odac25_uma_pipeline.py": "47e7e41ec769d05e0e25cdeca458e8e1216dd717db80620345da89f37e9739f7",
+    "kaggle\\phase3_material_pipeline.py": "21cb7d29831a1abc5a7e54f256d48903f97a9f25196f23fc41c193820d1e7a47",
+    "mof_dac\\__init__.py": "dcce98b4da7b5312d817b2565425877ead8273484869be3a14f877acfb9157cf",
+    "mof_dac\\__main__.py": "8deddfe601b3579feb3784beff9dfb6dd805cfe27ab666b1387052f58e959b9d",
+    "mof_dac\\data.py": "ece11f4a991dad34e5fc880cc008a036841a6bde42b72c74c1a16025fc8a688b",
+    "mof_dac\\formulation.py": "0fdb26f61234a9be1b3e3fb46d961d1bb7cbfc96a23091d37be4392a093f12ef",
+    "mof_dac\\gurobi.py": "fbece58ca0de8b2b120b39a79b3e91e03ce660f9c38d8b388c51e6956c2c2d18",
+    "mof_dac\\instances.py": "258dd371934b6634fbf713e61b4672ef1f3d6251a99e92ad58b3572f8dbda64d",
+    "mof_dac\\material_baselines.py": "8426734f8ed5ce701778bd5231b5741a68d78fb402ebdc4997ee5df1aee3391b",
+    "mof_dac\\materials.py": "7b49202cbc21ae089b6d397b776804fd66b3197c0aa732ecae5fd6b7a96a2149",
+    "mof_dac\\odac25.py": "7d3203f26e11fc3aece6a30bc28000be066247c0073a86e6a823c15e22784b0b",
+    "mof_dac\\odac25_archive.py": "cdb5e6bc163a378f168f87aff3494ed36b33f80c9c6040880687a7813caa97e0",
+    "mof_dac\\optimizers.py": "5939e97d434e51220740697b7d08fbcb4740142c39919096c6802dd6de6b0812",
+    "mof_dac\\parameters.py": "e81b0bb0668dd294df9e0a3832013e8e7f45a5c6f8dbb555f04858b40cf3b02c",
+    "mof_dac\\phase1.py": "90cbf3525fba79068b23bd734e2d841e4260d0e90d11bea470e962478103e2f5",
+    "mof_dac\\phase2.py": "9385e3f2a8758248f2cdeacd63f67884f5b216616e592926adc12c81dc4b35d2",
+    "mof_dac\\phase3.py": "e9ec22d457c41e06bcbecd5307e78fce9c66659dcb97a12ba3f247d5ee9efc74",
+    "mof_dac\\snn.py": "3b15c8172f6b3244da0fcd4e35ad4616816b3a68ea22b3f727a1b83f31e23947",
+    "mof_dac\\uio66.py": "6ecde7a5da1d601fec95116f7d039e3c04f90b75772134af7b4256fe3b1e57c7",
+    "mof_dac\\uio66_structures.py": "98eb8e8ab5a4bdab2b4a5d11932dcaf3d7f3d0f3438df5262b4b001d5245fc6d",
+    "pyproject.toml": "609bffea275dfe7b800664ad6305fccc5294ee2153df561b2f1e6eb732cac7ff",
+    "scripts\\build_uio66_design.py": "030b650ff3ed5bf851398e661def62be2ac82b7f68079faeff6e6d3dd51206fa",
+    "scripts\\build_uio66_structures.py": "77c530c3e6eec59a5c1749ba225514c9f085623ca911c3c9b386e722fcbf50e1",
+    "scripts\\odac25_hf.py": "297f2732996ffa3cbcd826688db2089c5b965c73d0dd3a381bb7179e40b21598",
+    "scripts\\package_kaggle.py": "527a968042cc452e5e80742af655687c27a38388043ba1a46d0a26502c204521",
+    "scripts\\run_material_baselines.py": "d37b160272b45d71bea711c4980dc569ed7db6185c26916c32e1c65020721ea3",
+    "sources\\manifest.json": "621988a6b354ca718fb764b3b065db1f359d789d3bda4a85f6cb43406bb7c235",
+    "tests\\test_foundation.py": "dbb6f8257e7a9627be4c45e2bafda28fd72928bd1e8d27170a9477dedc5e3e7c",
+    "tests\\test_material_pipeline.py": "3c859de2cbdd80910fb01b3dd1600bf36039b2e46e2170df3aca0e2e5cd30bd0",
+    "tests\\test_uio66.py": "10bf56f2ccadddcee7a630c93f6eeef893a2aec6409554b4360582d7f0687b8a",
+    ".planning\\ROADMAP.md": "59ae3ed2ceb3959694ed7f53bbe18be632def62ebdfa314940306a6deb9921d7",
+    ".planning\\STATE.md": "70bf5fb43a884b50cbca8f933818756b24188442ab6cd2bc2519a07e43cf1bee",
+    "AGENTS.md": "9f8bdb6b1b56ff16b181776cff986d51ea43c0e5d93b7a656a07f931bb9e5377",
+    "MODEL_HANDOFF.md": "d5b3b32564a08c5b9597b3599bbc2f657d1642e0f3af7ac8e7fda572dab12280",
+    "README.md": "b98d5d56001af1d24afd17b3c5aa50ee0d3a0c6205d4ab75b07765b0bdfbe9b6",
+    "agent.md": "8f99d44c95abb04bdd094cebd6e0f00bd1f4ae5cff34fae17c983501aa283f3c",
+    "beginner_guide.md": "232f4d080d54fea133b8664451190c7e47875c2fa7346bf0a9e87b6f073cae5a",
+    "chat_context.md": "f7e2ca8640e4a48fbd1e3ec70185d9e4f7c91cc0cc1ae6a3df84867477121bdc",
+    "context.md": "77c2bba87b9516178548fb94082ded878657af49b1fbe7117fd6fb1ffac5bdbb",
+    "docs\\ODAC25_KAGGLE_RUNBOOK.md": "e0d6df81794291480b679bf595af05724a8313e55f27ef500dc6f4534ffddf17",
+    "docs\\ODAC25_TARGET_CONTRACT.md": "aef890f14d98d979c3a55612ab456b0fa1f105278b9b5295bcd4f5e452e5d958",
+    "docs\\PHASE1_SUMMARY.md": "d52543e518b5bc18bdfa9740e46fd596b60a003588094f4cbea9ece16a113359",
+    "docs\\PHASE2_SUMMARY.md": "b2f74dcb0730281d2ca449a3ef12d72a66dba60c9841398ccc94db79ea71f522",
+    "docs\\PHASE3_STATUS.md": "2ea69b30c593c0183083aa63d03bf5c7794bc9d59fd9e4951d47b1a39229e699",
+    "docs\\REMAINING_WORK.md": "67f5d9efbdc47737a5546342c71dc2583e130142c11f20aa8279bc937a9e9808",
+    "docs\\UIO66_PROVISIONAL_LIBRARY.md": "4f1c1e8a7165dec0ea74df1a1a0c8f71d7eae44d285f5e7e8b40d6743405b94d",
+    "docs\\benchmark_protocol.md": "fccf77223d1fc96ee53278cbf35eda5ea88b44829d99d71690262b7f85d57190",
+    "docs\\data_contract.md": "fa9414810aff2a9c054853e2ff0d852fa55937564b0e2fd3513a2127496d6bf7",
+    "docs\\dataset_decision.md": "6147f700b9434acd6d0860841f5e743f74a432cd815db4c93b0a264d5cf1c974",
+    "docs\\knowledge_graph.md": "503ca56c732ed143a7ba290986fa053847487025ed825199b9f773f4866200f9",
+    "docs\\parameter_sourcing.md": "bbd6a792cdba8ae27b317b5fa9e3f4d8185ae87f36132ae74b3500c6a4f932b7",
+    "docs\\phase1_formulation.md": "a6a19f5b6c333fb9dcca7d44f3b30d1d0579060c7ab1e9a99b07da0a25944035",
+    "docs\\verification.md": "50ae549527612b86da2403fc853a070ec0de03ac5750f117190a30f2c2be5530",
+    "sources\\professor_feedback.md": "7515d0679500583257debee15c000ebaf460ed3c057a97f56aca71e17065beca",
+    "sources\\scoping_report_extracted.txt": "e89cd0a7203a6efab6e8b0287b9a301dba6bc29504e78280df9d343c3879f196",
+    "docs\\PHASE3_REFERENCE_AUDIT.md": "24914183d26a9a8cf41ca2d6a8cd0dc87beb624acec4a67d6e241b282f33c9ea",
+    "docs\\phase1_literature.md": "64fd5902c8a2bf6c2a16582708dba15ade95ad11ab62ad1c4dda6fd0b5ce5edc",
+    "docs\\references.md": "db8e373ac6d4408cf7e1a5de6ffb52512851fe31663c2e8ead29e878bc959485"
+  }
+}

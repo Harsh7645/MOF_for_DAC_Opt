@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "abstract-selection-v1",
+  "parameter_regime": "synthetic",
+  "energy_units": "dimensionless",
+  "missing_interactions": "modeled_zero",
+  "description": "Abstract fixture, not a chemically valid UiO-66 cell. One metal, linker budget two, toy charges +4/-2. All multiplicities one.",
+  "nodes": [
+    {"id": "M0", "kind": "metal", "h": 0.0, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"},
+    {"id": "M1", "kind": "metal", "h": 0.4, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"},
+    {"id": "L0", "kind": "linker", "h": -2.0, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"},
+    {"id": "L1", "kind": "linker", "h": -1.2, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"},
+    {"id": "L2", "kind": "linker", "h": -0.5, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"},
+    {"id": "L3", "kind": "linker", "h": -1.0, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"}
+  ],
+  "edges": [
+    {"i": "M0", "j": "L0", "J": -0.3, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"},
+    {"i": "M0", "j": "L1", "J": -0.3, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"},
+    {"i": "M1", "j": "L3", "J": -0.6, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"},
+    {"i": "L0", "j": "L1", "J": -0.8, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"},
+    {"i": "L0", "j": "L2", "J": 4.0, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"},
+    {"i": "L1", "j": "L3", "J": 1.5, "source": "synthetic-v1", "method": "hand_designed", "units": "dimensionless"}
+  ],
+  "constraints": [
+    {"id": "one_metal_type", "sense": "eq", "coefficients": {"M0": 1, "M1": 1}, "rhs": 1, "source": "professor-rule / synthetic encoding", "method": "one_hot"},
+    {"id": "charge_balance", "sense": "eq", "coefficients": {"M0": 4, "M1": 4, "L0": -2, "L1": -2, "L2": -2, "L3": -2}, "rhs": 0, "source": "synthetic-v1 toy charges", "method": "fixed_multiplicity_charge"},
+    {"id": "linker_budget", "sense": "le", "coefficients": {"L0": 1, "L1": 1, "L2": 1, "L3": 1}, "rhs": 2, "source": "professor-rule / synthetic encoding", "method": "cardinality_budget"},
+    {"id": "hard_clash_L0_L2", "sense": "le", "coefficients": {"L0": 1, "L2": 1}, "rhs": 1, "source": "synthetic-v1", "method": "hard_incompatibility"}
+  ]
+}

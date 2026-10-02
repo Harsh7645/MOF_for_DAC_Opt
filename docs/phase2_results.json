@@ -1,0 +1,499 @@
+{
+  "schema_version": 2,
+  "upstream": "snn-opt==0.6.0",
+  "convex_control": {
+    "status": "converged_feasible",
+    "seconds": 0.031065099999977974,
+    "energy": -1.9999999999999998,
+    "violations": {
+      "equality": 1.1102230246251565e-16,
+      "inequality": 0.0,
+      "bounds": 0.0,
+      "integrality": 1.1102230246251565e-16
+    },
+    "diagnostics": {
+      "upstream_version": "0.6.0",
+      "upstream_converged": true,
+      "reason": "converged(kkt(residual=5.44e-16<=tol=2.24e-04); obj_plateau(range=1.11e-16))",
+      "iterations_used": 251,
+      "equality_band": 0.0,
+      "max_iterations": 5000,
+      "original_constraints_feasible": true,
+      "theory_scope": "convex_control",
+      "curvature": {
+        "min_eigenvalue": 0.0,
+        "max_eigenvalue": 0.0,
+        "full_space_psd": true
+      },
+      "joint_feasible": true,
+      "projection_budget_exhausted": false,
+      "kkt_residual": 5.438959822042074e-16,
+      "kkt_scale": 2.2360679774997902,
+      "kkt_tolerance": 0.00022360779774997902,
+      "stationarity_residual": 1.1102230246251568e-16,
+      "final_proj_grad_norm": 1.5811388300841898,
+      "max_violation_rows_raw": 1.1102230246251565e-16,
+      "max_violation_box": 0.0,
+      "optimality_test": "kkt"
+    },
+    "decoded_energy": null,
+    "decoded_feasible": null
+  },
+  "convex_equality_band_sensitivity": [
+    {
+      "equality_band": 0.0,
+      "status": "converged_feasible",
+      "seconds": 0.011041700001442223,
+      "energy": -1.9999999999999998,
+      "violations": {
+        "equality": 1.1102230246251565e-16,
+        "inequality": 0.0,
+        "bounds": 0.0,
+        "integrality": 1.1102230246251565e-16
+      },
+      "diagnostics": {
+        "upstream_version": "0.6.0",
+        "upstream_converged": true,
+        "reason": "converged(kkt(residual=5.44e-16<=tol=2.24e-04); obj_plateau(range=1.11e-16))",
+        "iterations_used": 251,
+        "equality_band": 0.0,
+        "max_iterations": 5000,
+        "original_constraints_feasible": true,
+        "theory_scope": "convex_control",
+        "curvature": {
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "full_space_psd": true
+        },
+        "joint_feasible": true,
+        "projection_budget_exhausted": false,
+        "kkt_residual": 5.438959822042074e-16,
+        "kkt_scale": 2.2360679774997902,
+        "kkt_tolerance": 0.00022360779774997902,
+        "stationarity_residual": 1.1102230246251568e-16,
+        "final_proj_grad_norm": 1.5811388300841898,
+        "max_violation_rows_raw": 1.1102230246251565e-16,
+        "max_violation_box": 0.0,
+        "optimality_test": "kkt"
+      },
+      "decoded_energy": null,
+      "decoded_feasible": null
+    },
+    {
+      "equality_band": 1e-06,
+      "status": "converged_feasible",
+      "seconds": 0.010625400000208174,
+      "energy": -2.0,
+      "violations": {
+        "equality": 0.0,
+        "inequality": 0.0,
+        "bounds": 0.0,
+        "integrality": 0.0
+      },
+      "diagnostics": {
+        "upstream_version": "0.6.0",
+        "upstream_converged": true,
+        "reason": "converged(kkt(residual=1.00e-06<=tol=2.24e-04); obj_plateau(range=0.00e+00))",
+        "iterations_used": 251,
+        "equality_band": 1e-06,
+        "max_iterations": 5000,
+        "original_constraints_feasible": true,
+        "theory_scope": "convex_control",
+        "curvature": {
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "full_space_psd": true
+        },
+        "joint_feasible": true,
+        "projection_budget_exhausted": false,
+        "kkt_residual": 9.999999999172332e-07,
+        "kkt_scale": 2.23606797749979,
+        "kkt_tolerance": 0.000223607797749979,
+        "stationarity_residual": 9.999999999177336e-07,
+        "final_proj_grad_norm": 1.5811388300841898,
+        "max_violation_rows_raw": 0.0,
+        "max_violation_box": 0.0,
+        "optimality_test": "kkt"
+      },
+      "decoded_energy": null,
+      "decoded_feasible": null
+    },
+    {
+      "equality_band": 0.001,
+      "status": "feasible_unconverged",
+      "seconds": 0.23441430000093533,
+      "energy": -2.0,
+      "violations": {
+        "equality": 0.0,
+        "inequality": 0.0,
+        "bounds": 0.0,
+        "integrality": 0.0
+      },
+      "diagnostics": {
+        "upstream_version": "0.6.0",
+        "upstream_converged": false,
+        "reason": "max_iterations",
+        "iterations_used": 5000,
+        "equality_band": 0.001,
+        "max_iterations": 5000,
+        "original_constraints_feasible": true,
+        "theory_scope": "convex_control",
+        "curvature": {
+          "min_eigenvalue": 0.0,
+          "max_eigenvalue": 0.0,
+          "full_space_psd": true
+        },
+        "joint_feasible": true,
+        "projection_budget_exhausted": false,
+        "kkt_residual": 0.0009999995000002648,
+        "kkt_scale": 2.23606797749979,
+        "kkt_tolerance": 0.000223607797749979,
+        "stationarity_residual": 0.0009999999999998899,
+        "final_proj_grad_norm": 1.0,
+        "max_violation_rows_raw": 0.0,
+        "max_violation_box": 0.0,
+        "optimality_test": "kkt"
+      },
+      "decoded_energy": null,
+      "decoded_feasible": null
+    }
+  ],
+  "tiny_nonconvex_reference": {
+    "variables": 6,
+    "oracle_energy": -4.6,
+    "runs": [
+      {
+        "status": "converged_feasible",
+        "seconds": 0.015880500001003384,
+        "energy": -4.6,
+        "violations": {
+          "equality": 0.0,
+          "inequality": 0.0,
+          "bounds": 0.0,
+          "integrality": 0.0
+        },
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=1.57e-16<=tol=5.28e-04); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 5000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -4.108153708529652,
+            "max_eigenvalue": 4.0982606992443795,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 1.5700924586837752e-16,
+          "kkt_scale": 5.2839379254491625,
+          "kkt_tolerance": 0.0005283947925449163,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.871779788708135,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "decoded_energy": -4.6,
+        "decoded_feasible": true,
+        "seed": 0,
+        "initial_energy": -4.6,
+        "decoded_optimum_hit": true
+      },
+      {
+        "status": "converged_feasible",
+        "seconds": 0.015907499999229913,
+        "energy": -4.6,
+        "violations": {
+          "equality": 0.0,
+          "inequality": 0.0,
+          "bounds": 0.0,
+          "integrality": 0.0
+        },
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=1.57e-16<=tol=5.28e-04); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 5000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -4.108153708529652,
+            "max_eigenvalue": 4.0982606992443795,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 1.5700924586837752e-16,
+          "kkt_scale": 5.2839379254491625,
+          "kkt_tolerance": 0.0005283947925449163,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.871779788708135,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "decoded_energy": -4.6,
+        "decoded_feasible": true,
+        "seed": 1,
+        "initial_energy": -3.5999999999999996,
+        "decoded_optimum_hit": true
+      },
+      {
+        "status": "converged_feasible",
+        "seconds": 0.015380999999251799,
+        "energy": -2.0,
+        "violations": {
+          "equality": 0.0,
+          "inequality": 0.0,
+          "bounds": 0.0,
+          "integrality": 0.0
+        },
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=1.67e-16<=tol=3.29e-04); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 5000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -4.108153708529652,
+            "max_eigenvalue": 4.0982606992443795,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 1.6653345369377348e-16,
+          "kkt_scale": 3.2924155266308657,
+          "kkt_tolerance": 0.0003292425526630866,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.5049752469181039,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "decoded_energy": -2.0,
+        "decoded_feasible": true,
+        "seed": 2,
+        "initial_energy": -2.0,
+        "decoded_optimum_hit": false
+      }
+    ]
+  },
+  "nonconvex_pilot": {
+    "variables": 50,
+    "slots": 25,
+    "functionalized": 12,
+    "runs": [
+      {
+        "status": "returned_infeasible",
+        "seconds": 19.51519890000054,
+        "energy": -15.528852902688882,
+        "violations": {
+          "equality": 5.2042729485890504e-06,
+          "inequality": 0.0,
+          "bounds": 9.9664386491933e-07,
+          "integrality": 0.20546805162522114
+        },
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": false,
+          "reason": "max_iterations",
+          "iterations_used": 5000,
+          "equality_band": 0.0,
+          "max_iterations": 5000,
+          "original_constraints_feasible": false,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -1.8562943548384465,
+            "max_eigenvalue": 1.8562943536481977,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.1078516608524489,
+          "kkt_scale": 8.00814099411581,
+          "kkt_tolerance": 0.0008008150994115809,
+          "stationarity_residual": 0.574848290911015,
+          "final_proj_grad_norm": 5.511036597033935,
+          "max_violation_rows_raw": 5.2042729485890504e-06,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "decoded_energy": -16.054094952138346,
+        "decoded_feasible": true,
+        "seed": 0,
+        "initial_energy": -5.960966907398104
+      },
+      {
+        "status": "returned_infeasible",
+        "seconds": 19.73891730000105,
+        "energy": -17.10488813890781,
+        "violations": {
+          "equality": 3.956592177445373e-06,
+          "inequality": 0.0,
+          "bounds": 9.433283003300399e-07,
+          "integrality": 0.2934735910912529
+        },
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": false,
+          "reason": "max_iterations",
+          "iterations_used": 5000,
+          "equality_band": 0.0,
+          "max_iterations": 5000,
+          "original_constraints_feasible": false,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -1.8562943548384465,
+            "max_eigenvalue": 1.8562943536481977,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.12157411431044629,
+          "kkt_scale": 8.131264755887232,
+          "kkt_tolerance": 0.0008131274755887232,
+          "stationarity_residual": 0.5761622169055189,
+          "final_proj_grad_norm": 5.732596836593108,
+          "max_violation_rows_raw": 3.956592177445373e-06,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "decoded_energy": -17.69689540068716,
+        "decoded_feasible": true,
+        "seed": 1,
+        "initial_energy": 4.562245640438409
+      },
+      {
+        "status": "returned_infeasible",
+        "seconds": 19.701668199999403,
+        "energy": -15.564151503186519,
+        "violations": {
+          "equality": 4.520799343765702e-06,
+          "inequality": 0.0,
+          "bounds": 8.588608932935671e-07,
+          "integrality": 0.1960562786070067
+        },
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": false,
+          "reason": "max_iterations",
+          "iterations_used": 5000,
+          "equality_band": 0.0,
+          "max_iterations": 5000,
+          "original_constraints_feasible": false,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -1.8562943548384465,
+            "max_eigenvalue": 1.8562943536481977,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.09940153105956193,
+          "kkt_scale": 7.987217741903048,
+          "kkt_tolerance": 0.0007987227741903048,
+          "stationarity_residual": 0.6308153467686778,
+          "final_proj_grad_norm": 5.499894169082234,
+          "max_violation_rows_raw": 4.520799343765702e-06,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "decoded_energy": -16.054094952138346,
+        "decoded_feasible": true,
+        "seed": 2,
+        "initial_energy": -6.578798107741954
+      },
+      {
+        "status": "returned_infeasible",
+        "seconds": 19.966322500000388,
+        "energy": -17.104888137122398,
+        "violations": {
+          "equality": 3.956551243078366e-06,
+          "inequality": 0.0,
+          "bounds": 9.433285830379661e-07,
+          "integrality": 0.29347364574392054
+        },
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": false,
+          "reason": "max_iterations",
+          "iterations_used": 5000,
+          "equality_band": 0.0,
+          "max_iterations": 5000,
+          "original_constraints_feasible": false,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -1.8562943548384465,
+            "max_eigenvalue": 1.8562943536481977,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.1215741155127557,
+          "kkt_scale": 8.131264750630892,
+          "kkt_tolerance": 0.0008131274750630893,
+          "stationarity_residual": 0.5761622241361956,
+          "final_proj_grad_norm": 5.732596832253361,
+          "max_violation_rows_raw": 3.956551243078366e-06,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "decoded_energy": -17.69689540068716,
+        "decoded_feasible": true,
+        "seed": 3,
+        "initial_energy": -4.675613241934384
+      },
+      {
+        "status": "returned_infeasible",
+        "seconds": 19.696202499999345,
+        "energy": -17.144252215500785,
+        "violations": {
+          "equality": 4.231587896086353e-06,
+          "inequality": 0.0,
+          "bounds": 6.404915353641627e-07,
+          "integrality": 0.2874841833423697
+        },
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": false,
+          "reason": "max_iterations",
+          "iterations_used": 5000,
+          "equality_band": 0.0,
+          "max_iterations": 5000,
+          "original_constraints_feasible": false,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -1.8562943548384465,
+            "max_eigenvalue": 1.8562943536481977,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.11273982875687862,
+          "kkt_scale": 8.10346631590991,
+          "kkt_tolerance": 0.0008103476315909911,
+          "stationarity_residual": 0.6253439891367166,
+          "final_proj_grad_norm": 5.724008596762601,
+          "max_violation_rows_raw": 4.231587896086353e-06,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "decoded_energy": -17.69689540068716,
+        "decoded_feasible": true,
+        "seed": 4,
+        "initial_energy": 0.5563974432134202
+      }
+    ],
+    "certificate": null,
+    "interpretation": "experimental raw-W heuristic"
+  }
+}

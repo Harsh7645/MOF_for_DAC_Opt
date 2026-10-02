@@ -1,0 +1,11 @@
+.git/
+.venv/
+tmp/
+results/
+__pycache__/
+.pytest_cache/
+graphify-out/
+graphify-out/memory/*.md
+data/raw/
+sources/*.pdf
+sources/*.png

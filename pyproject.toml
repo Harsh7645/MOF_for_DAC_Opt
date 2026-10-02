@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mof-dac-opt"
+version = "0.1.0"
+description = "Synthetic-first constrained MOF selection research foundation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.11"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+snn = ["snn-opt==0.6.0"]
+gurobi = ["gurobipy>=13"]
+odac = ["ase>=3.26", "huggingface-hub>=0.28", "fairchem-core>=2,<3"]
+
+[project.scripts]
+mof-dac = "mof_dac.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["mof_dac*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

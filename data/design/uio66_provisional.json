@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "provisional; user authorized development 2026-10-02; chemistry review pending",
+  "family": "defect-free hydroxylated UiO-66 with BDC/2-amino-BDC substitutions",
+  "topology": "fcu",
+  "cell_convention": "one ideal Zr6O4(OH)4 unit and six owned linkers; verify against imported primitive CIF",
+  "node": {"id": "Zr6O4OH4", "composition": {"Zr": 6, "O": 8, "H": 4}, "formal_charge": 12},
+  "linkers": [
+    {"id": "BDC", "name": "benzene-1,4-dicarboxylate", "composition": {"C": 8, "H": 4, "O": 4}, "formal_charge": -2},
+    {"id": "NH2_BDC", "name": "2-aminobenzene-1,4-dicarboxylate", "composition": {"C": 8, "H": 5, "N": 1, "O": 4}, "formal_charge": -2}
+  ],
+  "slots": ["L0", "L1", "L2", "L3", "L4", "L5"],
+  "variable_definition": "x_i=0 selects BDC; x_i=1 selects NH2_BDC at an always-occupied slot",
+  "aminated_linker_budget": {"minimum": 0, "maximum": 6, "status": "provisional; span all counts for identifiable fitting"},
+  "amino_orientation_policy": "pending parent atom mapping; one orientation per slot must be frozen before generating structures",
+  "parent_cif": null,
+  "parent_sha256": null,
+  "slot_atom_mapping": null,
+  "periodic_contacts": null,
+  "coefficient_units": "eV for proposed CO2-minus-H2O adsorption diagnostic",
+  "coefficients": null,
+  "excluded": ["missing linkers", "missing nodes", "caps", "dehydroxylation", "amino protonation changes", "metal substitutions"],
+  "sources": [
+    {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5006632/", "supports": "Zr6O4(OH)4, fcu topology and 12-connected defect-free node; article inspected"},
+    {"url": "https://pubs.rsc.org/en/content/articlehtml/2017/cp/c6cp07801j", "supports": "six linkers in primitive cell and mixed amino-functionalized linkers; publisher search excerpt inspected, full text returned 403"}
+  ],
+  "charge_derivation": "6*(+4) + 4*(-2) + 4*(-1) + 6*(-2) = 0; neutral amino substitution preserves formal charge",
+  "formula_derivation": "C48 H(28+k) N(k) O32 Zr6; ideal fully occupied hydroxylated model only"
+}

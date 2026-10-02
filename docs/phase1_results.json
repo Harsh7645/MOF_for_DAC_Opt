@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "parameter_regime": "synthetic",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "instances": [
+    {
+      "name": "slots2",
+      "variables": 4,
+      "expected_infeasible": false,
+      "oracle_status": "optimal",
+      "oracle_energy": 0.4114278657011754,
+      "feasible_states": 2,
+      "sa_runs": 10,
+      "sa_feasible_runs": 10,
+      "sa_optimum_hits": 10,
+      "slsqp_status": "feasible_candidate",
+      "equality_audit": {
+        "original_rows": 4,
+        "rank": 3,
+        "selected_rows": [
+          1,
+          2,
+          3
+        ],
+        "consistent": true
+      }
+    },
+    {
+      "name": "slots4_frustrated",
+      "variables": 8,
+      "expected_infeasible": false,
+      "oracle_status": "optimal",
+      "oracle_energy": -0.7508767108192511,
+      "feasible_states": 5,
+      "sa_runs": 10,
+      "sa_feasible_runs": 10,
+      "sa_optimum_hits": 10,
+      "slsqp_status": "feasible_candidate",
+      "equality_audit": {
+        "original_rows": 6,
+        "rank": 5,
+        "selected_rows": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "consistent": true
+      }
+    },
+    {
+      "name": "slots6",
+      "variables": 12,
+      "expected_infeasible": false,
+      "oracle_status": "optimal",
+      "oracle_energy": -3.2926649460071964,
+      "feasible_states": 20,
+      "sa_runs": 10,
+      "sa_feasible_runs": 10,
+      "sa_optimum_hits": 9,
+      "slsqp_status": "feasible_candidate",
+      "equality_audit": {
+        "original_rows": 8,
+        "rank": 7,
+        "selected_rows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "consistent": true
+      }
+    },
+    {
+      "name": "slots8_frustrated",
+      "variables": 16,
+      "expected_infeasible": false,
+      "oracle_status": "optimal",
+      "oracle_energy": -6.266960918525333,
+      "feasible_states": 55,
+      "sa_runs": 10,
+      "sa_feasible_runs": 10,
+      "sa_optimum_hits": 3,
+      "slsqp_status": "feasible_candidate",
+      "equality_audit": {
+        "original_rows": 10,
+        "rank": 9,
+        "selected_rows": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "consistent": true
+      }
+    },
+    {
+      "name": "slots4_degenerate",
+      "variables": 8,
+      "expected_infeasible": false,
+      "oracle_status": "optimal",
+      "oracle_energy": 0.0,
+      "feasible_states": 6,
+      "sa_runs": 10,
+      "sa_feasible_runs": 10,
+      "sa_optimum_hits": 10,
+      "slsqp_status": "feasible_candidate",
+      "equality_audit": {
+        "original_rows": 6,
+        "rank": 5,
+        "selected_rows": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "consistent": true
+      }
+    },
+    {
+      "name": "slots4_infeasible",
+      "variables": 8,
+      "expected_infeasible": true,
+      "oracle_status": "infeasible",
+      "oracle_energy": null,
+      "feasible_states": 0,
+      "sa_runs": 10,
+      "sa_feasible_runs": 0,
+      "sa_optimum_hits": 0,
+      "slsqp_status": "no_feasible_candidate",
+      "equality_audit": {
+        "original_rows": 6,
+        "rank": 5,
+        "selected_rows": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "consistent": true
+      }
+    }
+  ],
+  "claims": [
+    "Numerical formulation and solvers only",
+    "No chemistry, SNN, Gurobi, DFT, surrogate, or hardware validation"
+  ]
+}
