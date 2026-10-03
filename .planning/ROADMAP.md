@@ -44,6 +44,12 @@ Continuation 2026-10-02: material scoring requires the reference audit in
 `../docs/UIO66_PROVISIONAL_LIBRARY.md`. Actual structures, real h/J and grounded
 solver results remain Phase 3 gates. Preserve the four-phase structure.
 
+Milestone 2026-10-03: all 64 provisional UiO-66 bare structures were model-relaxed
+on two T4 GPUs and audited locally (64 converged/contact-free/unchanged inferred
+bonds). Initial declared-tolerance grouping and post-relaxation grouping were
+executed. Bare preparation does not close the paired adsorption, real h/J,
+chemistry review or material-baseline gates. See the provisional library document.
+
 ## Phase 4 - Analysis & Drafting (weeks 10-12)
 
 - [ ] Validate reconstructed top candidates, structure identity and DAC conditions.

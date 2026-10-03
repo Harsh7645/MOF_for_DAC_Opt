@@ -81,3 +81,15 @@ Phase 3 cannot be marked scientifically complete until frozen non-leaking
 composition and UMA adsorption-energy baselines, a compatible graph-model
 comparison and the material-ranking evaluation execute. Synthetic optimization
 work is complete and must remain labeled synthetic.
+
+## Structural preparation milestone, 2026-10-03
+
+All 64 provisional UiO-66 structures completed fixed-cell UMA bare relaxation
+on two T4 GPUs. Saved trajectories, final CIFs and provenance passed independent
+local checks: 64 converged, no severe contacts, no changed distance-inferred
+bonds. Initial grouping: 53 groups at 0.01/0.05 Angstrom; relaxed grouping:
+54/53. These diagnostics do not prove crystallographic or chemical validity.
+Full suite: 39 passed; synthetic demo -4.6. Read
+[UIO66_PROVISIONAL_LIBRARY.md](UIO66_PROVISIONAL_LIBRARY.md) for exact artifacts,
+protocol and limitations. Phase 3 remains incomplete: no paired design labels,
+real adsorption h/J, valid full-pool material prediction or learned baseline score.

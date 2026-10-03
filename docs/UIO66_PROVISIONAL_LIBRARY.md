@@ -1,7 +1,8 @@
 # Provisional UiO-66 design library
 
 User authorized development on 2026-10-02. This is a reviewable design proposal,
-not an approved chemistry library or assembled structural dataset.
+not an approved chemistry library. Initial and model-relaxed structures now exist;
+the dated execution sections below define their limited validity.
 
 Use [uio66_provisional.json](../data/design/uio66_provisional.json). Fix the ideal
 hydroxylated Zr6O4(OH)4 node and fcu topology. Linker choices are BDC and
@@ -28,9 +29,10 @@ an oxidation-state calculation or proof of chemical/structural validity.
 `python -m scripts.build_uio66_design` enumerates 64 nominal configurations.
 Its graph stores six variable nodes and 15 possible pair-regression terms.
 These edges are not bonds or established physical interactions. Coefficients
-remain null and optimization is prohibited until measured/predicted labels
-have provenance. Symmetry-unique count is unknown; no train/test split is
-assigned before structural identity and symmetry duplicates are resolved.
+remain null and optimization is prohibited until measured/predicted adsorption
+labels have provenance. Declared-tolerance parent-operation groups have been
+audited; complete crystallographic equivalence remains unverified. No train/test
+split is assigned before duplicate groups are frozen.
 
 ## Grounding sequence
 
@@ -84,3 +86,55 @@ pending. The 138 ODAC25 validation MOFs are a separate prediction benchmark;
 their labels are not used to fit these 64 configurations. The parent comes from
 validation, so this separate design experiment must not enter the ODAC25
 training table or alter the frozen held-out benchmark.
+
+## Executed grouping and bare relaxation, 2026-10-03
+
+`mof_dac/structure_groups.py` checks species-preserving bijections under verified
+parent operations, including periodic images and Cartesian cell rotations.
+The initial audit found 64 groups at 1e-5 Angstrom (one operation), and 53 groups
+at both 0.01 and 0.05 Angstrom (24 operations). Connected groups are conservative
+split-safety units; approximate matches need not be mutually within tolerance.
+This is not a certificate of 53 symmetry-unique crystals. Preserve detected
+initial duplicates together even if later relaxation separates their geometries.
+Evidence: [initial groups](../artifacts/phase3/uio66_groups.json).
+After relaxation, the same parent-operation audit found 54 groups at 0.01
+Angstrom and 53 at 0.05. Evidence:
+[relaxed groups](../artifacts/phase3/uio66_relaxed_groups.json). Tolerance sensitivity
+and relaxation differences reinforce the need to retain initial duplicate groups.
+
+An actual four-structure T4 pilot converged, followed by all 64 nominal structures
+split across two T4 GPUs. `kaggle/run_uio66_relaxation.py` used UMA-s-1p2p1,
+task `odac`, heterogeneous `batch` inference, ASE LBFGS with maxstep 0.1 Angstrom,
+fixed cells and all atomic positions free. Tolerance: 0.05 eV/Angstrom;
+budget: 150 steps. All 64 converged in 0–42 steps, force norms
+0.0185348–0.0499344 eV/Angstrom. All 64 have zero contacts below 0.7 Angstrom
+and no changed inferred organic, amino, hydroxyl or Zr-O edges under the declared
+diagnostic cutoffs. Maximum atom displacement: 0.337744 Angstrom. Each result
+was saved immediately. Per-structure compute summed to 378.33 seconds across
+the two processes; this excludes model startup/download and is not end-to-end
+wall time or a solver-speed claim.
+
+Pinned HF revision: `f611b917d9c68566bbbeccbb0aa0f7cad1696cb2`;
+actual file: `checkpoints/uma-s-1p2p1.pt`;
+SHA-256: `b2673b85037b075674c25f55c34ffe1ff1e15db924be977b10a184765df0d5ce`;
+official MD5 verified: `3497615fd30a24c5b35cd3b41a682e6e`.
+Runtime: fairchem-core 2.23.0, Torch 2.13.0, ASE 3.26.0, NumPy 2.0.2, Python 3.12.
+The initial root-level checkpoint download returned 404; authenticated inventory
+resolved the correct subdirectory before any calculation ran.
+
+Downloaded trajectories, logs, final CIFs, pilot, executed sources and hashes:
+[bare-run archive](../artifacts/kaggle/uio66_bare_2026-10-03/).
+[audit_uio66_relaxation.py](../scripts/audit_uio66_relaxation.py) independently
+recomputed final forces/energies from saved trajectories, checked structure
+hashes and CIF contact/connectivity diagnostics. Its local output is
+[uio66_relaxation_audit.json](../artifacts/phase3/uio66_relaxation_audit.json).
+The secret-free [Kaggle notebook](../kaggle/uio66_relaxation.ipynb) reproduces
+the pilot, full two-GPU run and audit from `UIO66_Phase3_bundle.zip`.
+
+These are model-relaxed, fixed-cell proposals, not DFT-validated structures.
+Coordination cutoffs and low force do not establish chemical identity, stability,
+porosity, synthesizability, adsorption quality or DAC suitability. Bare energies
+across different compositions must not be ranked as adsorption objectives or
+fitted into adsorption h/J. Next: chemistry review, conservative duplicate groups,
+paired placement/relaxation/reference protocol, adsorption labels, held-out
+pairwise-fit diagnostics and grounded solver comparisons. Phase 3 is incomplete.

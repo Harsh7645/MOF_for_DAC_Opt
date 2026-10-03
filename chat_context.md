@@ -256,3 +256,31 @@ this handoff after each meaningful session and retain the four-phase structure.
   Graphify AST/semantic/HTML refreshed; coverage, source hashes, graph integrity,
   directed imports and local links verified. Latest counts live in BUILD_AUDIT.
   The secret-free Kaggle bundle was rebuilt with the new code and frozen targets.
+
+## Continuation 2026-10-03: provisional bare structures
+
+- Implemented parent-operation typed periodic matching and initial tolerance
+  audit: 64 groups at 1e-5 Angstrom; 53 at 0.01/0.05. After relaxation: 54 at
+  0.01 and 53 at 0.05. These are approximate split-safety groups, not definitive
+  symmetry-unique chemistry counts. Keep initial duplicates together.
+- Installed local spglib 2.7.0. Implemented fixed-cell LBFGS relaxation, immediate
+  per-candidate checkpoints, pinned checkpoint checksum, and connectivity-change
+  diagnostics. Authentic UMA file was `checkpoints/uma-s-1p2p1.pt`; initial
+  root-level path failed 404. Secret stayed in Kaggle Secrets/environment.
+- Four-candidate pilot converged. Ran all 64 on two T4 GPUs: 64 converged in
+  0–42 steps at fmax 0.05 eV/Angstrom; all contact-free below 0.7 Angstrom,
+  all unchanged inferred typed bonds. Downloaded 7,790,932-byte raw archive
+  with trajectories/logs/CIFs/executed sources. Local independent audit passed.
+- Runtime pinned HF revision f611b917d9c68566bbbeccbb0aa0f7cad1696cb2,
+  SHA-256 b2673b85037b075674c25f55c34ffe1ff1e15db924be977b10a184765df0d5ce;
+  fairchem 2.23.0, torch 2.13.0, ASE 3.26.0, NumPy 2.0.2. Per-structure compute
+  summed to 378.33 seconds, excluding startup/download and parallel wall-time.
+- Full suite: 39 passed in 10.81s; demo -4.6, synthetic, no SNN in demo.
+  Added reproducible Kaggle notebook, hash-verified structure bundle and local
+  ODAC reference-question draft (not sent). Memory and Graphify refreshed.
+- Phase 3 incomplete: bare energies are not adsorption h/J. Remaining gates:
+  chemistry review, paired placement/reference/relaxation labels, coefficient
+  validation and grounded solvers; ODAC reference identity/training-field mismatch,
+  learned structure baseline and frozen material ranking. No Phase 4 promotion.
+- Existing foundation is now tracked at commit 55d1e6d; this session made no
+  commit or push. Preserve existing edits and the live Kaggle notebook.

@@ -1,6 +1,6 @@
 # Current state
 
-Updated 2026-10-02. Phases 1 and 2 computational scopes are complete. Phase 3
+Updated 2026-10-03. Phases 1 and 2 computational scopes are complete. Phase 3
 numerical track is complete; its material-ranking track has authenticated ODAC25
 and UMA evidence plus a frozen table of 138 paired validation targets.
 
@@ -52,7 +52,34 @@ by the graph-model comparison. No predicted material ranking is claimed yet.
 The detailed remaining execution plan, dependencies, artifacts and exit criteria
 are maintained in `../docs/REMAINING_WORK.md`.
 
-## Active continuation 2026-10-02
+## Active continuation 2026-10-03
+
+64/64 provisional UiO-66 bare structures converged on two T4 GPUs using pinned
+UMA-s-1p2p1, task odac, batch inference and fixed-cell LBFGS. Tolerance 0.05
+eV/Angstrom, 150-step budget; observed 0–42 steps, maximum force 0.0499344.
+All were contact-free below 0.7 Angstrom with unchanged distance-inferred bonds.
+Trajectories/logs/CIFs and executed sources were downloaded to
+`../artifacts/kaggle/uio66_bare_2026-10-03/`. Independent local trajectory-energy,
+force, source/input/output hash and CIF diagnostics passed. Bare energies alone
+are not adsorption h/J or chemical validation. See
+`../docs/UIO66_PROVISIONAL_LIBRARY.md` for provenance and limitations.
+
+Initial duplicate audit: 53 parent-operation groups at 0.01 and 0.05 Angstrom,
+64 at 1e-5; not a full crystallographic equivalence certificate. Retain initial
+duplicate groups together for future fitting. Reproducible notebook and small
+structure-bearing bundle are implemented. Relaxed grouping found 54 groups at
+0.01 Angstrom and 53 at 0.05. Retain initial duplicate groups conservatively.
+Full suite: 39 passed in 10.81s;
+synthetic demo remains -4.6. Upstream ASE/NumPy/spglib deprecation warnings remain.
+
+Phase 3 is incomplete. Frozen ODAC25 reference convention and training-field
+mismatch remain unresolved; local `../docs/ODAC25_REFERENCE_QUESTION.md` draft
+records reproducible questions and has not been sent. Next independent work:
+chemistry review and paired adsorption placement/relaxation/reference protocol
+for the provisional family, followed by labels, uncertainty-aware h/J fitting,
+and grounded solver comparisons. Preserve the 138-pair ODAC25 benchmark.
+
+## Historical continuation 2026-10-02
 
 Read `../docs/PHASE3_REFERENCE_AUDIT.md` and
 `../docs/UIO66_PROVISIONAL_LIBRARY.md` first. September eSEN had 68 OOM failures;

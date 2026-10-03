@@ -98,8 +98,14 @@ For target success probability 0.99 and empirical per-run success p, independent
 - The nonconvex SNN route remains an explicitly experimental heuristic. Gurobi,
   SA and decoded SNN held-out results exist for 60 synthetic instances.
 - ODAC25 paired CO2/H2O atomistic adsorption energy is selected. The user has
-  dataset/model access and Kaggle GPU; authenticated schema inspection remains.
+  dataset/model access and Kaggle GPU; authenticated target reduction produced
+  138 frozen validation pairs. Reference conventions and training-field mapping
+  remain unresolved; see `docs/PHASE3_REFERENCE_AUDIT.md`.
 - Real h/J data, chemically validated slot/stoichiometry encoding, surrogate
   training, DFT validation and hardware measurements remain future work.
 - Select the actual block library, property labels/conditions, data licenses and compute allocation before the material-ranking track.
+- User approved a provisional six-slot UiO-66 BDC/NH2-BDC library. All 64 bare
+  structures completed pinned UMA fixed-cell relaxation and passed numerical
+  diagnostics on 2026-10-03; chemical approval and paired adsorption h/J remain
+  pending. See `docs/UIO66_PROVISIONAL_LIBRARY.md` and `.planning/STATE.md`.
 - The scoped literature matrix found a provisional gap, not proof of novelty. Do not claim first-of-kind.

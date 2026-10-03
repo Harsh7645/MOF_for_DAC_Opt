@@ -14,6 +14,7 @@ dev = ["pytest>=7"]
 snn = ["snn-opt==0.6.0"]
 gurobi = ["gurobipy>=13"]
 odac = ["ase>=3.26", "huggingface-hub>=0.28", "fairchem-core>=2,<3"]
+structures = ["ase>=3.26", "spglib==2.7.0"]
 
 [project.scripts]
 mof-dac = "mof_dac.__main__:main"

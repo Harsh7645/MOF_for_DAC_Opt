@@ -1,14 +1,18 @@
 # Remaining work to complete the MOF-for-DAC optimization project
 
-Updated: 2026-10-02
+Updated: 2026-10-03
 
 Current evidence: [PHASE3_REFERENCE_AUDIT.md](PHASE3_REFERENCE_AUDIT.md).
 Composition baseline code, leakage checks, inference scaffolding and packaging
 are implemented; strict training extraction and valid full-pool model results
 remain incomplete. User authorized a
 [provisional UiO-66 library](UIO66_PROVISIONAL_LIBRARY.md): 64 nominal patterns,
-with 64 unrelaxed coordinate proposals from an authenticated ODAC25 parent.
-Real coefficients, symmetry deduplication and chemical validation remain absent.
+with 64 coordinate proposals from an authenticated ODAC25 parent. All 64 now
+converged in fixed-cell UMA bare relaxation; saved trajectories and CIFs passed
+the independent audit. Initial parent-operation grouping found 53 groups at
+0.01/0.05 Angstrom; relaxed grouping found 54/53 respectively. These are
+declared-tolerance diagnostics. Real adsorption coefficients, complete symmetry
+review and chemical validation remain absent.
 This does not close P3.6. Checkboxes
 below represent complete evidence gates, not code existence.
 
@@ -205,12 +209,12 @@ building-block optimizer.
 
 - [ ] Freeze a real design family: zirconium node, UiO-66 topology/template and a
   finite set of amine/linker substitutions.
-- [ ] Define binary variables precisely: type presence versus occupant of a
-  specific crystallographic slot.
+- [x] Define provisional six-bit variables precisely: one BDC/NH2-BDC choice
+  at each occupied mapped slot. Chemistry approval remains separate.
 - [ ] Fix unit-cell multiplicities, protonation, node capping, defects, formal
   charges, linker budget and allowed substitutions with chemistry review.
-- [ ] Build or obtain provenance-bearing assembled structures for an informative
-  set of configurations.
+- [x] Build provenance-bearing provisional assembled structures for all 64
+  configurations; retain input hashes, atom mapping and final relaxed CIFs.
 - [ ] Validate structure identity, coordination, periodic connectivity and charge
   before any energy calculation.
 - [ ] Score assembled configurations with the selected physical model and a

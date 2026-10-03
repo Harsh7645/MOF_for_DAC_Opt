@@ -2,6 +2,21 @@
 
 ## Resume here
 
+Current milestone (2026-10-03): read `docs/UIO66_PROVISIONAL_LIBRARY.md` and
+`.planning/STATE.md`. All 64 provisional UiO-66 bare structures ran on two Kaggle
+T4 GPUs with pinned UMA: 64 converged, 64 contact-free, 64 unchanged inferred
+connectivity. Trajectories/CIFs/sources are downloaded to
+`artifacts/kaggle/uio66_bare_2026-10-03/`; local independent audit passed.
+Initial parent-operation grouping found 53 groups at 0.01/0.05 Angstrom,
+64 at 1e-5. Retain initial duplicate groups for leakage safety.
+39 tests pass; synthetic demo -4.6. Reproducible notebook:
+`kaggle/uio66_relaxation.ipynb`. Phase 3 remains incomplete: these are bare
+model energies, not paired adsorption labels or real h/J. ODAC25's 62 unmatched
+reference energies and training-field mismatch still block full material scoring;
+`docs/ODAC25_REFERENCE_QUESTION.md` is a local clarification draft, not sent.
+Preserve frozen validation and the separate design experiment. Graphify's
+`BUILD_AUDIT.json` records corpus/source freshness after refresh.
+
 Current continuation (2026-10-02) supersedes stale counts below. Read
 `.planning/STATE.md`, `docs/PHASE3_REFERENCE_AUDIT.md` and
 `docs/UIO66_PROVISIONAL_LIBRARY.md` first. Phase 3 is incomplete. A fresh Kaggle

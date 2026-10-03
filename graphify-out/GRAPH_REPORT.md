@@ -2,15 +2,15 @@
 > Coverage: local code/docs and JSON inventory; external dependency implementations excluded.
 > Relation variants collapsed by the simple graph remain in `extraction.json`; see BUILD_AUDIT.json.
 
-# Graph Report - MOF_for_DAC_Opt  (2026-10-02)
+# Graph Report - MOF_for_DAC_Opt  (2026-10-03)
 
 ## Corpus Check
-- 64 files · ~67,702 words
+- 71 files · ~71,481 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 442 nodes · 750 edges · 54 communities (15 shown, 39 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.86)
+- 480 nodes · 846 edges · 58 communities (21 shown, 37 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 20 edges (avg confidence: 0.85)
 - Token cost: unavailable (agent counters not exposed)
 
 ## Community Hubs (Navigation)
@@ -68,18 +68,22 @@
 - Twenty-Four-Test Verification
 - Research Continuation Leads
 - Graphify Continuity Limits
+- Canonical Array Contract
+- Numerical Module Responsibilities
+- Synthetic MOF Foundation
+- Original Source Hash Manifest
 
 ## God Nodes (most connected - your core abstractions)
-1. `Problem` - 25 edges
-2. `Remaining work to complete the MOF-for-DAC optimization project` - 22 edges
-3. `numpy` - 19 edges
-4. `pathlib` - 18 edges
-5. `exact()` - 17 edges
-6. `load_instance()` - 16 edges
-7. `slot_problem()` - 14 edges
-8. `Result` - 14 edges
-9. `Chat context and handoff` - 14 edges
-10. `Provisional UiO-66 design library` - 13 edges
+1. `Remaining work to complete the MOF-for-DAC optimization project` - 26 edges
+2. `Problem` - 25 edges
+3. `numpy` - 23 edges
+4. `pathlib` - 22 edges
+5. `Provisional UiO-66 design library` - 21 edges
+6. `Chat context and handoff` - 19 edges
+7. `exact()` - 17 edges
+8. `load_instance()` - 16 edges
+9. `argparse` - 15 edges
+10. `slot_problem()` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Three Validity Levels` --semantically_similar_to--> `Adsorption Energy Reference Subtraction`  [INFERRED] [semantically similar]
@@ -101,87 +105,111 @@
 ## Hyperedges (group relationships)
 - **Parameter evidence stages** — docs_parameter_sourcing_stage_a_synthetic_coefficients, docs_parameter_sourcing_stage_b_heuristic_design, docs_parameter_sourcing_stage_c_physics_grounded_gate [EXTRACTED 1.00]
 
-## Communities (54 total, 39 thin omitted)
+## Communities (58 total, 37 thin omitted)
 
 ### Community 0 - "Slot and Paired-Energy Validation"
-Cohesion: 0.08
-Nodes (46): dataclasses, datetime, load_instance(), _number(), _provenance(), Load a provenance-bearing selection graph; no CoRE-to-coefficient inference., Return (Problem, original JSON metadata). Node order fixes x indexing., _unique_object() (+38 more)
+Cohesion: 0.05
+Nodes (86): copy, dataclasses, datetime, io, load_instance(), _number(), _provenance(), Load a provenance-bearing selection graph; no CoRE-to-coefficient inference. (+78 more)
 
 ### Community 1 - "Classical Solvers and Pilot Audits"
-Cohesion: 0.07
-Nodes (45): main(), Compare declared field combinations on uniformly spaced stored records., reference_audit(), _identity(), input_digests(), main(), mlip_predictions(), Kaggle-side ODAC25 paired material benchmark; requires fairchem and pyarrow. (+37 more)
+Cohesion: 0.08
+Nodes (37): json, main(), Audit ODAC25 energy-field identities; never fit gas energies to validation…, Compare declared field combinations on uniformly spaced stored records., reference_audit(), _identity(), input_digests(), main() (+29 more)
 
 ### Community 2 - "Formulation Literature and Solver Evidence"
 Cohesion: 0.08
-Nodes (35): argparse, collections, csv, hashlib, json, Audit ODAC25 energy-field identities; never fit gas energies to validation…, Strict manifest validation for external material-ranking data., fit_pairwise() (+27 more)
+Nodes (31): argparse, collections, hashlib, importlib_metadata, itertools, main(), Pinned UMA fixed-cell structural pilot; does not modify the ODAC25 benchmark., connectivity_change() (+23 more)
 
 ### Community 3 - "ODAC Inventory Schema Runtime Evidence"
-Cohesion: 0.08
-Nodes (41): copy, importlib_metadata, io, itertools, Solve binary x with raw H, E@x=e and U@x<=u; report bound/status., solve_gurobi(), decode_slot_state(), phase1_instances() (+33 more)
-
-### Community 4 - "ODAC25 Streaming Kaggle Implementation"
-Cohesion: 0.06
-Nodes (33): Four-phase research roadmap, Phase 1 Formulation and Literature, Phase 2 Algorithm and Integration, Phase 3 - Scaling & Benchmarking (weeks 7-9), Phase 4 Analysis and Drafting, Curvature Honesty, Distance Based Decoding, Evidence and precedence (+25 more)
-
-### Community 5 - "Held-Out Gurobi SNN Benchmarks"
 Cohesion: 0.07
 Nodes (29): Synthetic Then Grounded Parameters, Canonical Continuous Polynomial, Pairwise Regression Identifiability, Stage A Synthetic Coefficients, Fixed Template Slot Contract, Lucas Penalty and Slack Mapping, Occupancy Budget Charge Constraints, Slot Variable Contract (+21 more)
 
-### Community 6 - "Objective Constraints and QUBO Arrays"
-Cohesion: 0.08
-Nodes (26): Active continuation 2026-10-02, Authenticated Target Profile, Current state, External Data Decision, Repository Instruction Routing, Authenticated ODAC25 Inventory, Authenticated Profile Milestone, Chat context and handoff (+18 more)
-
-### Community 7 - "Graph Loading and Convex Checks"
+### Community 4 - "ODAC25 Streaming Kaggle Implementation"
 Cohesion: 0.13
-Nodes (23): fnmatch, adsorption_energy(), pair_adsorbate_rows(), profile_adsorbate_rows(), Paired CO2/H2O target construction and evaluation utilities., Report target availability without choosing among repeated trajectories., Return E(system)-E(bare)-n_CO2*E(CO2)-n_H2O*E(H2O), in shared units., Reduce relaxation rows to one sampled single-gas target per MOF. For each… (+15 more)
+Nodes (21): fit_pairwise(), pairwise_design(), Synthetic pairwise coefficient recovery for parameter-pipeline validation., Fit a complete quadratic pseudo-energy and reject unidentifiable designs., Return [samples, 1+n+n(n-1)/2] constant/linear/pair features., enumerate_design(), Provisional UiO-66 occupancy design; no coordinates or physical coefficients., Enumerate occupancy vectors [N,6], stoichiometry and pending interaction graph. (+13 more)
 
-### Community 8 - "Numerical Evidence and Kaggle Handoff"
+### Community 5 - "Held-Out Gurobi SNN Benchmarks"
+Cohesion: 0.09
+Nodes (23): Credential and Access Evidence, Atomistic Versus Process Target, ODAC25 Recommendation, Full Phase 3 material benchmark, Kaggle ODAC25/UMA runbook, Nonsecret Return Artifacts, Private Dataset Bundle Upload, Streamed Validation Member (+15 more)
+
+### Community 6 - "Objective Constraints and QUBO Arrays"
 Cohesion: 0.10
 Nodes (21): Already complete — do not repeat, Completion definition, Compute and storage plan, Decisions requiring professor or user input, Final completion checklist, Immediate execution order, P3.1 Build a leakage-safe training set, P3.2 Establish simple training-only baselines (+13 more)
 
-### Community 9 - "Original Research Proposal"
+### Community 7 - "Graph Loading and Convex Checks"
 Cohesion: 0.14
+Nodes (18): composition_vector(), evaluate_composition_baselines(), fit_ridge(), paired_arrays(), Leakage-safe composition baselines for paired CO2/H2O targets., Fit on train and evaluate constant/composition baselines on frozen validation., Return element fractions [118] for one bare MOF composition., Return IDs, composition matrix [N,118], and paired targets [N,2]. (+10 more)
+
+### Community 8 - "Numerical Evidence and Kaggle Handoff"
+Cohesion: 0.19
+Nodes (17): fnmatch, pair_adsorbate_rows(), profile_adsorbate_rows(), Report target availability without choosing among repeated trajectories., Reduce relaxation rows to one sampled single-gas target per MOF. For each…, Pair one CO2 and one H2O adsorption target per MOF and split. Input rows…, select_relaxed_adsorbate_targets(), download() (+9 more)
+
+### Community 9 - "Original Research Proposal"
+Cohesion: 0.15
 Nodes (14): kaggle_secrets, extract_first_database(), _LimitedReader, main(), Bounded streaming extraction for official ODAC25 tar archives., Stream to the first regular ``.aselmdb`` under prefix and extract it., stream_extract(), os (+6 more)
 
 ### Community 10 - "Core Runtime Dependencies"
-Cohesion: 0.14
-Nodes (7): Problem, Validate a state [n] or batch [...,n]; never clip silently., Maximum raw linear, box and integrality residual per state., Symmetric Q[n,n]. Equivalent to energy only for binary states., Return Q, offset for H + rho*||Ex-e||^2 on bits. Inequalities remain explicit.…, A[n,n], b[n], C[m,n], d[m] for Cx+d<=0, including bounds. Export does not…, test_live_convex_snn_control()
+Cohesion: 0.13
+Nodes (15): Authenticated ODAC25 Inventory, Authenticated Profile Milestone, Chat context and handoff, Continuation 2026-10-02, Continuation 2026-10-03: provisional bare structures, Detailed remaining-work ledger (2026-09-14), Downloaded Smoke Evidence, Equality Closure and Held Out Handoff (+7 more)
 
 ### Community 11 - "ODAC25 Data Decision"
-Cohesion: 0.15
-Nodes (13): Credential and Access Evidence, Atomistic Versus Process Target, ODAC25 Recommendation, Full Phase 3 material benchmark, Kaggle ODAC25/UMA runbook, Nonsecret Return Artifacts, Private Dataset Bundle Upload, Streamed Validation Member (+5 more)
+Cohesion: 0.13
+Nodes (15): Authenticated UiO66 Parent, Bare Energy Interpretation Limits, Bare UMA Relaxation Evidence, Executed grouping and bare relaxation, 2026-10-03, Executed structural prototype, 2026-10-02, Formal Stoichiometry Proposal, Grounding sequence, Inferred Periodic Linker Mapping (+7 more)
 
 ### Community 12 - "Repository Routing and Historical Handoff"
-Cohesion: 0.15
-Nodes (13): Fair Benchmark Reporting, Required Baseline Evidence, Three Validity Levels, Adsorption Energy Reference Subtraction, Approved Paired Atomistic Target, Competition Diagnostic Boundary, Paired Evaluation Metrics, Paired Record Evidence Rules (+5 more)
+Cohesion: 0.17
+Nodes (12): Fair Benchmark Reporting, Required Baseline Evidence, Three Validity Levels, Adsorption Energy Reference Subtraction, Approved Paired Atomistic Target, Competition Diagnostic Boundary, Paired Evaluation Metrics, Paired Record Evidence Rules (+4 more)
 
 ### Community 13 - "Development and Held-Out Separation"
+Cohesion: 0.25
+Nodes (8): Active continuation 2026-10-03, Authenticated Target Profile, Current state, External Data Decision, Historical continuation 2026-10-02, Material-ranking gate, Phase 3 status — numerical track and paired targets complete, baselines open, Structural preparation milestone, 2026-10-03
+
+### Community 14 - "Material Manifest Prerequisites"
+Cohesion: 0.25
+Nodes (8): Repository Instruction Routing, Continuation Research Leads, Efficient retrieval and continuity, Historical Model Handoff, Model handoff — 2026-09-14, Next implementation sequence, Observed T4 UMA Handoff, Resume here
+
+### Community 15 - "Physics-Grounded Material Evaluation"
+Cohesion: 0.25
+Nodes (8): Curvature Honesty, Distance Based Decoding, Evidence and precedence, Explicit Selection Constraints, Project memory and research state, Quality Metrics and TTS, Research Validity Separation, State and unresolved decisions
+
+### Community 17 - "Graphify Freshness and Accounting"
+Cohesion: 0.33
+Nodes (5): csv, load_material_manifest(), Strict manifest validation for external material-ranking data., Load a provenance-bearing label manifest without inferring chemistry., test_material_manifest_requires_provenance_conditions_and_files()
+
+### Community 18 - "Heuristic Interaction Design"
+Cohesion: 0.40
+Nodes (5): Four-phase research roadmap, Phase 1 Formulation and Literature, Phase 2 Algorithm and Integration, Phase 3 - Scaling & Benchmarking (weeks 7-9), Phase 4 Analysis and Drafting
+
+### Community 19 - "Package Scientific Scope"
+Cohesion: 0.40
+Nodes (5): ODAC25 reference convention: technical clarification draft, ODAC25 reference convention: technical clarification draft Scope, ODAC Reference Clarification Draft, Questions for review, Reproducible observation
+
+### Community 21 - "Phase Two Roadmap"
 Cohesion: 0.50
 Nodes (4): Original Four Phase Timetable, Original Pseudo Energy Mapping, Original SNN MOF Proposal, Original Three Baselines
 
-### Community 14 - "Material Manifest Prerequisites"
+### Community 22 - "Phase Three Roadmap"
 Cohesion: 0.67
 Nodes (3): mof-dac-opt, pkg_numpy, pkg_scipy
 
 ## Knowledge Gaps
-- **30 isolated node(s):** `Original Pseudo Energy Mapping`, `Original Three Baselines`, `Original Four Phase Timetable`, `Kitai Quadratic Material Design Analogy`, `MOFTransformer Screening Candidate` (+25 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 241 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **39 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **29 isolated node(s):** `Original Pseudo Energy Mapping`, `Original Three Baselines`, `Original Four Phase Timetable`, `Kitai Quadratic Material Design Analogy`, `MOFTransformer Screening Candidate` (+24 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 257 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **37 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Project memory and research state` connect `ODAC25 Streaming Kaggle Implementation` to `Held-Out Gurobi SNN Benchmarks`, `Objective Constraints and QUBO Arrays`?**
-  _High betweenness centrality (0.050) - this node is a cross-community bridge._
-- **Why does `Problem` connect `Core Runtime Dependencies` to `Slot and Paired-Energy Validation`, `ODAC Inventory Schema Runtime Evidence`?**
-  _High betweenness centrality (0.041) - this node is a cross-community bridge._
-- **Why does `json` connect `Formulation Literature and Solver Evidence` to `Slot and Paired-Energy Validation`, `Classical Solvers and Pilot Audits`, `ODAC Inventory Schema Runtime Evidence`, `Graph Loading and Convex Checks`, `Original Research Proposal`?**
-  _High betweenness centrality (0.040) - this node is a cross-community bridge._
+- **Why does `numpy` connect `Slot and Paired-Energy Validation` to `Classical Solvers and Pilot Audits`, `Formulation Literature and Solver Evidence`, `ODAC25 Streaming Kaggle Implementation`, `Graph Loading and Convex Checks`, `Graphify Freshness and Accounting`?**
+  _High betweenness centrality (0.051) - this node is a cross-community bridge._
+- **Why does `pathlib` connect `ODAC25 Streaming Kaggle Implementation` to `Slot and Paired-Energy Validation`, `Classical Solvers and Pilot Audits`, `Formulation Literature and Solver Evidence`, `Graph Loading and Convex Checks`, `Numerical Evidence and Kaggle Handoff`, `Original Research Proposal`, `Graphify Freshness and Accounting`?**
+  _High betweenness centrality (0.046) - this node is a cross-community bridge._
+- **Why does `Remaining work to complete the MOF-for-DAC optimization project` connect `Objective Constraints and QUBO Arrays` to `Held-Out Gurobi SNN Benchmarks`, `Core Runtime Dependencies`, `ODAC25 Data Decision`, `Development and Held-Out Separation`, `Material Manifest Prerequisites`?**
+  _High betweenness centrality (0.046) - this node is a cross-community bridge._
 - **What connects `Original Pseudo Energy Mapping`, `Original Three Baselines`, `Original Four Phase Timetable` to the rest of the system?**
-  _30 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _29 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Slot and Paired-Energy Validation` be split into smaller, more focused modules?**
-  _Cohesion score 0.08345428156748912 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05386138613861386 - nodes in this community are weakly interconnected._
 - **Should `Classical Solvers and Pilot Audits` be split into smaller, more focused modules?**
-  _Cohesion score 0.0653061224489796 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08130081300813008 - nodes in this community are weakly interconnected._
 - **Should `Formulation Literature and Solver Evidence` be split into smaller, more focused modules?**
-  _Cohesion score 0.0821256038647343 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07948717948717948 - nodes in this community are weakly interconnected._
