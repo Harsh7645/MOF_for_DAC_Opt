@@ -8,8 +8,12 @@ paired ODAC25/UMA material track ready for authenticated Kaggle execution.
 Latest continuation: `.planning/STATE.md`, `docs/PHASE3_REFERENCE_AUDIT.md` and
 `docs/UIO66_PROVISIONAL_LIBRARY.md` (2026-10-02) supersede historical execution
 counts below. Phase 3 remains incomplete. Provisional library development is
-authorized; 64 unrelaxed coordinate proposals now exist. Chemistry approval,
-relaxation, symmetry deduplication, adsorption labels and real h/J are pending.
+authorized; 64 coordinate proposals, model bare relaxation and declared-tolerance
+duplicate grouping now exist. The two-state UMA paired adsorption pilot passed
+its local audit; all 64 four-start pairs and the provisional h/J/solver loop
+subsequently executed. Pairwise held-out error exceeded additive error and
+sampling rankings were unstable. Independent chemistry/physics validation,
+frozen ODAC25 baselines and reliable material ranking are pending. See STATE.
 
 - [Scoping report](sources/scoping_report.pdf), four pages: original proposal, equations, baselines, 12-week timetable.
 - Professor feedback: supplied Discord screenshots, message dated June 1, 2026, 10:32 PM in screenshot 2. Screenshot capture date September 10 is not the message date. [Feedback record](sources/professor_feedback.md).

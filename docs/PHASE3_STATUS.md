@@ -93,3 +93,25 @@ Full suite: 39 passed; synthetic demo -4.6. Read
 [UIO66_PROVISIONAL_LIBRARY.md](UIO66_PROVISIONAL_LIBRARY.md) for exact artifacts,
 protocol and limitations. Phase 3 remains incomplete: no paired design labels,
 real adsorption h/J, valid full-pool material prediction or learned baseline score.
+
+## Paired design pilot, 2026-10-03
+
+The separate UMA design experiment now has two audited paired pilot targets,
+from 8/8 accepted starts. The full 64-state/four-start run is active; h/J fitting
+and solver comparison are implemented but have not executed on full real outputs.
+The frozen duplicate-group split has 51 training and 13 test states, rank 22.
+See [UIO66_ADSORPTION_PROTOCOL.md](UIO66_ADSORPTION_PROTOCOL.md). These pilot
+predictions are not independent chemistry validation or a frozen ODAC25 score.
+
+## Full provisional design result, 2026-10-03
+
+Supersedes the running/no-fit statements above. All 64 paired targets and 512
+starts passed remote/local audits. Train-only 22-parameter fit and actual CPU
+Gurobi/SA/SNN comparison executed. Held-out MAE: pairwise .0301754 eV versus
+additive .0238031 eV. Two-to-four-start top10 overlap .4; sampling and rankings
+are unstable. All solvers found the tiny fitted objective optimum; that is not
+the best sampled configuration or independent chemical validation.
+Read [protocol/results](UIO66_ADSORPTION_PROTOCOL.md) and
+[recomputable numerical evidence](uio66_design_results.json). The exported
+graph is explicitly heuristic/UMA-derived. This completes the provisional
+computational path, not Phase3's unseen-MOF/chemical validation gates.

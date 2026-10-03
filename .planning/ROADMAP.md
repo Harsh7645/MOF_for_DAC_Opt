@@ -50,6 +50,17 @@ bonds). Initial declared-tolerance grouping and post-relaxation grouping were
 executed. Bare preparation does not close the paired adsorption, real h/J,
 chemistry review or material-baseline gates. See the provisional library document.
 
+Paired design continuation: actual two-state UMA pilot audited (8/8 starts
+accepted). Full 64-state/four-start run is active. Label-independent duplicate
+split is frozen (51 train/13 test, rank 22). Fit/uncertainty/CPU solver scripts
+are implemented but have not executed on the full model outputs. This separate
+study preserves the frozen ODAC25 benchmark and does not close chemical validation.
+
+Completed subsequently: 64 paired targets/512 starts audited, 51/13 train/test
+fit and CPU SNN/SA/Gurobi execution. Pairwise held-out error exceeds additive;
+two-vs-four-start top10 overlap .4. Provisional computational path is complete;
+stable/independent material validation and required learned baselines remain open.
+
 ## Phase 4 - Analysis & Drafting (weeks 10-12)
 
 - [ ] Validate reconstructed top candidates, structure identity and DAC conditions.

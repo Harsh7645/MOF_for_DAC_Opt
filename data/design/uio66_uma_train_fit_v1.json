@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "id": "uio66_uma_train_fit_v1",
+  "parameter_regime": "heuristic",
+  "energy_units": "eV",
+  "missing_interactions": "modeled_zero",
+  "description": "Provisional UMA-derived quadratic approximation; chemistry unvalidated. All 15 pairs fit.",
+  "offset_ev": 0.01603885534398997,
+  "fit_provenance": {
+    "protocol": {
+      "protocol": "uio66_uma_paired_flexible_v1",
+      "model": "uma-s-1p2p1",
+      "task": "odac",
+      "checkpoint_revision": "f611b917d9c68566bbbeccbb0aa0f7cad1696cb2",
+      "checkpoint_sha256": "b2673b85037b075674c25f55c34ffe1ff1e15db924be977b10a184765df0d5ce",
+      "source_sha256": {
+        "mof_dac/adsorption.py": "d05cd26a9dc7b2daaa2a2f163174df5a0d53ebe11e785c31ef4c27f1edf88c21",
+        "mof_dac/relaxation.py": "22b45e6434b3f1ce28fe7292a9362ea8d754709577fa4d5a6a20dd798342249b",
+        "kaggle/run_uio66_adsorption.py": "884e2a96ef356c8285704c490442d2b93061d046fb37a8b2f9d39aba9f0a7aad"
+      },
+      "seed": 41,
+      "starts_per_gas": 4,
+      "step_budget": 200,
+      "fmax": 0.05,
+      "placement": "uniform fractional centers; uniform SO(3); 2-Angstrom host/guest clearance; bounded rejection",
+      "reference": "lowest accepted sampled empty MOF after both gas desorption relaxations; isolated gas task odac"
+    },
+    "report_sha256": {
+      "artifacts\\kaggle\\uio66_adsorption_2026-10-03\\main\\worker0\\adsorption.json": "4cf3c183430d392d7d7cfe30e7c562ed48bc508e49b9af86230ac2f3a7badeaa",
+      "artifacts\\kaggle\\uio66_adsorption_2026-10-03\\main\\worker1\\adsorption.json": "9e7d6d044a6bdb5219ad6cb56f9b84271b9d3a7bb78cfcadb24cc6d80c241bec",
+      "artifacts\\kaggle\\uio66_adsorption_2026-10-03\\main\\worker2\\adsorption.json": "e32a126a2ffdf5100713a80528b50319da2881138d24d8a8d206027181886a3a",
+      "artifacts\\kaggle\\uio66_adsorption_2026-10-03\\main\\worker3\\adsorption.json": "c9e32e3ef2f174c9a91ae83b0f4e7c9402d2e83f77e8cb1f5a7a5ea4d28d0ed6"
+    },
+    "split_sha256": "333ca9b6c2694130d80c4e0e6d8243c3f47a796ead66503bd57023103d0d3d3e",
+    "manifest_sha256": "96f34032c8967e61e2f056ecbef78e3839451b9f0a1f3620d34acf1b86eee3f9",
+    "fit_source_sha256": {
+      "scripts/fit_uio66_adsorption.py": "86e7379f5b0ebbe4aab6b4673feba8772373cee74118c3c82a961d20dbd1e0ec",
+      "mof_dac/design_fit.py": "65f5e35dc258989710cf7763f22d0522797909b30213155b26e995b8adf38f23",
+      "mof_dac/parameters.py": "e81b0bb0668dd294df9e0a3832013e8e7f45a5c6f8dbb555f04858b40cf3b02c",
+      "scripts/audit_uio66_adsorption.py": "3618459be303ff1d1aadff4ffc75c3ae6187384df8293a2897c646e98178ba81"
+    },
+    "fit_environment": {
+      "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+      "packages": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "ase": "3.26.0"
+      }
+    },
+    "validation_scope": "same provisional fixed-template family; not independent DFT/ODAC25 validation"
+  },
+  "nodes": [
+    {
+      "id": "amino_slot_0",
+      "kind": "linker",
+      "h": 0.016833299210476695,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.041799626453813014,
+      "bootstrap_interval_ev": [
+        -0.05448409152382011,
+        0.13720491322014003
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "id": "amino_slot_1",
+      "kind": "linker",
+      "h": 0.02457163547573184,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.045943144756203785,
+      "bootstrap_interval_ev": [
+        -0.03442533992998766,
+        0.16069726578391352
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "id": "amino_slot_2",
+      "kind": "linker",
+      "h": 0.0037101261245467633,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.03572662853613409,
+      "bootstrap_interval_ev": [
+        -0.06270299191039481,
+        0.08113693853902315
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "id": "amino_slot_3",
+      "kind": "linker",
+      "h": 0.051219740174209695,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.04150274345210037,
+      "bootstrap_interval_ev": [
+        -0.011653829763530561,
+        0.14224796638711018
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "id": "amino_slot_4",
+      "kind": "linker",
+      "h": 0.0071776797771787495,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.04226451764779107,
+      "bootstrap_interval_ev": [
+        -0.11991862961638905,
+        0.07553102117351439
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "id": "amino_slot_5",
+      "kind": "linker",
+      "h": 0.01933085490112178,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.0392451398564698,
+      "bootstrap_interval_ev": [
+        -0.0469277104484844,
+        0.1164705861117411
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    }
+  ],
+  "edges": [
+    {
+      "i": "amino_slot_0",
+      "j": "amino_slot_1",
+      "J": -0.023012878201346842,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.02800647714005781,
+      "bootstrap_interval_ev": [
+        -0.09634010418651762,
+        0.016421133835523277
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_0",
+      "j": "amino_slot_2",
+      "J": 0.014913911248094899,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.021847950969824916,
+      "bootstrap_interval_ev": [
+        -0.024348986342994684,
+        0.052189943664942125
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_0",
+      "j": "amino_slot_3",
+      "J": -0.019113196577264586,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.025498214697777615,
+      "bootstrap_interval_ev": [
+        -0.06546018595803038,
+        0.030957835063052073
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_0",
+      "j": "amino_slot_4",
+      "J": 0.005488233521693545,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.02760966542862691,
+      "bootstrap_interval_ev": [
+        -0.033455501546622614,
+        0.07132931582182069
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_0",
+      "j": "amino_slot_5",
+      "J": -0.009843084665281518,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.02777141806664849,
+      "bootstrap_interval_ev": [
+        -0.0718064432445451,
+        0.03715803481239595
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_1",
+      "j": "amino_slot_2",
+      "J": -0.010710050717528336,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.026904289015533607,
+      "bootstrap_interval_ev": [
+        -0.06918880471899137,
+        0.025087368820886684
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_1",
+      "j": "amino_slot_3",
+      "J": 0.0032075286738408064,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.029324260722252804,
+      "bootstrap_interval_ev": [
+        -0.058289267887308226,
+        0.05514993928592944
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_1",
+      "j": "amino_slot_4",
+      "J": -0.011125975344517687,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.02790143913116958,
+      "bootstrap_interval_ev": [
+        -0.06044356443281676,
+        0.043270556806591205
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_1",
+      "j": "amino_slot_5",
+      "J": -0.03616153922579859,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.02709330546558597,
+      "bootstrap_interval_ev": [
+        -0.09767700029785432,
+        0.014871633131844416
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_2",
+      "j": "amino_slot_3",
+      "J": -0.04183170856430065,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.029374819111340652,
+      "bootstrap_interval_ev": [
+        -0.10380197726963729,
+        0.01740561650482204
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_2",
+      "j": "amino_slot_4",
+      "J": 0.02610713079850161,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.028669596873673667,
+      "bootstrap_interval_ev": [
+        -0.01531600372717547,
+        0.09226548281065106
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_2",
+      "j": "amino_slot_5",
+      "J": 0.04315770164778764,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.028858511825824936,
+      "bootstrap_interval_ev": [
+        -0.012416195485054975,
+        0.09988683710883607
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_3",
+      "j": "amino_slot_4",
+      "J": -0.046389006477194364,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.027447699119966345,
+      "bootstrap_interval_ev": [
+        -0.09994350780432489,
+        0.004465181582392686
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_3",
+      "j": "amino_slot_5",
+      "J": -0.06597450686489874,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.030911852248858823,
+      "bootstrap_interval_ev": [
+        -0.13236672080017392,
+        -0.013367662344934379
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    },
+    {
+      "i": "amino_slot_4",
+      "j": "amino_slot_5",
+      "J": 0.020330826033194305,
+      "source": "audited UMA-s-1p2p1 four-start paired design experiment",
+      "method": "training-only OLS; six binary BDC-to-NH2-BDC substitution choices",
+      "units": "eV",
+      "bootstrap_std_ev": 0.031016053597804585,
+      "bootstrap_interval_ev": [
+        -0.025831095364866732,
+        0.09530610011000237
+      ],
+      "uncertainty_scope": "conditional training-group bootstrap; physical and site-sampling error uncalibrated"
+    }
+  ],
+  "constraints": [],
+  "structural_rules": "Fixed neutral Zr6 node and all six occupied linkers compiled into template; each bit selects BDC(0)/NH2-BDC(1). No approved amino budget beyond 0..6."
+}

@@ -54,6 +54,54 @@ are maintained in `../docs/REMAINING_WORK.md`.
 
 ## Active continuation 2026-10-03
 
+LATEST VERIFIED: Full provisional paired run, local audit, train-only fit and
+CPU solver comparison completed. This supersedes running/no-fit statements below.
+64 complete pairs; 512 accepted starts. Main archive downloaded (133,472,188
+bytes), SHA-256 aee36cc47cda2b2088fc30c44f7fd240bad7e5731f71932a63018c4fc6bb1837.
+Archived executed sources, bare input/report hashes and all local trajectories,
+forces, contacts, inferred connectivity and CIF coordinates verified.
+Max system force .049972475 eV/Angstrom; max observed steps200. Site-range
+medians CO2 .135686 / H2O .326160 eV; maxima .196987 / .467891 eV.
+Fit: 51 train/13 test; rank22, condition17.8487, bootstrap193/200 identifiable.
+Pairwise held-out MAE/RMSE .0301754/.0413030 eV; additive .0238031/.0275139.
+Pairwise generalizes worse. Nested2-vs4 starts: mean absolute delta change
+.0130766, max .135151 eV, Spearman .7260, top10 overlap .4; max J shift .0506196.
+Graph: `../data/design/uio66_uma_train_fit_v1.json`, heuristic/UMA-derived only.
+CPU exact/Gurobi optimum110111: predicted delta -.0474215 eV, actual sampled
+delta -.0436706. SA/raw SNN/thresholded SNN each10/10 fitted optimum hits.
+Sampled best is111111 (-.0879886 eV), not the model optimum. Full-family top5
+overlap .8 includes training and is not a held-out material score.
+Curvature: min/max Hessian eigenvalues -.086836/.135148; no PSD shift.
+Artifacts: `../artifacts/phase3/uio66_uma_fit/`, main archive and
+`../docs/uio66_design_results.json`. No GPU job is active; draft save still failed.
+Phase3 remains incomplete. Expand sampling under a separately named uniform
+protocol before trusting rankings; chemistry/independent validation, frozen
+ODAC25 reference/training compatibility and learned structure baseline remain open.
+
+Paired adsorption protocol v1 is frozen and implemented. Actual pilot: states
+000000/111111, two starts/gas, same pinned UMA. All 8 starts accepted; both
+paired targets complete. Delta CO2-minus-H2O: +0.0296889057 and +0.0126993900 eV.
+Model gas references: CO2 -22.9974396449; H2O -14.3828426083 eV. These are UMA
+values, not ODAC25 DFT constants. Site ranges reach 0.36944 eV; no strong
+material ordering, global-minimum or selectivity claim follows.
+Raw pilot archive/CIFs/trajectories/logs/executed sources were downloaded to
+`../artifacts/kaggle/uio66_adsorption_2026-10-03/`; local audit passed, source
+report SHA-256 021bd197b54af8e5ce886415959aa44c805c56808caa5fad84c72f0f2c6fb86e.
+The full run is active: all 64 states, four starts/gas, fmax 0.05, 200 steps,
+four single-thread processes on two T4 GPUs. Latest observed checkpoint had
+21 complete pairs, no failed pairs; counts are provisional while running.
+Do not reset the live Kaggle kernel. Save conflict backup is retained locally.
+Freeze before fitting: 53 merged duplicate groups, 51 train/13 test, rank 22;
+pilot groups restricted to training. Implemented audited all-target fitting,
+additive comparison, training-group bootstrap, provisional graph export and
+CPU solver comparison scaffolding. None has fit or benchmarked real h/J yet.
+Reproducible adsorption notebook and 118-file bundle (407,156 bytes at creation)
+exist. Full verification: 44 tests passed in 15.57 seconds; synthetic demo -4.6,
+no SNN in demo. ASE/NumPy/spglib upstream deprecation warnings remain.
+Next: preserve full output, audit every trajectory/label, fit only if all 64
+targets pass, inspect held-out/sampling errors, then compare actual solvers.
+Independent chemistry review and ODAC25/learned-baseline gates remain open.
+
 64/64 provisional UiO-66 bare structures converged on two T4 GPUs using pinned
 UMA-s-1p2p1, task odac, batch inference and fixed-cell LBFGS. Tolerance 0.05
 eV/Angstrom, 150-step budget; observed 0–42 steps, maximum force 0.0499344.

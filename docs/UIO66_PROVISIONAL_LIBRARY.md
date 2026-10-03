@@ -138,3 +138,23 @@ across different compositions must not be ranked as adsorption objectives or
 fitted into adsorption h/J. Next: chemistry review, conservative duplicate groups,
 paired placement/relaxation/reference protocol, adsorption labels, held-out
 pairwise-fit diagnostics and grounded solver comparisons. Phase 3 is incomplete.
+
+## Paired adsorption continuation, 2026-10-03
+
+[Protocol v1](UIO66_ADSORPTION_PROTOCOL.md) now defines flexible fixed-cell
+single-molecule sampling with a common empty-host reference and isolated gas
+energies from the same model. A two-state/two-start pilot produced 8 accepted
+starts; downloaded trajectories/energies/forces/contact/connectivity diagnostics
+passed the local audit. The full 64-state/four-start run is active. This is a
+separate UMA-only design experiment, not the frozen ODAC25 benchmark.
+The label-independent fit split reserves 13 states for testing and 51 for
+training across 53 merged duplicate groups; inspected pilot states are train-only.
+No actual h/J has been fitted yet. See the protocol for sample spreads and gates.
+
+The full run subsequently completed: 64 paired labels, 512 accepted starts,
+audited raw archive, provisional training-only h/J fit and CPU solvers. Earlier
+no-fit/active-run statements describe the preceding milestone. The derived
+[interaction graph](../data/design/uio66_uma_train_fit_v1.json) is UMA-derived
+heuristic evidence. Pairwise test MAE .0301754 eV is worse than additive
+.0238031 eV; sampled top10 changes substantially between two and four starts.
+This does not approve the chemistry or establish a reliable material ranking.

@@ -12,6 +12,7 @@ def main():
     parser.add_argument('--output', default='artifacts/kaggle/MOF_DAC_Kaggle_bundle.zip')
     parser.add_argument('--frozen-targets', help='Optional audited paired_targets.json input')
     parser.add_argument('--uio66-structures', help='Optional hashed provisional structure directory')
+    parser.add_argument('--uio66-bare-results', help='Audited directory with gpu*/relaxation.json and hashed CIFs')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     output = Path(args.output)
@@ -19,7 +20,20 @@ def main():
     paths = [root / 'pyproject.toml', root / 'docs/ODAC25_TARGET_CONTRACT.md',
              root / 'docs/PHASE3_REFERENCE_AUDIT.md',
              root / 'docs/UIO66_PROVISIONAL_LIBRARY.md',
+             root / 'docs/UIO66_ADSORPTION_PROTOCOL.md',
              root / 'data/design/uio66_provisional.json']
+    for name in ('docs/uio66_design_results.json', 'data/design/uio66_uma_train_fit_v1.json'):
+        if (root / name).exists():
+            paths.append(root / name)
+    if args.uio66_bare_results:
+        split_path = root / 'data/design/uio66_fit_split.json'
+        paths.append(split_path)
+        for name, digest in json.loads(split_path.read_text())['source_sha256'].items():
+            path = (root / name).resolve()
+            if not path.is_relative_to(root) or path.suffix != '.json' \
+                    or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
+                raise ValueError('Frozen fit split source changed')
+            paths.append(path)
     for directory, patterns in [('mof_dac', ['*.py']), ('scripts', ['*.py']),
                                  ('kaggle', ['*.py', '*.ipynb'])]:
         for pattern in patterns:
@@ -48,6 +62,27 @@ def main():
                 extras.append(path)
             for path in extras:
                 name = 'uio66_structures/' + path.relative_to(directory).as_posix()
+                archive.write(path, name)
+                hashes[name] = hashlib.sha256(path.read_bytes()).hexdigest()
+        if args.uio66_bare_results:
+            from mof_dac.adsorption import intact
+            directory = Path(args.uio66_bare_results).resolve()
+            reports = sorted(directory.glob('gpu*/relaxation.json'))
+            identifiers = set()
+            extras = list(reports)
+            for report in reports:
+                for row in json.loads(report.read_text())['results']:
+                    path = (report.parent / 'structures' / row['final_structure_file']).resolve()
+                    if not path.is_relative_to(directory) or path.suffix != '.cif' or not intact(row) \
+                            or row['id'] in identifiers \
+                            or hashlib.sha256(path.read_bytes()).hexdigest() != row['final_structure_sha256']:
+                        raise ValueError('Invalid, duplicated or changed bare input')
+                    identifiers.add(row['id'])
+                    extras.append(path)
+            if len(identifiers) != 64:
+                raise ValueError('Expected all 64 accepted bare structures')
+            for path in extras:
+                name = 'uio66_bare/' + path.relative_to(directory).as_posix()
                 archive.write(path, name)
                 hashes[name] = hashlib.sha256(path.read_bytes()).hexdigest()
         archive.writestr('bundle_manifest.json', json.dumps({'sha256': hashes}, indent=2) + '\n')

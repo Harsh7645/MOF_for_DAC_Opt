@@ -91,3 +91,24 @@ DFT metadata at evaluation time and cannot be called prospective screening.
    energies do not identify per-block interactions.
 
 See [REMAINING_WORK.md](REMAINING_WORK.md) for the full four-phase checklist.
+
+## Bounded training lead checked 2026-10-03
+
+The [AtomMOF research mirror](https://huggingface.co/datasets/nayoung10/AtomMOF-data)
+offers smaller processed ODAC25 files. At code commit
+`7589209ff53514a136f20043e77408108d6f8530`, its
+[block extraction](https://github.com/nayoung10/AtomMOF/blob/7589209ff53514a136f20043e77408108d6f8530/src/preprocess/odac25/extract_blocks.py)
+preserves `atoms.info`; feature assembly carries that into the saved structure.
+Its [split script](https://github.com/nayoung10/AtomMOF/blob/7589209ff53514a136f20043e77408108d6f8530/src/preprocess/odac25/split_dataset_random.py)
+renames original validation to test and partitions original training by records.
+Thus mirror split names alone do not prove our official MOF-level split boundary.
+
+Downloaded only 57,701-byte test metadata at dataset revision
+`81a85299823a7e75e0ed7fe39640c99297906080`, SHA256
+`d5f40dd368522f46728b85d705bf49c364180a3fc2bc06e9946a89c1ab41834c`.
+Restricted inspection found 3,582 records containing atom counts only, no
+executable/class pickle opcodes. This metadata does not supply targets or
+resolve the bare-reference mapping. The actual LMDB/retained info fields,
+source-index identity, corrected labels, final fid and official split overlap
+still need inspection before this mirror can become a training source.
+No mirror-target extraction or learned-model benchmark is claimed.

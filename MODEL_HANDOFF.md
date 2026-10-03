@@ -2,6 +2,47 @@
 
 ## Resume here
 
+Latest verified milestone (2026-10-03): the full UiO-66 paired experiment and
+provisional fitting/solver loop HAVE EXECUTED. This supersedes active-run/no-fit
+notes below. Read `docs/UIO66_ADSORPTION_PROTOCOL.md`,
+`docs/uio66_design_results.json` and `.planning/STATE.md`.
+64/64 pairs, 512/512 starts accepted; downloaded 133,472,188-byte main archive,
+SHA-256 aee36cc47cda2b2088fc30c44f7fd240bad7e5731f71932a63018c4fc6bb1837.
+Remote and local trajectory/contact/connectivity/CIF/source/input audits passed.
+Train-only fit: rank22, condition17.85, 51 train/13 test, 193/200 bootstrap draws
+identifiable. Held-out pairwise MAE .0301754 eV vs additive .0238031 eV: pairwise
+is worse. Two-vs-four-start top10 overlap .4, max delta change .135151 eV:
+sampling/ranking is unstable. Do not claim validated h/J or reliable material ranking.
+`data/design/uio66_uma_train_fit_v1.json` is a provisional UMA-derived heuristic
+graph. CPU enumeration/Gurobi agree; SA and raw/thresholded SNN each hit the
+fitted six-bit optimum 10/10. This does not establish larger-scale performance.
+Main artifacts: `artifacts/kaggle/uio66_adsorption_2026-10-03/main/`;
+fit/solver output: `artifacts/phase3/uio66_uma_fit/`. No GPU job remains active.
+Kaggle still reports draft save failure; raw evidence and replay notebook are
+local. Do not claim successful Save Version. Phase 3 overall remains incomplete.
+Next independent step: separately named, uniformly expanded site-sampling study;
+preserve v1 labels/split and inspect additive-vs-pairwise quality, never retune
+on test labels. ODAC25 reference/training and learned-baseline gates still open.
+
+Latest continuation (2026-10-03, paired adsorption) supersedes older counts below:
+read `docs/UIO66_ADSORPTION_PROTOCOL.md` and `.planning/STATE.md`. The actual
+two-state UMA pilot produced 8/8 accepted starts and two paired model targets;
+downloaded evidence passed the local trajectory/contact/connectivity audit.
+The full 64-state, four-start-per-gas run is ACTIVE in the existing Chrome Kaggle
+notebook. Do not reload/Run All/stop it. Four workers, two per T4; outputs
+`/kaggle/working/uio66_ads_full/worker*/adsorption.json`. Download and audit the
+full archive before fitting. `data/design/uio66_fit_split.json` froze 53 duplicate
+groups, 51 train/13 test, rank 22; both inspected pilot states are train-only.
+No real h/J fit or solver comparison has executed yet. Reproducible notebook:
+`kaggle/uio66_adsorption.ipynb`; bundle `artifacts/kaggle/UIO66_Adsorption_bundle.zip`.
+Fit CLI: `python -m scripts.fit_uio66_adsorption --reports <four reports>
+--output-dir artifacts/phase3/uio66_uma_fit`. It rejects incomplete targets and
+changed protocols/splits. Then run `scripts.benchmark_uio66_fit` on fit/instance.
+These are provisional UMA coefficients, never DFT-grounded validation. Phase 3
+remains incomplete; frozen ODAC25 reference/training and learned-baseline gates
+are unresolved. Notebook draft save conflict: backup downloaded locally; do not
+reload a busy kernel. See `artifacts/kaggle/uio66_adsorption_2026-10-03/README.md`.
+
 Current milestone (2026-10-03): read `docs/UIO66_PROVISIONAL_LIBRARY.md` and
 `.planning/STATE.md`. All 64 provisional UiO-66 bare structures ran on two Kaggle
 T4 GPUs with pinned UMA: 64 converged, 64 contact-free, 64 unchanged inferred

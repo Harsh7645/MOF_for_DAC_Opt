@@ -16,6 +16,15 @@ review and chemical validation remain absent.
 This does not close P3.6. Checkboxes
 below represent complete evidence gates, not code existence.
 
+Paired-design milestone: protocol and two-state pilot are complete; all eight
+starts passed and two model-derived paired targets were audited locally. The
+64-state/four-start experiment subsequently completed: 64 pairs and 512 accepted
+starts audited locally. Actual training-only fit, conditional uncertainty and
+CPU solvers executed. Frozen split: 51 train/13 test, 53 groups, rank22.
+Pairwise test MAE .0301754 eV exceeds additive .0238031 eV; two-vs-four-start
+top10 overlap .4. Sampling stability and independent validity remain open.
+See [UIO66_ADSORPTION_PROTOCOL.md](UIO66_ADSORPTION_PROTOCOL.md).
+
 This is the operational completion checklist for the research project. It starts
 from the verified repository state: Phases 1 and 2 are complete for their
 controlled computational scopes; the Phase 3 synthetic benchmark and the frozen
@@ -219,6 +228,15 @@ building-block optimizer.
   before any energy calculation.
 - [ ] Score assembled configurations with the selected physical model and a
   consistent target/condition.
+- [x] Freeze provisional UMA sampling/reference protocol and audit the two-state pilot.
+- [x] Freeze label-independent duplicate-group train/test split (51/13; rank 22).
+- [x] Download/audit all 64 four-start paired targets; keep rejected/failed samples null.
+- [x] Compare nested two/four-start budgets; measured instability, not a passed stability gate.
+- [x] Fit provisional UMA-only h/J and report held-out additive comparison, rank/condition,
+  per-coefficient conditional bootstrap uncertainty and input/source hashes.
+- [x] Run actual CPU enumeration/Gurobi/SA/SNN on that provisional fitted objective.
+- [ ] Stabilize sampled targets/rankings with a separately named uniform sampling study.
+- [ ] Assess whether pairwise coefficients add predictive value; current holdout favors additive.
 - [ ] Fit `H(x) = sum(h_i*x_i) + sum(J_ij*x_i*x_j)` using an identifiable design
   matrix.
 - [ ] Record units, normalization, uncertainty, regularization and rank/condition
@@ -374,7 +392,8 @@ can continue before these decisions are finalized.
 4. Build and verify UMA adsorbed/bare/gas triplets; run UMA on T4.
 5. Select and run one compatible graph/Transformer baseline.
 6. Produce the frozen 138-MOF material-ranking comparison.
-7. Freeze the real block/slot chemistry and learn auditable `h/J` coefficients.
+7. Review provisional chemistry and improve sampling/fit validation; auditable
+   UMA-derived h/J now exists, but independent grounding and stable rankings do not.
 8. Run grounded SNN/SA/Gurobi optimization and reconstruct top candidates.
 9. Complete independent validation, ablations, figures and manuscript.
 

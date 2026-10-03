@@ -284,3 +284,55 @@ this handoff after each meaningful session and retain the four-phase structure.
   learned structure baseline and frozen material ranking. No Phase 4 promotion.
 - Existing foundation is now tracked at commit 55d1e6d; this session made no
   commit or push. Preserve existing edits and the live Kaggle notebook.
+
+## Continuation 2026-10-03: paired adsorption
+
+- Froze `docs/UIO66_ADSORPTION_PROTOCOL.md` before the pilot: fixed-cell flexible
+  host + one CO2/H2O, seeded SO(3) placements, fmax .05, 200 LBFGS steps,
+  isolated same-model gas references, lowest accepted gas-removed empty-host
+  reference across both gases. Incomplete pairs remain null.
+- Actual two-state/two-start pilot passed: 8/8 accepted. Model delta for
+  000000 = +.0296889057 eV; 111111 = +.0126993900 eV. UMA gas references
+  CO2 -22.9974396449 / H2O -14.3828426083 eV, not ODAC25 DFT constants.
+  Site ranges reach .36944 eV; no robust material-ranking claim.
+- Downloaded 2,535,365-byte raw pilot archive with logs/trajs/CIFs/executed
+  sources. Local audit recomputes energies/forces, contacts, connectivity and
+  CIF/trajectory agreement. SHA binds the report; audited two complete pairs.
+- Full 64-state/four-start run is ACTIVE on two T4 GPUs, four processes,
+  one CPU thread each. Paths `/kaggle/working/uio66_ads_full/worker*/`.
+  Do not reload/Run All/stop the live notebook. Save conflict backup downloaded;
+  no draft-save success claimed. Main output must be downloaded and audited.
+- Frozen `data/design/uio66_fit_split.json`: 53 merged duplicate groups,
+  51 train/13 test, rank 22; inspected pilot groups train-only. Implemented
+  full-pool hash/protocol gates, additive/pairwise OLS comparison, training-group
+  bootstrap, nested 2-vs-4-start sensitivity, provisional coefficient graph and
+  CPU SNN/SA/Gurobi comparison. No real full fit/solver results yet.
+- Added reproducible `kaggle/uio66_adsorption.ipynb` (11 cells; code compiled)
+  and small verified bare-CIF bundle. Tests: 44 passed in 15.57s, demo -4.6
+  synthetic, no SNN in demo. No commit/push or external messages.
+- Phase 3 remains incomplete: provisional UMA design is separate from frozen
+  ODAC25 material validation, unresolved reference/training fields, required
+  learned structure baseline, and independent chemistry/DFT validation.
+
+### Full v1 design execution completed
+
+- All64 paired targets and512 starts accepted; four worker exit codes0.
+  Downloaded 133,472,188-byte main archive SHA256
+  aee36cc47cda2b2088fc30c44f7fd240bad7e5731f71932a63018c4fc6bb1837.
+  Remote/local trajectory-energy/force/contact/connectivity/CIF/source/input
+  audits passed. No GPU job remains active. Draft-save conflict remains;
+  no successful SaveVersion claimed. Browser proof saved main_results.png.
+- Train-only actual fit: rank22, condition17.8487, bootstrap193/200 identifiable;
+  pairwise testMAE/RMSE .0301754/.0413030 eV versus additive .0238031/.0275139.
+  Pairwise is worse; no test-driven retuning/all-data refit.
+- Nested2-vs4 site budget: mean/max delta change .0130766/.1351513 eV,
+  Spearman .7260, top10 overlap .4, maxJ shift .0506196. Rankings not stable.
+- Actual CPU enumeration/Gurobi optimum110111 (-.0474215 predicted,
+  -.0436706 sampled). SA/raw SNN/thresholded SNN each10/10 fitted optimum hits.
+  Sampled best111111 -.0879886 eV differs. Full-family top5 overlap .8 includes
+  training, not a held-out score. Nonconvex spectrum -.086836/.135148, no PSD shift.
+- Saved docs/uio66_design_results.json and provisional UMA-derived heuristic
+  data/design/uio66_uma_train_fit_v1.json with per-coefficient conditional
+  bootstrap and complete provenance. Phase3 overall incomplete; independent
+  chemical/physics validation, stable sampling, ODAC25 reference/training,
+  learned structure baseline and frozen material ranking remain open.
