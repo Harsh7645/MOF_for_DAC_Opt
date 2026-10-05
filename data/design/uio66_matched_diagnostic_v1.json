@@ -1,0 +1,1184 @@
+{
+  "protocol": "uio66_matched_geometry_diagnostic_v1",
+  "status": "preregistered preparation; execution NOT authorized",
+  "original_plan_sha256": "f5b4cd746c471838b141c91d88442026ab4f1bcc0bf7548d5665a8924724f68e",
+  "mapping": {
+    "status": "distance-inferred mapping; chemistry review pending",
+    "bond_cutoffs_angstrom": {
+      "C-C": 1.75,
+      "C-H": 1.3,
+      "C-O": 1.65
+    },
+    "orientation_policy": "lowest parent H atom index per linker; planar NH2 initial guess",
+    "slots": [
+      {
+        "id": "L0",
+        "atom_indices": [
+          10,
+          17,
+          23,
+          30,
+          34,
+          36,
+          52,
+          53,
+          57,
+          61,
+          70,
+          76,
+          86,
+          99,
+          104,
+          106
+        ],
+        "image_shifts": {
+          "10": [
+            0,
+            0,
+            0
+          ],
+          "17": [
+            0,
+            -1,
+            0
+          ],
+          "23": [
+            0,
+            0,
+            0
+          ],
+          "30": [
+            0,
+            -1,
+            0
+          ],
+          "34": [
+            0,
+            0,
+            0
+          ],
+          "36": [
+            0,
+            0,
+            0
+          ],
+          "52": [
+            0,
+            0,
+            0
+          ],
+          "53": [
+            0,
+            0,
+            0
+          ],
+          "57": [
+            0,
+            0,
+            0
+          ],
+          "61": [
+            0,
+            0,
+            0
+          ],
+          "70": [
+            0,
+            -1,
+            0
+          ],
+          "76": [
+            0,
+            -1,
+            0
+          ],
+          "86": [
+            0,
+            0,
+            0
+          ],
+          "99": [
+            0,
+            0,
+            0
+          ],
+          "104": [
+            0,
+            -1,
+            0
+          ],
+          "106": [
+            0,
+            -1,
+            0
+          ]
+        },
+        "substitution_hydrogen": 10,
+        "substitution_carbon": 36,
+        "ring_neighbors": [
+          53,
+          61
+        ]
+      },
+      {
+        "id": "L1",
+        "atom_indices": [
+          22,
+          31,
+          32,
+          33,
+          35,
+          43,
+          46,
+          47,
+          51,
+          59,
+          66,
+          72,
+          82,
+          89,
+          92,
+          108
+        ],
+        "image_shifts": {
+          "22": [
+            0,
+            0,
+            -1
+          ],
+          "31": [
+            0,
+            0,
+            0
+          ],
+          "32": [
+            0,
+            0,
+            0
+          ],
+          "33": [
+            0,
+            0,
+            -1
+          ],
+          "35": [
+            0,
+            0,
+            0
+          ],
+          "43": [
+            0,
+            0,
+            -1
+          ],
+          "46": [
+            0,
+            0,
+            0
+          ],
+          "47": [
+            0,
+            0,
+            0
+          ],
+          "51": [
+            0,
+            0,
+            0
+          ],
+          "59": [
+            0,
+            0,
+            0
+          ],
+          "66": [
+            0,
+            0,
+            -1
+          ],
+          "72": [
+            0,
+            0,
+            0
+          ],
+          "82": [
+            0,
+            0,
+            0
+          ],
+          "89": [
+            0,
+            0,
+            0
+          ],
+          "92": [
+            0,
+            0,
+            -1
+          ],
+          "108": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "substitution_hydrogen": 22,
+        "substitution_carbon": 66,
+        "ring_neighbors": [
+          43,
+          59
+        ]
+      },
+      {
+        "id": "L2",
+        "atom_indices": [
+          11,
+          13,
+          27,
+          28,
+          37,
+          39,
+          40,
+          49,
+          56,
+          60,
+          63,
+          78,
+          94,
+          101,
+          112,
+          113
+        ],
+        "image_shifts": {
+          "11": [
+            0,
+            0,
+            -1
+          ],
+          "13": [
+            -1,
+            0,
+            0
+          ],
+          "27": [
+            0,
+            0,
+            -1
+          ],
+          "28": [
+            -1,
+            0,
+            0
+          ],
+          "37": [
+            0,
+            0,
+            0
+          ],
+          "39": [
+            0,
+            0,
+            0
+          ],
+          "40": [
+            -1,
+            0,
+            0
+          ],
+          "49": [
+            0,
+            0,
+            -1
+          ],
+          "56": [
+            0,
+            0,
+            0
+          ],
+          "60": [
+            -1,
+            0,
+            0
+          ],
+          "63": [
+            0,
+            0,
+            -1
+          ],
+          "78": [
+            0,
+            0,
+            0
+          ],
+          "94": [
+            -1,
+            0,
+            0
+          ],
+          "101": [
+            0,
+            0,
+            -1
+          ],
+          "112": [
+            -1,
+            0,
+            0
+          ],
+          "113": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "substitution_hydrogen": 11,
+        "substitution_carbon": 63,
+        "ring_neighbors": [
+          49,
+          78
+        ]
+      },
+      {
+        "id": "L3",
+        "atom_indices": [
+          7,
+          14,
+          20,
+          25,
+          38,
+          42,
+          45,
+          48,
+          54,
+          55,
+          62,
+          64,
+          84,
+          88,
+          97,
+          105
+        ],
+        "image_shifts": {
+          "7": [
+            -1,
+            0,
+            0
+          ],
+          "14": [
+            -1,
+            0,
+            0
+          ],
+          "20": [
+            0,
+            0,
+            0
+          ],
+          "25": [
+            0,
+            0,
+            0
+          ],
+          "38": [
+            0,
+            0,
+            0
+          ],
+          "42": [
+            0,
+            0,
+            0
+          ],
+          "45": [
+            -1,
+            0,
+            0
+          ],
+          "48": [
+            0,
+            0,
+            0
+          ],
+          "54": [
+            0,
+            0,
+            0
+          ],
+          "55": [
+            0,
+            0,
+            0
+          ],
+          "62": [
+            -1,
+            0,
+            0
+          ],
+          "64": [
+            0,
+            0,
+            0
+          ],
+          "84": [
+            0,
+            0,
+            0
+          ],
+          "88": [
+            -1,
+            0,
+            0
+          ],
+          "97": [
+            0,
+            0,
+            0
+          ],
+          "105": [
+            -1,
+            0,
+            0
+          ]
+        },
+        "substitution_hydrogen": 7,
+        "substitution_carbon": 62,
+        "ring_neighbors": [
+          38,
+          45
+        ]
+      },
+      {
+        "id": "L4",
+        "atom_indices": [
+          6,
+          12,
+          21,
+          29,
+          41,
+          44,
+          50,
+          67,
+          74,
+          75,
+          77,
+          80,
+          90,
+          93,
+          102,
+          107
+        ],
+        "image_shifts": {
+          "6": [
+            0,
+            0,
+            0
+          ],
+          "12": [
+            0,
+            -1,
+            1
+          ],
+          "21": [
+            0,
+            0,
+            0
+          ],
+          "29": [
+            0,
+            -1,
+            1
+          ],
+          "41": [
+            0,
+            0,
+            0
+          ],
+          "44": [
+            0,
+            0,
+            1
+          ],
+          "50": [
+            0,
+            0,
+            1
+          ],
+          "67": [
+            0,
+            0,
+            1
+          ],
+          "74": [
+            0,
+            -1,
+            1
+          ],
+          "75": [
+            0,
+            -1,
+            1
+          ],
+          "77": [
+            0,
+            0,
+            1
+          ],
+          "80": [
+            0,
+            0,
+            0
+          ],
+          "90": [
+            0,
+            -1,
+            1
+          ],
+          "93": [
+            0,
+            -1,
+            1
+          ],
+          "102": [
+            0,
+            0,
+            0
+          ],
+          "107": [
+            0,
+            0,
+            0
+          ]
+        },
+        "substitution_hydrogen": 6,
+        "substitution_carbon": 41,
+        "ring_neighbors": [
+          67,
+          80
+        ]
+      },
+      {
+        "id": "L5",
+        "atom_indices": [
+          9,
+          16,
+          18,
+          26,
+          58,
+          65,
+          68,
+          69,
+          71,
+          73,
+          79,
+          81,
+          85,
+          95,
+          98,
+          110
+        ],
+        "image_shifts": {
+          "9": [
+            -1,
+            1,
+            0
+          ],
+          "16": [
+            0,
+            0,
+            0
+          ],
+          "18": [
+            0,
+            0,
+            0
+          ],
+          "26": [
+            -1,
+            1,
+            0
+          ],
+          "58": [
+            0,
+            0,
+            0
+          ],
+          "65": [
+            -1,
+            1,
+            0
+          ],
+          "68": [
+            0,
+            1,
+            0
+          ],
+          "69": [
+            -1,
+            1,
+            0
+          ],
+          "71": [
+            0,
+            1,
+            0
+          ],
+          "73": [
+            0,
+            1,
+            0
+          ],
+          "79": [
+            0,
+            1,
+            0
+          ],
+          "81": [
+            0,
+            0,
+            0
+          ],
+          "85": [
+            -1,
+            1,
+            0
+          ],
+          "95": [
+            0,
+            0,
+            0
+          ],
+          "98": [
+            0,
+            0,
+            0
+          ],
+          "110": [
+            -1,
+            1,
+            0
+          ]
+        },
+        "substitution_hydrogen": 9,
+        "substitution_carbon": 69,
+        "ring_neighbors": [
+          65,
+          68
+        ]
+      }
+    ],
+    "node_atom_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      15,
+      19,
+      24,
+      83,
+      87,
+      91,
+      96,
+      100,
+      103,
+      109,
+      111
+    ],
+    "parent_json_sha256": "cd21327024b04a02901c9211fde709ee26fa7a6b7bf3eb671e13a5f3d11e69e4"
+  },
+  "checkpoint_sha256": "b2673b85037b075674c25f55c34ffe1ff1e15db924be977b10a184765df0d5ce",
+  "checkpoint_revision": "f611b917d9c68566bbbeccbb0aa0f7cad1696cb2",
+  "model": "uma-s-1p2p1",
+  "task": "odac",
+  "selection_rule": "Lowest accepted total energy within design/gas/batch/targeted-or-random; ties by start index. Replay pooled winner original frame0. Rigid best matched per110111 gas/batch.",
+  "rigid_rationale": "Saved110111CO2start31 host N22 moves0.568565A, coupled linker/guest motion; four rigid controls retain exact selected host coordinates.",
+  "thresholds_ev_A": [
+    0.02,
+    0.01,
+    0.005
+  ],
+  "max_steps_per_path": 1200,
+  "max_seconds_per_path": 1200,
+  "allocation": {
+    "gpus": 2,
+    "gpu_model_contains": "T4",
+    "max_wall_seconds": 7200,
+    "threads_per_worker": 1,
+    "approved": false
+  },
+  "optimizer": {
+    "name": "ASE LBFGS",
+    "maxstep_A": 0.1,
+    "fresh_history_at_path_start": true,
+    "same_history_across_thresholds": true
+  },
+  "assessment": {
+    "initial_last_checkpoint_target_ev": 0.005,
+    "applies_to": [
+      "each combo",
+      "each reference",
+      "each gas Eads",
+      "paired difference"
+    ],
+    "all_required_paths_and_checkpoints": true,
+    "physical_accuracy_claim": false
+  },
+  "reference_policy": "Two bare + two isolated gas staged paths. Each of20 flexible completed guests yields one staged empty-host path. Per design/tolerance use lowest complete accepted common bare pool. Rigid interaction uses exact same frozen host single point; do not pool rigid energies with flexible Eads.",
+  "failure_policy": "No retries/resampling. Retain every frame/log/checkpoint/error; missing paths remain denominator. Bond-image change/nonfinite/severe contact triggers global scientific hold. Step/time limit makes path incomplete; retain and continue independent paths within allocation.",
+  "jobs": [
+    {
+      "id": "uio66_000000_CO2_b0_targeted",
+      "design": "uio66_000000",
+      "gas": "CO2",
+      "batch": 0,
+      "category": "targeted",
+      "start": 1,
+      "source_energy_ev": -880.6439706546262,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_000000_CO2_b0_targeted.traj",
+      "pose_sha256": "b78321cd3489b3ac091df2f05194804994480381b317aa69c01bfda2310c1617",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_CO2_1.traj",
+      "source_sha256": "9d925c881a0abff1547c4c6012010cc2ad48c31024dbcabee42920f49855c41f",
+      "host_atoms": 114
+    },
+    {
+      "id": "uio66_000000_CO2_b0_random",
+      "design": "uio66_000000",
+      "gas": "CO2",
+      "batch": 0,
+      "category": "random",
+      "start": 8,
+      "source_energy_ev": -880.6230253889047,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_000000_CO2_b0_random.traj",
+      "pose_sha256": "b45eec15269b7f9b0039a05ce50aefcc363da8b126999ccadb69db8af05553d4",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_CO2_8.traj",
+      "source_sha256": "0d16d215c7ea31a6b93ebb64b26a3fca8f59e5171888f95d0776b2f50c28cf3e",
+      "host_atoms": 114
+    },
+    {
+      "id": "uio66_000000_CO2_b1_targeted",
+      "design": "uio66_000000",
+      "gas": "CO2",
+      "batch": 1,
+      "category": "targeted",
+      "start": 16,
+      "source_energy_ev": -880.6121964393619,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_000000_CO2_b1_targeted.traj",
+      "pose_sha256": "8ff2c190fb36115c2e91d1988072d11c844d6f0f848bd44c6c03607877435c84",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_CO2_16.traj",
+      "source_sha256": "e866baebfc194a5160011967c838e0670aa5f30f89ab914296538492b55760d6",
+      "host_atoms": 114
+    },
+    {
+      "id": "uio66_000000_CO2_b1_random",
+      "design": "uio66_000000",
+      "gas": "CO2",
+      "batch": 1,
+      "category": "random",
+      "start": 24,
+      "source_energy_ev": -880.5903722997359,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_000000_CO2_b1_random.traj",
+      "pose_sha256": "503ed79a31e6e9baee21736f8c9d1a7e71b6396f503cf013f571b27218cb6d0f",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_CO2_24.traj",
+      "source_sha256": "04295d862889004ea34f243669c108cf229980c65e8f9c63ac0339e32b5a9fac",
+      "host_atoms": 114
+    },
+    {
+      "id": "uio66_000000_CO2_replay",
+      "design": "uio66_000000",
+      "gas": "CO2",
+      "batch": 0,
+      "category": "targeted",
+      "start": 1,
+      "source_energy_ev": -880.6439706546262,
+      "frame": 0,
+      "kind": "replay",
+      "paired_with": "uio66_000000_CO2_b0_targeted",
+      "pose": "poses/uio66_000000_CO2_replay.traj",
+      "pose_sha256": "c0308f3b0a9e114e2cd813fe04ac14939f6d1e5c9dd5a88c649066c5a98bf425",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_CO2_1.traj",
+      "source_sha256": "9d925c881a0abff1547c4c6012010cc2ad48c31024dbcabee42920f49855c41f",
+      "host_atoms": 114
+    },
+    {
+      "id": "uio66_000000_H2O_b0_targeted",
+      "design": "uio66_000000",
+      "gas": "H2O",
+      "batch": 0,
+      "category": "targeted",
+      "start": 1,
+      "source_energy_ev": -872.0305918646491,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_000000_H2O_b0_targeted.traj",
+      "pose_sha256": "570880097dde25b85ab6ac5d8f13a6626f385cec1e465f082b3a545229343f29",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_H2O_1.traj",
+      "source_sha256": "5586749588da0bcf9bc3e97a865fe117d06c74d02ca778af6b6889dba8268afd",
+      "host_atoms": 114
+    },
+    {
+      "id": "uio66_000000_H2O_b0_random",
+      "design": "uio66_000000",
+      "gas": "H2O",
+      "batch": 0,
+      "category": "random",
+      "start": 11,
+      "source_energy_ev": -871.778265905812,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_000000_H2O_b0_random.traj",
+      "pose_sha256": "d6430f3346168d3f81f8bc8da2915481f8013ca5db30120e83f3b4e68969f402",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_H2O_11.traj",
+      "source_sha256": "332a0d987d926e7e794b647ae13bfbe8b64ba1fbb59509e4b710b78f8796e507",
+      "host_atoms": 114
+    },
+    {
+      "id": "uio66_000000_H2O_b1_targeted",
+      "design": "uio66_000000",
+      "gas": "H2O",
+      "batch": 1,
+      "category": "targeted",
+      "start": 17,
+      "source_energy_ev": -872.0234549224081,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_000000_H2O_b1_targeted.traj",
+      "pose_sha256": "ff2ed0c5c1a120be23d13ced2752ba68cb00239d9f0d9dc5e2e3c5039898585b",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_H2O_17.traj",
+      "source_sha256": "71433fcb632d3a8bb2454cbf4acf75b16d6bd660af03ac586bf5467dcec7d353",
+      "host_atoms": 114
+    },
+    {
+      "id": "uio66_000000_H2O_b1_random",
+      "design": "uio66_000000",
+      "gas": "H2O",
+      "batch": 1,
+      "category": "random",
+      "start": 31,
+      "source_energy_ev": -872.010799601621,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_000000_H2O_b1_random.traj",
+      "pose_sha256": "6acfb8fbefe5a780668f89b127766db946adec4abbb0a109963638110deda4dc",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_H2O_31.traj",
+      "source_sha256": "e03d9f29def412b8f0f391e29166c7104a1eff7bd5e1bd9c31aedd3a7e074ea1",
+      "host_atoms": 114
+    },
+    {
+      "id": "uio66_000000_H2O_replay",
+      "design": "uio66_000000",
+      "gas": "H2O",
+      "batch": 0,
+      "category": "targeted",
+      "start": 1,
+      "source_energy_ev": -872.0305918646491,
+      "frame": 0,
+      "kind": "replay",
+      "paired_with": "uio66_000000_H2O_b0_targeted",
+      "pose": "poses/uio66_000000_H2O_replay.traj",
+      "pose_sha256": "044a359396f3cb835e0a525f4c4896f5f7db07d3c7e35b995a56a35d3ff204e0",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_H2O_1.traj",
+      "source_sha256": "5586749588da0bcf9bc3e97a865fe117d06c74d02ca778af6b6889dba8268afd",
+      "host_atoms": 114
+    },
+    {
+      "id": "uio66_000000_bare",
+      "design": "uio66_000000",
+      "kind": "bare",
+      "pose": "poses/uio66_000000_bare.traj",
+      "pose_sha256": "74b1285c8d020316bbfccd12e4bae671ce68ea030706df2805ce0117b14fe189",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_bare.traj",
+      "source_sha256": "3d5324368e40f89a2f99bdf12b43020d3360ccb57e955cdcaabde233f0bb9c79",
+      "frame": -1
+    },
+    {
+      "id": "isolated_CO2",
+      "kind": "gas",
+      "gas": "CO2",
+      "pose": "poses/isolated_CO2.traj",
+      "pose_sha256": "3f154289adcdd8bd53700f53eb3aad8492156ebc000569e7025b5607b3c68199",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\isolated_CO2.traj",
+      "source_sha256": "d2d80a1a214da5963d7b27d88c2131babfd6caf4494c10e06a000a5d7463d332",
+      "frame": -1
+    },
+    {
+      "id": "isolated_H2O",
+      "kind": "gas",
+      "gas": "H2O",
+      "pose": "poses/isolated_H2O.traj",
+      "pose_sha256": "cf12c0ff26c01cd5e940f4b7acfd6a039ccebc7aab03bf965bfc992fa56b7457",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\isolated_H2O.traj",
+      "source_sha256": "40eae8c87b405f3cc4b770d8cbbee55301b8aa8f6851656d54f689e9fc65c019",
+      "frame": -1
+    },
+    {
+      "id": "uio66_110111_CO2_b0_targeted",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "batch": 0,
+      "category": "targeted",
+      "start": 7,
+      "source_energy_ev": -942.5269880289183,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_110111_CO2_b0_targeted.traj",
+      "pose_sha256": "4633f0d5acbda6968837ec68d25da0dc77812fc0b30e5adcdbff3e93ed88cf28",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_7.traj",
+      "source_sha256": "1d98d109ccee3b7e5fec46111253b8325e7b0d9559fbd474a24703e5db6ef9f0",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_CO2_b0_random",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "batch": 0,
+      "category": "random",
+      "start": 14,
+      "source_energy_ev": -942.5084232337471,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_110111_CO2_b0_random.traj",
+      "pose_sha256": "1ebac076fb935fedc7eac2b201ab33c92f10cb5a34168acd7805d70ded89f650",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_14.traj",
+      "source_sha256": "d0e7b6974ce0f1d067682aaa081a6cdd37227a30f82d423632a674dac3202ec7",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_CO2_b1_targeted",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "batch": 1,
+      "category": "targeted",
+      "start": 17,
+      "source_energy_ev": -942.5108540476471,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_110111_CO2_b1_targeted.traj",
+      "pose_sha256": "337f76d9a5355590bef3fc66f8044f6bf72d5deb195dfba4ee5d84573e6b335f",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_17.traj",
+      "source_sha256": "c7101517313528f2b62d6f2f10b83245d5043e3a9bfc4b0d695584650a95856f",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_CO2_b1_random",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "batch": 1,
+      "category": "random",
+      "start": 31,
+      "source_energy_ev": -942.5368902583767,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_110111_CO2_b1_random.traj",
+      "pose_sha256": "310e63286697bd6057e4b5b18ba83aa86f06d5379cb129c52efe1f1fc00aeffc",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_31.traj",
+      "source_sha256": "23535fafa6f8b48c1495c7d613a7620e207f312f411b9b5c67314156e00d476a",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_CO2_replay",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "batch": 1,
+      "category": "random",
+      "start": 31,
+      "source_energy_ev": -942.5368902583767,
+      "frame": 0,
+      "kind": "replay",
+      "paired_with": "uio66_110111_CO2_b1_random",
+      "pose": "poses/uio66_110111_CO2_replay.traj",
+      "pose_sha256": "6ab479782600f47fba4db1f8872bac30018566d57e9ceb4ee254bb92f891aa9a",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_31.traj",
+      "source_sha256": "23535fafa6f8b48c1495c7d613a7620e207f312f411b9b5c67314156e00d476a",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_CO2_b0_rigid",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "batch": 0,
+      "category": "targeted",
+      "start": 7,
+      "source_energy_ev": -942.5269880289183,
+      "frame": -1,
+      "kind": "rigid",
+      "paired_with": "uio66_110111_CO2_b0_targeted",
+      "pose": "poses/uio66_110111_CO2_b0_rigid.traj",
+      "pose_sha256": "4633f0d5acbda6968837ec68d25da0dc77812fc0b30e5adcdbff3e93ed88cf28",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_7.traj",
+      "source_sha256": "1d98d109ccee3b7e5fec46111253b8325e7b0d9559fbd474a24703e5db6ef9f0",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_CO2_b1_rigid",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "batch": 1,
+      "category": "random",
+      "start": 31,
+      "source_energy_ev": -942.5368902583767,
+      "frame": -1,
+      "kind": "rigid",
+      "paired_with": "uio66_110111_CO2_b1_random",
+      "pose": "poses/uio66_110111_CO2_b1_rigid.traj",
+      "pose_sha256": "310e63286697bd6057e4b5b18ba83aa86f06d5379cb129c52efe1f1fc00aeffc",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_31.traj",
+      "source_sha256": "23535fafa6f8b48c1495c7d613a7620e207f312f411b9b5c67314156e00d476a",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_H2O_b0_targeted",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "batch": 0,
+      "category": "targeted",
+      "start": 6,
+      "source_energy_ev": -933.9786363991358,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_110111_H2O_b0_targeted.traj",
+      "pose_sha256": "fc016b181169e3acf43dcd9d4594545c7858536e8b9e91d4e9be416fb998586a",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_6.traj",
+      "source_sha256": "842ec20dee8e520974f74978fd5a1b25b3e8b66cb4b41aff392d59606735acc2",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_H2O_b0_random",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "batch": 0,
+      "category": "random",
+      "start": 15,
+      "source_energy_ev": -933.9131208709524,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_110111_H2O_b0_random.traj",
+      "pose_sha256": "c716c2a8d9b5ce0d1425d702a9db5c0293e98d2a76132524103950f865d92308",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_15.traj",
+      "source_sha256": "de1450f52dc6cb3fac9028bafa5cdde6ef96cc7086d8eb1be7492e5fb63e6ff7",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_H2O_b1_targeted",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "batch": 1,
+      "category": "targeted",
+      "start": 17,
+      "source_energy_ev": -933.9508899918156,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_110111_H2O_b1_targeted.traj",
+      "pose_sha256": "6a2ab5597561c02cd1f1543a68a7a48acf119e82e6a3d91d09a63fd79f55ab37",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_17.traj",
+      "source_sha256": "9cb2b8138f93de9992ffb45be3ebdd02845cdcd673d7f392d1f8ae132fe21f34",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_H2O_b1_random",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "batch": 1,
+      "category": "random",
+      "start": 28,
+      "source_energy_ev": -933.9898324476865,
+      "frame": -1,
+      "kind": "matched",
+      "pose": "poses/uio66_110111_H2O_b1_random.traj",
+      "pose_sha256": "73fb328d4d1b2a8348783d64cd25af924c0870f73407d20e467592385b61beae",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_28.traj",
+      "source_sha256": "6f1022b5bce85695c25dbba59bd2adbcfabef16fec7b3b8f2900f8f360905cc6",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_H2O_replay",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "batch": 1,
+      "category": "random",
+      "start": 28,
+      "source_energy_ev": -933.9898324476865,
+      "frame": 0,
+      "kind": "replay",
+      "paired_with": "uio66_110111_H2O_b1_random",
+      "pose": "poses/uio66_110111_H2O_replay.traj",
+      "pose_sha256": "1ec5b380668138662245fa62699e096a093a557e9204bc6aca17709a39591904",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_28.traj",
+      "source_sha256": "6f1022b5bce85695c25dbba59bd2adbcfabef16fec7b3b8f2900f8f360905cc6",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_H2O_b0_rigid",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "batch": 0,
+      "category": "targeted",
+      "start": 6,
+      "source_energy_ev": -933.9786363991358,
+      "frame": -1,
+      "kind": "rigid",
+      "paired_with": "uio66_110111_H2O_b0_targeted",
+      "pose": "poses/uio66_110111_H2O_b0_rigid.traj",
+      "pose_sha256": "fc016b181169e3acf43dcd9d4594545c7858536e8b9e91d4e9be416fb998586a",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_6.traj",
+      "source_sha256": "842ec20dee8e520974f74978fd5a1b25b3e8b66cb4b41aff392d59606735acc2",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_H2O_b1_rigid",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "batch": 1,
+      "category": "random",
+      "start": 28,
+      "source_energy_ev": -933.9898324476865,
+      "frame": -1,
+      "kind": "rigid",
+      "paired_with": "uio66_110111_H2O_b1_random",
+      "pose": "poses/uio66_110111_H2O_b1_rigid.traj",
+      "pose_sha256": "73fb328d4d1b2a8348783d64cd25af924c0870f73407d20e467592385b61beae",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_28.traj",
+      "source_sha256": "6f1022b5bce85695c25dbba59bd2adbcfabef16fec7b3b8f2900f8f360905cc6",
+      "host_atoms": 124
+    },
+    {
+      "id": "uio66_110111_bare",
+      "design": "uio66_110111",
+      "kind": "bare",
+      "pose": "poses/uio66_110111_bare.traj",
+      "pose_sha256": "d7b787bd577bd7e4d24e34526d12072dd9af31ac70844d064c308529f62b9edc",
+      "source_trajectory": "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_bare.traj",
+      "source_sha256": "fe2b0fbbcce60c91d87c4fca6a930e7b9c222dde84173c133198a408e49f23da",
+      "frame": -1
+    }
+  ],
+  "source_hashes": {
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\adsorption.json": "6c18291e510116c8f953c205fec7eecb82d0ce00024c9095a66cd5f4f1cd753e",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_CO2_1.traj": "9d925c881a0abff1547c4c6012010cc2ad48c31024dbcabee42920f49855c41f",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_CO2_8.traj": "0d16d215c7ea31a6b93ebb64b26a3fca8f59e5171888f95d0776b2f50c28cf3e",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_CO2_16.traj": "e866baebfc194a5160011967c838e0670aa5f30f89ab914296538492b55760d6",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_CO2_24.traj": "04295d862889004ea34f243669c108cf229980c65e8f9c63ac0339e32b5a9fac",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_H2O_1.traj": "5586749588da0bcf9bc3e97a865fe117d06c74d02ca778af6b6889dba8268afd",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_H2O_11.traj": "332a0d987d926e7e794b647ae13bfbe8b64ba1fbb59509e4b710b78f8796e507",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_H2O_17.traj": "71433fcb632d3a8bb2454cbf4acf75b16d6bd660af03ac586bf5467dcec7d353",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\structures\\uio66_000000_H2O_31.traj": "e03d9f29def412b8f0f391e29166c7104a1eff7bd5e1bd9c31aedd3a7e074ea1",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\adsorption.json": "1782d2d4a880adb066816c952458d3de63e13620b93f2051847e8a669773e87c",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_7.traj": "1d98d109ccee3b7e5fec46111253b8325e7b0d9559fbd474a24703e5db6ef9f0",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_14.traj": "d0e7b6974ce0f1d067682aaa081a6cdd37227a30f82d423632a674dac3202ec7",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_17.traj": "c7101517313528f2b62d6f2f10b83245d5043e3a9bfc4b0d695584650a95856f",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_CO2_31.traj": "23535fafa6f8b48c1495c7d613a7620e207f312f411b9b5c67314156e00d476a",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_6.traj": "842ec20dee8e520974f74978fd5a1b25b3e8b66cb4b41aff392d59606735acc2",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_15.traj": "de1450f52dc6cb3fac9028bafa5cdde6ef96cc7086d8eb1be7492e5fb63e6ff7",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_17.traj": "9cb2b8138f93de9992ffb45be3ebdd02845cdcd673d7f392d1f8ae132fe21f34",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\structures\\uio66_110111_H2O_28.traj": "6f1022b5bce85695c25dbba59bd2adbcfabef16fec7b3b8f2900f8f360905cc6"
+  }
+}

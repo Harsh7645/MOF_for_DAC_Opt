@@ -6,6 +6,8 @@ import json
 import zipfile
 from pathlib import Path
 
+from mof_dac.sampling import frozen_input_path
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -13,6 +15,7 @@ def main():
     parser.add_argument('--frozen-targets', help='Optional audited paired_targets.json input')
     parser.add_argument('--uio66-structures', help='Optional hashed provisional structure directory')
     parser.add_argument('--uio66-bare-results', help='Audited directory with gpu*/relaxation.json and hashed CIFs')
+    parser.add_argument('--sampling-pilot', action='store_true', help='Include frozen v2 plan and only its eight hashed bare CIFs')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     output = Path(args.output)
@@ -22,6 +25,21 @@ def main():
              root / 'docs/UIO66_PROVISIONAL_LIBRARY.md',
              root / 'docs/UIO66_ADSORPTION_PROTOCOL.md',
              root / 'data/design/uio66_provisional.json']
+    if args.sampling_pilot:
+        plan_path = root/'data/design/uio66_sampling_pilot_v2.json'
+        plan = json.loads(plan_path.read_text())
+        split = root/'data/design/uio66_fit_split.json'
+        if len(plan['configurations'])!=8 or hashlib.sha256(split.read_bytes()).hexdigest()!=plan['historical_split_sha256']:
+            raise ValueError('Wrong pilot pool or changed historical split')
+        paths.extend([plan_path,split,root/'docs/UIO66_SAMPLING_PILOT_V2.md',root/'docs/UIO66_CHEMISTRY_REVIEW.md'])
+        recovery = root/'docs/UIO66_PILOT_RECOVERY.md'
+        if recovery.exists():
+            paths.append(recovery)
+        for row in plan['configurations']:
+            path = frozen_input_path(root, row['bare_input'])
+            if not path.is_relative_to(root) or path.suffix!='.cif' or hashlib.sha256(path.read_bytes()).hexdigest()!=row['bare_input_sha256']:
+                raise ValueError('Pilot input changed')
+            paths.append(path)
     for name in ('docs/uio66_design_results.json', 'data/design/uio66_uma_train_fit_v1.json'):
         if (root / name).exists():
             paths.append(root / name)

@@ -72,4 +72,4 @@ def relax_fixed_cell(atoms, calculator, output, identifier, fmax=0.05, steps=150
         'final_structure_sha256': hashlib.sha256(final.read_bytes()).hexdigest(),
         'connectivity': connectivity_change(atoms, state),
         'chemical_validity': 'unverified; force convergence and contact check are insufficient',
-        'target_scope': 'bare crystal energy only; not adsorption, selectivity or QUBO coefficients'}
+        'target_scope': 'component total energy; adsorption requires consistent host/system/gas subtraction'}

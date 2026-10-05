@@ -87,7 +87,8 @@ def summarize_adsorption(bare, gas_references, starts, expected_starts):
 
 
 def evaluate_candidate(host, calculator, gas_atoms, gas_references, output, identifier,
-                       starts=4, seed=41, fmax=0.05, steps=200, save_start=None):
+                       starts=4, seed=41, fmax=0.05, steps=200, save_start=None,
+                       proposal_factory=None, periodic_guard=False):
     """Flexible fixed-cell host+guest relaxation and desorbed bare-reference search."""
     from pathlib import Path
     from ase.io import read
@@ -97,10 +98,19 @@ def evaluate_candidate(host, calculator, gas_atoms, gas_references, output, iden
     if not intact(bare):
         return {'id': identifier, 'bare': bare, 'starts': [], 'status': 'failed_bare_reference', 'paired_target_ev': None}
     base = read(output / bare['trajectory_file'], index=-1)
+    if periodic_guard:
+        from mof_dac.sampling import periodic_change
+        change = periodic_change(host, base)
+        if any(change.values()):
+            return {'id':identifier,'bare':bare,'starts':[], 'status':'failed_periodic_bare',
+                    'paired_target_ev':None,'periodic_bare_connectivity':change}
     base.calc = None
     records = []
     for gas in ('CO2', 'H2O'):
-        proposals = place_guests(base, gas_atoms[gas], starts, seed)
+        proposals = (proposal_factory(base, gas) if proposal_factory is not None else
+                     place_guests(base, gas_atoms[gas], starts, seed))
+        if len(proposals) != starts:
+            raise ValueError('Proposal count differs from declared effort')
         for index, (system, placement) in enumerate(proposals):
             name = f'{identifier}_{gas}_{index}'
             row = {'gas': gas, 'start': index, 'placement': placement, 'status': 'failed'}
@@ -117,6 +127,14 @@ def evaluate_candidate(host, calculator, gas_atoms, gas_references, output, iden
                            guest_connectivity=guest_change)
                 conserved = not any(check[k] for check in (host_change, guest_change)
                                     for k in ('lost_edges', 'gained_edges'))
+                if periodic_guard:
+                    from mof_dac.sampling import periodic_change
+                    empty_final = read(output / empty['trajectory_file'], index=-1)
+                    row['periodic_host_connectivity'] = periodic_change(base, framework)
+                    row['periodic_empty_connectivity'] = periodic_change(framework, empty_final)
+                    conserved = conserved and not any(row[k][field]
+                        for k in ('periodic_host_connectivity', 'periodic_empty_connectivity')
+                        for field in ('lost_image_edges', 'gained_image_edges'))
                 row['status'] = 'accepted' if combo['status'] == 'converged' and conserved and intact(empty) \
                     and combo['severe_contacts_below_0_7_angstrom'] == 0 else 'rejected_diagnostic'
             except Exception as error:
