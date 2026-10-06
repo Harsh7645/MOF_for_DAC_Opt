@@ -1,5 +1,11 @@
 # Frozen water-complex DFT pilot: QE 7.5 revision 2
 
+2026-10-06 environment update: see [Fedora revision 1](UIO66_QE75_FEDORA_V1.md).
+QE/MPI software is built and the sealed artifacts are now verified on Fedora.
+The [single initialization test](UIO66_QE75_FEDORA_INIT01_RESULTS.md) completed with
+zero SCF steps. Its authorization is consumed; full SCF remains unauthorized.
+The Windows environment inventory below describes the original preparation.
+
 Preparation complete; **no DFT or UMA launched**. Professor supports the two-water
 pilot once executable, pseudopotentials and allocation are verified. This revision
 implements that preparation; it does not create an allocation or authorize execution.

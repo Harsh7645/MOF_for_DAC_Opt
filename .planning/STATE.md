@@ -1,3 +1,31 @@
+LATEST 2026-10-06: ONE Fedora initialization completed; authorization CONSUMED; NO SCF/UMA.
+Read docs/UIO66_QE75_FEDORA_INIT01_RESULTS.md. Transferred ZIP+receipt verified;
+all140files match archive and new artifacts/phase3/uio66_frozen_dft_v2_qe75_fedora_verified01/.
+Originals remain artifacts/UIO66_Frozen_DFT_QE75_v2.zip and sibling receipt, unchanged.
+QE source confirms nstep=0 preserved for SCF and RETURN before init_run/electrons.
+Actual XML:nstep0,0SCFsteps,status255,noenergy/forces;process0(defaultSTOP).4ranks/1thread.
+127atoms/522electrons/261bands;80/600Ry,Gamma,PBE-D3BJ2body unchanged;geometry verified.
+Dense225^3/1902004G,smooth160^3/741079G;finalnpwx uninitialized. RAM estimate>12.67GiB
+vs8GiBcap: NO fullSCF under current allocation. Measured initpeak0.7905GiB,swap0,noOOM;
+service3.836s,QE0.24s,scratch44512bytes. PreflightRAM10.62GiB. Noapps terminated.
+Evidence evidence/qe75-fedora-init01/; raw+scratch local/qe75-fedora-v1/smoke01/ retained.
+BothflagsFALSE,one-testmarker retained,NO retry/limitsincrease/fullSCF approved.
+Next:review larger verified RAM allocation and fullSCF launcher separately. Phase3 incomplete.
+
+LATEST 2026-10-06: Fedora continuation; QE7.5 source build COMPLETE, NO scientific QE/UMA.
+Read docs/UIO66_QE75_FEDORA_V1.md. Fedora45 prerelease, Ryzen5500U 6physical/12logical,
+14.94GiB RAM (~7.5GiB available),8GiB zram NOT extra RAM,~217GiB persistent Btrfs free.
+QE local/qe75-fedora-v1/build/bin/pw.x SHA0d1f6d9ac37a99f4f3fb72359bd3b6ffe54594cea92ed46a596238fa9283d8f1.
+GCC16.2.1/OpenMPI5.0.10/FFTW3.3.10/OpenBLAS0.3.34;MPI4rank/core-binding probe PASSED.
+QE7.5 has NO -h handler: revised isolated /dev/null startup expects read_namelists error,
+not SCF success. 6offline guard tests pass; real input/XML/SCF integration untested.
+Scientific artifacts/ absent from Git clone: sealed ZIP+receipt+140hash verification BLOCKED
+pending transfer from Windows. Never regenerate/substitute missing frozen artifacts.
+configs/qe75-fedora-v1.json separate proposal:4ranks,1thread,8GiBhard/no swap,600s init-only;
+requires10GiB MemAvailable;both approval flags FALSE. cgroup limits and wall-stop verified.
+Exact next:transfer/hash package,free RAM,review initialization-only test;NO SCF approved.
+Old32core/64GiB/100GiB launcher and sealed provenance unchanged. Phase3 incomplete.
+
 LATEST 2026-10-05: QE7.5 frozen DFT preparation revision2 SEALED; no SCF/UMA launched.
 Read docs/UIO66_QE75_WATER_PILOT_V2.md. New inputs PBE-D3(BJ),threebody=false;
 verified official SSSP1.3.0PBEPrecision5UPFs,metadata/archive/individualMD5+SHA256.

@@ -18,3 +18,5 @@ sources/*.pdf
 sources/*.png
 graphify-out/cache/
 graphify-out/.*
+local/
+evidence/
