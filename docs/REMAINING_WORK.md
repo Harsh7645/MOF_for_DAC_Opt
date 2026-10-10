@@ -1,6 +1,6 @@
 # Project work tracker
 
-Updated: **2026-10-05**. This section is the current status. Historical notes and
+Updated: **2026-10-07**. This section is the current status. Historical notes and
 original detailed checklists are preserved in the collapsed section below.
 
 **Phase 3 is not complete. DFT preparation is complete; DFT execution has not started.**
@@ -10,12 +10,27 @@ No additional DFT/UMA run, refit or design expansion is authorized by this track
 
 ### 1. Enable the two-water-complex DFT pilot
 
-- [ ] Obtain access to a Linux system with **Quantum ESPRESSO 7.5 / pw.x**.
+- [x] Prepare Windows SSH/SCP helpers, guarded Slurm overlay and safe package verifier;
+  verify sealed ZIP/receipt/all 140 hashes. **100 local tests pass**. No remote work.
+- [x] User confirmed **IIT Kharagpur CSE cluster**, CPU-only, `23BT10034@10.5.18.100`.
+  Separate CSE draft overlay prepared; 27 focused tests and shell syntax pass.
+- [x] User accepted normal first-use SSH trust in own terminal; strict follow-up
+  discovery succeeded. No independent institutional key verification claimed.
+- [x] Captured live host/account/partition/software/storage first-pass discovery.
+- [ ] Resolve live CPU access: **cpupart absent**, master partition DOWN; do not
+  substitute a GPU partition. No account association rows; permissions unresolved.
+- [ ] Complete second terminal authentication for follow-up inventory and sealed
+  package transfer/remote hash verification. No remote creation confirmed yet.
+- [ ] Confirm per-user quotas, shared scratch/retention and hard memory enforcement;
+  NFS filesystem free space is not a user allocation. See [CSE handoff](CSE_WINDOWS_HANDOFF.md).
+- [ ] Verify access to a Linux system with **Quantum ESPRESSO 7.5 / pw.x**.
 - [ ] Verify executable path, version/build, executable SHA256 and MPI installation.
 - [ ] Confirm the exact single-node MPI launch/binding command.
 - [ ] Obtain an approved allocation and hard resource limits. Current request:
-  **32 physical CPU cores, 64 GiB RAM, 100 GiB scratch; two sequential jobs,
-  maximum four hours each**. This is not confirmed availability or a runtime estimate.
+  **64 GiB RAM, 100 GiB scratch; two sequential jobs, maximum four hours each**.
+  CPU layout must follow the actual site: earlier generic 32-core request and
+  PARAM-only 40-rank draft are not verified CSE allocations. No availability,
+  compute charge or runtime estimate is established.
 - [ ] Confirm persistent output/scratch locations and retention of failed/partial jobs.
 - [ ] Complete the external environment configuration and run preflight checks.
 - [ ] Review the verified environment and obtain execution approval before launching.

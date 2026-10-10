@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# DRAFT: resolve every __PLACEHOLDER__ from verified account discovery, then review.
+# Official medium policy proposes 40 ranks; actual eligibility still unverified.
+#SBATCH --job-name=uio66-water
+#SBATCH --partition=__VERIFIED_PARTITION__
+#SBATCH --account=__VERIFIED_ACCOUNT__
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=40
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=64G
+#SBATCH --time=04:00:00
+#SBATCH --no-requeue
+#SBATCH --signal=B:USR1@120
+#SBATCH --output=__PERSISTENT_ROOT__/slurm-%j.out
+#SBATCH --error=__PERSISTENT_ROOT__/slurm-%j.err
+# QoS only when verified necessary; do not invent a directive.
+set -euo pipefail
+case "${1:-}" in 0|1) pilot_index="$1";; *) echo 'Expected frozen pilot index 0 or 1' >&2; exit 2;; esac
+test -n "${SLURM_JOB_ID:-}" || { echo 'Compute allocation required' >&2; exit 2; }
+module load __VERIFIED_QE75_MODULE_AND_DEPENDENCIES__
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+project='__PERSISTENT_ROOT__'
+python_bin='__VERIFIED_PYTHON311_OR_NEWER__'
+cd "$project/param_shakti_v1"
+sha256sum -c overlay.sha256
+module list 2> "$project/modules-${SLURM_JOB_ID}.txt"
+scontrol show job -dd "$SLURM_JOB_ID" > "$project/job-${SLURM_JOB_ID}-start.txt"
+runner=''
+forward_signal() { if [ -n "$runner" ]; then kill -USR1 "$runner" 2>/dev/null || true; fi; }
+trap forward_signal USR1 TERM
+"$python_bin" run_qe_water_pilot.py --package "$project/package" \
+  --environment "$project/environment.json" \
+  --output "$project/evidence-${SLURM_JOB_ID}" --execute --pilot-index "$pilot_index" &
+runner=$!
+set +e
+wait "$runner"
+rc=$?
+# An interrupted wait must not make the batch exit before the Python worker stops.
+if kill -0 "$runner" 2>/dev/null; then wait "$runner"; rc=$?; fi
+sacct -j "$SLURM_JOB_ID" --units=M --parsable2 \
+  --format=JobID,State,ExitCode,Elapsed,AllocCPUS,ReqMem,MaxRSS,TotalCPU,NodeList \
+  > "$project/accounting-${SLURM_JOB_ID}-provisional.txt" 2>&1
+printf '%s\n' "$rc" > "$project/launcher-${SLURM_JOB_ID}.exit"
+exit "$rc"

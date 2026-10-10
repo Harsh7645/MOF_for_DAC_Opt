@@ -1,0 +1,18 @@
+{
+  "revision": "cse_v1",
+  "status": "DRAFT_CPU_PARTITION_AND_QE_NOT_FOUND_IN_INITIAL_DISCOVERY",
+  "source_package_sha256": "4ea11e147c529d8b893d2131c06812ec5978b24f0c7d8905c116c22e4e6d0554",
+  "files": {
+    "connect_and_discover.ps1": "64baf3dd249dc9b53398ee3afc01275ce9c2625d1b09935027f42c2821960560",
+    "discover.ps1": "d944c73ee534be0ecd74e9d24788aa2a7d7ab412e1af294a2ac369d496cc6f70",
+    "discover.sh": "61f3b85644f0270ee5b20a906c8aa952bccfb0eae43c18381d048dbd56207646",
+    "discover_followup.sh": "61bf29b64628657db19400d033c0dd68fa4b7688b178315086b92e8b8c567c4f",
+    "environment.example.json": "10422d2d715b1588f8750025de9f5ffaafe697e6dd024d6df1b2359f3bad0a11",
+    "pilot.sbatch.in": "ea77e99fa310316c3ed608bc430a57ef8b35cc392e7fc4f51344aa321278af42",
+    "run_qe_water_pilot.py": "63e87117a2ab03ab42b475f61ef6337de0576d6af64bf00914243e5c46a35b2f",
+    "stage_remote.py": "a36cd108935a79217dbcbc3ea525e7914fd1a27f77a160ff2f34d5dd12adeffb",
+    "transfer_and_inspect.ps1": "055851b2baad92985f181a53772a91e29d61c2c123ce0d255faba1e5449f30b8",
+    "verify_extract.py": "0ac6c11683ef523696c72b6c9c66a81e314bc302b62de2941fa1aa8afb9d6b69"
+  },
+  "requested_compute": "CPU only; no verified allocation; no submission authorized"
+}

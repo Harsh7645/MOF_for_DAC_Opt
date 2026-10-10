@@ -23,11 +23,8 @@ BOHR_A = 0.529177210903
 
 
 def sha(path):
-    digest=hashlib.sha256()
     with Path(path).open('rb') as stream:
-        for chunk in iter(lambda:stream.read(1024*1024),b''):
-            digest.update(chunk)
-    return digest.hexdigest()
+        return hashlib.file_digest(stream,'sha256').hexdigest()
 
 
 def dump(path, obj):
@@ -152,8 +149,6 @@ def stop_group(proc):
 
 def validate_slurm(config, environment, job_text):
     """Cluster revision: validate a real one-node allocation, never infer it from login."""
-    if config.get('runtime_mode')=='cse_slurm_v1' and re.search(r'gres[/:]gpu',job_text,re.I):
-        raise ValueError('CSE water pilot is CPU-only; GPU allocation rejected')
     job={k:v for k,v in re.findall(r'(\w+)=([^\s]+)',job_text)}
     if not config.get('site_layout_verified') or not config.get('allocation_charge_reviewed'):
         raise ValueError('Site MPI layout and allocation charge review required')
@@ -186,7 +181,7 @@ def preflight(package, config):
     if not config.get('allocation_confirmed') or not config.get('approval_reference'):
         raise ValueError('Actual allocation and approval must be recorded first')
     scheduler=None
-    if config.get('runtime_mode') in ('param_shakti_slurm_v1','cse_slurm_v1'):
+    if config.get('runtime_mode')=='param_shakti_slurm_v1':
         jobid=os.environ.get('SLURM_JOB_ID','')
         if not re.fullmatch(r'\d+',jobid):raise ValueError('Compute allocation required; refuse login-node execution')
         text=subprocess.check_output(['scontrol','show','job','-o',jobid],text=True,timeout=15)
@@ -235,7 +230,7 @@ def preflight(package, config):
 def execute(package, config, evidence, receipt, pilot_index=None):
     if not config.get('execute_approved'):raise ValueError('Execution approval remains false')
     plan=json.loads((package/'pilot_plan.json').read_text());manifest=json.loads((package/'manifest.json').read_text())
-    if config.get('runtime_mode') in ('param_shakti_slurm_v1','cse_slurm_v1') and pilot_index not in (0,1):
+    if config.get('runtime_mode')=='param_shakti_slurm_v1' and pilot_index not in (0,1):
         raise ValueError('Slurm revision runs exactly one frozen complex per four-hour job')
     selected=plan['pilot'] if pilot_index is None else [plan['pilot'][pilot_index]]
     if pilot_index==1:

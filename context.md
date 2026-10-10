@@ -1,3 +1,50 @@
+LATEST 2026-10-07 CSE ACCESS: user authorized first-use SSH trust; accepted key
+and authenticated in private terminal. Strict discovery succeeded on master,
+23BT10034 uid39101, home /home/others/23BT10034. ED25519 matches prior observation;
+NOT independently institutionally verified. No further friend-key request needed.
+Read docs/CSE_WINDOWS_HANDOFF.md. Evidence discovery_20261007_143350.txt under
+artifacts/phase3/cse_preparation_20261007/. No cpupart visible; maspart DOWN;
+remaining visible partitions GPU-only names. No CPU entitlement established.
+No user account association rows; Python3.10.12/OpenMPI4.1.2; no pw.x on PATH.
+Home NFS filesystem free3.2T is NOT user quota; scratch/retention unknown.
+Hard memory enforcement unverified (CR_CORE/task-affinity/linuxproc).
+CSE overlay hashing adapted Python3.10; 29 focused tests pass5.93s; sealed unchanged.
+Second visible terminal process22660 runs transfer_and_inspect.ps1 and awaits
+password privately. Do not duplicate launch. Planned root, NOT yet verified created:
+/home/others/23BT10034/mof_dac_qe75_v2_20261007_143721.
+Poll followup_and_create_20261007_143721.txt and remote_verification_20261007_143721.txt;
+update directory ledger from actual output. No SCF/build/job/delete authorized.
+Phase3 incomplete; CPU/QE/storage/account gates unresolved, no scientific DFT result.
+
+LATEST 2026-10-07 CSE UPDATE: user confirms CSE cluster, CPU-only, login succeeded
+on FRIEND computer (PowerShell/CMD). No local Windows known_hosts or PuTTY key.
+Need saved PUBLIC server key from friend; user asked for ssh-keygen -F output.
+Reuse prior user-trusted connection if key matches, no independent institutional
+verification claim. Passwords only user terminal. No remote login/transfer/job by agent.
+Read docs/CSE_WINDOWS_HANDOFF.md, then docs/UIO66_QE75_WATER_PILOT_V2.md.
+hpc/cse_v1 separate draft overlay prepared; no PARAM 40-rank/resource assumptions.
+CSE live account/QE/MPI/CPU/RAM/storage/quotas remain unknown, placeholders retained.
+27 focused tests pass12.00s; Bash/PowerShell syntax pass; pinned ZIP+140 hashes valid.
+Frozen scientific package and prior PARAM overlay preserved. Remote ledger empty:
+artifacts/phase3/cse_preparation_20261007/remote_directory_ledger.json.
+No SCF/build/submission/delete authorized. Phase3 incomplete, no scientific DFT result.
+Graph targeted lookup missed new guard; source verified directly, no graph rebuild.
+
+LATEST 2026-10-07: cluster preparation only; no remote login/transfer/job/DFT.
+Read docs/PARAM_SHAKTI_WINDOWS_HANDOFF.md before access or submission.
+User login 23BT10034@10.5.18.100; TCP22 reachable. Official CSE PDF identifies
+this IP as CSE cluster, not PARAM. PARAM hostname resolves 10.171.17.201.
+No host key trusted. PARAM published ECDSA ends NqtlY; observed ends Nqt1Y
+(lowercase l versus digit 1); mismatch unresolved. CSE key unverified too.
+Need cluster/account identity and trusted matching fingerprint; passwords only
+user terminal. No authenticated account/QE/allocation/storage facts available.
+Sealed QE-v2 ZIP+receipt+140 hashes reverified. hpc/param_shakti_v1 draft overlay
+adds Slurm guards, independent-first-output gate, safe extraction/discovery.
+PARAM-only 40-rank/64GiB/two4h proposal NOT applicable to CSE without adaptation;
+no job submission authorized. 100 local tests passed31.39s, syntax checks pass.
+Remote directory ledger empty; no deletion. Graph used targeted, not rebuilt;
+new overlay files require direct reads. Phase3 incomplete; no scientific DFT result.
+
 LATEST 2026-10-05: QE7.5 frozen DFT preparation revision2 SEALED; no SCF/UMA launched.
 Read docs/UIO66_QE75_WATER_PILOT_V2.md. New inputs PBE-D3(BJ),threebody=false;
 verified official SSSP1.3.0PBEPrecision5UPFs,metadata/archive/individualMD5+SHA256.
