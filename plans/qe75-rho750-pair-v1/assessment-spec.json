@@ -1,0 +1,91 @@
+{
+  "execution_authorized": false,
+  "energy_comparison": {
+    "definition": "delta_delta_E = (E_second_750 - E_first_750) - (E_second_600 - E_first_600)",
+    "baseline_delta_eV": -0.03839670675722525,
+    "report": [
+      "signed eV",
+      "signed meV",
+      "absolute meV",
+      "each individual cutoff energy shift"
+    ],
+    "source": "XML full-precision Hartree total energies, crosschecked against final stdout Ry"
+  },
+  "force_comparison": {
+    "definition": "For each frozen geometry and atom i, dF_i_alpha = F_750_i_alpha - F_600_i_alpha",
+    "mapping": "force-atom-map.csv; manifest source index zero-based -> QE atom index one-based, verify species/type and unchanged coordinates/cell in input/output XML",
+    "expected_vectors_per_job": 127,
+    "expected_components_per_job": 381,
+    "XML_units_required": "Hartree atomic units",
+    "XML_to_text_force": "Ha/bohr * 2 = Ry/bohr",
+    "Ry_to_eV": 13.605693122994017,
+    "bohr_to_A": 0.529177210903,
+    "text_to_eV_A": "Ry/bohr * Ry_to_eV / bohr_to_A",
+    "extract": "ONLY the 127 rows immediately after total Forces acting on atoms (cartesian axes, Ry/au), not verbose component force blocks",
+    "statistics": [
+      "all signed x/y/z component differences",
+      "per-atom vector difference norm",
+      "per-group RMS vector difference and maximum norm",
+      "per-group maximum absolute component difference",
+      "whole-structure same statistics",
+      "each guest atom",
+      "moving_amino and linker/rings atoms",
+      "each node hydrogen using manifest group and atomic number",
+      "projection onto normalized archived local_motion_A per atom; zero displacement explicitly undefined"
+    ],
+    "cross_geometry_force_difference_optional": "Only after verifying shared index/symbol identity; do not compare geometries by nearest-neighbour remapping"
+  },
+  "reviewed_tolerances": {
+    "energy_literal": "2-3 meV",
+    "force_literal": "0.005-0.01 eV/A",
+    "source": "docs/UIO66_QE75_WATER_PILOT_V2.md, Registered scope and numerical checks; docs/UIO66_FROZEN_DFT_DIAGNOSTIC.md Stage C",
+    "binding_energy_meV": null,
+    "binding_force_eV_A": null,
+    "automatic_accuracy_pass": false,
+    "ambiguity": "Historical ranges and relevant-force criterion do not select a single threshold or component/norm/RMS aggregation. Report positions below, within or above the ranges without declaring numerical acceptance. Reviewer must fix rule before results are assessed."
+  },
+  "valid_result_prerequisites": [
+    "conv_thr=1e-8 Ry achieved in text/XML",
+    "522 electrons, 127 atom identities and frozen cell/coordinates unchanged",
+    "input/UPF/build hashes match",
+    "finite complete 127 total forces; species/type/units match XML",
+    "exit 0 and JOB DONE plus successful scientific XML convergence",
+    "no unresolved final diagonalization errors or resource/deadline stop",
+    "all workers stopped and temporary controls removed"
+  ],
+  "provenance_crosscheck_tolerances_NOT_convergence_targets": {
+    "coordinates_A": 2e-08,
+    "text_vs_XML_energy_Ry": 5.1e-09,
+    "text_vs_XML_force_component_Ry_bohr": 5.1e-09,
+    "origin": "existing independent second-v7 audit, rounding checks"
+  },
+  "diagnostics": [
+    "initial negative pseudocharge distinguished from every SCF warning and final value; pair with iteration/error",
+    "actual dense/smooth FFT and G counts from stdout; compare XML cutoff/grid metadata",
+    "memory peak, job swap, all memory/tasks events, host reserve, elapsed preparation/run/finalization, scratch",
+    "initialization starting charge and atomic/random wavefunctions, same clean-start defaults/MPI build; retain differences"
+  ],
+  "predicted_grid_750": {
+    "dense": [
+      243,
+      243,
+      243
+    ],
+    "dense_Gamma_G": 2658579,
+    "smooth": [
+      160,
+      160,
+      160
+    ],
+    "smooth_Gamma_G": 741079,
+    "status": "OFFLINE PREDICTION; actual output verification required"
+  },
+  "limitations": [
+    "density/augmentation cutoff plus induced FFT change only; cannot separate their effects",
+    "two points are a sensitivity check, not an asymptotic limit",
+    "ecutwfc remains 80 Ry; wavefunction convergence not established",
+    "Gamma mesh, SCF-threshold sensitivity, hosts and CO2 transfer unresolved",
+    "PP/functional/proton correspondence and physical/UMA accuracy unresolved",
+    "no negative pseudocharge automatic threshold; no unconverged energy accepted"
+  ]
+}

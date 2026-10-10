@@ -1,0 +1,110 @@
+{
+  "revision": "rho750-pair-preparation-v1",
+  "execution_authorized": false,
+  "execution_enabled": false,
+  "local_feasibility": "NO_GO",
+  "reason": "750-Ry estimated 12.005\u201313.017 GiB exceeds unchanged 10/11-GiB guards; host gate also fails in recorded snapshot",
+  "current_Fedora_limits_UNCHANGED": {
+    "ranks": 4,
+    "threads": 1,
+    "memory_high_GiB": 10,
+    "memory_max_GiB": 11,
+    "memory_swap_max_bytes": 0,
+    "tasks_max": 96,
+    "minimum_available_RAM_GiB": 12,
+    "minimum_total_reserve_GiB": 3.5,
+    "minimum_free_disk_GiB": 40,
+    "scratch_stop_GiB": 20,
+    "free_disk_stop_GiB": 20,
+    "system_available_stop_GiB": 0.75,
+    "memory_stop_GiB": 10.75
+  },
+  "proposed_time_budget_per_job_s": 14400,
+  "proposed_pair_serial_ceiling_s": 28800,
+  "retry_count": 0,
+  "initialization_probe_proposed": false,
+  "jobs": [
+    {
+      "order": 1,
+      "manifest_id": "uio66_110111_H2O_s28_f0.010_complex",
+      "input": "plans/qe75-rho750-pair-v1/inputs/uio66_110111_H2O_s28_f0.010_complex__rho750.in",
+      "input_sha256": "2269f82e3b518651bfd4ac215f7d0e41b532fd07d523ef6a5c63124f740ecbdd",
+      "baseline_input": "local/qe75-fedora-completion-v5/run01/input.in",
+      "baseline_review": "evidence/qe75-first-independent-review-v6/review.json",
+      "baseline_XML": "local/qe75-fedora-completion-v5/run01/scratch/uio66_110111_H2O_s28_f0.010_complex.save/data-file-schema.xml",
+      "work_root": "local/qe75-rho750-pair-v1/water01/run01",
+      "outdir": "local/qe75-rho750-pair-v1/water01/run01/scratch",
+      "prefix": "uio66_110111_H2O_s28_f0.010_complex",
+      "scientific_changes": {
+        "ecutrho_Ry": [
+          600,
+          750
+        ]
+      },
+      "execution_control_changes": [],
+      "restart_mode": "from_scratch",
+      "reuse_checkpoint": false,
+      "worker_argv": [
+        "/usr/lib64/openmpi/bin/mpirun",
+        "--host",
+        "localhost:4",
+        "-np",
+        "4",
+        "--map-by",
+        "core",
+        "--bind-to",
+        "core",
+        "--nooversubscribe",
+        "--report-bindings",
+        "/home/harshsahu/MOF_for_DAC_Opt/local/qe75-fedora-v1/build/bin/pw.x",
+        "-in",
+        "input.in"
+      ]
+    },
+    {
+      "order": 2,
+      "manifest_id": "uio66_110111_H2O_s28_f0.005_complex",
+      "input": "plans/qe75-rho750-pair-v1/inputs/uio66_110111_H2O_s28_f0.005_complex__rho750.in",
+      "input_sha256": "c9a870a703693c01db58a4a8f6e84d5d49396cf5f72111b902459cf7129f7a91",
+      "baseline_input": "local/qe75-second-v7/run01/input.in",
+      "baseline_review": "evidence/qe75-second-v7/independent-audit-v2.json",
+      "baseline_XML": "local/qe75-second-v7/run01/scratch/uio66_110111_H2O_s28_f0.005_complex.save/data-file-schema.xml",
+      "work_root": "local/qe75-rho750-pair-v1/water02/run01",
+      "outdir": "local/qe75-rho750-pair-v1/water02/run01/scratch",
+      "prefix": "uio66_110111_H2O_s28_f0.005_complex",
+      "scientific_changes": {
+        "ecutrho_Ry": [
+          600,
+          750
+        ]
+      },
+      "execution_control_changes": [],
+      "restart_mode": "from_scratch",
+      "reuse_checkpoint": false,
+      "worker_argv": [
+        "/usr/lib64/openmpi/bin/mpirun",
+        "--host",
+        "localhost:4",
+        "-np",
+        "4",
+        "--map-by",
+        "core",
+        "--bind-to",
+        "core",
+        "--nooversubscribe",
+        "--report-bindings",
+        "/home/harshsahu/MOF_for_DAC_Opt/local/qe75-fedora-v1/build/bin/pw.x",
+        "-in",
+        "input.in"
+      ]
+    }
+  ],
+  "controller_status": "Existing completed launchers are consumed and target/input-pinned. Do not invoke them. Resource/target adapter must be prepared and checked on a verified larger allocation before an executable batch can be approved.",
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "potential_source": "artifacts/phase3/uio66_frozen_dft_v2_qe75_fedora_verified01/pseudo",
+  "pw_sha256": "0d1f6d9ac37a99f4f3fb72359bd3b6ffe54594cea92ed46a596238fa9283d8f1"
+}

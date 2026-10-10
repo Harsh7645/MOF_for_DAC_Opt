@@ -1,3 +1,8 @@
+> Historical cluster preparation preserved. As of 2026-10-10, all 14 baseline
+> SCFs are complete on Fedora. Use `docs/UIO66_QE75_WINDOWS_BASELINE14_GUIDE.md`
+> for current offline work. Old pending terminals/launch steps below are not
+> current instructions or authorization; no cluster action is required for analysis.
+
 # Windows to PARAM Shakti: preparation v1
 
 Updated 2026-10-07. **No remote job, build or DFT calculation submitted.**

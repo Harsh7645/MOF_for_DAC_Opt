@@ -1,3 +1,8 @@
+> Historical cluster preparation preserved. As of 2026-10-10, all 14 baseline
+> SCFs are complete on Fedora. Use `docs/UIO66_QE75_WINDOWS_BASELINE14_GUIDE.md`
+> for current offline work. Old pending terminals/launch steps below are not
+> current instructions or authorization; no cluster action is required for analysis.
+
 # Windows to IIT Kharagpur CSE: preparation v1
 
 Updated 2026-10-07. Current endpoint: `23BT10034@10.5.18.100`, port 22.

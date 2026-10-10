@@ -1,3 +1,25 @@
+LATEST 2026-10-10 WINDOWS INTEGRATION: 14 frozen 80/600-Ry baseline SCFs
+complete on Fedora (7 complexes + 7 stripped hosts). Phase 3 INCOMPLETE.
+Read docs/UIO66_QE75_WINDOWS_BASELINE14_GUIDE.md and baseline14 results first.
+Portable offline entry: scripts/review_qe75_baseline14_portable.py; no QE/MPI/UMA.
+Archive SHA256 8f7fbf7abc4839117595f18e14b42db05d8392547cede539232ae937e99bf0d7.
+Numerical convergence (density/grid, wavefunction cutoff, k-points) and physical/
+UMA accuracy unresolved. Four missing UMA host single points remain separate.
+Historical approval flags are consumed, NOT execution permission. No calculations,
+refit, design expansion, remote login/job submission or checkpoint deletion authorized.
+Windows CSE/PARAM preparation, guards/tests and discovery evidence preserved;
+cluster discovery remains historical, not a prerequisite for offline analysis.
+Full binary restart checkpoints and seven machine-specific launch configs remain
+Fedora-only. Do not reconstruct configs or resume a historical controller.
+Git initial state: pull did not leave an active operation; local edits blocked
+integration. Backed up 32 files, checkpoint9cbcc61; integrated already-fetched2b83668 only.
+Three status-prefix conflicts resolved retaining BOTH histories and shared base.
+Windows offline review PASS:471payloads/14SCFs/1717forces;42targetedtests pass15.53s.
+Current offline report: docs/UIO66_QE75_WINDOWS_OFFLINE_REVIEW_20261010.md.
+Graphify index predates portable verifier; targeted lookup missed; read source.
+
+## Historical state (superseded by current baseline completion)
+
 LATEST 2026-10-07 CSE ACCESS: user authorized first-use SSH trust; accepted key
 and authenticated in private terminal. Strict discovery succeeded on master,
 23BT10034 uid39101, home /home/others/23BT10034. ED25519 matches prior observation;

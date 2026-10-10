@@ -18,3 +18,14 @@ sources/*.pdf
 sources/*.png
 graphify-out/cache/
 graphify-out/.*
+local/
+evidence/
+
+# Machine-specific Fedora launch state: never use as current authorization.
+/configs/qe75-fedora-feasibility-v2.json
+/configs/qe75-fedora-completion-v3.json
+/configs/qe75-fedora-completion-v5.json
+/configs/qe75-rho625-v1.json
+/configs/qe75-rho625-v2.json
+/configs/qe75-second-v6.json
+/configs/qe75-second-v7.json

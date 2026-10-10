@@ -1,5 +1,60 @@
 # Project work tracker
 
+Updated **2026-10-10** after Windows/Fedora integration.
+**All 14 frozen 80/600-Ry baseline SCFs are complete. Phase 3 is incomplete.**
+No new calculation, launch-state reuse, refit or design expansion is authorized.
+
+## Completed - do not rerun
+
+- [x] Seven complexes and seven matching stripped hosts converged on Fedora.
+- [x] Windows portable review: 471 payload hashes, 14 SCFs and 1,717 force vectors.
+- [x] Four complex/host/guest-associated energy differences reproduced offline.
+- [x] Correct maximum-force wording: overall 0.565884531 eV/Angstrom on water
+  f0.010 stripped-host H, QE atom115; original scientific archive unchanged.
+- [x] Windows cluster scripts/tests retained while importing Fedora reports,
+  frozen plans, portable verifier and 3.75-MiB review ZIP.
+- [x] Seven Fedora-specific operational configs remain off this Windows checkout;
+  full binary restart checkpoints remain Fedora-only. No deletion.
+
+## What remains - in order
+
+1. **Review the provisional baseline.** See [Windows offline results](UIO66_QE75_WINDOWS_OFFLINE_REVIEW_20261010.md).
+   The reconstructed signs agree with archived UMA for all four complex changes,
+   but this does not establish numerical/physical accuracy or a material ranking.
+2. **Preregister exact numerical acceptance metrics and obtain a verified allocation.**
+   Prepared paired water 80/750-Ry checks require separate authorization and adequate
+   RAM. The existing laptop limits remain unchanged; historical 2-3 meV and
+   0.005-0.01 eV/Angstrom ranges are not binding pass thresholds.
+3. **Perform authorized density/grid and wavefunction-cutoff checks, then address
+   electronic tolerance, k-points and transferability to hosts/CO2.** Track FFT/G
+   counts and negative pseudocharge. Recalculate affected comparison groups if needed.
+   No such job is authorized by this tracker.
+4. **Resolve scientific interpretation.** CO2 start7 final guest-associated change
+   is -0.294481 meV; its sign is not numerically resolved. Guest-associated energy
+   includes interaction and guest deformation, not just adsorption. Frozen snapshots
+   are not DFT-relaxed minima. Parent/proton correspondence and amino geometry still
+   require expert review; preserve unusual structures and failed sampling evidence.
+5. **Complete remaining Phase 3 workstreams.** Four UMA host single points remain
+   missing and require separate authorization. ODAC25 reference mismatch remains
+   separate. Resolve sampling stability, validated coefficients/surrogate comparisons
+   and honest benchmark scope before material-ranking or broader design claims.
+6. **Proceed to Phase 4 only after relevant gates.** Sensitivity/statistical analysis,
+   reproducibility, hardware claims and methods-focused manuscript work remain.
+   Detailed earlier checklists below retain context; current status above controls.
+
+## Where to resume
+
+- [Portable Windows guide](UIO66_QE75_WINDOWS_BASELINE14_GUIDE.md)
+- [Baseline results](UIO66_QE75_BASELINE14_RESULTS_V1.md)
+- [Proposed 750-Ry check](UIO66_QE75_RHO750_PAIR_PREPARATION_V1.md)
+- [Historical CSE preparation](CSE_WINDOWS_HANDOFF.md): CPU partition/QE/account/
+  resource gates unresolved; not required for offline Windows review.
+
+<details>
+<summary>Preserved previous tracker - superseded pending/active states are historical</summary>
+
+# Project work tracker
+
 Updated: **2026-10-07**. This section is the current status. Historical notes and
 original detailed checklists are preserved in the collapsed section below.
 
@@ -716,5 +771,7 @@ finalcompletion/stabilityunverified. GPUsoff. Saved-batch replacement prepared a
 [incident/replacement plan](UIO66_PILOT_RECOVERY.md). Historical64results/split remain
 intact. No full64expansion,DFT,refit ormaterialranking claim. OlderACTIVE notes historical.
 
+
+</details>
 
 </details>

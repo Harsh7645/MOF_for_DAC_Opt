@@ -1,0 +1,20 @@
+# Preserve historical scientific input/manifest bytes on Windows checkouts.
+/plans/qe75-*/** -text
+# Keep provenance-pinned Fedora Python/shell source bytes stable on Windows.
+/scripts/*qe75*.py text eol=lf
+/scripts/*qe75*.sh text eol=lf
+# This frozen CSV uses the standard csv writer's CRLF; retain its hash.
+/plans/qe75-rho750-pair-v1/force-atom-map.csv whitespace=cr-at-eol
+# Preserve hash-pinned Windows cluster overlay bytes, including original CRLF.
+/hpc/cse_v1/** -text whitespace=cr-at-eol
+/hpc/param_shakti_v1/** -text whitespace=cr-at-eol
+# Current cross-platform status/source text uses LF (not scientific evidence).
+/AGENTS.md text eol=lf
+/MODEL_HANDOFF.md text eol=lf
+/.planning/STATE.md text eol=lf
+/context.md text eol=lf
+/chat_context.md text eol=lf
+/docs/REMAINING_WORK.md text eol=lf
+/scripts/run_qe_water_pilot.py text eol=lf
+/tests/test_cse_cluster.py text eol=lf
+/tests/test_param_shakti.py text eol=lf
