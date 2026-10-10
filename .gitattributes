@@ -1,0 +1,7 @@
+# Preserve historical scientific input/manifest bytes on Windows checkouts.
+/plans/qe75-*/** -text
+# Keep provenance-pinned Fedora Python/shell source bytes stable on Windows.
+/scripts/*qe75*.py text eol=lf
+/scripts/*qe75*.sh text eol=lf
+# This frozen CSV uses the standard csv writer's CRLF; retain its hash.
+/plans/qe75-rho750-pair-v1/force-atom-map.csv whitespace=cr-at-eol

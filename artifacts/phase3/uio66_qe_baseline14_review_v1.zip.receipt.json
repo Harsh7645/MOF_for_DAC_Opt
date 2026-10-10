@@ -1,0 +1,8 @@
+{
+  "archive": "artifacts/phase3/uio66_qe_baseline14_review_v1.zip",
+  "sha256": "8f7fbf7abc4839117595f18e14b42db05d8392547cede539232ae937e99bf0d7",
+  "size_bytes": 3930640,
+  "verified_payloads": 471,
+  "scope": "Review-only: 14 inputs, complete stdout/stderr, final XML, forces, PP files, accounting and audit; binary checkpoints remain intact on Fedora, not included here",
+  "time": 1791604666.3666909
+}

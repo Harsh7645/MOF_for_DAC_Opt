@@ -1,0 +1,37 @@
+{
+  "Zr": {
+    "filename": "Zr_pbe_v1.uspp.F.UPF",
+    "cutoff_wfc": 30.0,
+    "cutoff_rho": 240.0,
+    "sha256": "d56e2997788a4b3d90bb829416161ff9eb6ccdfe377cb52acfbdd2175f4b4acf",
+    "type": "US"
+  },
+  "O": {
+    "filename": "O.pbe-n-kjpaw_psl.0.1.UPF",
+    "cutoff_wfc": 75.0,
+    "cutoff_rho": 600.0,
+    "sha256": "7c4b6ed541f83d0afdf5c1d3a8c611340f073f3e2b11e95b7963bb2ee26929aa",
+    "type": "PAW"
+  },
+  "C": {
+    "filename": "C.pbe-n-kjpaw_psl.1.0.0.UPF",
+    "cutoff_wfc": 45.0,
+    "cutoff_rho": 360.0,
+    "sha256": "9900d1efd50b9848e31849f39094b33348486b400ee51e0f3922f716137cf3d7",
+    "type": "PAW"
+  },
+  "N": {
+    "filename": "N.oncvpsp.upf",
+    "cutoff_wfc": 80.0,
+    "cutoff_rho": 320.0,
+    "sha256": "36f1fc9a24ff5c788a536d4c1a53f82adca7b1fd132827fc654c124d69f274ca",
+    "type": "NC"
+  },
+  "H": {
+    "filename": "H_ONCV_PBE-1.0.oncvpsp.upf",
+    "cutoff_wfc": 80.0,
+    "cutoff_rho": 320.0,
+    "sha256": "69d631780c0178c5239ed3dcb4a3e22c13bd13cde9beb97e123d036949da5c09",
+    "type": "NC"
+  }
+}
