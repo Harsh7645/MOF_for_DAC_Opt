@@ -1,4 +1,21 @@
-# Phase 3 status — numerical track and paired targets complete, baselines open
+# Phase 3 status — DFT baseline complete; material validation open
+
+Documentation reviewed **26 October 2026**; scientific records through **10 October**.
+**Phase 3 is incomplete.** The 138-MOF ODAC25 benchmark, 64-configuration UiO-66
+fit and selected frozen-snapshot DFT diagnostic are separate studies.
+
+| Workstream | Current evidence and limit |
+|---|---|
+| Synthetic optimizer benchmark | Complete; SA 55/60 at 4,000 steps on 50 bits, decoded SNN 7/20. |
+| 138-MOF ODAC25 prediction/ranking | Targets frozen; compatible training/reference data and shared ridge/UMA/CGCNN results pending. |
+| 64-configuration UiO-66 experiment | UMA labels, provisional h/J and solver comparison complete; sampling stability and physical validity unresolved. |
+| Independent DFT diagnostics | 14 baseline SCFs complete: seven complex snapshots and seven stripped hosts; not top-ten material validation. |
+| Numerical convergence | v2.1 prepared, no refined result; algebra confirmation and machine/build/allocation pending. |
+
+Read [remaining work](REMAINING_WORK.md), [baseline results](UIO66_QE75_BASELINE14_RESULTS_V1.md)
+and [convergence v2.1](UIO66_QE75_WATER_CONVERGENCE_V2.md) for current decisions.
+Earlier dated milestones below describe progress at their recorded dates.
+No new calculation or scientific signoff is reported by this documentation refresh.
 
 ## Frozen held-out benchmark
 
@@ -75,7 +92,10 @@ are not fitted baselines or material-performance claims.
   one-molecule rows, final trajectory frames and the strongest sampled final
   configuration, retaining provenance; 285 targets formed 138 pairs.
 - Reproducible comparison across numerical baselines: PASS.
-- Material-ranking comparison: NOT RUN.
+- Material-ranking comparison on the 138-MOF pool: NOT RUN.
+- Separate provisional UiO-66 labels/h/J and solver comparison: COMPLETE, not physically validated.
+- Selected frozen-snapshot DFT baseline: 14/14 SCFs COMPLETE and verified.
+- Numerical convergence/refinement checks: PREPARED, NOT RUN.
 
 Phase 3 cannot be marked scientifically complete until frozen non-leaking
 composition and UMA adsorption-energy baselines, a compatible graph-model
@@ -91,14 +111,16 @@ bonds. Initial grouping: 53 groups at 0.01/0.05 Angstrom; relaxed grouping:
 54/53. These diagnostics do not prove crystallographic or chemical validity.
 Full suite: 39 passed; synthetic demo -4.6. Read
 [UIO66_PROVISIONAL_LIBRARY.md](UIO66_PROVISIONAL_LIBRARY.md) for exact artifacts,
-protocol and limitations. Phase 3 remains incomplete: no paired design labels,
-real adsorption h/J, valid full-pool material prediction or learned baseline score.
+protocol and limitations. At this early milestone, paired labels and the fit
+were not yet available; the later completed design result below supersedes that
+state. Full-pool prediction and independent material validity remain open.
 
 ## Paired design pilot, 2026-10-03
 
 The separate UMA design experiment now has two audited paired pilot targets,
-from 8/8 accepted starts. The full 64-state/four-start run is active; h/J fitting
-and solver comparison are implemented but have not executed on full real outputs.
+from 8/8 accepted starts. At the pilot stage the full 64-state/four-start run
+was active and fitting had not executed. The completed result below supersedes
+that running state; it is not a currently active job.
 The frozen duplicate-group split has 51 training and 13 test states, rank 22.
 See [UIO66_ADSORPTION_PROTOCOL.md](UIO66_ADSORPTION_PROTOCOL.md). These pilot
 predictions are not independent chemistry validation or a frozen ODAC25 score.
@@ -115,3 +137,58 @@ Read [protocol/results](UIO66_ADSORPTION_PROTOCOL.md) and
 [recomputable numerical evidence](uio66_design_results.json). The exported
 graph is explicitly heuristic/UMA-derived. This completes the provisional
 computational path, not Phase3's unseen-MOF/chemical validation gates.
+
+## Sampling and matched-geometry diagnostics, 4–5 October
+
+The larger eight-design/32-start-per-gas pilot completed 512 starts and 16
+force continuations but failed its registered sampling-stability gate. The
+48-path matched diagnostic subsequently saved 144 checkpoints; 44/48 component
+paths met the initial last-energy-change target. Replay agreement and relaxed
+paths help investigate sensitivity; they do not establish physical UMA accuracy
+or reverse the failed ranking-stability gate. The 13 originally held-out design
+states have since informed development and are not an untouched final test.
+See [sampling results](UIO66_SAMPLING_PILOT_RESULTS.md) and
+[matched diagnostic results](UIO66_MATCHED_DIAGNOSTIC_V2_RESULTS.md).
+
+## Independent frozen DFT baseline, completed 10 October
+
+All seven selected complex snapshots and seven matching stripped hosts completed
+QE 7.5 PBE-D3(BJ) SCFs at 80/600 Ry with Gamma sampling, without ionic relaxation.
+Windows offline verification checked 471 payload hashes, 14 SCFs, 1,717 force
+vectors and four energy comparisons. The recorded integration suite passed
+42 targeted tests; these checks were not rerun for this documentation refresh.
+
+For later-minus-earlier complex-energy changes, DFT and archived UMA agree in
+direction in all four selected comparisons. Their discrepancies are 2.14–4.39 meV
+at the baseline settings, not a general model-accuracy estimate.
+`Delta E_guest-associated = Delta E_complex - Delta E_stripped-host` includes
+interaction and guest deformation, not isolated adsorption energy. The late CO2
+remainder is -0.294481 meV; its sign is not numerically resolved. The largest
+baseline force is 0.565884531 eV/Angstrom on a stripped-host H. These frozen
+snapshots are not DFT-relaxed minima; SCF convergence is not numerical or physical
+convergence. See [baseline results](UIO66_QE75_BASELINE14_RESULTS_V1.md) and
+[offline review](UIO66_QE75_WINDOWS_OFFLINE_REVIEW_20261010.md).
+
+## Current convergence preparation, v2.1
+
+The [current specification](UIO66_QE75_WATER_CONVERGENCE_V2.md) registers
+2.0 meV per energy-difference comparison, without per-atom normalization, and
+maximum per-atom force-vector change <=0.005 eV/Angstrom separately per structure,
+including all atoms. Both successive registered refinements and eventual common
+refined protocol versus the original archived baseline must be assessed.
+These are sensitivity rules, not absolute error bounds. Energy algebra remains
+explicitly reconstructed pending focused confirmation; machine/build/allocation
+are unassigned. No refinement SCF has run.
+
+Two 80/750-Ry water checks are prepared. A machine/build change requires two
+separate 80/600-Ry reproductions first; each stage has a proposed 8-hour/32-core-hour
+ceiling. The proposed larger-memory workstation is not a verified allocation.
+Water-complex checks alone do not validate hosts/CO2; wavefunction cutoff,
+electronic tolerance and k-points remain separate. Preserve the original
+professor packet as historical: its open threshold-choice request is superseded
+by v2.1, while formula confirmation and scientific review remain pending.
+
+The four missing UMA host results, failed sampling pilot, ODAC25 reference
+mismatch, chemistry/proton correspondence, shared-pool surrogate comparison
+and independent top-ten candidate validation remain open. No refit, expansion
+or calculation is authorized by this status report.

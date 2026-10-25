@@ -8,6 +8,17 @@ Outputs: `graphify-out/graph.html` (interactive), `graphify-out/graph.json`
 (queryable data), `graphify-out/GRAPH_REPORT.md` (communities and audit), plus
 `graphify-out/BUILD_AUDIT.json` (coverage, integrity and token-accounting limits).
 
+## Freshness reviewed 26 October 2026
+
+The generated graph and its original build audit are a **5 October snapshot**.
+They predate the complete 14-SCF DFT baseline and convergence v2.1 preparation.
+Do not treat the old coverage/hashes as a current-code or current-status audit.
+The [current navigation supplement](../graphify-out/CURRENT_STATUS.md) provides
+direct pointers to the updated status, convergence, scripts and interview notes.
+It is not a semantic re-extraction; generated JSON/HTML and old audit evidence
+are preserved unchanged. Token accounting for a new extraction is not available
+because no extraction ran in this documentation refresh.
+
 ## Read efficiently
 
 From the project root:

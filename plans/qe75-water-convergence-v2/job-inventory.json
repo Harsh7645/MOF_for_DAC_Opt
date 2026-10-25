@@ -1,0 +1,134 @@
+{
+  "revision": "water-convergence-v2.1",
+  "all_14_baseline_SCFs_complete": true,
+  "execution_authorized": false,
+  "execution_enabled": false,
+  "machine_selected": null,
+  "jobs": [
+    {
+      "job_id": "R01",
+      "role": "conditional_baseline_reproduction",
+      "manifest_id": "uio66_110111_H2O_s28_f0.010_complex",
+      "input": "inputs/uio66_110111_H2O_s28_f0.010_complex__80_600.in",
+      "ecutwfc_Ry": 80,
+      "ecutrho_Ry": 600,
+      "attempt_limit": 1,
+      "wall_seconds_including_finalization": 14400,
+      "physical_cores": 4,
+      "MPI_ranks": 4,
+      "threads_per_rank": 1,
+      "execution_authorized": false,
+      "private_work_directory": "UNASSIGNED/R01/attempt01",
+      "precondition": "machine or build changed; own explicit budget/approval",
+      "clean_start": true
+    },
+    {
+      "job_id": "R02",
+      "role": "conditional_baseline_reproduction",
+      "manifest_id": "uio66_110111_H2O_s28_f0.005_complex",
+      "input": "inputs/uio66_110111_H2O_s28_f0.005_complex__80_600.in",
+      "ecutwfc_Ry": 80,
+      "ecutrho_Ry": 600,
+      "attempt_limit": 1,
+      "wall_seconds_including_finalization": 14400,
+      "physical_cores": 4,
+      "MPI_ranks": 4,
+      "threads_per_rank": 1,
+      "execution_authorized": false,
+      "private_work_directory": "UNASSIGNED/R02/attempt01",
+      "precondition": "machine or build changed; own explicit budget/approval",
+      "clean_start": true
+    },
+    {
+      "job_id": "D01",
+      "role": "immediate_density_refinement",
+      "manifest_id": "uio66_110111_H2O_s28_f0.010_complex",
+      "input": "inputs/uio66_110111_H2O_s28_f0.010_complex__80_750.in",
+      "ecutwfc_Ry": 80,
+      "ecutrho_Ry": 750,
+      "attempt_limit": 1,
+      "wall_seconds_including_finalization": 14400,
+      "physical_cores": 4,
+      "MPI_ranks": 4,
+      "threads_per_rank": 1,
+      "execution_authorized": false,
+      "private_work_directory": "UNASSIGNED/D01/attempt01",
+      "precondition": "machine/build verified; reproduction pair reviewed if changed; input/acceptance review and own approval",
+      "clean_start": true
+    },
+    {
+      "job_id": "D02",
+      "role": "immediate_density_refinement",
+      "manifest_id": "uio66_110111_H2O_s28_f0.005_complex",
+      "input": "inputs/uio66_110111_H2O_s28_f0.005_complex__80_750.in",
+      "ecutwfc_Ry": 80,
+      "ecutrho_Ry": 750,
+      "attempt_limit": 1,
+      "wall_seconds_including_finalization": 14400,
+      "physical_cores": 4,
+      "MPI_ranks": 4,
+      "threads_per_rank": 1,
+      "execution_authorized": false,
+      "private_work_directory": "UNASSIGNED/D02/attempt01",
+      "precondition": "machine/build verified; reproduction pair reviewed if changed; input/acceptance review and own approval",
+      "clean_start": true
+    }
+  ],
+  "budgets": {
+    "density_pair": {
+      "jobs": 2,
+      "wall_hours": 8,
+      "core_hours": 32
+    },
+    "conditional_reproduction_pair": {
+      "additional_jobs": 2,
+      "wall_hours": 8,
+      "core_hours": 32
+    },
+    "combined_if_required": {
+      "jobs": 4,
+      "wall_hours": 16,
+      "core_hours": 64
+    }
+  },
+  "budgets_are": "proposed ceilings including preparation/finalization, not runtime forecasts or allocations",
+  "sequence": "if machine/build changed: R01 then R02, independent pair review/hold; D01 then D02. Each next job needs previous terminal result and resource review; no retries/extensions. If unchanged and verified, retain archived reference without rerunning it.",
+  "later_stages": [
+    {
+      "settings": "100/750 Ry",
+      "status": "conditional proposal only; no input or launch prepared"
+    },
+    {
+      "settings": "120/750 Ry",
+      "status": "conditional proposal only; no input or launch prepared"
+    },
+    {
+      "settings": "density toward900 Ry at chosen common ecutwfc",
+      "status": "conditional proposal only; exact settings/scope/budget unresolved"
+    },
+    {
+      "settings": "tighter electronic SCF",
+      "status": "separate proposal; no automatic coupling"
+    },
+    {
+      "settings": "k-point refinement",
+      "status": "separate proposal; no automatic coupling"
+    }
+  ],
+  "later_stage_budget": null,
+  "reference_policy": "On changed environment, compare reproduced baseline with archive first; refined vs local reproduced baseline and direct eventual refined vs archived baseline both reported. No numerical continuity assumed.",
+  "host_CO2_scope": "not validated by water complexes; no extra jobs prepared",
+  "output_retention": "inputs, stdout/stderr/XML, complete forces, actual grids/G counts, resource/exit status, full checkpoints and failed/partial evidence. No deletion/retry.",
+  "comparison_policy": {
+    "successive_registered_refinements_required": true,
+    "eventual_common_refined_vs_original_baseline_required": true,
+    "applies_to": [
+      "energy",
+      "force"
+    ],
+    "scope_confirmed_by_user": "2026-10-10: Apply the criteria between successive registered refinements, and also compare the eventual common refined protocol directly with the original baseline.",
+    "baseline_identity": "Original archived 80/600-Ry results; a reproduction does not replace this reference.",
+    "registration": "Record each protocol and predecessor before execution; no retrospective selection of passing comparisons.",
+    "missing_data": "Unevaluated, not passed; initial water complex checks cannot establish host/guest-associated or CO2 convergence."
+  }
+}

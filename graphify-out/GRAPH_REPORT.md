@@ -1,3 +1,7 @@
+> Freshness notice, 26 October 2026: this generated/retrieval record describes
+> the historical graph through 5 October. For current DFT/convergence evidence,
+> use [current navigation](CURRENT_STATUS.md); no semantic rebuild is claimed.
+
 > Token accounting: agent usage unavailable; zero fields in compatibility files are not measured cost.
 > Coverage: local code/docs and JSON inventory; external dependency implementations excluded.
 > Relation variants collapsed by the simple graph remain in `extraction.json`; see BUILD_AUDIT.json.

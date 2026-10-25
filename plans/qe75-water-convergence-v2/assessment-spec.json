@@ -1,0 +1,84 @@
+{
+  "revision": "water-convergence-v2.1",
+  "execution_authorized": false,
+  "review_source": "User-supplied scientific review, 2026-10-10; malformed original formula table not available as readable source",
+  "energy": {
+    "threshold_meV": 2.0,
+    "normalization": "none; per same-composition energy-difference comparison",
+    "endpoints": "A earlier, B later saved UMA checkpoint",
+    "delta_complex": "Ec(B,p)-Ec(A,p)",
+    "delta_host": "Eh(B,p)-Eh(A,p)",
+    "delta_guest_associated": "Delta Ec(p)-Delta Eh(p)",
+    "complex_sensitivity": "abs(Delta Ec(refined)-Delta Ec(reference))",
+    "host_sensitivity": "abs(Delta Eh(refined)-Delta Eh(reference))",
+    "guest_associated_sensitivity": "abs((Delta Ec(refined)-Delta Eh(refined))-(Delta Ec(reference)-Delta Eh(reference)))",
+    "inequality": "<= threshold",
+    "formula_provenance": "RECONSTRUCTION, NOT QUOTATION; pending focused reviewer confirmation",
+    "formula_confirmed": false,
+    "immediate_evaluable": [
+      "complex_sensitivity"
+    ],
+    "immediate_not_evaluable": [
+      "host_sensitivity",
+      "guest_associated_sensitivity"
+    ],
+    "final_common_refined_direct_baseline_comparison_required": true,
+    "passing_is_absolute_error_bound": false
+  },
+  "force": {
+    "threshold_eV_A": 0.005,
+    "metric": "max_i norm2(F_i(refined)-F_i(reference))",
+    "scope": "separately for each identical frozen structure",
+    "excluded_atoms": [],
+    "atoms_per_structure": 127,
+    "primary_inequality": "<= threshold",
+    "supplementary": [
+      "signed Cartesian component differences",
+      "all per-atom vector norms",
+      "group RMS and maxima",
+      "whole-structure maximum",
+      "guest, amino/linker and node-proton summaries"
+    ],
+    "mapping": "force-atom-map.csv; preserve source zero-based and QE one-based mapping, species/order/cell/coordinates; no remapping"
+  },
+  "units": {
+    "energies": "eV internally, meV reported; 1 meV=0.001 eV",
+    "XML_energy": "Hartree",
+    "stdout_energy": "Ry",
+    "forces": "eV/Angstrom; XML Ha/bohr, stdout Ry/bohr",
+    "Ry_eV": 13.605693122994017,
+    "bohr_A": 0.529177210903
+  },
+  "validity_gates": [
+    "complete finite energies and all 127 forces per structure",
+    "input, geometry, UPF, executable/MPI provenance and neutral 522 electrons verified",
+    "SCF converged to 1e-8 Ry, exit0/JOB DONE/XML convergence and no unresolved diagonalization failure",
+    "actual FFT grids and G counts captured from eventual stdout/XML, predictions not acceptance evidence",
+    "hard resource/deadline accounting and full output retention",
+    "baseline reproduction pair required if machine or build differs; independent review before refinements"
+  ],
+  "interpretation": {
+    "late_CO2_guest_associated_meV": -0.2944812671631363,
+    "late_CO2_sign": "unresolved; not a priority unless needed by scientific conclusion",
+    "stripped_host": "differences between frozen framework conformations, not deformation relative to equilibrium",
+    "claims_unresolved": [
+      "numerical convergence",
+      "quantitative UMA accuracy",
+      "material rankings"
+    ]
+  },
+  "pending_reviewer_question": "The comparison routes are now confirmed: successive registered refinements AND eventual common refined versus original baseline. Please confirm only the reconstructed energy algebra: Sc=abs(DeltaEc(r)-DeltaEc(p)), Sh=abs(DeltaEh(r)-DeltaEh(p)), Sg=abs([DeltaEc-DeltaEh](r)-[DeltaEc-DeltaEh](p)), each <=2.0 meV without per-atom normalization. Is this the intended reconstruction of the malformed table?",
+  "comparison_policy": {
+    "successive_registered_refinements_required": true,
+    "eventual_common_refined_vs_original_baseline_required": true,
+    "applies_to": [
+      "energy",
+      "force"
+    ],
+    "scope_confirmed_by_user": "2026-10-10: Apply the criteria between successive registered refinements, and also compare the eventual common refined protocol directly with the original baseline.",
+    "baseline_identity": "Original archived 80/600-Ry results; a reproduction does not replace this reference.",
+    "registration": "Record each protocol and predecessor before execution; no retrospective selection of passing comparisons.",
+    "missing_data": "Unevaluated, not passed; initial water complex checks cannot establish host/guest-associated or CO2 convergence."
+  },
+  "historical_reviewer_question": "Please confirm our reconstruction of the malformed table: for each same-composition A-to-B comparison, require abs(Delta Ec(refined)-Delta Ec(baseline)) <= 2.0 meV, abs(Delta Eh(refined)-Delta Eh(baseline)) <= 2.0 meV, and abs([Delta Ec-Delta Eh](refined)-[Delta Ec-Delta Eh](baseline)) <= 2.0 meV, with no per-atom normalization. The immediate water-complex pair evaluates only the complex-energy criterion; the host and guest-associated criteria remain unevaluated. Is this the intended scope?"
+}

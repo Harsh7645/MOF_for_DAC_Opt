@@ -1,3 +1,91 @@
+# Four-phase research roadmap
+
+Reviewed **26 October 2026** against scientific records through **10 October**.
+Phases 1–2 computational scopes are complete; **Phase 3 remains incomplete**.
+The original relative 12-week schedule is historical, not a calendar commitment.
+
+## Phase 1 — formulation and literature
+
+- [x] Source-backed formulation, explicit constraints and binary/relaxed conventions.
+- [x] Controlled synthetic instance family, exact checks and parameter-recovery study.
+- [x] Scoped literature work and documented real-chemistry evidence gates.
+
+Exit: PASS for the controlled computational scope. See
+[Phase 1 summary](../docs/PHASE1_SUMMARY.md); chemistry validity remains separate.
+
+## Phase 2 — algorithm integration
+
+- [x] Pinned upstream SNN execution on a convex control.
+- [x] Experimental nonconvex route, diagnostics and separate binary decoding.
+- [x] Development-only 50-variable pilot and recorded feasibility/failure limits.
+
+Exit: PASS for integration. See [Phase 2 summary](../docs/PHASE2_SUMMARY.md).
+No SNN superiority or hardware-energy benefit has been established.
+
+## Phase 3 — benchmarking and materials evidence
+
+### Completed evidence
+
+- [x] Frozen 60-instance synthetic SNN/SA/Gurobi comparison at 12/20/50 bits.
+  Gurobi certified all optima; the CV's 92% is SA 55/60 at 4,000 steps on
+  20 synthetic 50-bit instances with three solver seeds.
+- [x] Curate 560,208 ODAC25 source rows into 285 single-gas targets and 138
+  paired validation MOFs with source/frame/trajectory provenance.
+- [x] UMA total-energy execution smoke on 16 structures; MAE 0.0236525 eV.
+  This is not the 138-MOF adsorption-energy benchmark.
+- [x] Separate provisional six-bit UiO-66 study: 64 relaxed bare structures,
+  64 paired targets/512 starts, frozen 51/13 group split, 22-parameter fit and
+  enumeration/Gurobi/SA/SNN comparison. Pairwise MAE 0.0301754 eV is worse
+  than additive 0.0238031 eV; the inspected holdout is now development evidence.
+- [x] Eight-design sampling pilot and matched-geometry diagnostics completed.
+  The registered sampling-stability gate failed; no expansion/refit pass is implied.
+- [x] All 14 frozen 80/600-Ry QE 7.5 baseline SCFs completed: seven complex
+  snapshots plus seven stripped hosts. Portable review verified 471 payload
+  hashes, 14 SCFs and 1,717 force vectors. These are not top-ten candidate checks.
+- [x] Convergence v2.1 preparation, portable inputs and offline metric verifier.
+  This checkbox records preparation only; no refinement calculation has run.
+
+### Remaining gates
+
+- [ ] Resolve ODAC25 training/reference compatibility and freeze non-overlapping
+  training targets; preserve the 138-MOF validation pool.
+- [ ] Evaluate constant/ridge, UMA adsorption and CGCNN or the reviewed report
+  alternative on identical targets; save per-MOF predictions, errors, top-ten
+  overlap, rank correlation, failures and measured cost.
+- [ ] Confirm reconstructed convergence algebra and a suitable machine/build/
+  allocation. Registered targets are 2.0 meV per energy-difference comparison
+  and all-atom maximum force-vector change <=0.005 eV/Angstrom. Both successive
+  refinements and eventual common refined protocol versus original baseline
+  are required; a sensitivity pass is not an absolute error bound.
+- [ ] Execute separately reviewed density/wavefunction-cutoff checks, with
+  baseline reproduction if machine/build changes; assess electronic tolerance,
+  k-points and transfer to hosts/CO2. Water-complex checks alone do not close these.
+- [ ] Resolve chemistry/proton correspondence, four missing UMA host results,
+  sampling stability and predictive value before accepting/refitting coefficients.
+- [ ] Establish independently supported rankings and define top-K candidate checks.
+
+Resume from [remaining work](../docs/REMAINING_WORK.md),
+[current Phase 3 summary](../docs/PHASE3_STATUS.md),
+[baseline results](../docs/UIO66_QE75_BASELINE14_RESULTS_V1.md) and
+[convergence v2.1](../docs/UIO66_QE75_WATER_CONVERGENCE_V2.md).
+No calculation, remote job or automatic refit is authorized by this roadmap.
+
+## Phase 4 — analysis and drafting
+
+- [ ] Independently check selected candidate structures and the declared target.
+- [ ] Analyze coefficient/sampling sensitivity, constraints, decoding and solver ablations.
+- [ ] Prepare reproducible figures, evidence retention and a scoped manuscript.
+
+Exit: defensible claims supported by the accepted physical and computational scope.
+DAC working capacity/selectivity and hardware benefit require their own evidence.
+
+<details>
+<summary>Historical roadmap through 5 October — superseded execution states</summary>
+
+The following record preserves earlier plans, dates and evidence. Statements such
+as “all14DFTresults absent” and “run is active” describe that historical stage;
+the current roadmap above controls. Relative paths in this retained text are historical.
+
 LATEST 2026-10-05: QE7.5 frozen DFT preparation revision2 SEALED; no SCF/UMA launched.
 Read docs/UIO66_QE75_WATER_PILOT_V2.md. New inputs PBE-D3(BJ),threebody=false;
 verified official SSSP1.3.0PBEPrecision5UPFs,metadata/archive/individualMD5+SHA256.
@@ -131,3 +219,5 @@ stable/independent material validation and required learned baselines remain ope
 
 Exit: defensible material claims and scientific narrative. Hardware energy benefit
 is a deployment hypothesis unless directly measured.
+
+</details>

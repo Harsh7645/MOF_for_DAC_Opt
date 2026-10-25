@@ -1,3 +1,51 @@
+DOCUMENTATION REVIEW 2026-10-26: science unchanged from 2026-10-10.
+Read docs/PHASE3_STATUS.md, docs/REMAINING_WORK.md and
+docs/UIO66_QE75_WATER_CONVERGENCE_V2.md for current state.
+README and roadmap refreshed; interview preparation is in docs/placement/.
+14 baseline SCFs complete; convergence v2.1 prepared, no refinement results.
+Phase3/138-MOF ranking/physical validation incomplete; no new execution authorized.
+Graph JSON/HTML remain a historical Oct5 snapshot; current navigation supplement:
+graphify-out/CURRENT_STATUS.md. Refreshing docs is not scientific signoff.
+
+LATEST 2026-10-10 CONVERGENCE v2.1 CLARIFICATION (preparation only).
+User requires BOTH routes for energy AND force: successive registered refinements,
+plus eventual common refined protocol directly versus ORIGINAL archived baseline.
+Targets unchanged:2.0meV per energy comparison;all-atom max force-vector change
+<=0.005eV/A separately per structure. Adjacent passes do not bound cumulative drift.
+Comparison scope confirmed; original malformed-table algebra remains labeled reconstruction.
+Machine UNASSIGNED; no execution authorized. Budgets and frozen scientific inputs unchanged.
+Current doc: docs/UIO66_QE75_WATER_CONVERGENCE_V2.md; remaining-work tracker updated.
+New seal: artifacts/phase3/UIO66_Water_Convergence_v2_1_Review.zip
+SHA256 ee7ec85b5d75684b5fcb61e35626dac38827a32c72024bdb564e744bad9b5842.
+Previous v2 seal preserved;5targeted tests and isolated21payload/254atom verifier pass.
+No baseline audit rerun, no calculations. Phase3 incomplete.
+
+LATEST 2026-10-10 CONVERGENCE V2 PREPARED; no calculation authorized.
+Read docs/UIO66_QE75_WATER_CONVERGENCE_V2.md and plans/qe75-water-convergence-v2/.
+14 baseline SCFs complete; DFT/UMA agree on direction of4selectedcomplex changes.
+Guest-associated=DeltaEc-DeltaEh; frozen-host conformation difference, not equilibrium deformation.
+Register2.0meV per energy-difference comparison, no per-atom normalization;
+force max_i norm2(Frefined-Freference)<=0.005eV/A separately per structure, ALL atoms.
+Energy formulas explicitly reconstructed, reviewer confirmation PENDING; machine UNASSIGNED.
+Immediate2water80/750 inputs unchanged fromv1; separate2baseline80/600 reproductions
+required if machine/build changes. Budgets8h/32coreh each stage; combined16h/64coreh.
+Suggestedworkstation32GiBphysical/24available,20hard/18gracefulstop,zeroswap,4physical
+cores/4boundMPI/1thread,prefer100GiBpersistent; actualscheduler adaptation pending.
+100/750,120/750,densitytoward900 conditional only; tighterSCF/kpoints separate.
+Eventualcommonrefined protocol MUST compare directly tobaseline; sensitivitypass != absoluteerrorbound.
+LateCO2~-0.29meV signunresolved; do not prioritize unless scientificallynecessary.
+Portable ZIP UIO66_Water_Convergence_v2_Review.zip SHA682551aac253e42a0746fcf41f4e6b7223bc22eeac4308ed4b5d4f15c0cb1bb6.
+21payloads+manifest;4NEWpreparation/metric tests pass; historicalbaseline audits notrerun.
+Baseline/v1/professorpacket preserved. Phase3/numerical/quantitativeUMA/rankings unresolved.
+
+LATEST 2026-10-10 PUSH/PROFESSOR REVIEW: normal push complete, remote main
+verified2ead1867b5082b57997e184332a825e7f8b4d8a1; checkpoint9cbcc61 retained.
+No credential signatures or unintended recovery archives in outgoing commits.
+Read docs/UIO66_QE75_PROFESSOR_REVIEW_20261010.md (new LOCAL review draft,
+not yet committed/pushed). Four energy comparisons, cancellation, threshold/force
+metric decisions and proposed compute bounds; existing verified analysis reused.
+No scientific audits rerun/calculations launched. Phase3 still incomplete.
+
 LATEST 2026-10-10 WINDOWS INTEGRATION: 14 frozen 80/600-Ry baseline SCFs
 complete on Fedora (7 complexes + 7 stripped hosts). Phase 3 INCOMPLETE.
 Read docs/UIO66_QE75_WINDOWS_BASELINE14_GUIDE.md and baseline14 results first.

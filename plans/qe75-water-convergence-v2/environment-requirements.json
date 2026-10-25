@@ -1,0 +1,37 @@
+{
+  "machine_identified": false,
+  "machine": null,
+  "build": null,
+  "scheduler": null,
+  "resource_availability_verified": false,
+  "execution_authorized": false,
+  "proposal_type": "suggested four-rank workstation profile; not a cluster configuration",
+  "physical_RAM_GiB_min": 32,
+  "available_RAM_GiB_at_launch_min": 24,
+  "hard_job_memory_GiB": 20,
+  "graceful_stop_memory_GiB": 18,
+  "job_swap_bytes": 0,
+  "physical_cores": 4,
+  "bound_MPI_ranks": 4,
+  "threads_per_rank": 1,
+  "persistent_usable_storage_GiB_preferred": 100,
+  "usable_storage_meaning": "verified quota/writable capacity, sufficient for both stages and retained failures; no filesystem-free-space assumption",
+  "per_job_wall_seconds_including_finalization": 14400,
+  "serial_only": true,
+  "laptop_limits_unchanged": {
+    "memory_high_GiB": 10,
+    "memory_hard_GiB": 11
+  },
+  "scheduler_adaptation_required": true,
+  "needed_machine_facts": [
+    "host identity and workstation/cluster classification",
+    "verified physical cores, RAM available at launch and enforcement/accounting",
+    "QE7.5 executable/build/hash, compiler, MPI/binding, pseudopotentials",
+    "account/partition/QoS and permitted CPU/memory/wall limits, charges where applicable",
+    "persistent/scratch paths, quota, retention and stop/kill capability"
+  ],
+  "machine_or_build_change_requires_baseline_reproduction": true,
+  "reference_machine_build": "Historical Fedora QE7.5, four-rank binding; use archived build metadata, not Windows paths",
+  "18GiB_trigger_semantics": "aggregate job/cgroup memory, promptly graceful-stop; hard20GiB remains enforced; no silent relabeling as memory.high",
+  "no_cluster_mapping_assumed": true
+}

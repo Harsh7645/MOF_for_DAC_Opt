@@ -1,3 +1,7 @@
+> Freshness notice, 26 October 2026: this generated/retrieval record describes
+> the historical graph through 5 October. For current DFT/convergence evidence,
+> use [current navigation](CURRENT_STATUS.md); no semantic rebuild is claimed.
+
 # Retrieval checks
 
 Graphify 0.9.54, 2026-09-10. Successful local commands:

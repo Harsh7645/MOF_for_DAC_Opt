@@ -5,6 +5,35 @@ Hamiltonian and SNN-QP integration. Target material family: amine-functionalized
 zirconium MOFs / UiO-66 derivatives. Synthetic optimizer evidence and real ODAC25
 validation targets exist; **no material discovery is claimed.**
 
+## Current status — documentation reviewed 26 October 2026
+
+Scientific results and convergence preparation currently extend through **10 October**.
+Phases 1–2 computational scopes are complete; **Phase 3 remains incomplete**.
+
+- The frozen synthetic benchmark and 138 paired ODAC25 validation targets are complete.
+  Compatible training/reference data and the shared 138-MOF ridge/UMA/CGCNN
+  prediction and ranking comparison remain open.
+- The separate 64-configuration UiO-66 experiment has audited UMA labels,
+  provisional h/J and completed enumeration/Gurobi/SA/SNN comparisons. Its
+  sampling-stability gate failed; coefficients and material rankings remain provisional.
+- **14 baseline QE 7.5 SCFs are complete and verified:** seven frozen complex
+  snapshots and seven matching stripped hosts. They are diagnostic snapshots,
+  not ten independently validated top-ranked materials.
+- Convergence **v2.1 is prepared, not executed**. Registered sensitivity targets:
+  2.0 meV per energy-difference comparison and maximum per-atom force-vector
+  change <=0.005 eV/Angstrom, all atoms. Both successive registered refinements
+  and eventual common refined protocol versus the original baseline are required.
+  Reconstructed energy algebra awaits focused confirmation; the execution
+  machine/build/allocation remain unassigned.
+
+Start with [remaining work](docs/REMAINING_WORK.md),
+[Phase 3 status](docs/PHASE3_STATUS.md),
+[baseline DFT results](docs/UIO66_QE75_BASELINE14_RESULTS_V1.md) and
+[convergence v2.1](docs/UIO66_QE75_WATER_CONVERGENCE_V2.md).
+[Interview preparation](docs/placement/PLACEMENT_PREP_BRIEF.md) and the
+[CV claim review](docs/placement/CV_CLAIM_REVIEW.md) distinguish completed results
+from ongoing work. This refresh reports no new calculation or scientific signoff.
+
 ## Start here
 
 - [Beginner guide](beginner_guide.md): chemistry translated into graphs and optimization.
@@ -15,7 +44,7 @@ validation targets exist; **no material discovery is claimed.**
 - [Detailed remaining work](docs/REMAINING_WORK.md): Phase 3/4 tasks, dependencies, deliverables and exit criteria.
 - [Phase 1 summary](docs/PHASE1_SUMMARY.md): exit audit, results and open evidence gate.
 - [Phase 2 summary](docs/PHASE2_SUMMARY.md): live SNN controls, 50-variable pilot and limits.
-- [Phase 3 status](docs/PHASE3_STATUS.md): frozen numerical benchmark and material-data gate.
+- [Phase 3 status](docs/PHASE3_STATUS.md): synthetic benchmark, provisional UiO-66 fit, completed DFT baseline and open validation gates.
 - [Dataset decision](docs/dataset_decision.md): external DAC sources, recommendation and required target choice.
 - [ODAC25 target contract](docs/ODAC25_TARGET_CONTRACT.md): paired CO2/H2O energy target and evidence rules.
 - [Kaggle runbook](docs/ODAC25_KAGGLE_RUNBOOK.md): secret-safe ODAC25 inventory and UMA smoke workflow.
@@ -70,9 +99,11 @@ Objective: `h @ x + 0.5 * x @ W @ x`. Explicit constraints: `E@x=e`, `U@x<=u`,
 quadratic changes the linear term. Dense matrices suit this initial scale; sparse
 storage should be added only after profiling larger instances.
 
-The [Graphify knowledge graph](graphify-out/graph.html) indexes source and research
-documents. [Query and refresh instructions](docs/knowledge_graph.md) keep future
-lookups focused. It is separate from the numerical interaction graph in the fixture.
+The [Graphify knowledge graph](graphify-out/graph.html) is a historical **5 October**
+source/document snapshot. Its generated nodes do not cover the later DFT and
+convergence work. Use the [current navigation supplement](graphify-out/CURRENT_STATUS.md)
+for those records and the [freshness guide](docs/knowledge_graph.md) before relying
+on a graph result. It is separate from the numerical interaction graph in the fixture.
 
 Phase 1 completed its synthetic-first scope with a [formulation contract](docs/phase1_formulation.md):
 fixed-template slot choices, occupancy/budget/charge rules, and a worked example.
@@ -101,11 +132,13 @@ has been executed; see the Phase 2 summary. Optional install:
 
 Gurobi 13.0.3, constraint-aware SA and decoded SNN have been run on 60 frozen
 held-out synthetic instances at 12, 20 and 50 bits; see the Phase 3 status.
-MOFTransformer/CGCNN or a current DAC model still requires assembled structures,
-a fixed target, access to validated checkpoints and a shared candidate pool. The
-paired ODAC25 validation target is frozen and its authenticated artifacts are
-verified. Predictive material baselines and independent chemistry validation remain.
+The ODAC25 paired validation target is frozen; compatible training/reference
+data, target-compatible model checkpoints and the shared-pool material comparison
+remain open. The separate UiO-66 design fit and DFT snapshot diagnostics do not
+complete that benchmark. Independent chemistry and numerical validation remain.
 
 Source PDFs/screenshots are archived locally under `sources/` and ignored by Git;
 text extraction, summaries and hashes remain reviewable. Generated results and raw
-datasets are ignored. No commit, remote push or external message was made.
+datasets are generally ignored; consult each evidence guide for tracked review
+payloads and machine-local checkpoints. A repository commit does not by itself
+publish every raw calculation artifact. This documentation refresh runs no calculation.
