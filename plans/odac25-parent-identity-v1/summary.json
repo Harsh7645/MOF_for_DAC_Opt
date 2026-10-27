@@ -1,0 +1,86 @@
+{
+  "admitted_corrected_pairs": 0,
+  "authoritatively_verified_pairs": 0,
+  "counted_cached_and_new_range_bytes": 15816071,
+  "counts": {
+    "composition_matched_identity_unverified": 110,
+    "framework_composition_conflict": 27,
+    "incomplete": 1
+  },
+  "energy_reference_issue": "separate_unresolved",
+  "eponee_other_records": [
+    {
+      "info": {
+        "energy": -598.6892625749999,
+        "energy_ads": -0.33779519999984586,
+        "energy_ads_corrected": -0.33779519999984586,
+        "energy_mof": -575.3491108000001,
+        "energy_mof_old": -575.3491108000001,
+        "energy_old": -598.6773019999999,
+        "fid": 170,
+        "mof_name": "EPONEE",
+        "mof_type": "pristine",
+        "nads": 1,
+        "name": "EPONEE_w_CO2_1",
+        "nco2": 1,
+        "nh2o": 0,
+        "nn2": 0,
+        "no2": 0,
+        "sid": 88026,
+        "supercell": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mirror_row_ordinal": 3066,
+      "record_sha256": "9f2afa1b45205e64efe4b509f387e8aad92df1dc789407ccfde279fbaa10a131",
+      "source_index_key": "511812",
+      "substituted": false
+    },
+    {
+      "info": {
+        "energy": -598.2666165149999,
+        "energy_ads": 0.08577904000014769,
+        "energy_ads_corrected": 0.08577904000014769,
+        "energy_mof": -575.3491108000001,
+        "energy_mof_old": -575.3491108000001,
+        "energy_old": -598.25372776,
+        "fid": 158,
+        "mof_name": "EPONEE",
+        "mof_type": "pristine",
+        "nads": 1,
+        "name": "EPONEE_w_CO2_random_2",
+        "nco2": 1,
+        "nh2o": 0,
+        "nn2": 0,
+        "no2": 0,
+        "sid": 106701,
+        "supercell": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mirror_row_ordinal": 3067,
+      "record_sha256": "0381274e66c80dc48dc00785eb978e52716b262d827d03e0b1bda5c142b6ae62",
+      "source_index_key": "512637",
+      "substituted": false
+    }
+  ],
+  "limitations": "Same composition/fragment hashes/cell/reference energy do not establish parent state. No complete periodic connectivity or original tag verification.",
+  "mirror_key_count": 3582,
+  "missing_selected": [
+    {
+      "gas": "co2",
+      "key": "512478",
+      "mof_id": "EPONEE",
+      "reason": "exact_key_absent_from_pinned_mirror"
+    }
+  ],
+  "networkx_version": "3.6.1",
+  "numpy_version": "2.5.3",
+  "rows": 138,
+  "selected_records": 275,
+  "version": "parent-identity-v1"
+}

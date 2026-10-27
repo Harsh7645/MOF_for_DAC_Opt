@@ -1,3 +1,101 @@
+FIXED SNAPSHOT VERIFIED - 2026-10-27.
+plans/phase3-review-response-v2/snapshot.zip: SHA256 ae7debffc85b218b848aa1fe5d51979987411ee77c02c6ee7b861b725b972340.
+178 payload hashes/114 review links; 4 targeted tests pass. Extracted replay:
+33 central +65 inspection payloads byte-identical; overwrite guard passed.
+See postseal_verification.json beside ZIP; recorded separately, immutable ZIP unchanged.
+Q1/Q2 qualified assessment + independent final review OPEN; Phase3 incomplete.
+
+REVIEW RESPONSE v2 - 2026-10-27; no new scientific calculations or fits.
+Read docs/PHASE3_REVIEW_RESPONSE_V2.md, docs/PHASE3_SCIENTIFIC_CLARIFICATIONS_V2.md,
+docs/MANUSCRIPT_METHODS_RESULTS_V2.md and docs/CHEMISTRY_INSPECTION_REVIEW_V2.md.
+Updated checklist: docs/PHASE3_CLOSURE_CHECKLIST_V2.md. Fixed review package:
+plans/phase3-review-response-v2/README.md (snapshot.zip and checksum receipt).
+Exact decoder/tolerances, bootstrap endpoints/23 exclusions/977 conditional fits,
+eight-pattern seeds/gas-specific failures and periodic loading limitations documented.
+Five exact checkpoints + parent/CIF;749 coordinate rows;20 OH environments;stable image labels.
+Four targeted checks pass; v1 scope and historical scientific evidence unchanged.
+PHASE 3 INCOMPLETE: Q1 source/proton correspondence and Q2 geometry adequacy OPEN;
+qualified chemistry assessment and independent final review still required.
+User-communicated findings have no supplied signed reviewer identity/qualification;
+AI response is NOT human approval. No demonstrated blocker is NOT a passed gate.
+Keep fixed snapshot immutable; record later responses separately with its hash.
+ODAC25 deferred/paused/UNSENT; DFT supplementary; no contact/compute authorized.
+
+CURRENT SCOPE REVISION - 2026-10-27; supersedes older completion gates below.
+Title: Separating Optimization Performance from Target Reliability in a Discrete MOF Design Workflow.
+Read docs/RESEARCH_SCOPE_REVISION_20261027.md, docs/PHASE3_CLOSURE_CHECKLIST_V1.md,
+docs/MANUSCRIPT_METHODS_RESULTS_V1.md and plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md.
+Local preparation: six tables, seven figure pairs, saved snapshots, claim ledger and structural record.
+Reformat only: no new solver runs, fits, QE/UMA or unchanged scientific audits.
+PHASE 3 INCOMPLETE: qualified chemistry assessment AND independent final review pending;
+record reviewer/date/evidence hashes/findings/disposition; no inferred approval.
+ODAC25 formally DEFERRED extension; investigation PAUSED; request UNSENT; frozen138 intact.
+14 DFT baselines supplementary only; higher-memory access/refinement NOT a limited-scope closure dependency.
+Sc/Sh/Sg each2.0meV where applicable; test Sg directly; all-atom max vector force change0.005eV/A.
+Both successive and direct-original-baseline comparisons required. Baseline drift does not preclude
+later refined convergence. See docs/FUTURE_CONVERGENCE_RULES_V3.md; old sealed rules preserved.
+Additive descriptive only; pairwise RMSE exception, exposed13, rank failures and sampling limits retained.
+No SNN advantage, calibrated uncertainty, chemical approval or reliable material ranking.
+Phase4: review integration, citation/novelty checks, manuscript/supplement, archive and author approval.
+No computation, contacts or publication authorized. Older entries below are historical.
+
+PROFESSOR-REVIEW CONSOLIDATION ? 2026-10-27; DOCUMENTATION ONLY.
+Read docs/PHASE3_PROFESSOR_RESULTS_LIMITATIONS_20261027.md and its SOURCES.json receipt.
+Narrative +12claim/evidence/scope/limitation rows +dependency priorities +5professor decisions.
+Existing findings unchanged;no fits/calculations/audit reruns. Phase3 incomplete.
+ODAC25 remains PAUSED;request UNSENT;no messages or compute authorized.
+
+OFFLINE UiO66 DEVELOPMENT v1 ? 2026-10-26.
+ODAC25 identity/reference investigation PAUSED by user pending source response; request UNSENT.
+Do not contact anyone. Status docs/ODAC25_REQUEST_STATUS.json; request packet unchanged.
+Read docs/UIO66_OFFLINE_DEVELOPMENT_V1.md; results plans/uio66-offline-development-v1/results/.
+Historical51/13 split/OLS/bootstrap reproduced;13 inspected designs remain historical evaluation.
+New exploratory fits use ONLY51development IDs/42whole duplicate groups; no historical replacement.
+142groupedCV folds +1000group bootstrap;7tests pass;no leakage. Pairwise MAE worse19/20repeats:
+median33.6896vs29.4083meV;LOGO RMSE favors pairwise38.5514vs41.0423,so not uniform superiority.
+23pairwise bootstrap rank failures retained;14/15J ranges cross0;rankings unstable.
+Two->four-start development target mean absolute change15.1232meV,max135.1513;not error bars.
+Additive descriptive reference only;no physical h/J/ranking claim. No QE/UMA/ODAC fitting.
+Higher-cutoff DFT deferredRAM;14baselineSCFs preserved;Phase3 INCOMPLETE.
+
+PARENT-IDENTITY AUDIT v1 ? 2026-10-26; REAL FITTING HOLD.
+Read docs/ODAC25_PARENT_IDENTITY_V1.md and plans/odac25-parent-identity-v1/.
+Versioned all138 table:110 composition candidates (NOT identity verified),27 conflicts,1 EPONEE incomplete.
+All27 water hosts have extra C1O2;20 CO2_COOH/7 CO2_NCOO. Paper excludes reactive-water comparisons;
+exact original tags/parent-state links still required.110 cells match;86 fragment signatures match/24 differ;
+fragment hashes are diagnostics, NOT full periodic identity.61/275 block atom orders differ from structure arrays.
+Two other EPONEE CO2 records recovered;missing random_1/fid665/index512478 NOT substituted.
+Corrected-pool proposal admits0;all138 evaluation families remain reserved from training.
+Ten targeted tests pass;seven generated outputs reproduce byte-for-byte offline.
+Draft docs/ODAC25_PARENT_STATE_REVIEW_QUESTION_V2.md NOT SENT;small official mapping/export needed.
+62reference mismatches,DFT convergence/RAM remain separate;14DFT results preserved;Phase3 incomplete.
+No model changes,fitting,inference,full database acquisition or calculation authorized.
+
+ACQUISITION INVESTIGATION 2026-10-26 ? REAL FITTING HOLD.
+Read docs/ODAC25_ACQUISITION_INVESTIGATION_20261026.md and its assessment/CSV.
+Bounded pinned-mirror audit:275/276 frozen selected records match metadata/labels.
+Original107 composition candidates:106 selected pairs agree;EPONEE CO2 index512478 missing.
+Original31 ambiguities:4 selected pairs agree;27 selected pairs have DIFFERENT HOST COMPOSITIONS.
+All31 cache deltas=C1O2; preserve every state. mof_name alone does NOT establish same adsorption parent.
+Do not drop/relabel targets, choose smaller parents or claim paired competition/material ranking.
+Three training sample records retain corrected fields/fid;no complete paired training pool/family split.
+Request originalEPONEE + CAXVOO parent-state clarification + complete8-16training-parent metadata export.
+Draft docs/ODAC25_PARENT_STATE_REVIEW_QUESTION.md NOT SENT. No large archive/model fitting/inference.
+Five new investigation tests pass;offline replay matches;prior surrogate implementation unchanged this turn.
+62missing reference energies and higher-cutoffDFT/RAM remain separate.14DFT results preserved;Phase3 incomplete.
+
+LOCAL SURROGATE WORKSTREAM 2026-10-26 (supersedes historical no-local-training-task scope).
+Read docs/SURROGATE_BASELINE_LOCAL_20261026.md and its compact audit JSON.
+Frozen138 evaluation hash/provenance verified; no compatible local training data.
+Cache covers138IDs:107consistent fraction candidates,31ambiguous; no silent selection.
+One full parent export matched;138-parent verification/family separation still pending.
+Constant/ridge guards + parent-group CV implemented;9new synthetic tests +4existing pass.
+No real models fit/predictions/benchmark scores. Evaluation labels never used for tuning.
+Official compatible corrected/final-fid training + parent/alias exports needed; mirror
+6,547,623,936-byte training LMDB only inventoried, NOT downloaded or approved compatible.
+Higher-cutoff DFT deferred for RAM; ODAC25 reference mismatch remains separate.
+14DFT baseline results preserved; noQE/UMA/CGCNN. Phase3 INCOMPLETE.
+
 DOCUMENTATION REVIEW 2026-10-26: science unchanged from 2026-10-10.
 Read ../docs/PHASE3_STATUS.md, ../docs/REMAINING_WORK.md and
 ../docs/UIO66_QE75_WATER_CONVERGENCE_V2.md for current state.

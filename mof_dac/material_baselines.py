@@ -12,7 +12,10 @@ MAX_ATOMIC_NUMBER = 118
 
 def composition_vector(atomic_numbers):
     """Return element fractions [118] for one bare MOF composition."""
-    numbers = np.asarray(atomic_numbers, dtype=int)
+    raw = np.asarray(atomic_numbers, dtype=float)
+    if not np.isfinite(raw).all() or np.any(raw != np.floor(raw)):
+        raise ValueError("atomic_numbers must contain finite integers")
+    numbers = raw.astype(int)
     if numbers.ndim != 1 or not len(numbers):
         raise ValueError("atomic_numbers must be a nonempty vector")
     if np.any(numbers < 1) or np.any(numbers > MAX_ATOMIC_NUMBER):
@@ -64,8 +67,8 @@ def fit_ridge(features, targets, alpha):
     features, targets = np.asarray(features, float), np.asarray(targets, float)
     if features.ndim != 2 or targets.shape != (len(features), 2) or not len(features):
         raise ValueError("Expected features [N,D] and targets [N,2]")
-    if not np.isfinite(features).all() or not np.isfinite(targets).all() or alpha < 0:
-        raise ValueError("Finite arrays and nonnegative alpha required")
+    if not np.isfinite(features).all() or not np.isfinite(targets).all() or not np.isfinite(alpha) or alpha <= 0:
+        raise ValueError("Finite arrays and positive alpha required")
     mean = features.mean(axis=0)
     scale = features.std(axis=0)
     scale[scale == 0] = 1.0
@@ -76,15 +79,17 @@ def fit_ridge(features, targets, alpha):
     return RidgeModel(mean, scale, intercept, coefficients, float(alpha))
 
 
-def select_ridge_alpha(features, targets, ids, *, alphas=(0.01, 0.1, 1.0, 10.0), folds=5):
+def select_ridge_alpha(features, targets, ids, *, alphas=(0.01, 0.1, 1.0, 10.0), folds=5, groups=None):
     """Choose alpha by deterministic train-only MOF folds and paired MAE."""
     features, targets = np.asarray(features, float), np.asarray(targets, float)
     if len(ids) != len(features) or len(set(ids)) != len(ids) or folds < 2:
         raise ValueError("Unique IDs and at least two folds are required")
-    folds = min(folds, len(ids))
-    assignment = np.empty(len(ids), dtype=int)
-    for fold, index in enumerate(np.argsort(np.asarray(ids, dtype=str), kind="stable")):
-        assignment[index] = fold % folds
+    groups = list(ids if groups is None else groups)
+    if len(groups) != len(ids) or len(set(groups)) < 2 or any(not str(g) for g in groups):
+        raise ValueError("At least two independent parent groups are required")
+    folds = min(folds, len(set(groups)))
+    group_folds = {group: index % folds for index, group in enumerate(sorted(set(groups)))}
+    assignment = np.asarray([group_folds[group] for group in groups])
     scores = {}
     for alpha in alphas:
         errors = []
@@ -101,7 +106,7 @@ def select_ridge_alpha(features, targets, ids, *, alphas=(0.01, 0.1, 1.0, 10.0),
     return selected, scores
 
 
-def evaluate_composition_baselines(train_rows, validation_rows, *, top_k=10):
+def evaluate_composition_baselines(train_rows, validation_rows, *, top_k=10, train_groups=None):
     """Fit on train and evaluate constant/composition baselines on frozen validation."""
     train_ids, train_x, train_y = paired_arrays(train_rows, expected_split="train")
     val_ids, val_x, val_y = paired_arrays(validation_rows, expected_split="val")
@@ -109,7 +114,7 @@ def evaluate_composition_baselines(train_rows, validation_rows, *, top_k=10):
     if overlap:
         raise ValueError(f"Train/validation MOF leakage: {sorted(overlap)[:3]}")
     constant = np.broadcast_to(train_y.mean(axis=0), val_y.shape).copy()
-    alpha, cv = select_ridge_alpha(train_x, train_y, train_ids)
+    alpha, cv = select_ridge_alpha(train_x, train_y, train_ids, groups=train_groups)
     ridge = fit_ridge(train_x, train_y, alpha)
     composition = ridge.predict(val_x)
     return {

@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "historical_numeric_reproduction_tolerance": 1e-11,
+  "split_unchanged": true,
+  "development_designs": 51,
+  "development_groups": 42,
+  "historical_evaluation_designs": 13,
+  "historical_evaluation_used_for_new_fits": false,
+  "cv_folds_checked": 142,
+  "bootstrap_draws_checked": 1000,
+  "rank_deficient_pairwise_draws_retained": 23,
+  "tests_passed": 7,
+  "tests_seconds": 2.32,
+  "test_command": "python -m pytest tests/test_uio66_development.py tests/test_design_fit.py -q -p no:cacheprovider --basetemp local/uio66-development-tests-v1",
+  "figures_visually_checked": 5,
+  "original_inputs_hash_unchanged": true,
+  "results_copy_byte_identical": true,
+  "environment": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "ase": "3.26.0",
+    "matplotlib": "3.11.1",
+    "pytest": "8.4.2"
+  },
+  "ODAC25_investigation": "paused_by_user",
+  "request_submission": "unsent",
+  "QE_UMA_jobs": 0
+}

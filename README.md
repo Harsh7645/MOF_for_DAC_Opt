@@ -1,38 +1,39 @@
 # MOF for DAC optimization
 
-Research foundation for constrained building-block selection using a pseudo-energy
-Hamiltonian and SNN-QP integration. Target material family: amine-functionalized
-zirconium MOFs / UiO-66 derivatives. Synthetic optimizer evidence and real ODAC25
-validation targets exist; **no material discovery is claimed.**
+Working title: **Separating Optimization Performance from Target Reliability in a
+Discrete MOF Design Workflow.**
 
-## Current status — documentation reviewed 26 October 2026
+The revised methods question separates fixed-objective solver performance,
+surrogate adequacy and adsorption-target reliability before physical interpretation.
+The 64 ordered UiO-66 patterns are provisional computational models, not established materials.
 
-Scientific results and convergence preparation currently extend through **10 October**.
-Phases 1–2 computational scopes are complete; **Phase 3 remains incomplete**.
+## Current status - 27 October 2026
 
-- The frozen synthetic benchmark and 138 paired ODAC25 validation targets are complete.
-  Compatible training/reference data and the shared 138-MOF ridge/UMA/CGCNN
-  prediction and ranking comparison remain open.
-- The separate 64-configuration UiO-66 experiment has audited UMA labels,
-  provisional h/J and completed enumeration/Gurobi/SA/SNN comparisons. Its
-  sampling-stability gate failed; coefficients and material rankings remain provisional.
-- **14 baseline QE 7.5 SCFs are complete and verified:** seven frozen complex
-  snapshots and seven matching stripped hosts. They are diagnostic snapshots,
-  not ten independently validated top-ranked materials.
-- Convergence **v2.1 is prepared, not executed**. Registered sensitivity targets:
-  2.0 meV per energy-difference comparison and maximum per-atom force-vector
-  change <=0.005 eV/Angstrom, all atoms. Both successive registered refinements
-  and eventual common refined protocol versus the original baseline are required.
-  Reconstructed energy algebra awaits focused confirmation; the execution
-  machine/build/allocation remain unassigned.
+Phases 1-2 computational scopes are complete. **Phase 3 remains incomplete** pending
+qualified chemistry assessment and independent final review; local evidence and
+manuscript preparation are complete. See the [scope revision](docs/RESEARCH_SCOPE_REVISION_20261027.md)
+and [closure checklist](docs/PHASE3_CLOSURE_CHECKLIST_V2.md).
 
-Start with [remaining work](docs/REMAINING_WORK.md),
-[Phase 3 status](docs/PHASE3_STATUS.md),
-[baseline DFT results](docs/UIO66_QE75_BASELINE14_RESULTS_V1.md) and
-[convergence v2.1](docs/UIO66_QE75_WATER_CONVERGENCE_V2.md).
-[Interview preparation](docs/placement/PLACEMENT_PREP_BRIEF.md) and the
-[CV claim review](docs/placement/CV_CLAIM_REVIEW.md) distinguish completed results
-from ongoing work. This refresh reports no new calculation or scientific signoff.
+- [Central package](plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md): actual synthetic
+  budgets, raw/decoded feasibility, six-bit fitted objective, surrogate adequacy,
+  development-only stability and failed sampling/relaxation criteria.
+- [Methods/results draft](docs/MANUSCRIPT_METHODS_RESULTS_V2.md) and
+  [structural record](docs/STRUCTURAL_MODEL_RECORD_V1.md) retain explicit limitations.
+  No SNN advantage, physical predictor or reliable material ranking is established.
+- ODAC25 is a deferred extension. Historical 138 selections are preserved, but
+  parent identity/reference compatibility and benchmark remain unresolved.
+  Investigation is paused; the request remains unsent.
+- All 14 frozen baseline DFT SCFs are complete, but cutoff/grid/k-point convergence
+  is unresolved. They are exploratory supplementary evidence only. Further DFT and
+  larger-memory access are not dependencies of the limited methods scope.
+- [Future convergence rules](docs/FUTURE_CONVERGENCE_RULES_V3.md) are confirmed:
+  Sc/Sh/Sg each 2.0 meV where applicable, direct Sg testing, all-atom maximum force
+  vector change 0.005 eV/Angstrom. Preserve both successive and direct-to-baseline
+  comparisons; baseline drift does not prevent later refined convergence.
+
+Original roadmap/evidence preserved. No new calculations, contacts or publication authorized.
+
+Review revision: [response table](docs/PHASE3_REVIEW_RESPONSE_V2.md), [exact chemistry packet](docs/CHEMISTRY_INSPECTION_REVIEW_V2.md) and [fixed snapshot](plans/phase3-review-response-v2/README.md). Q1/Q2 and independent final review remain open.
 
 ## Start here
 

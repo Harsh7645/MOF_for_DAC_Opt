@@ -1,0 +1,147 @@
+{
+  "created": "2026-10-27",
+  "document": "docs/PHASE3_PROFESSOR_RESULTS_LIMITATIONS_20261027.md",
+  "document_sha256": "793bf11920c76fbe6143b3a60290b6ee57961c7742f0a32bec76f59238ce3c75",
+  "scope": "Document consolidation only; historical data immutable; no scientific re-audit, fits or calculations.",
+  "validation": {
+    "local_links_checked": 39,
+    "missing_links": [],
+    "stored_offline_review_receipt_verified": true,
+    "selected_reported_numeric_values_checked_against_saved_JSON": true,
+    "DFT_archive_hash_unchanged": true,
+    "ODAC25_paused_request_unsent": true,
+    "new_tests_run": false,
+    "new_fits": 0,
+    "new_QE_UMA_jobs": 0
+  },
+  "sources": {
+    "artifacts/phase3/uio66_matched_v2_results_20261005/local_assessment.json": {
+      "bytes": 58938,
+      "sha256": "95ca6d426f0865affc538e2dfec1756bfdc0a35a80d2ad627678197bd140fce7"
+    },
+    "artifacts/phase3/uio66_qe_baseline14_review_v1.zip": {
+      "bytes": 3930640,
+      "sha256": "8f7fbf7abc4839117595f18e14b42db05d8392547cede539232ae937e99bf0d7"
+    },
+    "artifacts/phase3/uio66_saved_pilot_results_20261004/local_assessment.json": {
+      "bytes": 125958,
+      "sha256": "2f32bb693edeb3157f7e69f2998d1b0c23424837ad57ccbac3efacae3ff83b16"
+    },
+    "docs/ODAC25_ACQUISITION_INVESTIGATION_20261026.md": {
+      "bytes": 15874,
+      "sha256": "43c0164ab0a4c6025a5772b3601b9485f971c9546ee70af8a82c715d58c06c99"
+    },
+    "docs/ODAC25_PARENT_IDENTITY_V1.md": {
+      "bytes": 10084,
+      "sha256": "40ce9e88d69bb60abca3b1bf191eeda717b96d26abc50e8fe1cd2ffad1f5fec9"
+    },
+    "docs/ODAC25_PARENT_STATE_REVIEW_QUESTION_V2.md": {
+      "bytes": 1745,
+      "sha256": "fa6b120fe8a96828731b2b8f6332032c2a30281cdf529ab1e1d24cf5f21d71ec"
+    },
+    "docs/ODAC25_REQUEST_STATUS.json": {
+      "bytes": 632,
+      "sha256": "cc6edd1dd8582104dd5da790ea3cb003577375491f28a4c470a2d5210dbee7be"
+    },
+    "docs/PHASE3_REFERENCE_AUDIT.md": {
+      "bytes": 6686,
+      "sha256": "9efe764a0832f0c068bedc34e0422ac47ef13c09556e23db73863ab43e9c570f"
+    },
+    "docs/phase3_results.json": {
+      "bytes": 520452,
+      "sha256": "431443ff3404ce64d8648a8c1f5c2dec38dda820529256803b53c8b2caac397f"
+    },
+    "docs/PHASE3_STATUS.md": {
+      "bytes": 15071,
+      "sha256": "f867bcc9eb7dbdff735a7e442df9df1366891f579deda6e8675cc8cdb16d78ec"
+    },
+    "docs/UIO66_CHEMISTRY_REVIEW.md": {
+      "bytes": 10166,
+      "sha256": "07792cc803aecd37e5e2e65035660ff7b66bfa4178ca96d979cbcdba9e83e84b"
+    },
+    "docs/uio66_design_results.json": {
+      "bytes": 58399,
+      "sha256": "cc9856b5acd333b56ec7af45d4c7549876376e8f38fc683dea8eeee402f68a4d"
+    },
+    "docs/UIO66_FROZEN_DFT_DIAGNOSTIC.md": {
+      "bytes": 19956,
+      "sha256": "f50ad6b95c9283daf3a31ad19a53a3b1e096722c70fb745125459acfa94b91eb"
+    },
+    "docs/UIO66_MATCHED_DIAGNOSTIC_V2_RESULTS.md": {
+      "bytes": 12166,
+      "sha256": "00a3eb533ee0db215c934621df29f8760d094dfa792e4ed79f8486a85587ae3e"
+    },
+    "docs/UIO66_OFFLINE_DEVELOPMENT_V1.md": {
+      "bytes": 13217,
+      "sha256": "b4affa185065f082e438657e4387685be3de1abae89f3d76aa66c1dce331f9f0"
+    },
+    "docs/UIO66_QE75_BASELINE14_RESULTS_V1.md": {
+      "bytes": 8701,
+      "sha256": "549c3b0be61fe5dd5e4d19478b5f641d1496b34a488947631c3f73b3adb22b81"
+    },
+    "docs/UIO66_QE75_WATER_CONVERGENCE_V2.md": {
+      "bytes": 10923,
+      "sha256": "f0801c2cd36d223737a3b326161e058ffa9ed97301bebab3e1d7d01fd69f8f21"
+    },
+    "docs/UIO66_QE75_WINDOWS_OFFLINE_REVIEW_20261010.md": {
+      "bytes": 6448,
+      "sha256": "d417cd3a002bc7d4ec158b15a3aaac26ea926f71b66399a53232e575f36194e1"
+    },
+    "docs/UIO66_SAMPLING_PILOT_RESULTS.md": {
+      "bytes": 9838,
+      "sha256": "0b2cb952b42a8801c8d5f5566ca77fd8d1fa4b2c824c06b10996225223248490"
+    },
+    "plans/odac25-parent-identity-v1/corrected_pool_proposal_v1.json": {
+      "bytes": 3452,
+      "sha256": "f3fcacf9e0c09e372a926fa9fb393bacc72c2b4fa116ae0d2f876febb33fa6cc"
+    },
+    "plans/odac25-parent-identity-v1/pair_status_v1.csv": {
+      "bytes": 121954,
+      "sha256": "b64c2560e65056b9991bdbd4a791661125e078de06c624ee2dd4625c4004a15c"
+    },
+    "plans/odac25-parent-identity-v1/TRAINING_EXPORT_REQUIREMENTS.md": {
+      "bytes": 5365,
+      "sha256": "0faf7c0401bd482f0be6dd2ce7de6fe4e7c7bb52c8f19a63e6555e0f5dc32623"
+    },
+    "plans/uio66-offline-development-v1/results/analysis.json": {
+      "bytes": 83958,
+      "sha256": "dd7e6e55ebd3b35ceca07e78032303459acc7bc19745e025aa19247473e18bb7"
+    },
+    "plans/uio66-offline-development-v1/results/bootstrap_fits.json": {
+      "bytes": 1739644,
+      "sha256": "9607426b82742539e6c80fa3252ca50df544a7a4317ebbaa6e0bc29ec76288fd"
+    },
+    "plans/uio66-offline-development-v1/results/coefficient_stability.png": {
+      "bytes": 96553,
+      "sha256": "448eadfa0e68b80cab607152671a5fc67f0888c0e25cb132a1f64e2172c2afbd"
+    },
+    "plans/uio66-offline-development-v1/results/development_rank_stability.png": {
+      "bytes": 133158,
+      "sha256": "b1820b4d0c0ee2f9049abc2ad71bfd25e968a990848ecdf13e5dbedac109fe98"
+    },
+    "plans/uio66-offline-development-v1/results/fit_and_grouped_cv.png": {
+      "bytes": 171867,
+      "sha256": "07c363b7e41b277f40a7049a846fc75ff369658f12217d827127a55c93a3b09e"
+    },
+    "plans/uio66-offline-development-v1/results/historical_reproduction.json": {
+      "bytes": 6712,
+      "sha256": "8b5a037a2ff97878184f98db57e31f3ed72ea1f9d16e0cfae7a937152ebf277c"
+    },
+    "plans/uio66-offline-development-v1/results/residual_patterns.png": {
+      "bytes": 194285,
+      "sha256": "e1149c11a046c226b7a5901763c1befb0b894b6da45145e5215f4471bd607889"
+    },
+    "plans/uio66-offline-development-v1/results/residuals_by_pattern.csv": {
+      "bytes": 11558,
+      "sha256": "e0b516bfaa45cb0906cb7681e90cf436e131fd73563444d71fcdbb102c2b4857"
+    },
+    "plans/uio66-offline-development-v1/results/sampling_vs_fitting.png": {
+      "bytes": 132164,
+      "sha256": "79c79288b5cbdba9302545f47909cf2b31597d066a3841615b37a445e720223d"
+    },
+    "plans/uio66-offline-development-v1/review_receipt.json": {
+      "bytes": 3353,
+      "sha256": "23eabd37cc41bb185aefe87b2edb63b3e21e5c8e9d24e95817c1be457245221e"
+    }
+  }
+}

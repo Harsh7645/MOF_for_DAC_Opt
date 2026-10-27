@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "scope": "documented methods revision; saved-results packaging only",
+  "phase3_status": "incomplete_pending_qualified_chemistry_and_independent_final_reviews",
+  "original_roadmap_sha256": "62778acf14249a9621a7d8c267d0d61f2655fe5e85bcaef65a3086a7a20760ba",
+  "inputs": {
+    "docs/phase3_results.json": "431443ff3404ce64d8648a8c1f5c2dec38dda820529256803b53c8b2caac397f",
+    "docs/uio66_design_results.json": "cc9856b5acd333b56ec7af45d4c7549876376e8f38fc683dea8eeee402f68a4d",
+    "plans/uio66-offline-development-v1/results/analysis.json": "dd7e6e55ebd3b35ceca07e78032303459acc7bc19745e025aa19247473e18bb7",
+    "plans/uio66-offline-development-v1/results/historical_reproduction.json": "8b5a037a2ff97878184f98db57e31f3ed72ea1f9d16e0cfae7a937152ebf277c",
+    "plans/uio66-offline-development-v1/results/exact_split.json": "333ca9b6c2694130d80c4e0e6d8243c3f47a796ead66503bd57023103d0d3d3e",
+    "artifacts/phase3/uio66_saved_pilot_results_20261004/local_assessment.json": "2f32bb693edeb3157f7e69f2998d1b0c23424837ad57ccbac3efacae3ff83b16",
+    "artifacts/phase3/uio66_matched_v2_results_20261005/local_assessment.json": "95ca6d426f0865affc538e2dfec1756bfdc0a35a80d2ad627678197bd140fce7",
+    "plans/uio66-offline-development-v1/results/fit_and_grouped_cv.png": "07c363b7e41b277f40a7049a846fc75ff369658f12217d827127a55c93a3b09e",
+    "plans/uio66-offline-development-v1/results/fit_and_grouped_cv.svg": "d99003b9d0308e2ee5650a6d07853a3b18a4cf879403cbf0f94d215fc3632939",
+    "plans/uio66-offline-development-v1/results/coefficient_stability.png": "448eadfa0e68b80cab607152671a5fc67f0888c0e25cb132a1f64e2172c2afbd",
+    "plans/uio66-offline-development-v1/results/coefficient_stability.svg": "03fbff7cae26ae747cfa11121bbecc586d08b7096dac58b274980f16fc6c9360",
+    "plans/uio66-offline-development-v1/results/residual_patterns.png": "e1149c11a046c226b7a5901763c1befb0b894b6da45145e5215f4471bd607889",
+    "plans/uio66-offline-development-v1/results/residual_patterns.svg": "9d37b06d18de286bbbb3886245e08949d2bc9139632bbcdaf9b6c18a0eb1bf64",
+    "plans/uio66-offline-development-v1/results/development_rank_stability.png": "b1820b4d0c0ee2f9049abc2ad71bfd25e968a990848ecdf13e5dbedac109fe98",
+    "plans/uio66-offline-development-v1/results/development_rank_stability.svg": "5c55786a613e4a90ad82d2c6f7d9dee3c78949ff2b41d9203ff703bd3443c33f",
+    "plans/uio66-offline-development-v1/results/sampling_vs_fitting.png": "79c79288b5cbdba9302545f47909cf2b31597d066a3841615b37a445e720223d",
+    "plans/uio66-offline-development-v1/results/sampling_vs_fitting.svg": "aea3e2ba56cdbc8bec299da7ee67374d7e19a4958df3f61ebc46fd961b5c7e61",
+    "scripts/build_phase3_methods_package.py": "c075aeb806df7fe0d626e9df7b4bc6219ffb16600ef7169c730c5d0f98f177d9",
+    ".planning/ROADMAP_pre_scope_20261027.md": "62778acf14249a9621a7d8c267d0d61f2655fe5e85bcaef65a3086a7a20760ba",
+    "docs/UIO66_ADSORPTION_PROTOCOL.md": "263876a8b3086559ed9452969a9711694bd84d76772097ece6ef589f38fdc601",
+    "docs/UIO66_OFFLINE_DEVELOPMENT_V1.md": "b4affa185065f082e438657e4387685be3de1abae89f3d76aa66c1dce331f9f0",
+    "plans/uio66-offline-development-v1/protocol.json": "1e92ac490fec280e0bb74ae18fbb29f21302925549a99e7f74f6621f8e8636bb",
+    "plans/uio66-offline-development-v1/results/receipt.json": "24261955587b0b0baa8c8b220c200296d50f3db085ecde05f4a7c01109b8aea9",
+    "plans/uio66-offline-development-v1/results/residuals_by_pattern.csv": "e0b516bfaa45cb0906cb7681e90cf436e131fd73563444d71fcdbb102c2b4857",
+    "plans/uio66-offline-development-v1/results/bootstrap_fits.json": "9607426b82742539e6c80fa3252ca50df544a7a4317ebbaa6e0bc29ec76288fd",
+    "mof_dac/phase3.py": "e9ec22d457c41e06bcbecd5307e78fce9c66659dcb97a12ba3f247d5ee9efc74",
+    "mof_dac/formulation.py": "0fdb26f61234a9be1b3e3fb46d961d1bb7cbfc96a23091d37be4392a093f12ef",
+    "scripts/benchmark_uio66_fit.py": "5bb2d03ac8cfba50a63238d43c46fa13168ad8998c002e03b1477262fbe90069",
+    "mof_dac/uio66_structures.py": "98eb8e8ab5a4bdab2b4a5d11932dcaf3d7f3d0f3438df5262b4b001d5245fc6d",
+    "artifacts/phase3/uio66_structures/manifest.json": "96f34032c8967e61e2f056ecbef78e3839451b9f0a1f3620d34acf1b86eee3f9",
+    "artifacts/phase3/uio66_structures/atom_mapping.json": "d0a91b7da378a2da319c70536102bc2625682898e6f739af4cc95401142ce40f",
+    "artifacts/phase3/uio66_sampling_audit_v2_verified.json": "ffc8f7af8a85f12f71ddbb347d2e385fbe24acc26e77f042667fc6a4b9aa121f",
+    "artifacts/phase3/uio66_frozen_dft_v2_qe75/parent_audit.json": "6e440efe465842e0cc961b3cdfbefba9cb61bb22bd744707b742b6b588ebf8a5",
+    "artifacts/phase3/uio66_frozen_dft_v2_qe75/provenance/publication_comparison.json": "c5d49e9cd8c6511ab682946aa7f994e0c6f17c6a77e0e5d7f1a31ed9c8e90cab",
+    "docs/UIO66_FROZEN_DFT_DIAGNOSTIC.md": "f50ad6b95c9283daf3a31ad19a53a3b1e096722c70fb745125459acfa94b91eb",
+    "docs/UIO66_MATCHED_DIAGNOSTIC_V2_RESULTS.md": "00a3eb533ee0db215c934621df29f8760d094dfa792e4ed79f8486a85587ae3e",
+    "docs/UIO66_CHEMISTRY_REVIEW.md": "07792cc803aecd37e5e2e65035660ff7b66bfa4178ca96d979cbcdba9e83e84b",
+    "docs/ODAC25_REQUEST_STATUS.json": "cc6edd1dd8582104dd5da790ea3cb003577375491f28a4c470a2d5210dbee7be",
+    "docs/ODAC25_PARENT_STATE_REVIEW_QUESTION_V2.md": "fa6b120fe8a96828731b2b8f6332032c2a30281cdf529ab1e1d24cf5f21d71ec",
+    "plans/odac25-parent-identity-v1/review_receipt.json": "6faaf4209b558119b06ace5f58821eb26353fa95bd4cabd7f0a63d39ad49ab70",
+    "artifacts/phase3/uio66_uma_fit/fit.json": "317ff1464c30fa25834f081435ca65c0022907334a5b3a070ac86590b67a558d",
+    "data/design/uio66_fit_split.json": "333ca9b6c2694130d80c4e0e6d8243c3f47a796ead66503bd57023103d0d3d3e",
+    "artifacts/phase3/uio66_qe_baseline14_review_v1.zip": "8f7fbf7abc4839117595f18e14b42db05d8392547cede539232ae937e99bf0d7"
+  },
+  "outputs": {
+    "docs/RESEARCH_SCOPE_REVISION_20261027.md": "5dfd7e07a224a5f5bced03a2ccf3d7656f01bb6173aa1926693983045cd29319",
+    "docs/FUTURE_CONVERGENCE_RULES_V3.md": "7f9bd41959b7d88b787e9230ee7f97e2f6aa14a379672a5014342bf61442503e",
+    "docs/STRUCTURAL_MODEL_RECORD_V1.md": "302048e51ac4b0930713af9adb4c39c15f4b318adc2d0d7b9f54b184fbfbf94b",
+    "docs/MANUSCRIPT_METHODS_RESULTS_V1.md": "6cc2452fc5f64299a0bb9c5b24cd088f832784b0bc4213fdc8d78520b46b28dc",
+    "docs/PHASE3_CLOSURE_CHECKLIST_V1.md": "5e407f98288240f74d939a1c5b0f31552d4b8728a4631c04740ad4c12a2761cf",
+    "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md": "5d5af4db1aceb005180cdd83e0a446feb8cd529ae7eda362f92dd0895e6f12da",
+    "plans/phase3-methods-scope-v1/CLAIMS.md": "96915024f0321b152f181348265bc7eeac0daea3afa636287463e6d547240dd0",
+    "plans/phase3-methods-scope-v1/LOCAL_REVIEW.md": "ef3ad50973ee621962b21ce8e196bbc06566d384fec9ddfc9955facfc5b87b36",
+    "plans/phase3-methods-scope-v1/review_status.json": "38524faf28466839e0988b9fcfb912089a2383dbf44cef7ca317f535e907a71d",
+    "plans/phase3-methods-scope-v1/evidence/receipt.json": "8a3fcbc7f990767fecf2e8a1c071d68d7f2187a9f537a9d6e7167f67a50a4fa0",
+    "scripts/build_phase3_methods_package.py": "c075aeb806df7fe0d626e9df7b4bc6219ffb16600ef7169c730c5d0f98f177d9",
+    "tests/test_phase3_methods_package.py": "5b011a70741600904bc7dc44ea064bce5836d7ca7b78b9badef1577d825e46a2",
+    ".planning/ROADMAP.md": "3f594235359bc83a0bfad416019323f8e2f3c755620c6d042a9f7e6f41161f70"
+  },
+  "validation": {
+    "central_tables": 6,
+    "figure_pairs": 7,
+    "central_payloads": 33,
+    "original_source_and_snapshot_reproductions": "33/33 payload hashes identical for both",
+    "targeted_tests": "4 passed in 0.77 s; tests/test_phase3_methods_package.py",
+    "new_figures_visually_checked": [
+      "F1_solver_outputs",
+      "F4_sampling_batches"
+    ],
+    "copied_prior_figure_pairs": 5,
+    "local_markdown_links_checked": 34,
+    "historical_fit_split_and_DFT_archive_hashes_match": true,
+    "original_roadmap_byte_preserved": true,
+    "request_status": "unsent; unchanged",
+    "independent_final_review": "pending",
+    "chemistry_assessment": "pending"
+  },
+  "environment": {
+    "python": "3.14.6",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.1"
+  },
+  "prohibited_work_performed": {
+    "new_fits": false,
+    "solver_runs": false,
+    "QE": false,
+    "UMA_inference": false,
+    "messages": false,
+    "historical_scientific_audit_reruns": false
+  },
+  "links": [
+    {
+      "from": "docs/RESEARCH_SCOPE_REVISION_20261027.md",
+      "target": "../.planning/ROADMAP_pre_scope_20261027.md"
+    },
+    {
+      "from": "docs/RESEARCH_SCOPE_REVISION_20261027.md",
+      "target": "ODAC25_REQUEST_STATUS.json"
+    },
+    {
+      "from": "docs/RESEARCH_SCOPE_REVISION_20261027.md",
+      "target": "FUTURE_CONVERGENCE_RULES_V3.md"
+    },
+    {
+      "from": "docs/FUTURE_CONVERGENCE_RULES_V3.md",
+      "target": "RESEARCH_SCOPE_REVISION_20261027.md"
+    },
+    {
+      "from": "docs/STRUCTURAL_MODEL_RECORD_V1.md",
+      "target": "../artifacts/phase3/uio66_frozen_dft_v2_qe75/parent_audit.json"
+    },
+    {
+      "from": "docs/STRUCTURAL_MODEL_RECORD_V1.md",
+      "target": "../artifacts/phase3/uio66_frozen_dft_v2_qe75/provenance/publication_comparison.json"
+    },
+    {
+      "from": "docs/STRUCTURAL_MODEL_RECORD_V1.md",
+      "target": "../artifacts/phase3/uio66_structures/atom_mapping.json"
+    },
+    {
+      "from": "docs/STRUCTURAL_MODEL_RECORD_V1.md",
+      "target": "../artifacts/phase3/uio66_sampling_audit_v2_verified.json"
+    },
+    {
+      "from": "docs/STRUCTURAL_MODEL_RECORD_V1.md",
+      "target": "../mof_dac/uio66_structures.py"
+    },
+    {
+      "from": "docs/STRUCTURAL_MODEL_RECORD_V1.md",
+      "target": "UIO66_FROZEN_DFT_DIAGNOSTIC.md"
+    },
+    {
+      "from": "docs/MANUSCRIPT_METHODS_RESULTS_V1.md",
+      "target": "../plans/phase3-methods-scope-v1/CLAIMS.md"
+    },
+    {
+      "from": "docs/MANUSCRIPT_METHODS_RESULTS_V1.md",
+      "target": "STRUCTURAL_MODEL_RECORD_V1.md"
+    },
+    {
+      "from": "docs/MANUSCRIPT_METHODS_RESULTS_V1.md",
+      "target": "UIO66_QE75_BASELINE14_RESULTS_V1.md"
+    },
+    {
+      "from": "docs/MANUSCRIPT_METHODS_RESULTS_V1.md",
+      "target": "FUTURE_CONVERGENCE_RULES_V3.md"
+    },
+    {
+      "from": "docs/MANUSCRIPT_METHODS_RESULTS_V1.md",
+      "target": "../plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md"
+    },
+    {
+      "from": "docs/PHASE3_CLOSURE_CHECKLIST_V1.md",
+      "target": "RESEARCH_SCOPE_REVISION_20261027.md"
+    },
+    {
+      "from": "docs/PHASE3_CLOSURE_CHECKLIST_V1.md",
+      "target": "../plans/phase3-methods-scope-v1/review_status.json"
+    },
+    {
+      "from": "docs/PHASE3_CLOSURE_CHECKLIST_V1.md",
+      "target": "../plans/phase3-methods-scope-v1/scope_receipt.json"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/T1_synthetic.md"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/F1_solver_outputs.svg"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/T2_six_bit_objective.md"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/T3_surrogate.md"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/F2_surrogate_adequacy.svg"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/T4_stability.md"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/F3_coefficients.svg"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/T5_sampling.md"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/F4_sampling_batches.svg"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/T6_relaxation.md"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/S1_pattern_residuals.svg"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/S2_conditional_ranks.svg"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md",
+      "target": "evidence/S3_nested_sampling.svg"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/LOCAL_REVIEW.md",
+      "target": "review_status.json"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/LOCAL_REVIEW.md",
+      "target": "EVIDENCE_INDEX.md"
+    },
+    {
+      "from": "plans/phase3-methods-scope-v1/LOCAL_REVIEW.md",
+      "target": "../../docs/PHASE3_CLOSURE_CHECKLIST_V1.md"
+    }
+  ],
+  "notes": [
+    "Hash checks confirm preservation; they do not rerun historical scientific audits.",
+    "Self-review and formatting reproducibility do not satisfy independent scientific/chemistry gates.",
+    "Source snapshots support aggregation; full scientific replay still depends on original raw archives and protocols.",
+    "No commit or publication performed. Existing unrelated local changes preserved."
+  ]
+}

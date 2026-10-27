@@ -1,0 +1,155 @@
+{
+  "status": "blocked_no_compatible_training_no_benchmark_results",
+  "contract": {
+    "target_field": "energy_ads_corrected",
+    "units": "eV",
+    "reduction": "exact_single_gas;max_fid_per_trajectory;min_final_corrected_per_mof_gas",
+    "reference_convention": "ODAC25_20250918_filtered_pre_kpoint_corrected_adsorption"
+  },
+  "frozen_pairs": 138,
+  "frozen_single_gas_labels": 285,
+  "frozen_sha256": "58c5dd5bec75366e3cd95dbd7ba9d714d1ff0163a560158cf154640aed5095bf",
+  "cache_sha256": "f22e3f992ab050877e02b61184f3b61c234ae3a50ec288aaaee4d78e7983fdcc",
+  "feature_schema": "118 bare-parent elemental fractions, Z=1..118, dimensionless; no geometry-derived descriptors",
+  "candidate_counts": {
+    "ambiguous_composition": 31,
+    "cache_consistent_candidate": 107
+  },
+  "ambiguous_ids": [
+    "ANUGEW_deen_33",
+    "AQUCOG_0.11_0_dmen_5.5",
+    "CAXVOO_0.08_0_eeen_14",
+    "CAXVOO_0.08_0_eeen_19",
+    "CAXVOO_0.08_0_een_33",
+    "CAXVOO_0.08_0_mmen_14",
+    "CAXVOO_0.08_0_nmen_9.5",
+    "CAXVOO_nmen_16",
+    "CAXWEF_0.08_0_mmen_60",
+    "COKMIA_0.05_0_een_5.5",
+    "COKNAT_0.11_0_mmen_20",
+    "COKPEZ_mmen_5.5",
+    "IBUBIT_0.03_1_dmen_11",
+    "IBUBIT_eeen_12",
+    "MIMSUY_0.04_0_dmen_22",
+    "MIMSUY_0.04_1_mden_33",
+    "NOKLIJ_0.08_0_deen_9.0",
+    "NOKLIJ_0.11_0_en_37",
+    "OGEBAF01_een_22",
+    "PAJSAX_0.02_0_ipen_100",
+    "PIBPIA_ipen_25",
+    "PIBPIA_mmen_12",
+    "RAVVUH_0.16_0_eeen_16",
+    "RAVXAP_ipen_83",
+    "WAMREJ_mden_87",
+    "XIGFOJ_manual_0.08_0_en_100",
+    "XIGFOJ_manual_deen_100",
+    "ja300034j_si_002_0.16_0_mmen_18",
+    "ja300034j_si_002_eeen_16",
+    "ja300034j_si_002_eeen_50",
+    "ja5b02897_si_003_0.08_0_en_12"
+  ],
+  "full_parent_exports_matched": [
+    "jz4002345_si_002"
+  ],
+  "parent_export_scope": "Numbers/index/source hash match; chemistry and reference-energy identity not thereby verified",
+  "reference_lookup": {
+    "distinct_unresolved_energies": 67,
+    "without_stored_energy_match": 62
+  },
+  "training_inventory": {
+    "roots": [
+      "C:\\Users\\hp\\Documents\\GitHub\\MOF_for_DAC_Opt\\data",
+      "C:\\Users\\hp\\Documents\\GitHub\\MOF_for_DAC_Opt\\artifacts",
+      "C:\\Users\\hp\\Documents\\GitHub\\MOF_for_DAC_Opt\\local",
+      "C:\\Users\\hp\\Downloads"
+    ],
+    "excluded": "test fixtures, environments, pycache",
+    "candidates": []
+  },
+  "sample8": {
+    "seconds": 0.008377300000120158,
+    "python_traced_peak_bytes": 39300,
+    "memory_scope": "Python allocations only, not total process RSS"
+  },
+  "all138": {
+    "seconds": 0.08858909999980824,
+    "python_traced_peak_bytes": 873554,
+    "memory_scope": "Python allocations only, not total process RSS"
+  },
+  "disk_free_GiB": 101.53244018554688,
+  "environment": {
+    "python": "3.14.6",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.5.3"
+  },
+  "verified_evidence": [
+    {
+      "path": "artifacts/kaggle/odac25_reference_audit_2026-10-02/reference_lookup/phase3_execution_evidence.json",
+      "sha256": "0eee575542733addc63ed53eb6a6911167a25ff1fb439177abb70a5331e8edec"
+    },
+    {
+      "path": "artifacts/kaggle/odac25_reference_audit_2026-10-02/reference_lookup/phase3_execution_evidence_final.json",
+      "sha256": "1ecb8bbce8218b6fe81a2d268ef4565509e2eb4e5e4990ce852a52bce76eaed5"
+    },
+    {
+      "path": "artifacts/kaggle/odac25_reference_audit_2026-10-02/reference_lookup/phase3_material_base_audited.bare_cache.json",
+      "sha256": "f22e3f992ab050877e02b61184f3b61c234ae3a50ec288aaaee4d78e7983fdcc"
+    },
+    {
+      "path": "artifacts/kaggle/odac25_reference_audit_2026-10-02/reference_lookup/phase3_material_base_audited.bare_cache.mismatches.json",
+      "sha256": "29bb0cd1bb24a58b1c61be9a27c1d40414779227689581774c8792d3362de505"
+    },
+    {
+      "path": "artifacts/kaggle/odac25_reference_audit_2026-10-02/reference_lookup/phase3_reference_audit.json",
+      "sha256": "375a9e76b2c3b4755378a184b8d2724682dd2e33db3fe36774d92e8843eede66"
+    },
+    {
+      "path": "artifacts/kaggle/odac25_reference_audit_2026-10-02/reference_lookup/phase3_reference_frame_lookup.json",
+      "sha256": "a020aeb08a4a3f02772522d2ace70d70ca2e60618f2b73d1861dce4d5bec48c2"
+    },
+    {
+      "path": "artifacts/kaggle/odac25_reference_audit_2026-10-02/reference_lookup/phase3_uio66_candidate_parent.json",
+      "sha256": "cd21327024b04a02901c9211fde709ee26fa7a6b7bf3eb671e13a5f3d11e69e4"
+    },
+    {
+      "path": "artifacts/kaggle/odac25_reference_audit_2026-10-02/reference_lookup/phase3_uio66_candidate_parent.cif",
+      "sha256": "b9646d1fb1bdc6ef097703a8de699c0e919d0f1751467e5903b53b9d4d70e4e5"
+    }
+  ],
+  "unresolved": [
+    "compatible corrected/final-frame training export",
+    "complete verified parent structure exports",
+    "31 multi-composition parent identities",
+    "reviewed parent-family/alias map and split separation",
+    "ODAC25 reference geometry mapping; independent of frozen-field regression",
+    "higher-cutoff DFT deferred for RAM; Phase 3 incomplete"
+  ],
+  "models_fit": 0,
+  "evaluation_metrics": null,
+  "validation": {
+    "new_tests_passed": 9,
+    "existing_targeted_tests_passed": 4,
+    "synthetic_only": true,
+    "scientific_calculations": 0
+  },
+  "source_hashes": {
+    "mof_dac/material_baselines.py": "68283beff67a1192236f481eed3a17ff5e70ac8d21ec3902d3acca762a10e9b9",
+    "mof_dac/surrogate_baseline.py": "09d1b7bc0b651e1e022c5ff5c49ed43190933463ab374610bfdd6d4d0d7a6743",
+    "scripts/local_surrogate_baseline.py": "0bb6b9592b7c89f56d358f9b039e1d01135bb4fc8f9662cc3f9ad3de12459618",
+    "tests/test_surrogate_baseline.py": "bb2a46358e9d884025662c6fd7495e5708cb322c662b6c33e7d0762e2224d034"
+  },
+  "resource_observation": {
+    "physical_GiB": 15.325851440429688,
+    "available_GiB_at_final_check": 3.225910186767578,
+    "disk_free_GiB_at_final_check": 101.41548538208008,
+    "source": "Windows CIM / Get-PSDrive; observed 2026-10-26, not an allocation"
+  },
+  "acquisition_metadata": {
+    "url": "https://huggingface.co/api/datasets/nayoung10/AtomMOF-data/tree/81a85299823a7e75e0ed7fe39640c99297906080?recursive=true",
+    "sha256": "d7d841aca94bc094a6e35573e0512848f9ddf73310d3fcbaa1ddf0052c480295",
+    "training_lmdb_bytes": 6547623936,
+    "test_lmdb_bytes": 141197312,
+    "large_download_performed": false,
+    "official_card_probe": "HTTP 401 unauthenticated"
+  }
+}

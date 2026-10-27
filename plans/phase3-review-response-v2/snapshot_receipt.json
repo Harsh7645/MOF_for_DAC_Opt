@@ -1,0 +1,11 @@
+{
+  "archive": "plans/phase3-review-response-v2/snapshot.zip",
+  "sha256": "ae7debffc85b218b848aa1fe5d51979987411ee77c02c6ee7b861b725b972340",
+  "bytes": 5560947,
+  "payloads": 178,
+  "verified_payload_hashes": 178,
+  "review_links": 114,
+  "source_HEAD": "2ea98b09a6e65faa959c1bb605f84490ef1c59a1",
+  "credentials_scan": "allowlist plus high-specificity token/private-key scan passed; no launch configs included",
+  "phase3_status": "incomplete; Q1/Q2 and independent final review pending"
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-27",
+  "new_targeted_tests": {
+    "command": "python -m pytest tests/test_phase3_review_response.py -q -p no:cacheprovider --basetemp local/phase3-review-response-tests-v2",
+    "passed": 4,
+    "failed": 0,
+    "seconds": 2.31,
+    "warnings": "25 ASE/NumPy shape-assignment deprecation warnings; no failed checks"
+  },
+  "checks": [
+    "synthetic decoder exact ties/count behavior",
+    "five exact checkpoint positions/cells/atom-order match; no rounding or modification",
+    "749 CSV positions float64-equal to exact JSON",
+    "each displayed coordinate reconstructs from source plus integer image @ cell",
+    "11 SVG views and tolerance-bearing names remain distinct",
+    "all 1000 draws and 23 pairwise exclusions retained",
+    "512 unique seed entropies match gas/batch/start fields",
+    "previous scope-v1 output hashes unchanged"
+  ],
+  "visual_review": "parent node and representative OH/guest panels inspected; archived before/after images copied unchanged; exact tables supplied for all labels/images",
+  "preparation_fix": "decimal checkpoint tolerance was initially mistaken for a filename suffix in new plot formatting; fixed before sealing, named-file count regression added; original scientific artifacts unaffected; initial unsealed display draft preserved under ignored local/",
+  "scope": "offline formatting and exact-geometry inspection only; no scientific fits/inference/optimization",
+  "Q1": "open; qualified review required",
+  "Q2": "open; qualified review required",
+  "independent_final_scientific_review": "pending"
+}

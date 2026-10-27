@@ -1,0 +1,1880 @@
+{
+  "status": "provisional design execution complete; Phase 3 overall incomplete",
+  "adsorption": {
+    "scope": "provisional UMA sampled single-molecule design; not independent chemical validation",
+    "complete_pairs": 64,
+    "accepted_starts": 512,
+    "system_max_steps": 200,
+    "system_max_force_ev_per_angstrom": 0.049972474575042725,
+    "delta_min_median_max_ev": [
+      -0.08798857209193756,
+      0.03751418453914113,
+      0.179158506439542
+    ],
+    "site_range_ev": {
+      "CO2": {
+        "median": 0.135686061460774,
+        "max": 0.19698718384881886
+      },
+      "H2O": {
+        "median": 0.3261599469380485,
+        "max": 0.46789127359545546
+      }
+    },
+    "worker_peak_torch_cuda_allocated_bytes": [
+      1570356736,
+      1584139776,
+      1584139776,
+      1595871744
+    ],
+    "gas_references_ev": [
+      {
+        "CO2": -22.99743964487037,
+        "H2O": -14.382842608318448
+      },
+      {
+        "CO2": -22.99743964487037,
+        "H2O": -14.382842608318448
+      },
+      {
+        "CO2": -22.99743964487037,
+        "H2O": -14.382842608318448
+      },
+      {
+        "CO2": -22.99743964487037,
+        "H2O": -14.382842608318448
+      }
+    ]
+  },
+  "fit": {
+    "status": "provisional model fit; not independently validated chemistry",
+    "train_count": 51,
+    "test_count": 13,
+    "parameters": 22,
+    "rank": 22,
+    "condition_number": 17.848720394304372,
+    "offset_ev": 0.01603885534398997,
+    "h_ev": [
+      0.016833299210476695,
+      0.02457163547573184,
+      0.0037101261245467633,
+      0.051219740174209695,
+      0.0071776797771787495,
+      0.01933085490112178
+    ],
+    "W_ev": [
+      [
+        0.0,
+        -0.023012878201346842,
+        0.014913911248094899,
+        -0.019113196577264586,
+        0.005488233521693545,
+        -0.009843084665281518
+      ],
+      [
+        -0.023012878201346842,
+        0.0,
+        -0.010710050717528336,
+        0.0032075286738408064,
+        -0.011125975344517687,
+        -0.03616153922579859
+      ],
+      [
+        0.014913911248094899,
+        -0.010710050717528336,
+        0.0,
+        -0.04183170856430065,
+        0.02610713079850161,
+        0.04315770164778764
+      ],
+      [
+        -0.019113196577264586,
+        0.0032075286738408064,
+        -0.04183170856430065,
+        0.0,
+        -0.046389006477194364,
+        -0.06597450686489874
+      ],
+      [
+        0.005488233521693545,
+        -0.011125975344517687,
+        0.02610713079850161,
+        -0.046389006477194364,
+        0.0,
+        0.020330826033194305
+      ],
+      [
+        -0.009843084665281518,
+        -0.03616153922579859,
+        0.04315770164778764,
+        -0.06597450686489874,
+        0.020330826033194305,
+        0.0
+      ]
+    ],
+    "pairwise_train": {
+      "mae_ev": 0.017125052528652044,
+      "rmse_ev": 0.022825896382494597,
+      "max_absolute_error_ev": 0.07591414838417453
+    },
+    "pairwise_test": {
+      "mae_ev": 0.030175429889740826,
+      "rmse_ev": 0.04130298819279296,
+      "max_absolute_error_ev": 0.1006441905802061
+    },
+    "additive_train": {
+      "mae_ev": 0.024037279812894365,
+      "rmse_ev": 0.035460016542990774,
+      "max_absolute_error_ev": 0.11821713406787042
+    },
+    "additive_test": {
+      "mae_ev": 0.023803110604990192,
+      "rmse_ev": 0.027513883609504974,
+      "max_absolute_error_ev": 0.05101183877985088
+    },
+    "uncertainty": {
+      "method": "training-group bootstrap; conditional on this sampled UMA target",
+      "attempted": 200,
+      "identifiable_replicates": 193,
+      "physical_model_and_sampling_uncertainty": "not calibrated; independently unresolved",
+      "coefficient_std_ev": [
+        0.05113099548357413,
+        0.041799626453813014,
+        0.045943144756203785,
+        0.03572662853613409,
+        0.04150274345210037,
+        0.04226451764779107,
+        0.0392451398564698,
+        0.02800647714005781,
+        0.021847950969824916,
+        0.025498214697777615,
+        0.02760966542862691,
+        0.02777141806664849,
+        0.026904289015533607,
+        0.029324260722252804,
+        0.02790143913116958,
+        0.02709330546558597,
+        0.029374819111340652,
+        0.028669596873673667,
+        0.028858511825824936,
+        0.027447699119966345,
+        0.030911852248858823,
+        0.031016053597804585
+      ],
+      "coefficient_percentiles_2_5_97_5_ev": [
+        [
+          -0.16455380891792487,
+          -0.05448409152382011,
+          -0.03442533992998766,
+          -0.06270299191039481,
+          -0.011653829763530561,
+          -0.11991862961638905,
+          -0.0469277104484844,
+          -0.09634010418651762,
+          -0.024348986342994684,
+          -0.06546018595803038,
+          -0.033455501546622614,
+          -0.0718064432445451,
+          -0.06918880471899137,
+          -0.058289267887308226,
+          -0.06044356443281676,
+          -0.09767700029785432,
+          -0.10380197726963729,
+          -0.01531600372717547,
+          -0.012416195485054975,
+          -0.09994350780432489,
+          -0.13236672080017392,
+          -0.025831095364866732
+        ],
+        [
+          0.09158933649404358,
+          0.13720491322014003,
+          0.16069726578391352,
+          0.08113693853902315,
+          0.14224796638711018,
+          0.07553102117351439,
+          0.1164705861117411,
+          0.016421133835523277,
+          0.052189943664942125,
+          0.030957835063052073,
+          0.07132931582182069,
+          0.03715803481239595,
+          0.025087368820886684,
+          0.05514993928592944,
+          0.043270556806591205,
+          0.014871633131844416,
+          0.01740561650482204,
+          0.09226548281065106,
+          0.09988683710883607,
+          0.004465181582392686,
+          -0.013367662344934379,
+          0.09530610011000237
+        ]
+      ]
+    },
+    "heldout_predictions": [
+      {
+        "id": "uio66_000011",
+        "target_ev": 0.04396338012839607,
+        "pairwise_ev": 0.0628782160554848,
+        "additive_ev": 0.048552803461003755
+      },
+      {
+        "id": "uio66_000110",
+        "target_ev": 0.05038307711436829,
+        "pairwise_ev": 0.028047268818184055,
+        "additive_ev": 0.018590549860092908
+      },
+      {
+        "id": "uio66_000111",
+        "target_ev": 0.023767245450024177,
+        "pairwise_ev": 0.0017344428876014048,
+        "additive_ev": 0.015530081476258485
+      },
+      {
+        "id": "uio66_001001",
+        "target_ev": 0.026490910665650347,
+        "pairwise_ev": 0.08223753801744615,
+        "additive_ev": 0.06177342254385877
+      },
+      {
+        "id": "uio66_001011",
+        "target_ev": 0.03520898404611472,
+        "pairwise_ev": 0.13585317462632082,
+        "additive_ev": 0.067867273780687
+      },
+      {
+        "id": "uio66_001100",
+        "target_ev": 0.04843055253434869,
+        "pairwise_ev": 0.02913701307844578,
+        "additive_ev": 0.03181116894294792
+      },
+      {
+        "id": "uio66_001110",
+        "target_ev": 0.02030759745458255,
+        "pairwise_ev": 0.01603281717693178,
+        "additive_ev": 0.037905020179776164
+      },
+      {
+        "id": "uio66_010100",
+        "target_ev": 0.04821728570585293,
+        "pairwise_ev": 0.09503775966777231,
+        "additive_ev": -0.002794553073997952
+      },
+      {
+        "id": "uio66_010110",
+        "target_ev": 0.03561609026917978,
+        "pairwise_ev": 0.04470045762323901,
+        "additive_ev": 0.0032992981628302866
+      },
+      {
+        "id": "uio66_100111",
+        "target_ev": -0.0071869356371436766,
+        "pairwise_ev": -0.004900305622774465,
+        "additive_ev": 0.02389543176450569
+      },
+      {
+        "id": "uio66_101001",
+        "target_ev": 0.03670402655746585,
+        "pairwise_ev": 0.10414166381073624,
+        "additive_ev": 0.07013877283210598
+      },
+      {
+        "id": "uio66_101100",
+        "target_ev": 0.04619925227940058,
+        "pairwise_ev": 0.04177102695975279,
+        "additive_ev": 0.04017651923119513
+      },
+      {
+        "id": "uio66_110001",
+        "target_ev": 0.026737813051006754,
+        "pairwise_ev": 0.007757142838893331,
+        "additive_ev": 0.0355330508151601
+      }
+    ],
+    "sampling_budget_sensitivity": {
+      "scope": "nested two-start prefix versus four starts, same model/cell; not global-search uncertainty",
+      "delta_mean_absolute_change_ev": 0.013076642788544035,
+      "delta_max_absolute_change_ev": 0.13515134459453293,
+      "all_family_spearman": 0.7260073260073259,
+      "all_family_top10_overlap": 0.4,
+      "training_h_max_absolute_change_ev": 0.02066311792951262,
+      "training_J_max_absolute_change_ev": 0.050619591992965125
+    },
+    "protocol": {
+      "protocol": "uio66_uma_paired_flexible_v1",
+      "model": "uma-s-1p2p1",
+      "task": "odac",
+      "checkpoint_revision": "f611b917d9c68566bbbeccbb0aa0f7cad1696cb2",
+      "checkpoint_sha256": "b2673b85037b075674c25f55c34ffe1ff1e15db924be977b10a184765df0d5ce",
+      "source_sha256": {
+        "mof_dac/adsorption.py": "d05cd26a9dc7b2daaa2a2f163174df5a0d53ebe11e785c31ef4c27f1edf88c21",
+        "mof_dac/relaxation.py": "22b45e6434b3f1ce28fe7292a9362ea8d754709577fa4d5a6a20dd798342249b",
+        "kaggle/run_uio66_adsorption.py": "884e2a96ef356c8285704c490442d2b93061d046fb37a8b2f9d39aba9f0a7aad"
+      },
+      "seed": 41,
+      "starts_per_gas": 4,
+      "step_budget": 200,
+      "fmax": 0.05,
+      "placement": "uniform fractional centers; uniform SO(3); 2-Angstrom host/guest clearance; bounded rejection",
+      "reference": "lowest accepted sampled empty MOF after both gas desorption relaxations; isolated gas task odac"
+    },
+    "report_sha256": {
+      "artifacts\\kaggle\\uio66_adsorption_2026-10-03\\main\\worker0\\adsorption.json": "4cf3c183430d392d7d7cfe30e7c562ed48bc508e49b9af86230ac2f3a7badeaa",
+      "artifacts\\kaggle\\uio66_adsorption_2026-10-03\\main\\worker1\\adsorption.json": "9e7d6d044a6bdb5219ad6cb56f9b84271b9d3a7bb78cfcadb24cc6d80c241bec",
+      "artifacts\\kaggle\\uio66_adsorption_2026-10-03\\main\\worker2\\adsorption.json": "e32a126a2ffdf5100713a80528b50319da2881138d24d8a8d206027181886a3a",
+      "artifacts\\kaggle\\uio66_adsorption_2026-10-03\\main\\worker3\\adsorption.json": "c9e32e3ef2f174c9a91ae83b0f4e7c9402d2e83f77e8cb1f5a7a5ea4d28d0ed6"
+    },
+    "fit_source_sha256": {
+      "scripts/fit_uio66_adsorption.py": "86e7379f5b0ebbe4aab6b4673feba8772373cee74118c3c82a961d20dbd1e0ec",
+      "mof_dac/design_fit.py": "65f5e35dc258989710cf7763f22d0522797909b30213155b26e995b8adf38f23",
+      "mof_dac/parameters.py": "e81b0bb0668dd294df9e0a3832013e8e7f45a5c6f8dbb555f04858b40cf3b02c",
+      "scripts/audit_uio66_adsorption.py": "3618459be303ff1d1aadff4ffc75c3ae6187384df8293a2897c646e98178ba81"
+    },
+    "fit_environment": {
+      "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+      "packages": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "ase": "3.26.0"
+      }
+    },
+    "split_sha256": "333ca9b6c2694130d80c4e0e6d8243c3f47a796ead66503bd57023103d0d3d3e",
+    "manifest_sha256": "96f34032c8967e61e2f056ecbef78e3839451b9f0a1f3620d34acf1b86eee3f9",
+    "target_definition": "min sampled Eads(CO2) - min sampled Eads(H2O); lower preferred",
+    "sampling_diagnostics": [
+      {
+        "id": "uio66_000000",
+        "target_ev": 0.03020315029494469,
+        "co2_range_ev": 0.1762834737189678,
+        "h2o_range_ev": 0.36941687913520127
+      },
+      {
+        "id": "uio66_000001",
+        "target_ev": 0.01504771726184373,
+        "co2_range_ev": 0.19698718384881886,
+        "h2o_range_ev": 0.30893722823441294
+      },
+      {
+        "id": "uio66_000010",
+        "target_ev": 0.049207324925994556,
+        "co2_range_ev": 0.1356517159977102,
+        "h2o_range_ev": 0.3485697379519479
+      },
+      {
+        "id": "uio66_000011",
+        "target_ev": 0.04396338012839607,
+        "co2_range_ev": 0.11714953755506485,
+        "h2o_range_ev": 0.33380600567693364
+      },
+      {
+        "id": "uio66_000100",
+        "target_ev": 0.04164795098655105,
+        "co2_range_ev": 0.15318522989662142,
+        "h2o_range_ev": 0.33081190368477564
+      },
+      {
+        "id": "uio66_000101",
+        "target_ev": 0.034560184749700795,
+        "co2_range_ev": 0.16488237725423005,
+        "h2o_range_ev": 0.32370983433725087
+      },
+      {
+        "id": "uio66_000110",
+        "target_ev": 0.05038307711436829,
+        "co2_range_ev": 0.06934632215211423,
+        "h2o_range_ev": 0.32548909430477124
+      },
+      {
+        "id": "uio66_000111",
+        "target_ev": 0.023767245450024177,
+        "co2_range_ev": 0.056336185734721766,
+        "h2o_range_ev": 0.32139315036113203
+      },
+      {
+        "id": "uio66_001000",
+        "target_ev": 0.03844159453229423,
+        "co2_range_ev": 0.15090387625355106,
+        "h2o_range_ev": 0.3468687026513635
+      },
+      {
+        "id": "uio66_001001",
+        "target_ev": 0.026490910665650347,
+        "co2_range_ev": 0.13697915064938115,
+        "h2o_range_ev": 0.2772668917482406
+      },
+      {
+        "id": "uio66_001010",
+        "target_ev": 0.03534580847213675,
+        "co2_range_ev": 0.14810236132154841,
+        "h2o_range_ev": 0.3532878022161867
+      },
+      {
+        "id": "uio66_001011",
+        "target_ev": 0.03520898404611472,
+        "co2_range_ev": 0.12548281176566434,
+        "h2o_range_ev": 0.31854988594398037
+      },
+      {
+        "id": "uio66_001100",
+        "target_ev": 0.04843055253434869,
+        "co2_range_ev": 0.11929340435960967,
+        "h2o_range_ev": 0.3120037181644193
+      },
+      {
+        "id": "uio66_001101",
+        "target_ev": 0.025926352741301173,
+        "co2_range_ev": 0.09093717509426824,
+        "h2o_range_ev": 0.2695368878480622
+      },
+      {
+        "id": "uio66_001110",
+        "target_ev": 0.02030759745458255,
+        "co2_range_ev": 0.0710357589848627,
+        "h2o_range_ev": 0.28240926496312113
+      },
+      {
+        "id": "uio66_001111",
+        "target_ev": 0.02343008498747423,
+        "co2_range_ev": 0.028230413385017528,
+        "h2o_range_ev": 0.26518269301834607
+      },
+      {
+        "id": "uio66_010000",
+        "target_ev": 0.033867326273259835,
+        "co2_range_ev": 0.17678582985990943,
+        "h2o_range_ev": 0.33831263287106594
+      },
+      {
+        "id": "uio66_010001",
+        "target_ev": 0.025352136092813282,
+        "co2_range_ev": 0.18316562461677677,
+        "h2o_range_ev": 0.3098264032781799
+      },
+      {
+        "id": "uio66_010010",
+        "target_ev": 0.037328526563790376,
+        "co2_range_ev": 0.1402091914749235,
+        "h2o_range_ev": 0.36037512101222546
+      },
+      {
+        "id": "uio66_010011",
+        "target_ev": 0.03861661891233581,
+        "co2_range_ev": 0.11419189324703893,
+        "h2o_range_ev": 0.34480553768651134
+      },
+      {
+        "id": "uio66_010100",
+        "target_ev": 0.04821728570585293,
+        "co2_range_ev": 0.14985181522627045,
+        "h2o_range_ev": 0.3325362959000131
+      },
+      {
+        "id": "uio66_010101",
+        "target_ev": 0.02482943263965609,
+        "co2_range_ev": 0.07653898453270358,
+        "h2o_range_ev": 0.33081025140290876
+      },
+      {
+        "id": "uio66_010110",
+        "target_ev": 0.03561609026917978,
+        "co2_range_ev": 0.10350913189336097,
+        "h2o_range_ev": 0.32683079957132577
+      },
+      {
+        "id": "uio66_010111",
+        "target_ev": -0.03248823844489124,
+        "co2_range_ev": 0.09452731585224683,
+        "h2o_range_ev": 0.31484023847235676
+      },
+      {
+        "id": "uio66_011000",
+        "target_ev": 0.028493916077430015,
+        "co2_range_ev": 0.1600727850805015,
+        "h2o_range_ev": 0.37316687377722246
+      },
+      {
+        "id": "uio66_011001",
+        "target_ev": 0.04665696681730225,
+        "co2_range_ev": 0.10874385540910225,
+        "h2o_range_ev": 0.3112077083137592
+      },
+      {
+        "id": "uio66_011010",
+        "target_ev": 0.03835386862056822,
+        "co2_range_ev": 0.13334698294283953,
+        "h2o_range_ev": 0.3642341837468166
+      },
+      {
+        "id": "uio66_011011",
+        "target_ev": 0.12345254495506452,
+        "co2_range_ev": 0.13054683782991106,
+        "h2o_range_ev": 0.3966990877739818
+      },
+      {
+        "id": "uio66_011100",
+        "target_ev": 0.03769984251449188,
+        "co2_range_ev": 0.09009832840229137,
+        "h2o_range_ev": 0.24034395160822442
+      },
+      {
+        "id": "uio66_011101",
+        "target_ev": 0.024891356959876987,
+        "co2_range_ev": 0.04409049583705382,
+        "h2o_range_ev": 0.2599112268561612
+      },
+      {
+        "id": "uio66_011110",
+        "target_ev": 0.043542185766348496,
+        "co2_range_ev": 0.04520739329973367,
+        "h2o_range_ev": 0.28550002668680463
+      },
+      {
+        "id": "uio66_011111",
+        "target_ev": -0.0057781867267223674,
+        "co2_range_ev": 0.04324563743909948,
+        "h2o_range_ev": 0.26106447451707027
+      },
+      {
+        "id": "uio66_100000",
+        "target_ev": 0.04600022606985732,
+        "co2_range_ev": 0.18129714643464467,
+        "h2o_range_ev": 0.3738823917603895
+      },
+      {
+        "id": "uio66_100001",
+        "target_ev": 0.041208476539175365,
+        "co2_range_ev": 0.1607117656740229,
+        "h2o_range_ev": 0.3608685433332539
+      },
+      {
+        "id": "uio66_100010",
+        "target_ev": 0.04916609537225014,
+        "co2_range_ev": 0.16508930492011586,
+        "h2o_range_ev": 0.3702116891441847
+      },
+      {
+        "id": "uio66_100011",
+        "target_ev": 0.05054269602943151,
+        "co2_range_ev": 0.1357204069238378,
+        "h2o_range_ev": 0.3156606750962965
+      },
+      {
+        "id": "uio66_100100",
+        "target_ev": 0.0422734933550899,
+        "co2_range_ev": 0.14820536021579755,
+        "h2o_range_ev": 0.3509155280833056
+      },
+      {
+        "id": "uio66_100101",
+        "target_ev": 0.022438033533155988,
+        "co2_range_ev": 0.17230711897821038,
+        "h2o_range_ev": 0.2197114420730486
+      },
+      {
+        "id": "uio66_100110",
+        "target_ev": 0.041056366632240326,
+        "co2_range_ev": 0.08292849550605297,
+        "h2o_range_ev": 0.3433961588592638
+      },
+      {
+        "id": "uio66_100111",
+        "target_ev": -0.0071869356371436766,
+        "co2_range_ev": 0.09092275449916087,
+        "h2o_range_ev": 0.22593166790829855
+      },
+      {
+        "id": "uio66_101000",
+        "target_ev": 0.06925813880071274,
+        "co2_range_ev": 0.1475066425133491,
+        "h2o_range_ev": 0.36333175545360064
+      },
+      {
+        "id": "uio66_101001",
+        "target_ev": 0.03670402655746585,
+        "co2_range_ev": 0.15086759104667635,
+        "h2o_range_ev": 0.2610103841622049
+      },
+      {
+        "id": "uio66_101010",
+        "target_ev": 0.0468894436081726,
+        "co2_range_ev": 0.1652380627697312,
+        "h2o_range_ev": 0.37545795363553225
+      },
+      {
+        "id": "uio66_101011",
+        "target_ev": 0.17723497552959344,
+        "co2_range_ev": 0.1494290360735704,
+        "h2o_range_ev": 0.46789127359545546
+      },
+      {
+        "id": "uio66_101100",
+        "target_ev": 0.04619925227940058,
+        "co2_range_ev": 0.11293659406658207,
+        "h2o_range_ev": 0.28084798120187315
+      },
+      {
+        "id": "uio66_101101",
+        "target_ev": 0.006317752952220701,
+        "co2_range_ev": 0.12387799375517261,
+        "h2o_range_ev": 0.25602015085030416
+      },
+      {
+        "id": "uio66_101110",
+        "target_ev": 0.040372184509699593,
+        "co2_range_ev": 0.05886294196113795,
+        "h2o_range_ev": 0.3112836632805056
+      },
+      {
+        "id": "uio66_101111",
+        "target_ev": 0.0768600671189077,
+        "co2_range_ev": 0.07575955749166496,
+        "h2o_range_ev": 0.27501125470803345
+      },
+      {
+        "id": "uio66_110000",
+        "target_ev": 0.04201269030614441,
+        "co2_range_ev": 0.186234159276637,
+        "h2o_range_ev": 0.3671445218037661
+      },
+      {
+        "id": "uio66_110001",
+        "target_ev": 0.026737813051006754,
+        "co2_range_ev": 0.1917048241256225,
+        "h2o_range_ev": 0.3293818150932566
+      },
+      {
+        "id": "uio66_110010",
+        "target_ev": 0.0357628983763405,
+        "co2_range_ev": 0.17081974795348742,
+        "h2o_range_ev": 0.3624309294488057
+      },
+      {
+        "id": "uio66_110011",
+        "target_ev": 0.017680526979127364,
+        "co2_range_ev": 0.1508932826528735,
+        "h2o_range_ev": 0.2645704988865418
+      },
+      {
+        "id": "uio66_110100",
+        "target_ev": 0.040659354075962995,
+        "co2_range_ev": 0.15041629816050772,
+        "h2o_range_ev": 0.34995064803979403
+      },
+      {
+        "id": "uio66_110101",
+        "target_ev": 0.005780141468342492,
+        "co2_range_ev": 0.19271082873672185,
+        "h2o_range_ev": 0.2720157554005027
+      },
+      {
+        "id": "uio66_110110",
+        "target_ev": 0.0342884556438392,
+        "co2_range_ev": 0.11080702287370059,
+        "h2o_range_ev": 0.349180682248857
+      },
+      {
+        "id": "uio66_110111",
+        "target_ev": -0.043670636298763554,
+        "co2_range_ev": 0.11606419842371452,
+        "h2o_range_ev": 0.26560936415694414
+      },
+      {
+        "id": "uio66_111000",
+        "target_ev": 0.051935464550759036,
+        "co2_range_ev": 0.15879227423044995,
+        "h2o_range_ev": 0.39183699253567283
+      },
+      {
+        "id": "uio66_111001",
+        "target_ev": 0.02295110325895422,
+        "co2_range_ev": 0.1777995309544167,
+        "h2o_range_ev": 0.37244046223304395
+      },
+      {
+        "id": "uio66_111010",
+        "target_ev": 0.04933862258224764,
+        "co2_range_ev": 0.1504138409850384,
+        "h2o_range_ev": 0.3604150382393527
+      },
+      {
+        "id": "uio66_111011",
+        "target_ev": 0.179158506439542,
+        "co2_range_ev": 0.15234188129943504,
+        "h2o_range_ev": 0.4453407424227862
+      },
+      {
+        "id": "uio66_111100",
+        "target_ev": 0.0526755692860732,
+        "co2_range_ev": 0.12367875007453222,
+        "h2o_range_ev": 0.2521537590839671
+      },
+      {
+        "id": "uio66_111101",
+        "target_ev": -0.01025923729945788,
+        "co2_range_ev": 0.09936526927970135,
+        "h2o_range_ev": 0.2614240620172268
+      },
+      {
+        "id": "uio66_111110",
+        "target_ev": 0.03916812856028429,
+        "co2_range_ev": 0.06035054545509411,
+        "h2o_range_ev": 0.31246938915114697
+      },
+      {
+        "id": "uio66_111111",
+        "target_ev": -0.08798857209193756,
+        "co2_range_ev": 0.11699090850925131,
+        "h2o_range_ev": 0.2754062875259251
+      }
+    ],
+    "validation_scope": "same provisional fixed-template family; not independent DFT/ODAC25 validation"
+  },
+  "solver_comparison": {
+    "scope": "provisional UMA-trained quadratic; numerical solver quality, not chemical validation",
+    "input_sha256": {
+      "artifacts/phase3/uio66_uma_fit/fit.json": "317ff1464c30fa25834f081435ca65c0022907334a5b3a070ac86590b67a558d",
+      "artifacts/phase3/uio66_uma_fit/instance.json": "7373942731ffc1bad752cf72d77eb9f5209f4360388614c3f24c07fbe1743f79"
+    },
+    "hardware": {
+      "platform": "Windows-11-10.0.26300-SP0",
+      "processor": "AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",
+      "backend": "CPU"
+    },
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "snn-opt": "0.6.0",
+      "gurobipy": "13.0.3"
+    },
+    "curvature": {
+      "min_eigenvalue": -0.0868359477229657,
+      "max_eigenvalue": 0.13514759298855722,
+      "full_space_psd": false
+    },
+    "offset_ev": 0.01603885534398997,
+    "oracle": {
+      "state": {
+        "x": [
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "continuous_feasible": true,
+        "binary_feasible": true,
+        "model_delta_ev": -0.04742153424486495,
+        "binary_optimality_gap_ev": 0.0,
+        "optimum_hit": true
+      },
+      "seconds": 0.0003479000006336719,
+      "diagnostics": {
+        "feasible_states": 64,
+        "enumerated_states": 64
+      }
+    },
+    "runs": [
+      {
+        "method": "Gurobi",
+        "seed": 0,
+        "status": "optimal",
+        "seconds": 0.07008499999938067,
+        "diagnostics": {
+          "gurobi_version": "13.0.3",
+          "status_code": 2,
+          "solution_count": 3,
+          "best_bound": -0.06346038958885492,
+          "mip_gap": 0.0,
+          "nodes": 1.0,
+          "runtime": 0.03900003433227539,
+          "time_limit": 60.0,
+          "seed": 0,
+          "threads": 1,
+          "nonconvex_parameter": 2
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SA",
+        "seed": 0,
+        "status": "feasible_candidate",
+        "seconds": 0.26474729999608826,
+        "diagnostics": {
+          "seed": 0,
+          "steps": 2000,
+          "temperature": 2.0,
+          "final_temperature": 0.01,
+          "initialization_attempts": 1,
+          "max_flips": 4,
+          "infeasible_proposals": 0,
+          "accepted_proposals": 1486
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_raw",
+        "seed": 0,
+        "status": "converged_feasible",
+        "seconds": 0.058767900001839735,
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=0.00e+00<=tol=1.83e-05); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 2000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -0.0868359477229657,
+            "max_eigenvalue": 0.13514759298855722,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.0,
+          "kkt_scale": 0.183084280522535,
+          "kkt_tolerance": 1.83094280522535e-05,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.0,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_threshold",
+        "seed": 0,
+        "status": "decoded",
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        },
+        "seconds": 0.05896650001523085,
+        "decode_rule": "x>=0.5; no energy optimization or exact repair in decoding"
+      },
+      {
+        "method": "SA",
+        "seed": 1,
+        "status": "feasible_candidate",
+        "seconds": 0.26599220000207424,
+        "diagnostics": {
+          "seed": 1,
+          "steps": 2000,
+          "temperature": 2.0,
+          "final_temperature": 0.01,
+          "initialization_attempts": 1,
+          "max_flips": 4,
+          "infeasible_proposals": 0,
+          "accepted_proposals": 1442
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_raw",
+        "seed": 1,
+        "status": "converged_feasible",
+        "seconds": 0.02759660000447184,
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=0.00e+00<=tol=1.83e-05); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 2000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -0.0868359477229657,
+            "max_eigenvalue": 0.13514759298855722,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.0,
+          "kkt_scale": 0.183084280522535,
+          "kkt_tolerance": 1.83094280522535e-05,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.0,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_threshold",
+        "seed": 1,
+        "status": "decoded",
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        },
+        "seconds": 0.02777990000322461,
+        "decode_rule": "x>=0.5; no energy optimization or exact repair in decoding"
+      },
+      {
+        "method": "SA",
+        "seed": 2,
+        "status": "feasible_candidate",
+        "seconds": 0.2673074999911478,
+        "diagnostics": {
+          "seed": 2,
+          "steps": 2000,
+          "temperature": 2.0,
+          "final_temperature": 0.01,
+          "initialization_attempts": 1,
+          "max_flips": 4,
+          "infeasible_proposals": 0,
+          "accepted_proposals": 1445
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_raw",
+        "seed": 2,
+        "status": "converged_feasible",
+        "seconds": 0.025061899999855086,
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=0.00e+00<=tol=1.83e-05); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 2000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -0.0868359477229657,
+            "max_eigenvalue": 0.13514759298855722,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.0,
+          "kkt_scale": 0.183084280522535,
+          "kkt_tolerance": 1.83094280522535e-05,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.0,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_threshold",
+        "seed": 2,
+        "status": "decoded",
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        },
+        "seconds": 0.025241499999538064,
+        "decode_rule": "x>=0.5; no energy optimization or exact repair in decoding"
+      },
+      {
+        "method": "SA",
+        "seed": 3,
+        "status": "feasible_candidate",
+        "seconds": 0.2503523000050336,
+        "diagnostics": {
+          "seed": 3,
+          "steps": 2000,
+          "temperature": 2.0,
+          "final_temperature": 0.01,
+          "initialization_attempts": 1,
+          "max_flips": 4,
+          "infeasible_proposals": 0,
+          "accepted_proposals": 1433
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_raw",
+        "seed": 3,
+        "status": "converged_feasible",
+        "seconds": 0.02489459999196697,
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=0.00e+00<=tol=1.83e-05); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 2000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -0.0868359477229657,
+            "max_eigenvalue": 0.13514759298855722,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.0,
+          "kkt_scale": 0.183084280522535,
+          "kkt_tolerance": 1.83094280522535e-05,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.0,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_threshold",
+        "seed": 3,
+        "status": "decoded",
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        },
+        "seconds": 0.025082399995881133,
+        "decode_rule": "x>=0.5; no energy optimization or exact repair in decoding"
+      },
+      {
+        "method": "SA",
+        "seed": 4,
+        "status": "feasible_candidate",
+        "seconds": 0.27617779999854974,
+        "diagnostics": {
+          "seed": 4,
+          "steps": 2000,
+          "temperature": 2.0,
+          "final_temperature": 0.01,
+          "initialization_attempts": 1,
+          "max_flips": 4,
+          "infeasible_proposals": 0,
+          "accepted_proposals": 1495
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_raw",
+        "seed": 4,
+        "status": "converged_feasible",
+        "seconds": 0.029085799993481487,
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=0.00e+00<=tol=1.83e-05); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 2000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -0.0868359477229657,
+            "max_eigenvalue": 0.13514759298855722,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.0,
+          "kkt_scale": 0.183084280522535,
+          "kkt_tolerance": 1.83094280522535e-05,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.0,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_threshold",
+        "seed": 4,
+        "status": "decoded",
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        },
+        "seconds": 0.029266499986988492,
+        "decode_rule": "x>=0.5; no energy optimization or exact repair in decoding"
+      },
+      {
+        "method": "SA",
+        "seed": 5,
+        "status": "feasible_candidate",
+        "seconds": 0.3041072000050917,
+        "diagnostics": {
+          "seed": 5,
+          "steps": 2000,
+          "temperature": 2.0,
+          "final_temperature": 0.01,
+          "initialization_attempts": 1,
+          "max_flips": 4,
+          "infeasible_proposals": 0,
+          "accepted_proposals": 1484
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_raw",
+        "seed": 5,
+        "status": "converged_feasible",
+        "seconds": 0.028171400001156144,
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=0.00e+00<=tol=1.83e-05); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 2000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -0.0868359477229657,
+            "max_eigenvalue": 0.13514759298855722,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.0,
+          "kkt_scale": 0.183084280522535,
+          "kkt_tolerance": 1.83094280522535e-05,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.0,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_threshold",
+        "seed": 5,
+        "status": "decoded",
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        },
+        "seconds": 0.02835120000236202,
+        "decode_rule": "x>=0.5; no energy optimization or exact repair in decoding"
+      },
+      {
+        "method": "SA",
+        "seed": 6,
+        "status": "feasible_candidate",
+        "seconds": 0.2698458999948343,
+        "diagnostics": {
+          "seed": 6,
+          "steps": 2000,
+          "temperature": 2.0,
+          "final_temperature": 0.01,
+          "initialization_attempts": 1,
+          "max_flips": 4,
+          "infeasible_proposals": 0,
+          "accepted_proposals": 1472
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_raw",
+        "seed": 6,
+        "status": "converged_feasible",
+        "seconds": 0.029225200007203966,
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=0.00e+00<=tol=1.83e-05); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 2000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -0.0868359477229657,
+            "max_eigenvalue": 0.13514759298855722,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.0,
+          "kkt_scale": 0.183084280522535,
+          "kkt_tolerance": 1.83094280522535e-05,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.0,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_threshold",
+        "seed": 6,
+        "status": "decoded",
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        },
+        "seconds": 0.029404200002318248,
+        "decode_rule": "x>=0.5; no energy optimization or exact repair in decoding"
+      },
+      {
+        "method": "SA",
+        "seed": 7,
+        "status": "feasible_candidate",
+        "seconds": 0.2908431000105338,
+        "diagnostics": {
+          "seed": 7,
+          "steps": 2000,
+          "temperature": 2.0,
+          "final_temperature": 0.01,
+          "initialization_attempts": 1,
+          "max_flips": 4,
+          "infeasible_proposals": 0,
+          "accepted_proposals": 1479
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_raw",
+        "seed": 7,
+        "status": "converged_feasible",
+        "seconds": 0.03833830000075977,
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=0.00e+00<=tol=1.83e-05); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 2000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -0.0868359477229657,
+            "max_eigenvalue": 0.13514759298855722,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.0,
+          "kkt_scale": 0.183084280522535,
+          "kkt_tolerance": 1.83094280522535e-05,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.0,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_threshold",
+        "seed": 7,
+        "status": "decoded",
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        },
+        "seconds": 0.03857560000324156,
+        "decode_rule": "x>=0.5; no energy optimization or exact repair in decoding"
+      },
+      {
+        "method": "SA",
+        "seed": 8,
+        "status": "feasible_candidate",
+        "seconds": 0.30628610000712797,
+        "diagnostics": {
+          "seed": 8,
+          "steps": 2000,
+          "temperature": 2.0,
+          "final_temperature": 0.01,
+          "initialization_attempts": 1,
+          "max_flips": 4,
+          "infeasible_proposals": 0,
+          "accepted_proposals": 1457
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_raw",
+        "seed": 8,
+        "status": "converged_feasible",
+        "seconds": 0.032535899998038076,
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=0.00e+00<=tol=1.83e-05); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 2000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -0.0868359477229657,
+            "max_eigenvalue": 0.13514759298855722,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.0,
+          "kkt_scale": 0.183084280522535,
+          "kkt_tolerance": 1.83094280522535e-05,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.0,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_threshold",
+        "seed": 8,
+        "status": "decoded",
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        },
+        "seconds": 0.03271459999086801,
+        "decode_rule": "x>=0.5; no energy optimization or exact repair in decoding"
+      },
+      {
+        "method": "SA",
+        "seed": 9,
+        "status": "feasible_candidate",
+        "seconds": 0.27830360000371,
+        "diagnostics": {
+          "seed": 9,
+          "steps": 2000,
+          "temperature": 2.0,
+          "final_temperature": 0.01,
+          "initialization_attempts": 1,
+          "max_flips": 4,
+          "infeasible_proposals": 0,
+          "accepted_proposals": 1458
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_raw",
+        "seed": 9,
+        "status": "converged_feasible",
+        "seconds": 0.029029600002104416,
+        "diagnostics": {
+          "upstream_version": "0.6.0",
+          "upstream_converged": true,
+          "reason": "converged(kkt(residual=0.00e+00<=tol=1.83e-05); obj_plateau(range=0.00e+00))",
+          "iterations_used": 201,
+          "equality_band": 0.0,
+          "max_iterations": 2000,
+          "original_constraints_feasible": true,
+          "theory_scope": "experimental_outside_convex_guarantee",
+          "curvature": {
+            "min_eigenvalue": -0.0868359477229657,
+            "max_eigenvalue": 0.13514759298855722,
+            "full_space_psd": false
+          },
+          "joint_feasible": true,
+          "projection_budget_exhausted": false,
+          "kkt_residual": 0.0,
+          "kkt_scale": 0.183084280522535,
+          "kkt_tolerance": 1.83094280522535e-05,
+          "stationarity_residual": 0.0,
+          "final_proj_grad_norm": 0.0,
+          "max_violation_rows_raw": 0.0,
+          "max_violation_box": 0.0,
+          "optimality_test": "kkt"
+        },
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        }
+      },
+      {
+        "method": "SNN_threshold",
+        "seed": 9,
+        "status": "decoded",
+        "state": {
+          "x": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "continuous_feasible": true,
+          "binary_feasible": true,
+          "model_delta_ev": -0.04742153424486495,
+          "binary_optimality_gap_ev": 0.0,
+          "optimum_hit": true
+        },
+        "seconds": 0.029209200001787394,
+        "decode_rule": "x>=0.5; no energy optimization or exact repair in decoding"
+      }
+    ],
+    "summary": {
+      "Gurobi": {
+        "runs": 1,
+        "binary_feasible": 1,
+        "optimum_hits": 1
+      },
+      "SA": {
+        "runs": 10,
+        "binary_feasible": 10,
+        "optimum_hits": 10
+      },
+      "SNN_raw": {
+        "runs": 10,
+        "binary_feasible": 10,
+        "optimum_hits": 10
+      },
+      "SNN_threshold": {
+        "runs": 10,
+        "binary_feasible": 10,
+        "optimum_hits": 10
+      }
+    },
+    "family_sampling_comparison": {
+      "scope": "all 64 same-family model samples, includes training; not held-out score",
+      "top_k": 5,
+      "top_k_overlap": 0.8,
+      "sampled_best_id": "uio66_111111",
+      "sampled_best_delta_ev": -0.08798857209193756,
+      "model_top": [
+        {
+          "id": "uio66_110111",
+          "predicted_ev": -0.04742153424486495,
+          "sampled_ev": -0.043670636298763554
+        },
+        {
+          "id": "uio66_110101",
+          "predicted_ev": -0.0229032917552195,
+          "sampled_ev": 0.005780141468342492
+        },
+        {
+          "id": "uio66_010111",
+          "predicted_ev": -0.017773907533142227,
+          "sampled_ev": -0.03248823844489124
+        },
+        {
+          "id": "uio66_111101",
+          "predicted_ev": -0.013663312016619172,
+          "sampled_ev": -0.01025923729945788
+        },
+        {
+          "id": "uio66_111111",
+          "predicted_ev": -0.012074423707763012,
+          "sampled_ev": -0.08798857209193756
+        }
+      ]
+    }
+  },
+  "fit_solver_source_archive_sha256": {
+    "mof_dac/data.py": "ece11f4a991dad34e5fc880cc008a036841a6bde42b72c74c1a16025fc8a688b",
+    "mof_dac/design_fit.py": "65f5e35dc258989710cf7763f22d0522797909b30213155b26e995b8adf38f23",
+    "mof_dac/formulation.py": "0fdb26f61234a9be1b3e3fb46d961d1bb7cbfc96a23091d37be4392a093f12ef",
+    "mof_dac/gurobi.py": "fbece58ca0de8b2b120b39a79b3e91e03ce660f9c38d8b388c51e6956c2c2d18",
+    "mof_dac/optimizers.py": "5939e97d434e51220740697b7d08fbcb4740142c39919096c6802dd6de6b0812",
+    "mof_dac/parameters.py": "e81b0bb0668dd294df9e0a3832013e8e7f45a5c6f8dbb555f04858b40cf3b02c",
+    "mof_dac/snn.py": "3b15c8172f6b3244da0fcd4e35ad4616816b3a68ea22b3f727a1b83f31e23947",
+    "scripts/audit_uio66_adsorption.py": "3618459be303ff1d1aadff4ffc75c3ae6187384df8293a2897c646e98178ba81",
+    "scripts/benchmark_uio66_fit.py": "5bb2d03ac8cfba50a63238d43c46fa13168ad8998c002e03b1477262fbe90069",
+    "scripts/fit_uio66_adsorption.py": "86e7379f5b0ebbe4aab6b4673feba8772373cee74118c3c82a961d20dbd1e0ec"
+  },
+  "raw_archive_sha256": "aee36cc47cda2b2088fc30c44f7fd240bad7e5731f71932a63018c4fc6bb1837",
+  "remaining_gates": [
+    "site-sampling stability",
+    "chemical/independent physical validation",
+    "frozen ODAC25 reference identity/training compatibility",
+    "learned structure baseline and material ranking"
+  ]
+}

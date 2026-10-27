@@ -1,0 +1,62 @@
+{
+  "coefficient_endpoints_percent": [
+    2.5,
+    50,
+    97.5
+  ],
+  "ranking_endpoints_percent": [
+    5,
+    50,
+    95
+  ],
+  "pairwise": {
+    "attempted": 1000,
+    "included": 977,
+    "excluded": 23
+  },
+  "additive": {
+    "attempted": 1000,
+    "included": 1000,
+    "excluded": 0
+  },
+  "conditional_keys": [
+    "coefficient_percentiles_2_5_50_97_5_ev",
+    "coefficient_positive_fraction",
+    "rank_percentiles_5_50_95",
+    "top10_overlap_percentiles_5_50_95",
+    "spearman_to_full_fit_percentiles_5_50_95",
+    "preferred_design_counts"
+  ],
+  "not_bootstrap_conditional": [
+    "full_fit_preferred_design",
+    "condition_number",
+    "full_coefficients_ev",
+    "historical metrics",
+    "CV metrics"
+  ],
+  "rank_deficient_pairwise_draws": [
+    50,
+    278,
+    304,
+    317,
+    328,
+    330,
+    358,
+    448,
+    449,
+    477,
+    483,
+    549,
+    562,
+    593,
+    604,
+    619,
+    625,
+    639,
+    712,
+    750,
+    819,
+    927,
+    985
+  ]
+}

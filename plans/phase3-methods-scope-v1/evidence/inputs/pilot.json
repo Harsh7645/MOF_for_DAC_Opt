@@ -1,0 +1,4512 @@
+{
+  "protocol": "uio66_eight_stratified_32_v2",
+  "scope": "development pilot; not independent physical validation",
+  "assessment_source_sha256": {
+    "scripts/assess_uio66_sampling_pilot.py": "6e55fda018abc71d9b4b447c59b6dd015e95cca099eaf9fd9bf4338adf44b921",
+    "scripts/audit_uio66_adsorption.py": "3618459be303ff1d1aadff4ffc75c3ae6187384df8293a2897c646e98178ba81",
+    "mof_dac/sampling.py": "7e37960d424a94538cc88cb6b8391db243a9ce2223052b1f976990303ee96aea"
+  },
+  "plan_sha256": "f5b4cd746c471838b141c91d88442026ab4f1bcc0bf7548d5665a8924724f68e",
+  "report_sha256": {
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\adsorption.json": "6c18291e510116c8f953c205fec7eecb82d0ce00024c9095a66cd5f4f1cd753e",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\adsorption.json": "1782d2d4a880adb066816c952458d3de63e13620b93f2051847e8a669773e87c",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker2\\adsorption.json": "7fa51c598449ad8eec78eb683863ad1ce3a7c0eeb00a499b96694b46dc81fe83",
+    "artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker3\\adsorption.json": "a7835420cf64c0f888ab822bab09b932e57797e3c88a9980e4a87350ca67561f"
+  },
+  "energy_audit_statuses": [
+    {
+      "complete_model_sample": 2
+    },
+    {
+      "complete_model_sample": 2
+    },
+    {
+      "complete_model_sample": 2
+    },
+    {
+      "complete_model_sample": 2
+    }
+  ],
+  "basins": [
+    {
+      "id": "uio66_000000",
+      "gas": "CO2",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -880.6439706546262
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -880.6230253889047
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -880.6121964393619
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -880.6107709901576
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -880.5903722997359
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -880.583460815213
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -880.5673731053296
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -880.5645550950765
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -880.5607433310939
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -880.5556921008396
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -880.5549876463949
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -880.5487664231915
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -880.5485138465558
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -880.542948324237
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -880.5405866537035
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -880.5317444267232
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -880.5107744542655
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -880.5096697526918
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -880.5011724501485
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -880.4910216335273
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -880.4903005312818
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -880.4884319531128
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -880.4871666702512
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -880.4839359495154
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -880.4812662696685
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -880.4764686934075
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -880.4686218099467
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -880.4577293062991
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -880.4555743759561
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -880.453593690096
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -880.4470597931954
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -880.4311332745193
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_000000",
+      "gas": "H2O",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -872.0305918646491
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -872.0288322495866
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -872.0234549224081
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -872.010799601621
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -872.0036849039417
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -871.8841727059838
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -871.7914816450702
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -871.7861312518339
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -871.778265905812
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -871.7770607700052
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -871.7646911939725
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -871.7628038407836
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -871.7627935596416
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -871.745842341324
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -871.7430638208544
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -871.7330161831037
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -871.7305115014613
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -871.7270327684868
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -871.726321222479
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -871.7145898621407
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -871.7121416905335
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -871.7068512618762
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -871.7031441765661
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -871.6922894504282
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -871.6812458942339
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -871.6812135485067
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -871.6772200585294
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -871.6658364122596
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -871.6569669788732
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -871.6568868344599
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -871.6319167279025
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -871.6152133768427
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_111111",
+      "gas": "CO2",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -954.9719015873114
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -954.9667230488739
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -954.9434828987966
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -954.9248287954227
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -954.9086397089307
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -954.8875414334212
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -954.8810315033547
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -954.8794725367874
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -954.8723622510253
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -954.872031477219
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -954.8669400772709
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -954.8593478326734
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -954.8564502554308
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -954.8487494151783
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -954.8382728115921
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -954.8325301501727
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -954.831695797887
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -954.8303967644837
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -954.825709326174
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -954.8225162504654
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -954.8207681538813
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -954.7994089553387
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -954.798813126545
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -954.7978363130779
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -954.7945982183162
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -954.7611669169459
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -954.719359786986
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -954.7119153278668
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -954.701080011665
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -954.6982525351623
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -954.6532360791406
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -954.6527833189482
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_111111",
+      "gas": "H2O",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -946.4517683150066
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -946.3985445581336
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -946.3696918319533
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -946.3374769973931
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -946.3069364241701
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -946.3057497959186
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -946.2969058541648
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -946.2740212896164
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -946.2699253806682
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -946.2684947646463
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -946.268230777018
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -946.1796033868111
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -946.156533779206
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -946.1506133787652
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -946.0981741357614
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -946.092199105037
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -946.0517912677368
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -946.0467384976857
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -946.0211836158746
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -946.0119809615053
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -946.0103369536715
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -946.006120490648
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -946.0043956709892
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -945.9906278421596
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -945.9565177254577
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -945.9531595490583
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -945.9498390851771
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -945.9469894965954
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -945.9397476382135
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -945.8897711923848
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -945.8507608329838
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -945.8346807520926
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_110111",
+      "gas": "CO2",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -942.5368902583767
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -942.5269880289183
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -942.5127726242115
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -942.5108540476471
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -942.5084232337471
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -942.5053544991135
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -942.5011145041984
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -942.4966377980519
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -942.4916024531991
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -942.4885833070151
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -942.476409055181
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -942.476255960404
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -942.465322194707
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -942.4366105348926
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -942.4292517069617
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -942.4274174942533
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -942.4118117956982
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -942.3965698440938
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -942.3963834287185
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -942.3957434257601
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -942.3918558242954
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -942.380966687703
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -942.3763827007277
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -942.375289325158
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -942.3739412057387
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -942.3723686659644
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -942.3627150436658
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -942.3601841229895
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -942.3539951705233
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -942.3377542758749
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -942.330445071389
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -942.3213792664425
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_110111",
+      "gas": "H2O",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -933.9898324476865
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -933.9786363991358
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -933.9508899918156
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -933.945565280187
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -933.9160418451045
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -933.9131208709524
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -933.9070766968616
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -933.9051621322673
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -933.8907007900477
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -933.7780220644179
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -933.73363860478
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -933.6914594189673
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -933.6644097221147
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -933.6368059734499
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -933.6237483982989
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -933.6191260988845
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -933.6157703396658
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -933.615273962735
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -933.6144835671429
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -933.6075323328707
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -933.602558722363
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -933.5995116523677
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -933.5983861810377
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -933.5957552185763
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -933.5821283011329
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -933.5711132311758
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -933.5633185658172
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -933.540429366881
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -933.5280343267119
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -933.5237658255624
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -933.5229925677064
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -933.4889421606172
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_001001",
+      "gas": "CO2",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -905.3944481088974
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -905.383882624552
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -905.3718746682509
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -905.3712261614158
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -905.3694549928795
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -905.364561936731
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -905.3626648823237
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -905.3349848037417
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -905.3240083786798
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -905.3193964528951
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -905.3160485601372
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -905.3123300913309
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -905.3105024952483
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -905.3036196219459
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -905.2953619452492
+        },
+        {
+          "start_ids": [
+            2,
+            19
+          ],
+          "minimum_system_energy_ev": -905.2915333284928
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -905.2685424829837
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -905.262555553831
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -905.2614699272375
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -905.261068290292
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -905.257760709709
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -905.2562901364654
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -905.2542677361157
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -905.2435941385515
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -905.240615354536
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -905.22992625152
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -905.225930926785
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -905.2054377263478
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -905.2051773032485
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -905.2036449531654
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -905.2030996576965
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 1,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_001001",
+      "gas": "H2O",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -896.8026676433756
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -896.7971271027569
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -896.7953705047959
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -896.7812782988151
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -896.7801786065796
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -896.7787108379655
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -896.778688198456
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -896.7075980141606
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -896.6842974470642
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -896.6494297429365
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -896.6470185939388
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -896.6198124027584
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -896.5430864579224
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -896.54273831891
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -896.5404231897286
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -896.5329967707262
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -896.5287228127975
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -896.52267785631
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -896.5199902363329
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -896.5186323931981
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -896.5078103052489
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -896.4930088829525
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -896.477715030704
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -896.4739347700599
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -896.4705858499377
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -896.4628783505649
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -896.4466057651027
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -896.4347785574255
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -896.4317535070215
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -896.4277803543578
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -896.3985444387952
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -896.3845376690285
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_000110",
+      "gas": "CO2",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -905.3900508022625
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -905.3728089323387
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -905.3705888980955
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -905.3685084654117
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -905.3603098659111
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -905.3571684733754
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -905.3569968060518
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -905.3470603986082
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -905.3222162804082
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -905.3130162706896
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -905.2961225047826
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -905.2856475534782
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -905.2848846992479
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -905.2591993396723
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -905.258167990909
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -905.2500024520411
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -905.244039244755
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -905.2422530407048
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -905.2405152027656
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -905.2313256666633
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -905.2260083115629
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -905.2234153340839
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -905.2216045257838
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -905.2213503268624
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -905.2194038914781
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -905.2151771998057
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -905.198808369557
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -905.1844204751354
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -905.1754547819645
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -905.1585559517266
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -905.1579889941193
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -905.1579846596918
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_000110",
+      "gas": "H2O",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -896.7763180715395
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -896.773866442889
+        },
+        {
+          "start_ids": [
+            24,
+            21
+          ],
+          "minimum_system_energy_ev": -896.7732122293078
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -896.7713923347079
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -896.768018105429
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -896.765952768251
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -896.7607054638971
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -896.7504426045763
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -896.6426066817332
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -896.6105653592526
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -896.5557266982015
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -896.548299076858
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -896.5228724056109
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -896.5217507562759
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -896.5161675037992
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -896.5051241325806
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -896.5016886813888
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -896.4967254045162
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -896.4951026938692
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -896.4874070904249
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -896.4756314934301
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -896.472294306758
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -896.4684861298016
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -896.4433817534807
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -896.4315764029162
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -896.4223089846018
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -896.4126670232631
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -896.4112894352364
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -896.3920980253383
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -896.3716380980059
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -896.3678562525712
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_001100",
+      "gas": "CO2",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -905.4070987727997
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -905.401556862362
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -905.3959585093801
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -905.384074001772
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -905.3799481917736
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -905.3753135214934
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -905.3746203155628
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -905.3632517323033
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -905.3578906304815
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -905.3476985618096
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -905.3303941001537
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -905.3268025370836
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -905.3213486775147
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -905.3131867931643
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -905.3119655469856
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -905.3072838629157
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -905.3016184237955
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -905.2786157398501
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -905.2725941077816
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -905.2678864071484
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -905.2648172800667
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -905.2533667901267
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -905.2511716101005
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -905.2490273883428
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -905.2350795132966
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -905.2347221605013
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -905.2339574740131
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -905.2307559744172
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -905.2241479598073
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -905.2172220096952
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -905.1975988643275
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -905.1904552079734
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_001100",
+      "gas": "H2O",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -896.8051435688166
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -896.8028067724972
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -896.792226070162
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -896.7828082592139
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -896.7808966642273
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -896.7712995069701
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -896.7623168235435
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -896.6616644842803
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -896.6400417130544
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -896.6399414437996
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -896.620632379443
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -896.6193491689496
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -896.6170759317343
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -896.6128871050602
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -896.602246393152
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -896.5557211939287
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -896.5553610465025
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -896.5387821764992
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -896.5382956982609
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -896.5295517882935
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -896.5278611091248
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -896.5263217274704
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -896.5249529607786
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -896.5222397941761
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -896.5150571854675
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -896.5006719131994
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -896.4833093317211
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -896.4778453009958
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -896.4743126601422
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -896.4558717711036
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -896.4467457441121
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -896.3963503411259
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_000111",
+      "gas": "CO2",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            0,
+            17
+          ],
+          "minimum_system_energy_ev": -917.7560326696891
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -917.7535908597416
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -917.7479423733822
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -917.7222051331598
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -917.7148447804304
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -917.7045576568147
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -917.70168893826
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -917.6915204364749
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -917.6887335196145
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -917.6878611873458
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -917.6865984666457
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -917.6786189582042
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -917.6646760150063
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -917.6643938997726
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -917.6598254232484
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -917.6533410923004
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -917.6438717106646
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -917.6283065792508
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -917.6209205349152
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -917.6156605472368
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -917.6097514852981
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -917.5980298411764
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -917.5815009370727
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -917.5755565173048
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -917.5745392916759
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -917.5661442331267
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -917.5652933930189
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -917.5499271453335
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -917.5494062491416
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -917.5359431500585
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -917.5076140372113
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": true,
+      "cross_batch_basins": 1,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_000111",
+      "gas": "H2O",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -909.1965569168551
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -909.1669607838757
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -909.1646190882035
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -909.1463048124398
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -909.1449084043992
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -909.1447338899518
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -909.1447259060064
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -909.0636385872889
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -909.0061227598799
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -908.9835686316823
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -908.926255355017
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -908.9042246626758
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -908.8933885715763
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -908.8867701708383
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -908.8865195939385
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -908.8832190749226
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -908.8746927262163
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -908.8673555479256
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -908.8588459595053
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -908.8509309200476
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -908.8498894201252
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -908.8480839211238
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -908.8445476607485
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -908.8428234010157
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -908.8396596114386
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -908.8314173602041
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -908.8278056497954
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -908.8203933714252
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -908.8100035238789
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -908.7725780101266
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -908.7687497783195
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -908.7538966828488
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_010101",
+      "gas": "CO2",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -917.7585247704935
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -917.7553935416153
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -917.7553256255867
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -917.7544482689816
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -917.7511298173347
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -917.7391114124138
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -917.7163036852154
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -917.6967417367638
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -917.6963914005418
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -917.6892425473742
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -917.6824754487785
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -917.6824699120099
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -917.6823512576836
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -917.676948321388
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -917.6766850661629
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -917.6751168358193
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -917.6728002643283
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -917.6479621628337
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -917.6414081735871
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -917.6405286947625
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -917.6397886125241
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -917.6359097749017
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -917.6217468132674
+        },
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -917.6210914573371
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -917.6199263037488
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -917.6095350113934
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -917.5917690731966
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -917.5899678461309
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -917.5886724722442
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -917.5652884586708
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -917.5640997032002
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -917.5045325692598
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    },
+    {
+      "id": "uio66_010101",
+      "gas": "H2O",
+      "approximate_minima": [
+        {
+          "start_ids": [
+            30
+          ],
+          "minimum_system_energy_ev": -909.2595534452873
+        },
+        {
+          "start_ids": [
+            1
+          ],
+          "minimum_system_energy_ev": -909.1716213907298
+        },
+        {
+          "start_ids": [
+            21
+          ],
+          "minimum_system_energy_ev": -909.1707518055981
+        },
+        {
+          "start_ids": [
+            0
+          ],
+          "minimum_system_energy_ev": -909.1339899016859
+        },
+        {
+          "start_ids": [
+            25
+          ],
+          "minimum_system_energy_ev": -909.1170575733729
+        },
+        {
+          "start_ids": [
+            7
+          ],
+          "minimum_system_energy_ev": -909.0480471093555
+        },
+        {
+          "start_ids": [
+            22
+          ],
+          "minimum_system_energy_ev": -909.0294931177572
+        },
+        {
+          "start_ids": [
+            12
+          ],
+          "minimum_system_energy_ev": -909.0088437804449
+        },
+        {
+          "start_ids": [
+            27
+          ],
+          "minimum_system_energy_ev": -908.9822056917207
+        },
+        {
+          "start_ids": [
+            6
+          ],
+          "minimum_system_energy_ev": -908.9790942602273
+        },
+        {
+          "start_ids": [
+            14
+          ],
+          "minimum_system_energy_ev": -908.9352417079589
+        },
+        {
+          "start_ids": [
+            16
+          ],
+          "minimum_system_energy_ev": -908.9340652808597
+        },
+        {
+          "start_ids": [
+            19
+          ],
+          "minimum_system_energy_ev": -908.9127916035201
+        },
+        {
+          "start_ids": [
+            10
+          ],
+          "minimum_system_energy_ev": -908.9085512311549
+        },
+        {
+          "start_ids": [
+            24
+          ],
+          "minimum_system_energy_ev": -908.9051310779423
+        },
+        {
+          "start_ids": [
+            11
+          ],
+          "minimum_system_energy_ev": -908.9047737376454
+        },
+        {
+          "start_ids": [
+            15
+          ],
+          "minimum_system_energy_ev": -908.9018438996643
+        },
+        {
+          "start_ids": [
+            23
+          ],
+          "minimum_system_energy_ev": -908.8961075849065
+        },
+        {
+          "start_ids": [
+            17
+          ],
+          "minimum_system_energy_ev": -908.8864603342664
+        },
+        {
+          "start_ids": [
+            2
+          ],
+          "minimum_system_energy_ev": -908.8837322296372
+        },
+        {
+          "start_ids": [
+            28
+          ],
+          "minimum_system_energy_ev": -908.8782544432289
+        },
+        {
+          "start_ids": [
+            29
+          ],
+          "minimum_system_energy_ev": -908.8756165566823
+        },
+        {
+          "start_ids": [
+            3
+          ],
+          "minimum_system_energy_ev": -908.8700375911394
+        },
+        {
+          "start_ids": [
+            18
+          ],
+          "minimum_system_energy_ev": -908.8665724813653
+        },
+        {
+          "start_ids": [
+            26
+          ],
+          "minimum_system_energy_ev": -908.8553366455704
+        },
+        {
+          "start_ids": [
+            31
+          ],
+          "minimum_system_energy_ev": -908.854100491361
+        },
+        {
+          "start_ids": [
+            4
+          ],
+          "minimum_system_energy_ev": -908.8481158569052
+        },
+        {
+          "start_ids": [
+            8
+          ],
+          "minimum_system_energy_ev": -908.8415772581258
+        },
+        {
+          "start_ids": [
+            5
+          ],
+          "minimum_system_energy_ev": -908.7988950262632
+        },
+        {
+          "start_ids": [
+            9
+          ],
+          "minimum_system_energy_ev": -908.783428084379
+        },
+        {
+          "start_ids": [
+            13
+          ],
+          "minimum_system_energy_ev": -908.776934464658
+        },
+        {
+          "start_ids": [
+            20
+          ],
+          "minimum_system_energy_ev": -908.7735182234286
+        }
+      ],
+      "lowest_basin_seen_in_both_batches": false,
+      "cross_batch_basins": 0,
+      "limitations": "No crystal symmetry or exhaustive basin equivalence; complete-link thresholds are diagnostics"
+    }
+  ],
+  "provenance_relocation": {
+    "/kaggle/working/uio66_sampling_authorized/worker0/adsorption.json": "C:\\Users\\hp\\Documents\\GitHub\\MOF_for_DAC_Opt\\artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker0\\adsorption.json",
+    "/kaggle/working/uio66_sampling_authorized/worker1/adsorption.json": "C:\\Users\\hp\\Documents\\GitHub\\MOF_for_DAC_Opt\\artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker1\\adsorption.json",
+    "/kaggle/working/uio66_sampling_authorized/worker2/adsorption.json": "C:\\Users\\hp\\Documents\\GitHub\\MOF_for_DAC_Opt\\artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker2\\adsorption.json",
+    "/kaggle/working/uio66_sampling_authorized/worker3/adsorption.json": "C:\\Users\\hp\\Documents\\GitHub\\MOF_for_DAC_Opt\\artifacts\\phase3\\uio66_saved_pilot_results_20261004\\raw\\uio66_sampling_authorized\\worker3\\adsorption.json"
+  },
+  "stability": {
+    "configurations": [
+      {
+        "id": "uio66_000000",
+        "status": "complete",
+        "batches": [
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_000000_H2O_5_empty",
+            "bare_reference_energy_ev": -857.3286737623172,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.16490822633979008,
+                  -0.3178572474386243,
+                  -0.2224004393682577,
+                  -0.2288742392073715,
+                  -0.2346299239063825,
+                  -0.17505904296093888,
+                  -0.12094638600787277,
+                  -0.10501986733176238,
+                  -0.2969119817171446,
+                  -0.25734740802546696,
+                  -0.2168349170494963,
+                  -0.15782254232784965,
+                  -0.24125969814203074,
+                  -0.22957869365201589,
+                  -0.28465758297001287,
+                  -0.12946096876852664
+                ],
+                "minimum_sampled_adsorption_ev": -0.3178572474386243,
+                "sampled_range_ev": 0.21283738010686193,
+                "selected_start": 1
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.0746148811982934,
+                  -0.3190754940134397,
+                  -0.031547450218816664,
+                  -0.051287470147961756,
+                  -0.31731587895094293,
+                  0.05462953617573163,
+                  -0.07996527443460621,
+                  0.004665108759446923,
+                  0.01922692020739447,
+                  0.03030282212896651,
+                  -0.014804851843358335,
+                  -0.06674953517633497,
+                  -0.021499812468071866,
+                  -0.05127718900600797,
+                  0.0456799583759917,
+                  0.09630299379293916
+                ],
+                "minimum_sampled_adsorption_ev": -0.3190754940134397,
+                "sampled_range_ev": 0.41537848780637887,
+                "selected_start": 1
+              }
+            },
+            "paired_target_ev": 0.0012182465748153959,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          },
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_000000_H2O_26_empty",
+            "bare_reference_energy_ev": -857.3286513577767,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.2861054367148341,
+                  -0.16234095046571895,
+                  -0.23846409242936772,
+                  -0.20565342407611809,
+                  -0.1551752670213915,
+                  -0.15037769076037932,
+                  -0.1610756676041234,
+                  -0.12750268744891002,
+                  -0.26428129708882864,
+                  -0.14253080729965006,
+                  -0.13163830365205342,
+                  -0.2144956510563958,
+                  -0.1642095286347427,
+                  -0.22267542054443368,
+                  -0.18468345161842592,
+                  -0.183578750044731
+                ],
+                "minimum_sampled_adsorption_ev": -0.2861054367148341,
+                "sampled_range_ev": 0.1586027492659241,
+                "selected_start": 16
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.29219093784652017,
+                  -0.31196095631289467,
+                  -0.015538802391596107,
+                  -0.05319722787728409,
+                  0.03427390756574056,
+                  -0.003095896045486768,
+                  0.054526987221926504,
+                  -0.1726787398886458,
+                  0.03024807186123013,
+                  -0.03434837522879519,
+                  -0.0006477244383162883,
+                  0.008349789529098928,
+                  -0.06556680390999503,
+                  0.07957723819263407,
+                  -0.019017535366081972,
+                  -0.299305635525819
+                ],
+                "minimum_sampled_adsorption_ev": -0.31196095631289467,
+                "sampled_range_ev": 0.39153819450552874,
+                "selected_start": 17
+              }
+            },
+            "paired_target_ev": 0.02585551959806054,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          }
+        ],
+        "absolute_batch_adsorption_difference_ev": {
+          "CO2": 0.031751810723790186,
+          "H2O": 0.007114537700545043
+        },
+        "absolute_batch_delta_difference_ev": 0.024637273023245143,
+        "absolute_batch_system_minimum_difference_ev": {
+          "CO2": 0.031774215264249506,
+          "H2O": 0.007136942241004363
+        },
+        "16_to_32_adsorption_change_ev": {
+          "CO2": 0.0,
+          "H2O": 0.0
+        },
+        "bare_reference_batch_difference_ev": 2.2404540459319833e-05,
+        "energy_target_met": false
+      },
+      {
+        "id": "uio66_111111",
+        "status": "complete",
+        "batches": [
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_111111_H2O_15_empty",
+            "bare_reference_energy_ev": -931.6364936665819,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.247098191902424,
+                  -0.22251694397847643,
+                  -0.1639030016256271,
+                  -0.19776248643474048,
+                  -0.2148161037259939,
+                  -0.08542647553373683,
+                  -0.16487981509273197,
+                  -0.01885000749588528,
+                  -0.27470639747834014,
+                  -0.24553922533506523,
+                  -0.3095495873442502,
+                  -0.22541452122108296,
+                  -0.23300676581858681,
+                  -0.07798201641448088,
+                  -0.1606649068638859,
+                  -0.1868348424290076
+                ],
+                "minimum_sampled_adsorption_ev": -0.3095495873442502,
+                "sampled_range_ev": 0.2906995798483649,
+                "selected_start": 10
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.2546850147159816,
+                  -0.24915848974594468,
+                  0.07234677830499692,
+                  -0.001847340974244105,
+                  0.01494060391119234,
+                  -0.28641352101819706,
+                  -0.07286283013663564,
+                  -0.03245499283641351,
+                  0.0628185494426603,
+                  -0.16026711191070575,
+                  -0.2876001492697,
+                  -0.13719750430563948,
+                  0.07958863668691407,
+                  -0.027402222785347874,
+                  0.18465552280779463,
+                  -0.4324320401061854
+                ],
+                "minimum_sampled_adsorption_ev": -0.4324320401061854,
+                "sampled_range_ev": 0.61708756291398,
+                "selected_start": 15
+              }
+            },
+            "paired_target_ev": 0.12288245276193521,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          },
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_111111_H2O_20_empty",
+            "bare_reference_energy_ev": -931.6423491306006,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.23224270174809192,
+                  -0.24775265795030066,
+                  -0.2850400199518077,
+                  -0.15962017986772992,
+                  -0.18592055070304525,
+                  -0.19848403612117238,
+                  -0.3269342734029266,
+                  -0.19060798901274723,
+                  -0.19274137470178232,
+                  -0.013447303669650523,
+                  -0.05846375969134954,
+                  -0.061291236194065846,
+                  -0.12137814147492065,
+                  -0.18272747499442232,
+                  -0.3321128118405028,
+                  -0.23257347555433228
+                ],
+                "minimum_sampled_adsorption_ev": -0.3321128118405028,
+                "sampled_range_ev": 0.31866550817085226,
+                "selected_start": 30
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.24303903809893512,
+                  -0.2447336417491428,
+                  0.019071248271053776,
+                  0.01485478524748629,
+                  -0.34450009303431983,
+                  0.17443090593517496,
+                  -0.12542163984621624,
+                  -0.31228525847406985,
+                  0.013210777413725339,
+                  0.07535265374188072,
+                  -0.2717141152458211,
+                  0.03456389675941551,
+                  0.13542054653417068,
+                  0.07203218986067128,
+                  -0.3733528192145954,
+                  -0.07298239684237018
+                ],
+                "minimum_sampled_adsorption_ev": -0.3733528192145954,
+                "sampled_range_ev": 0.5477837251497704,
+                "selected_start": 30
+              }
+            },
+            "paired_target_ev": 0.04124000737409261,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          }
+        ],
+        "absolute_batch_adsorption_difference_ev": {
+          "CO2": 0.022563224496252587,
+          "H2O": 0.05907922089159001
+        },
+        "absolute_batch_delta_difference_ev": 0.0816424453878426,
+        "absolute_batch_system_minimum_difference_ev": {
+          "CO2": 0.028418688514875612,
+          "H2O": 0.05322375687296699
+        },
+        "16_to_32_adsorption_change_ev": {
+          "CO2": 0.022563224496252587,
+          "H2O": -0.0058554640186230245
+        },
+        "bare_reference_batch_difference_ev": 0.0058554640186230245,
+        "energy_target_met": false
+      },
+      {
+        "id": "uio66_110111",
+        "status": "complete",
+        "batches": [
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_110111_CO2_7_empty",
+            "bare_reference_energy_ev": -919.2566221039237,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.25871087541737836,
+                  -0.2470527554043116,
+                  -0.18254878609845093,
+                  -0.12690493890887922,
+                  -0.13779407550124745,
+                  -0.22219421160993136,
+                  -0.08369252708077113,
+                  -0.272926280124139,
+                  -0.251292750319422,
+                  -0.0763833225949071,
+                  -0.10865329487172914,
+                  -0.21126044591291304,
+                  -0.17518995816762128,
+                  -0.24257604925777798,
+                  -0.25436148495295186,
+                  -0.12122757636383596
+                ],
+                "minimum_sampled_adsorption_ev": -0.272926280124139,
+                "sampled_range_ev": 0.1965429575292319,
+                "selected_start": 7
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.27657713286227903,
+                  -0.26761198461942826,
+                  -0.1385573521756882,
+                  0.0026587387922987205,
+                  0.11569888667984429,
+                  0.09903534536122294,
+                  -0.3391716868935859,
+                  -0.024945009872475055,
+                  -0.051994706725075446,
+                  0.02498114509931071,
+                  0.04370949366589372,
+                  0.06835148106640787,
+                  0.03193237937146165,
+                  0.02033861335767284,
+                  0.07614614642498196,
+                  -0.2736561587102173
+                ],
+                "minimum_sampled_adsorption_ev": -0.3391716868935859,
+                "sampled_range_ev": 0.4548705735734302,
+                "selected_start": 6
+              }
+            },
+            "paired_target_ev": 0.0662454067694469,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          },
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_110111_H2O_28_empty",
+            "bare_reference_energy_ev": -919.2468077828529,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.23216162745769964,
+                  -0.26660661992379175,
+                  -0.18317006653002466,
+                  -0.11593669526622818,
+                  -0.24735502547584076,
+                  -0.12812123824109278,
+                  -0.10974774279999622,
+                  -0.167564367974947,
+                  -0.15213600099527014,
+                  -0.24433587929185308,
+                  -0.1514959980368218,
+                  -0.07713183871921103,
+                  -0.15232241637058053,
+                  -0.12969377801540816,
+                  -0.13213527300446515,
+                  -0.2926428306534632
+                ],
+                "minimum_sampled_adsorption_ev": -0.2926428306534632,
+                "sampled_range_ev": 0.21551099193425216,
+                "selected_start": 31
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.26105039887638526,
+                  -0.32123960064429724,
+                  0.005901992872487938,
+                  0.01437642843630016,
+                  0.10161606445942795,
+                  0.030138738803636045,
+                  -0.31591488901565157,
+                  -0.10398821360868027,
+                  0.03126421013369196,
+                  0.14070823055417492,
+                  0.04752209003843433,
+                  0.10665782346493557,
+                  -0.3601820565151215,
+                  0.013880051505545055,
+                  -0.2755117410959187,
+                  0.027091668808317593
+                ],
+                "minimum_sampled_adsorption_ev": -0.3601820565151215,
+                "sampled_range_ev": 0.5008902870692964,
+                "selected_start": 28
+              }
+            },
+            "paired_target_ev": 0.06753922586165828,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          }
+        ],
+        "absolute_batch_adsorption_difference_ev": {
+          "CO2": 0.019716550529324195,
+          "H2O": 0.021010369621535574
+        },
+        "absolute_batch_delta_difference_ev": 0.001293819092211379,
+        "absolute_batch_system_minimum_difference_ev": {
+          "CO2": 0.009902229458475631,
+          "H2O": 0.01119604855068701
+        },
+        "16_to_32_adsorption_change_ev": {
+          "CO2": 0.009902229458475631,
+          "H2O": 0.01119604855068701
+        },
+        "bare_reference_batch_difference_ev": 0.009814321070848564,
+        "energy_target_met": false
+      },
+      {
+        "id": "uio66_001001",
+        "status": "complete",
+        "batches": [
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_001001_H2O_8_empty",
+            "bare_reference_energy_ev": -882.0824406145733,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.1826752943873231,
+                  -0.3040023651083317,
+                  -0.2116530690491487,
+                  -0.18118803084827562,
+                  -0.21548168580547156,
+                  -0.12376469372169652,
+                  -0.16371387910784563,
+                  -0.12555746690408398,
+                  -0.2895747334357708,
+                  -0.1886622235399642,
+                  -0.28468167728728133,
+                  -0.24412811923606625,
+                  -0.1743874766720097,
+                  -0.23244983188716617,
+                  -0.1607350950922779,
+                  -0.29199440880724126
+                ],
+                "minimum_sampled_adsorption_ev": -0.3040023651083317,
+                "sampled_range_ev": 0.18023767138663516,
+                "selected_start": 1
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.3159950759233183,
+                  -0.33184387986513997,
+                  -0.027725660060717416,
+                  -0.06343958990569121,
+                  -0.07513996683680801,
+                  -0.31340497556427493,
+                  -0.24231479126878952,
+                  0.01867745778904606,
+                  -0.33008728190409187,
+                  -0.005302627045942643,
+                  -0.04252708235710401,
+                  0.0024048723268847993,
+                  -0.0573946334182196,
+                  -0.07745509601820544,
+                  -0.18173537104703286,
+                  0.06673878409660716
+                ],
+                "minimum_sampled_adsorption_ev": -0.33184387986513997,
+                "sampled_range_ev": 0.39858266396174713,
+                "selected_start": 1
+              }
+            },
+            "paired_target_ev": 0.027841514756808294,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          },
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_001001_H2O_17_empty",
+            "bare_reference_energy_ev": -882.0787806830344,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.29500583351104126,
+                  -0.31822778099264326,
+                  -0.23982823223242633,
+                  -0.20871388480260578,
+                  -0.23428216734352247,
+                  -0.1815403818042256,
+                  -0.1289569753437405,
+                  -0.18524959933269258,
+                  -0.1497105988802474,
+                  -0.1537059236152487,
+                  -0.28644455441884986,
+                  -0.2431761249903417,
+                  -0.12687932979169148,
+                  -0.2587644758368839,
+                  -0.22739929404112047,
+                  -0.18006980856058874
+                ],
+                "minimum_sampled_adsorption_ev": -0.31822778099264326,
+                "sampled_range_ev": 0.19134845120095179,
+                "selected_start": 17
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.31855531522673886,
+                  -0.31708754661260485,
+                  -0.08146316656952735,
+                  -0.07137347937329963,
+                  -0.3410443520226849,
+                  -0.05700910184523167,
+                  0.07708562232435412,
+                  -0.2226741557112959,
+                  -0.1581891114054983,
+                  -0.012311478707054846,
+                  -0.18780645158360443,
+                  0.03384293699512142,
+                  0.02986978433134624,
+                  -0.016091739351075773,
+                  -0.05836694498000128,
+                  0.026844733927397613
+                ],
+                "minimum_sampled_adsorption_ev": -0.3410443520226849,
+                "sampled_range_ev": 0.418129974347039,
+                "selected_start": 20
+              }
+            },
+            "paired_target_ev": 0.022816571030041644,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          }
+        ],
+        "absolute_batch_adsorption_difference_ev": {
+          "CO2": 0.014225415884311587,
+          "H2O": 0.009200472157544937
+        },
+        "absolute_batch_delta_difference_ev": 0.005024943726766651,
+        "absolute_batch_system_minimum_difference_ev": {
+          "CO2": 0.010565484345420373,
+          "H2O": 0.005540540618653722
+        },
+        "16_to_32_adsorption_change_ev": {
+          "CO2": 0.010565484345420373,
+          "H2O": 0.005540540618653722
+        },
+        "bare_reference_batch_difference_ev": 0.0036599315388912146,
+        "energy_target_met": false
+      },
+      {
+        "id": "uio66_000110",
+        "status": "complete",
+        "batches": [
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_000110_CO2_1_empty",
+            "bare_reference_energy_ev": -882.0624392366684,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.312930050799892,
+                  -0.3301719207237426,
+                  -0.23624362324382275,
+                  -0.22576867193937744,
+                  -0.31071001655676866,
+                  -0.16172564424506675,
+                  -0.19828910937020794,
+                  -0.11557590042572485,
+                  -0.2972895918366163,
+                  -0.18416036321617923,
+                  -0.1389294880182348,
+                  -0.09811011258047131,
+                  -0.1245415935966463,
+                  -0.18237415916600241,
+                  -0.16353645254515925,
+                  -0.19932045813347088
+                ],
+                "minimum_sampled_adsorption_ev": -0.3301719207237426,
+                "sampled_range_ev": 0.23206180814327126,
+                "selected_start": 1
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  0.03399240975043227,
+                  -0.3051607595894197,
+                  -0.07646891128901956,
+                  -0.05984228759373167,
+                  -0.0708856588123794,
+                  0.03261482172374741,
+                  -0.10301723187117062,
+                  -0.11044485321465203,
+                  -0.04982084888231242,
+                  -0.04212524543802232,
+                  0.022972860385017668,
+                  -0.07759056062402436,
+                  0.05318381964853103,
+                  -0.1652835142657736,
+                  -0.32611048972105294,
+                  -0.05144355952929658
+                ],
+                "minimum_sampled_adsorption_ev": -0.32611048972105294,
+                "sampled_range_ev": 0.37929430936958397,
+                "selected_start": 14
+              }
+            },
+            "paired_target_ev": -0.0040614310026896305,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          },
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_000110_CO2_24_empty",
+            "bare_reference_energy_ev": -882.0631891176124,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.30787970292887223,
+                  -0.2864316361253856,
+                  -0.1798864402827718,
+                  -0.25238750820678035,
+                  -0.17069690418055927,
+                  -0.2615875179253777,
+                  -0.15877512899534452,
+                  -0.15454843732290158,
+                  -0.29968110342828425,
+                  -0.1653795490800718,
+                  -0.09792718924383337,
+                  -0.22425593676508981,
+                  -0.18937368955836575,
+                  -0.16072156437964225,
+                  -0.09735589720902738,
+                  -0.29636804356904634
+                ],
+                "minimum_sampled_adsorption_ev": -0.30787970292887223,
+                "sampled_range_ev": 0.21052380571984486,
+                "selected_start": 16
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.31992104232019614,
+                  -0.3278347169581579,
+                  -0.05565695545796956,
+                  -0.029599767499256302,
+                  0.014455323014637145,
+                  -0.322708536604317,
+                  -0.19657495580238304,
+                  0.07439362792499793,
+                  -0.3271805033769155,
+                  -0.31467373796626674,
+                  -0.022454403870732165,
+                  -0.026262580827186355,
+                  -0.3219863794980924,
+                  -0.3302863456086911,
+                  0.07817547335967134,
+                  0.0026499724501505284
+                ],
+                "minimum_sampled_adsorption_ev": -0.3302863456086911,
+                "sampled_range_ev": 0.4084618189683624,
+                "selected_start": 29
+              }
+            },
+            "paired_target_ev": 0.022406642679818844,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          }
+        ],
+        "absolute_batch_adsorption_difference_ev": {
+          "CO2": 0.02229221779487034,
+          "H2O": 0.004175855887638136
+        },
+        "absolute_batch_delta_difference_ev": 0.026468073682508475,
+        "absolute_batch_system_minimum_difference_ev": {
+          "CO2": 0.021542336850870925,
+          "H2O": 0.0049257368316375505
+        },
+        "16_to_32_adsorption_change_ev": {
+          "CO2": -0.0007498809439994147,
+          "H2O": 0.004175855887638136
+        },
+        "bare_reference_batch_difference_ev": 0.0007498809439994147,
+        "energy_target_met": false
+      },
+      {
+        "id": "uio66_001100",
+        "status": "complete",
+        "batches": [
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_001100_H2O_6_empty",
+            "bare_reference_energy_ev": -882.0805991578218,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.3179197066879311,
+                  -0.32351805966983704,
+                  -0.20057693715797598,
+                  -0.252355297461591,
+                  -0.23392674429341298,
+                  -0.22924506022356184,
+                  -0.1731328074083791,
+                  -0.15668335780914333,
+                  -0.19455530508948016,
+                  -0.14610915711513428,
+                  -0.29727471880120504,
+                  -0.269659759117431,
+                  -0.15704071060442004,
+                  -0.18984760445620452,
+                  -0.17098858565067587,
+                  -0.2798518277893578
+                ],
+                "minimum_sampled_adsorption_ev": -0.32351805966983704,
+                "sampled_range_ev": 0.17740890255470276,
+                "selected_start": 1
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.31745489808704264,
+                  -0.33936500635697797,
+                  -0.06151119463836352,
+                  -0.0753404103590114,
+                  -0.019867565580874214,
+                  -0.037230147059197805,
+                  -0.1982227181400944,
+                  -0.010870894002003695,
+                  -0.1559074028093832,
+                  0.016696022028078517,
+                  -0.30785774082985284,
+                  -0.014403534855567557,
+                  -0.05879802803590195,
+                  -0.09191928036229768,
+                  -0.29887505740330056,
+                  0.06709142501436105
+                ],
+                "minimum_sampled_adsorption_ev": -0.33936500635697797,
+                "sampled_range_ev": 0.406456431371339,
+                "selected_start": 1
+              }
+            },
+            "paired_target_ev": 0.015846946687140928,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          },
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_001100_CO2_17_empty",
+            "bare_reference_energy_ev": -882.0822160592361,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.15430176990663824,
+                  -0.3274430686932561,
+                  -0.22196271968904568,
+                  -0.24714683297715112,
+                  -0.23353108905781994,
+                  -0.17371108602027618,
+                  -0.1375663055887486,
+                  -0.15110027031074935,
+                  -0.18516157596026517,
+                  -0.29496461145630803,
+                  -0.2835960281968397,
+                  -0.30029248766710737,
+                  -0.30441829766552075,
+                  -0.11079950386694293,
+                  -0.2416929734082629,
+                  -0.11794316022100304
+                ],
+                "minimum_sampled_adsorption_ev": -0.3274430686932561,
+                "sampled_range_ev": 0.2166435648263132,
+                "selected_start": 17
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.3271674026074365,
+                  -0.3400849012620242,
+                  -0.06126305991588055,
+                  -0.04999851791298937,
+                  -0.09066252637412475,
+                  -0.3177495916593429,
+                  -0.14782843750563046,
+                  -0.13718772559743542,
+                  -0.1520172641798112,
+                  -0.15557371188847213,
+                  0.009186896450934512,
+                  -0.17488277624502047,
+                  -0.06280244157030523,
+                  -0.17498304549987864,
+                  -0.06449312073893765,
+                  -0.07323703070633059
+                ],
+                "minimum_sampled_adsorption_ev": -0.3400849012620242,
+                "sampled_range_ev": 0.3492717977129587,
+                "selected_start": 17
+              }
+            },
+            "paired_target_ev": 0.012641832568768052,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          }
+        ],
+        "absolute_batch_adsorption_difference_ev": {
+          "CO2": 0.003925009023419079,
+          "H2O": 0.0007198949050462033
+        },
+        "absolute_batch_delta_difference_ev": 0.003205114118372876,
+        "absolute_batch_system_minimum_difference_ev": {
+          "CO2": 0.005541910437727893,
+          "H2O": 0.0023367963193550167
+        },
+        "16_to_32_adsorption_change_ev": {
+          "CO2": 0.003925009023419079,
+          "H2O": 0.0007198949050462033
+        },
+        "bare_reference_batch_difference_ev": 0.0016169014143088134,
+        "energy_target_met": true
+      },
+      {
+        "id": "uio66_000111",
+        "status": "complete",
+        "batches": [
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_000111_H2O_14_empty",
+            "bare_reference_energy_ev": -894.4400991639741,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.318493860844697,
+                  -0.31605205089717003,
+                  -0.2410801493597461,
+                  -0.17812173839230638,
+                  -0.25032237850133754,
+                  -0.1380177084603389,
+                  -0.12860542428224164,
+                  -0.17221267645369664,
+                  -0.25398162763043786,
+                  -0.09840434121407782,
+                  -0.12775458417446828,
+                  -0.22685509092811174,
+                  -0.2271372061618564,
+                  -0.11238833648907587,
+                  -0.22228661440398412,
+                  -0.20633290182014719
+                ],
+                "minimum_sampled_adsorption_ev": -0.318493860844697,
+                "sampled_range_ev": 0.22008951963061918,
+                "selected_start": 0
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.34167731591096384,
+                  -0.3219666321066583,
+                  -0.01988162872319066,
+                  -0.06027730263010511,
+                  -0.03590418721275768,
+                  -0.004863877502906178,
+                  -0.1831809875873418,
+                  -0.24069681499636175,
+                  -0.06382839854577327,
+                  -0.025142148831285738,
+                  0.06904508944374044,
+                  0.05036376216592231,
+                  -0.04441377563309601,
+                  -0.016717839146075164,
+                  -0.32179211765926397,
+                  0.012938248413639997
+                ],
+                "minimum_sampled_adsorption_ev": -0.34167731591096384,
+                "sampled_range_ev": 0.4107224053547043,
+                "selected_start": 0
+              }
+            },
+            "paired_target_ev": 0.023183455066266845,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          },
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_000111_CO2_27_empty",
+            "bare_reference_energy_ev": -894.4496770937712,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.30082563474060464,
+                  -0.303455447353727,
+                  -0.23948172800409395,
+                  -0.20622435365875447,
+                  -0.24161678097290462,
+                  -0.1274225530343216,
+                  -0.15091310253480117,
+                  -0.0604972985696719,
+                  -0.25457219961835165,
+                  -0.1811898406091501,
+                  -0.275088394518221,
+                  -0.25744091817308856,
+                  -0.10228951050000035,
+                  -0.17380379627356035,
+                  -0.13438419843113536,
+                  -0.26772804178882836
+                ],
+                "minimum_sampled_adsorption_ev": -0.303455447353727,
+                "sampled_range_ev": 0.24295814878405508,
+                "selected_start": 17
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.3344410817859611,
+                  -0.3122062039167517,
+                  -0.012027958658812565,
+                  -0.04217302412657631,
+                  0.0011023418855771183,
+                  -0.31378511035008927,
+                  -0.3640372147654247,
+                  -0.018411217957940096,
+                  -0.15104892959256944,
+                  0.012126330664479212,
+                  -0.09373565292732877,
+                  0.0637699237702023,
+                  -0.05399989184879672,
+                  -0.06086886948664727,
+                  -0.0173697180355461,
+                  -0.07170496058611064
+                ],
+                "minimum_sampled_adsorption_ev": -0.3640372147654247,
+                "sampled_range_ev": 0.427807138535627,
+                "selected_start": 22
+              }
+            },
+            "paired_target_ev": 0.06058176741169774,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          }
+        ],
+        "absolute_batch_adsorption_difference_ev": {
+          "CO2": 0.015038413490970015,
+          "H2O": 0.02235989885446088
+        },
+        "absolute_batch_delta_difference_ev": 0.037398312345430895,
+        "absolute_batch_system_minimum_difference_ev": {
+          "CO2": 0.005460483693809692,
+          "H2O": 0.0319378286516212
+        },
+        "16_to_32_adsorption_change_ev": {
+          "CO2": -0.009577929797160323,
+          "H2O": 0.02235989885446088
+        },
+        "bare_reference_batch_difference_ev": 0.009577929797160323,
+        "energy_target_met": false
+      },
+      {
+        "id": "uio66_010101",
+        "status": "complete",
+        "batches": [
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_010101_H2O_10_empty",
+            "bare_reference_energy_ev": -894.4445742278376,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.2742898125074049,
+                  -0.316510897785534,
+                  -0.23467119345492904,
+                  -0.25437752783376766,
+                  -0.24033738497566048,
+                  -0.12327458596281815,
+                  -0.16752113868541585,
+                  -0.1466585995361953,
+                  -0.19389590219374497,
+                  -0.31331175287870394,
+                  -0.19851482205446302,
+                  -0.23078639162032744,
+                  -0.25472786405579484,
+                  -0.12208583049222455,
+                  -0.31243439627361624,
+                  -0.14975520048859892
+                ],
+                "minimum_sampled_adsorption_ev": -0.316510897785534,
+                "sampled_range_ev": 0.19442506729330944,
+                "selected_start": 1
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.30657306552986796,
+                  -0.34420455457372867,
+                  -0.056315393481121134,
+                  -0.04262075498333928,
+                  -0.02069902074915575,
+                  0.028521809892914973,
+                  -0.15167742407120244,
+                  -0.22063027319941142,
+                  -0.014160421969698689,
+                  0.04398875177705719,
+                  -0.08113439499881991,
+                  -0.07735690148935959,
+                  -0.1814269442887948,
+                  0.05048237149808443,
+                  -0.10782487180281208,
+                  -0.07442706350823158
+                ],
+                "minimum_sampled_adsorption_ev": -0.34420455457372867,
+                "sampled_range_ev": 0.3946869260718131,
+                "selected_start": 1
+              }
+            },
+            "paired_target_ev": 0.027693656788194687,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          },
+          {
+            "status": "complete_model_sample",
+            "bare_reference_id": "uio66_010101_H2O_30_empty",
+            "bare_reference_energy_ev": -894.4519599522155,
+            "gas_results": {
+              "CO2": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.3059939445294191,
+                  -0.30173022024884233,
+                  -0.22571723873342364,
+                  -0.22754872430211037,
+                  -0.23307031492403496,
+                  -0.17234721618150672,
+                  -0.19200857650129421,
+                  -0.14056824904504595,
+                  -0.2398429502883488,
+                  -0.055132972173979056,
+                  -0.28971181532791945,
+                  -0.23307585169267497,
+                  -0.17052670666295455,
+                  -0.19038901543821396,
+                  -0.17169186025127203,
+                  -0.19856256574782094
+                ],
+                "minimum_sampled_adsorption_ev": -0.3059939445294191,
+                "sampled_range_ev": 0.25086097235544,
+                "selected_start": 16
+              },
+              "H2O": {
+                "complete": true,
+                "expected_starts": 16,
+                "accepted_starts": 16,
+                "sampled_adsorption_energies_ev": [
+                  -0.09926272032580385,
+                  -0.051657773732493695,
+                  -0.031769920831401066,
+                  -0.07798904298615383,
+                  0.061284337105327324,
+                  -0.3359492450641923,
+                  -0.19469055722324669,
+                  -0.061305024372607875,
+                  -0.07032851740839163,
+                  -0.2822550128389807,
+                  -0.02053408503652321,
+                  -0.14740313118672788,
+                  -0.04345188269498834,
+                  -0.04081399614837977,
+                  -0.42475088475341494,
+                  -0.019297930827086418
+                ],
+                "minimum_sampled_adsorption_ev": -0.42475088475341494,
+                "sampled_range_ev": 0.48603522185874226,
+                "selected_start": 30
+              }
+            },
+            "paired_target_ev": 0.11875694022399585,
+            "scope": "UMA minimum among declared starts; not DFT, equilibrium selectivity or global minima"
+          }
+        ],
+        "absolute_batch_adsorption_difference_ev": {
+          "CO2": 0.010516953256114903,
+          "H2O": 0.08054633017968627
+        },
+        "absolute_batch_delta_difference_ev": 0.09106328343580117,
+        "absolute_batch_system_minimum_difference_ev": {
+          "CO2": 0.003131228878260117,
+          "H2O": 0.08793205455754105
+        },
+        "16_to_32_adsorption_change_ev": {
+          "CO2": -0.007385724377854785,
+          "H2O": 0.08054633017968627
+        },
+        "bare_reference_batch_difference_ev": 0.007385724377854785,
+        "energy_target_met": false
+      }
+    ],
+    "initial_target_ev": 0.01,
+    "energy_stability": "initial target not met",
+    "ranking": {
+      "batch_spearman": 0.523809523809524,
+      "top2_overlap": 0.5,
+      "decisive_reversals": [
+        [
+          "uio66_111111",
+          "uio66_110111"
+        ],
+        [
+          "uio66_111111",
+          "uio66_010101"
+        ],
+        [
+          "uio66_110111",
+          "uio66_010101"
+        ]
+      ],
+      "near_tie_pairs": [
+        [
+          "uio66_000000",
+          "uio66_111111"
+        ],
+        [
+          "uio66_000000",
+          "uio66_001001"
+        ],
+        [
+          "uio66_000000",
+          "uio66_000110"
+        ],
+        [
+          "uio66_000000",
+          "uio66_001100"
+        ],
+        [
+          "uio66_111111",
+          "uio66_001001"
+        ],
+        [
+          "uio66_111111",
+          "uio66_000110"
+        ],
+        [
+          "uio66_111111",
+          "uio66_000111"
+        ],
+        [
+          "uio66_110111",
+          "uio66_000111"
+        ],
+        [
+          "uio66_001001",
+          "uio66_000110"
+        ],
+        [
+          "uio66_001001",
+          "uio66_001100"
+        ],
+        [
+          "uio66_001001",
+          "uio66_000111"
+        ],
+        [
+          "uio66_001001",
+          "uio66_010101"
+        ],
+        [
+          "uio66_000110",
+          "uio66_001100"
+        ],
+        [
+          "uio66_001100",
+          "uio66_000111"
+        ],
+        [
+          "uio66_001100",
+          "uio66_010101"
+        ],
+        [
+          "uio66_000111",
+          "uio66_010101"
+        ]
+      ],
+      "top2_boundary_near_tie": true,
+      "criterion_met": false
+    },
+    "next_decision": "no-go for scaling; investigate sampling, ties and force convergence"
+  },
+  "force_check": {
+    "scope": "representative continuations only, not full tight-force minima/ranking",
+    "report_sha256": "f6443cee9f246d8b0f8d86a9ae1d9657751e9b18f5d686174485084eedb4ae68",
+    "configurations": [
+      {
+        "id": "uio66_000000",
+        "status": "complete",
+        "max_abs_adsorption_shift_ev": 0.032167420823444814,
+        "delta_shift_ev": 0.008034196217582945,
+        "initial_target_met": false
+      },
+      {
+        "id": "uio66_111111",
+        "status": "complete",
+        "max_abs_adsorption_shift_ev": 0.03207363571203459,
+        "delta_shift_ev": -0.0030881095740902254,
+        "initial_target_met": false
+      },
+      {
+        "id": "uio66_110111",
+        "status": "complete",
+        "max_abs_adsorption_shift_ev": 0.05916146502761421,
+        "delta_shift_ev": -0.0692125623212938,
+        "initial_target_met": false
+      },
+      {
+        "id": "uio66_001001",
+        "status": "complete",
+        "max_abs_adsorption_shift_ev": 0.01591723490230379,
+        "delta_shift_ev": -0.012912266845599873,
+        "initial_target_met": false
+      }
+    ],
+    "initial_0_01_ev_target_met": false
+  },
+  "chemistry_review": "pending; computation alone cannot approve template or DAC claims"
+}

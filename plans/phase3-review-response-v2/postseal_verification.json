@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-27",
+  "snapshot_sha256": "ae7debffc85b218b848aa1fe5d51979987411ee77c02c6ee7b861b725b972340",
+  "independent_archive_check": "CRC and all 178 payload hashes passed; ZIP hash equals external receipt",
+  "overwrite_guard": "attempt refused before mutation; archive bytes unchanged",
+  "isolated_offline_figure_replay": {
+    "payloads": 33,
+    "all_byte_identical": true
+  },
+  "isolated_offline_inspection_replay": {
+    "payloads": 65,
+    "all_byte_identical": true
+  },
+  "git_diff_check": "passed; line-ending warnings only",
+  "snapshot_modified": false,
+  "note": "Recorded separately after sealing; formatting/display replay only, no new science or reviewer approval.",
+  "installed_numpy_defaults_checked": {
+    "isclose_rtol": 1e-05,
+    "percentile_method": "linear"
+  }
+}

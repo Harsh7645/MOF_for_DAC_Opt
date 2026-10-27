@@ -1,9 +1,104 @@
+## Review response v2 - 27 October 2026
+
+Local clarifications and fixed review snapshot prepared. [Response table](PHASE3_REVIEW_RESPONSE_V2.md),
+[revised manuscript](MANUSCRIPT_METHODS_RESULTS_V2.md), [exact inspection packet](CHEMISTRY_INSPECTION_REVIEW_V2.md),
+and [closure checklist v2](PHASE3_CLOSURE_CHECKLIST_V2.md).
+**Phase 3 incomplete:** Q1 source/proton correspondence and Q2 geometry/model adequacy
+await qualified assessment; independent final scientific review is also pending.
+User-communicated findings and AI responses are not documented human approval.
+Four new targeted checks pass; no new scientific calculation/fit or changed historical result.
+The fixed snapshot must remain unchanged; later reviewer responses go outside it.
+ODAC25 deferred/paused/unsent; DFT supplementary only; no new authorization.
+
+## Current revised scope - 27 October 2026
+
+**Phase 3 remains incomplete pending independent final review and qualified chemistry
+assessment.** Local evidence packaging and manuscript preparation are complete.
+No deferred original objective has been marked completed.
+
+- [Scope and original-objective dispositions](RESEARCH_SCOPE_REVISION_20261027.md).
+- [Closure checklist: passed, remaining, reviews, extensions, Phase 4](PHASE3_CLOSURE_CHECKLIST_V1.md).
+- [Methods/results manuscript foundation](MANUSCRIPT_METHODS_RESULTS_V1.md).
+- [Six tables, seven figure pairs and reproducible saved-result aggregation](../plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md).
+- [Structural observations and unanswered chemistry questions](STRUCTURAL_MODEL_RECORD_V1.md).
+- [Confirmed future Sc/Sh/Sg and force rules](FUTURE_CONVERGENCE_RULES_V3.md).
+
+**Deferred extensions:** ODAC25 identity/reference/training/benchmark (paused; request
+unsent; historical selections preserved), additional UMA host points and physical
+ranking, DFT convergence and hardware studies. The 14 DFT baselines remain exploratory
+supplementary evidence; no central quantitative DFT inference. Larger-memory access
+is not a dependency of the limited methods scope. No new calculations or contacts.
+
+Remaining action: document both independent reviews and resolve blocking findings;
+then reassess Phase 3. Phase 4 covers literature/novelty verification, manuscript,
+reproduction archive and author-approved release. See the checklist for exact gates.
+
+### Historical entries below - superseded as current scope guidance
+
+## Professor review consolidation ? 27 October 2026
+
+[Results/limitations draft](PHASE3_PROFESSOR_RESULTS_LIMITATIONS_20261027.md)
+connects synthetic objectives, sampled UMA targets, failed stability diagnostics,
+14 baseline DFT single points and unresolved ODAC25 provenance. Includes explicit
+claim/evidence limits, prioritized dependencies and professor decisions.
+Documentation only: no new fits, calculations or completed scientific milestones.
+Phase3 incomplete;ODAC25 investigation paused;request unsent. Current evidence unchanged.
+
+## Current workstreams ? 26 October 2026
+
+**ODAC25 identity/reference investigation paused by user**, awaiting source-side response.
+[Request status](ODAC25_REQUEST_STATUS.json): **unsent**, no contact authorized.
+Keep the request packet intact; do not resume acquisition/identity work automatically.
+
+**Completed offline UiO66 development analysis:** [report](UIO66_OFFLINE_DEVELOPMENT_V1.md).
+Historical51/13 fit/split reproduced. New fits use51development designs only, whole-group CV/bootstrap.
+Pairwise MAE worse19/20grouped repetitions;coefficient/ranking instability quantified.
+Sampling sensitivity is separate from fitting residuals;original benchmark unchanged.
+Next decision:review additive as descriptive reference;no physical ranking or additional computation.
+Higher-cutoff DFT still deferredRAM;14baselineSCFs preserved;Phase3 incomplete.
+Older entries below are history and do not override the ODAC25 pause.
+
+## Current ODAC25 identity gate ? 26 October 2026
+
+Completed: [parent-identity v1](ODAC25_PARENT_IDENTITY_V1.md), versioned all138 table,
+bounded EPONEE investigation, separate corrected-pool policy and compact export specification.
+110 composition candidates remain identity-unverified;27 selected pairs have different
+framework compositions;EPONEE's exact CO2 selection is missing from the pinned mirror.
+No corrected pairs admitted and no real fitting. Next: official state/family mappings,
+original tags and missing EPONEE frame, then complete compatible training-parent export.
+[Focused question v2](ODAC25_PARENT_STATE_REVIEW_QUESTION_V2.md) drafted, not sent.
+Energy-reference mismatch and higher-cutoff DFT/RAM remain separate;Phase3 incomplete.
+Previous status entries below are preserved historical records.
+
 # Project work tracker
 
 Documentation reviewed **2026-10-26**; scientific results and convergence
 preparation remain dated **2026-10-10**. No new calculation is reported.
 **All 14 frozen 80/600-Ry baseline SCFs are complete. Phase 3 is incomplete.**
 No new calculation, launch-state reuse, refit or design expansion is authorized.
+
+## Acquisition investigation ? current next action
+
+[Detailed plan](ODAC25_ACQUISITION_INVESTIGATION_20261026.md): bounded audit matched275/276
+selected records. Of31 ambiguous IDs,27 selected gas pairs use different framework
+compositions;4 agree. Of107 previously consistent IDs,106 agree andEPONEE CO2 is
+missing. **Review parent-state semantics before fitting or interpreting paired delta.**
+Get originalEPONEE row512478, a canonical state/family map, and a compact export
+of complete corrected/final-frame training parents. Three inspected training
+records demonstrate field availability only. Preserve all138 frozen targets;
+no removal, substitution, model fitting or large archive acquisition performed.
+[Question drafted, not sent](ODAC25_PARENT_STATE_REVIEW_QUESTION.md).
+
+## Local surrogate workstream ? 26 October 2026
+
+[Current report](SURROGATE_BASELINE_LOCAL_20261026.md): frozen138 labels verified;
+107 cache-consistent fraction candidates and31 ambiguous IDs retained. One full
+parent export matched. Constant/ridge admission guards and grouped CV are tested.
+**No compatible training data; no real fit/predictions/score.** Next: reviewed
+corrected/final-frame training export, complete parent structures, canonical
+parent-family/alias map and resolution of31 composition ambiguities. No evaluation
+labels may enter tuning; keep all138. Mirror sizes inventoried only; no download.
+Higher-cutoff DFT is deferred for RAM. ODAC25 reference geometry remains separate.
 
 ## Completed - do not rerun
 

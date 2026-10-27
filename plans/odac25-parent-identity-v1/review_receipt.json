@@ -1,0 +1,70 @@
+{
+  "version": "parent-identity-v1",
+  "files": {
+    "plans/odac25-parent-identity-v1/corrected_pool_proposal_v1.json": {
+      "bytes": 3452,
+      "sha256": "f3fcacf9e0c09e372a926fa9fb393bacc72c2b4fa116ae0d2f876febb33fa6cc"
+    },
+    "plans/odac25-parent-identity-v1/PAIRING_RULE.md": {
+      "bytes": 5709,
+      "sha256": "beee8f32e7190a21dfb137269caab4d0f3095fe98d4a0a5be807bf0ff80b7fa4"
+    },
+    "plans/odac25-parent-identity-v1/pair_status_v1.csv": {
+      "bytes": 121954,
+      "sha256": "b64c2560e65056b9991bdbd4a791661125e078de06c624ee2dd4625c4004a15c"
+    },
+    "plans/odac25-parent-identity-v1/pair_status_v1.json": {
+      "bytes": 306640,
+      "sha256": "dab51d01e2ba49bccc27484d13b22d2c8f6d00c55bcb8f27271f1d17482fbc5b"
+    },
+    "plans/odac25-parent-identity-v1/range_receipts.json": {
+      "bytes": 209212,
+      "sha256": "02b97955089b2a9b4f75ae284f96c019c53a42704ad9f12658e795cc1a2096fe"
+    },
+    "plans/odac25-parent-identity-v1/receipt.json": {
+      "bytes": 1850,
+      "sha256": "3d72059313c85844dc7f272396fecc812ac58a69218eec0989e7c9c00f213768"
+    },
+    "plans/odac25-parent-identity-v1/selected_structure_diagnostics.jsonl": {
+      "bytes": 1524467,
+      "sha256": "4e20e380b85ae30b4d0d662d5494da54771b047ec9f46d9b7e706e011e6f0843"
+    },
+    "plans/odac25-parent-identity-v1/summary.json": {
+      "bytes": 2514,
+      "sha256": "dfcd23d006d59f66a5a593794af94083fd9cbcb9ba49d8df6ce7615d63d2b3b1"
+    },
+    "plans/odac25-parent-identity-v1/TRAINING_EXPORT_REQUIREMENTS.md": {
+      "bytes": 5365,
+      "sha256": "0faf7c0401bd482f0be6dd2ce7de6fe4e7c7bb52c8f19a63e6555e0f5dc32623"
+    },
+    "plans/odac25-parent-identity-v1/validation.json": {
+      "bytes": 896,
+      "sha256": "e2fe97c0a37fe655eb7277a07f8359f0ed2ed95d7f70230cbe6efcd7dff23865"
+    },
+    "docs/ODAC25_PARENT_IDENTITY_V1.md": {
+      "bytes": 10084,
+      "sha256": "40ce9e88d69bb60abca3b1bf191eeda717b96d26abc50e8fe1cd2ffad1f5fec9"
+    },
+    "docs/ODAC25_PARENT_STATE_REVIEW_QUESTION_V2.md": {
+      "bytes": 1745,
+      "sha256": "fa6b120fe8a96828731b2b8f6332032c2a30281cdf529ab1e1d24cf5f21d71ec"
+    },
+    "scripts/audit_odac25_parent_identity.py": {
+      "bytes": 14084,
+      "sha256": "7c6ab6fc8f4f0de8498c04854992f82c1fa7955375b3e2d6e8c2b24373761e9f"
+    },
+    "tests/test_odac25_parent_identity.py": {
+      "bytes": 2566,
+      "sha256": "6890fd62388fa76f001f993cfea5915b03e3bd65e76167d65e871b368fc346fb"
+    },
+    "local/odac25-parent-identity-sources-v1/receipt.json": {
+      "bytes": 264,
+      "sha256": "62189bc03078a9cc71232897ff6ce048d26a813bad0fbda51385f7d1828adaa9"
+    },
+    "local/odac25-parent-identity-sources-v1/odac25_paper_v2.html": {
+      "bytes": 460865,
+      "sha256": "fbe6e8ecd3bc36f0db4326fa8e1179f3abfc6b7367a9e3087c13bce88ea2f9e5"
+    }
+  },
+  "note": "Preparation/diagnostics only. Does not authorize fitting or assert authoritative identity."
+}

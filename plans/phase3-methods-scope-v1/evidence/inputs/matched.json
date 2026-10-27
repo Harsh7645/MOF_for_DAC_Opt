@@ -1,0 +1,2304 @@
+{
+  "protocol": "uio66_matched_geometry_diagnostic_v2",
+  "thresholds_ev_A": [
+    0.02,
+    0.01,
+    0.005
+  ],
+  "components": [
+    {
+      "id": "uio66_000000_CO2_b0_targeted",
+      "status": "complete",
+      "energies_ev": [
+        -880.6483104388594,
+        -880.6496769708465,
+        -880.6497680288181
+      ],
+      "checkpoint_changes_ev": [
+        -0.001366531987059716,
+        -9.105797164465912e-05
+      ],
+      "last_change_ev": -9.105797164465912e-05,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_b0_random",
+      "status": "complete",
+      "energies_ev": [
+        -880.6476207949585,
+        -880.6497012176436,
+        -880.6501232019014
+      ],
+      "checkpoint_changes_ev": [
+        -0.002080422685139638,
+        -0.00042198425774131465
+      ],
+      "last_change_ev": -0.00042198425774131465,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_b1_targeted",
+      "status": "complete",
+      "energies_ev": [
+        -880.6310165208109,
+        -880.6320042753329,
+        -880.6497542081438
+      ],
+      "checkpoint_changes_ev": [
+        -0.0009877545219296735,
+        -0.017749932810943392
+      ],
+      "last_change_ev": -0.017749932810943392,
+      "initial_target_met": false
+    },
+    {
+      "id": "uio66_000000_CO2_b1_random",
+      "status": "complete",
+      "energies_ev": [
+        -880.6471233381703,
+        -880.6495480478767,
+        -880.650202556419
+      ],
+      "checkpoint_changes_ev": [
+        -0.0024247097063607725,
+        -0.0006545085423113051
+      ],
+      "last_change_ev": -0.0006545085423113051,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_replay",
+      "status": "complete",
+      "energies_ev": [
+        -880.646409857418,
+        -880.649506590853,
+        -880.6497759702692
+      ],
+      "checkpoint_changes_ev": [
+        -0.0030967334349725206,
+        -0.0002693794161814367
+      ],
+      "last_change_ev": -0.0002693794161814367,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b0_targeted",
+      "status": "complete",
+      "energies_ev": [
+        -872.0380680295801,
+        -872.047969461644,
+        -872.0484983417812
+      ],
+      "checkpoint_changes_ev": [
+        -0.009901432063884386,
+        -0.0005288801371534646
+      ],
+      "last_change_ev": -0.0005288801371534646,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b0_random",
+      "status": "complete",
+      "energies_ev": [
+        -871.7833660546045,
+        -871.7847592230729,
+        -871.7852388922107
+      ],
+      "checkpoint_changes_ev": [
+        -0.0013931684684393986,
+        -0.0004796691378032847
+      ],
+      "last_change_ev": -0.0004796691378032847,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b1_targeted",
+      "status": "complete",
+      "energies_ev": [
+        -872.0359277822974,
+        -872.0365007966049,
+        -872.0368657683936
+      ],
+      "checkpoint_changes_ev": [
+        -0.0005730143074060834,
+        -0.0003649717887128645
+      ],
+      "last_change_ev": -0.0003649717887128645,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b1_random",
+      "status": "complete",
+      "energies_ev": [
+        -872.0431303633678,
+        -872.0480165679214,
+        -872.0484995416227
+      ],
+      "checkpoint_changes_ev": [
+        -0.004886204553599782,
+        -0.00048297370130967465
+      ],
+      "last_change_ev": -0.00048297370130967465,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_replay",
+      "status": "complete",
+      "energies_ev": [
+        -872.0371800468788,
+        -872.0477761271826,
+        -872.0479886791054
+      ],
+      "checkpoint_changes_ev": [
+        -0.010596080303798772,
+        -0.00021255192280023039
+      ],
+      "last_change_ev": -0.00021255192280023039,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_bare",
+      "status": "complete",
+      "energies_ev": [
+        -857.3285122486525,
+        -857.3287477575427,
+        -857.3287705445326
+      ],
+      "checkpoint_changes_ev": [
+        -0.00023550889022772026,
+        -2.278698991631245e-05
+      ],
+      "last_change_ev": -2.278698991631245e-05,
+      "initial_target_met": true
+    },
+    {
+      "id": "isolated_CO2",
+      "status": "complete",
+      "energies_ev": [
+        -22.99743953988424,
+        -22.99743953988424,
+        -22.99743953988424
+      ],
+      "checkpoint_changes_ev": [
+        0.0,
+        0.0
+      ],
+      "last_change_ev": 0.0,
+      "initial_target_met": true
+    },
+    {
+      "id": "isolated_H2O",
+      "status": "complete",
+      "energies_ev": [
+        -14.383004261964704,
+        -14.383007341557903,
+        -14.383007341557903
+      ],
+      "checkpoint_changes_ev": [
+        -3.0795931991178804e-06,
+        0.0
+      ],
+      "last_change_ev": 0.0,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b0_targeted",
+      "status": "complete",
+      "energies_ev": [
+        -942.5495437419065,
+        -942.6245977001048,
+        -942.6384713499559
+      ],
+      "checkpoint_changes_ev": [
+        -0.07505395819828209,
+        -0.013873649851120717
+      ],
+      "last_change_ev": -0.013873649851120717,
+      "initial_target_met": false
+    },
+    {
+      "id": "uio66_110111_CO2_b0_random",
+      "status": "complete",
+      "energies_ev": [
+        -942.5330598493572,
+        -942.6265065204578,
+        -942.6274589321484
+      ],
+      "checkpoint_changes_ev": [
+        -0.09344667110065075,
+        -0.000952411690605004
+      ],
+      "last_change_ev": -0.000952411690605004,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b1_targeted",
+      "status": "complete",
+      "energies_ev": [
+        -942.6046986286856,
+        -942.6139885290302,
+        -942.6157550281833
+      ],
+      "checkpoint_changes_ev": [
+        -0.009289900344583657,
+        -0.0017664991531773921
+      ],
+      "last_change_ev": -0.0017664991531773921,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b1_random",
+      "status": "complete",
+      "energies_ev": [
+        -942.6105083837422,
+        -942.6205518970378,
+        -942.6238541958185
+      ],
+      "checkpoint_changes_ev": [
+        -0.010043513295613593,
+        -0.0033022987806816673
+      ],
+      "last_change_ev": -0.0033022987806816673,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_replay",
+      "status": "complete",
+      "energies_ev": [
+        -942.6106348970304,
+        -942.6158917101282,
+        -942.6233717270504
+      ],
+      "checkpoint_changes_ev": [
+        -0.005256813097730628,
+        -0.007480016922272625
+      ],
+      "last_change_ev": -0.007480016922272625,
+      "initial_target_met": false
+    },
+    {
+      "id": "uio66_110111_CO2_b0_rigid",
+      "status": "complete",
+      "energies_ev": [
+        -942.5535752193659,
+        -942.5535827308737,
+        -942.5535829533443
+      ],
+      "checkpoint_changes_ev": [
+        -7.511507760682434e-06,
+        -2.224705895059742e-07
+      ],
+      "last_change_ev": -2.224705895059742e-07,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b1_rigid",
+      "status": "complete",
+      "energies_ev": [
+        -942.6010536826672,
+        -942.6031298484147,
+        -942.6031298484147
+      ],
+      "checkpoint_changes_ev": [
+        -0.0020761657475532047,
+        0.0
+      ],
+      "last_change_ev": 0.0,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b0_targeted",
+      "status": "complete",
+      "energies_ev": [
+        -933.9931635851576,
+        -934.0213785330856,
+        -934.0218436891405
+      ],
+      "checkpoint_changes_ev": [
+        -0.028214947927949652,
+        -0.0004651560549291389
+      ],
+      "last_change_ev": -0.0004651560549291389,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b0_random",
+      "status": "complete",
+      "energies_ev": [
+        -933.9272212208575,
+        -934.0198169293667,
+        -934.0220278948077
+      ],
+      "checkpoint_changes_ev": [
+        -0.09259570850917953,
+        -0.0022109654410087387
+      ],
+      "last_change_ev": -0.0022109654410087387,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b1_targeted",
+      "status": "complete",
+      "energies_ev": [
+        -933.9851862389304,
+        -934.0314308377199,
+        -934.0333220204028
+      ],
+      "checkpoint_changes_ev": [
+        -0.04624459878948528,
+        -0.0018911826829253187
+      ],
+      "last_change_ev": -0.0018911826829253187,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b1_random",
+      "status": "complete",
+      "energies_ev": [
+        -933.9944005717571,
+        -934.002463971617,
+        -934.0439250522884
+      ],
+      "checkpoint_changes_ev": [
+        -0.008063399859906895,
+        -0.041461080671410855
+      ],
+      "last_change_ev": -0.041461080671410855,
+      "initial_target_met": false
+    },
+    {
+      "id": "uio66_110111_H2O_replay",
+      "status": "complete",
+      "energies_ev": [
+        -933.9986602940663,
+        -934.0425805648894,
+        -934.0441747468049
+      ],
+      "checkpoint_changes_ev": [
+        -0.043920270823036844,
+        -0.001594181915493209
+      ],
+      "last_change_ev": -0.001594181915493209,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b0_rigid",
+      "status": "complete",
+      "energies_ev": [
+        -933.9106355092579,
+        -933.911339573754,
+        -933.911339573754
+      ],
+      "checkpoint_changes_ev": [
+        -0.0007040644961762155,
+        0.0
+      ],
+      "last_change_ev": 0.0,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b1_rigid",
+      "status": "complete",
+      "energies_ev": [
+        -933.9775101754051,
+        -933.9790604731174,
+        -933.9790604731174
+      ],
+      "checkpoint_changes_ev": [
+        -0.0015502977123560413,
+        0.0
+      ],
+      "last_change_ev": 0.0,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_bare",
+      "status": "complete",
+      "energies_ev": [
+        -919.2427507337715,
+        -919.2599653048014,
+        -919.2620071225862
+      ],
+      "checkpoint_changes_ev": [
+        -0.017214571029967374,
+        -0.002041817784743216
+      ],
+      "last_change_ev": -0.002041817784743216,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_b0_targeted_empty",
+      "status": "complete",
+      "energies_ev": [
+        -857.3279374345829,
+        -857.3281115890778,
+        -857.3282933050739
+      ],
+      "checkpoint_changes_ev": [
+        -0.00017415449497093505,
+        -0.0001817159960637582
+      ],
+      "last_change_ev": -0.0001817159960637582,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_b0_random_empty",
+      "status": "complete",
+      "energies_ev": [
+        -857.3271666264033,
+        -857.3274103667062,
+        -857.3283973363318
+      ],
+      "checkpoint_changes_ev": [
+        -0.000243740302948936,
+        -0.0009869696256146199
+      ],
+      "last_change_ev": -0.0009869696256146199,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_b1_targeted_empty",
+      "status": "complete",
+      "energies_ev": [
+        -857.3266791532964,
+        -857.3269177342809,
+        -857.3282048092639
+      ],
+      "checkpoint_changes_ev": [
+        -0.00023858098450091347,
+        -0.0012870749829971828
+      ],
+      "last_change_ev": -0.0012870749829971828,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_b1_random_empty",
+      "status": "complete",
+      "energies_ev": [
+        -857.3253286891868,
+        -857.3255997833764,
+        -857.3285445793817
+      ],
+      "checkpoint_changes_ev": [
+        -0.000271094189656651,
+        -0.0029447960052948474
+      ],
+      "last_change_ev": -0.0029447960052948474,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_replay_empty",
+      "status": "complete",
+      "energies_ev": [
+        -857.3278999845298,
+        -857.3280946163198,
+        -857.3282985593798
+      ],
+      "checkpoint_changes_ev": [
+        -0.00019463179000922537,
+        -0.00020394306000071083
+      ],
+      "last_change_ev": -0.00020394306000071083,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b0_targeted_empty",
+      "status": "complete",
+      "energies_ev": [
+        -857.3271303137001,
+        -857.3277883392777,
+        -857.3284179836045
+      ],
+      "checkpoint_changes_ev": [
+        -0.0006580255776498234,
+        -0.0006296443267501672
+      ],
+      "last_change_ev": -0.0006296443267501672,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b0_random_empty",
+      "status": "complete",
+      "energies_ev": [
+        -857.3234650053713,
+        -857.3271958450437,
+        -857.3285655916061
+      ],
+      "checkpoint_changes_ev": [
+        -0.0037308396723574333,
+        -0.0013697465624318284
+      ],
+      "last_change_ev": -0.0013697465624318284,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b1_targeted_empty",
+      "status": "complete",
+      "energies_ev": [
+        -857.3269088979481,
+        -857.3269797935831,
+        -857.3287308547755
+      ],
+      "checkpoint_changes_ev": [
+        -7.089563496265328e-05,
+        -0.0017510611924080877
+      ],
+      "last_change_ev": -0.0017510611924080877,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b1_random_empty",
+      "status": "complete",
+      "energies_ev": [
+        -857.3266660075328,
+        -857.3272783141498,
+        -857.32826252414
+      ],
+      "checkpoint_changes_ev": [
+        -0.0006123066169720914,
+        -0.000984209990178897
+      ],
+      "last_change_ev": -0.000984209990178897,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_replay_empty",
+      "status": "complete",
+      "energies_ev": [
+        -857.3271261942442,
+        -857.3277587781826,
+        -857.3284547337499
+      ],
+      "checkpoint_changes_ev": [
+        -0.0006325839383407583,
+        -0.0006959555673802242
+      ],
+      "last_change_ev": -0.0006959555673802242,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b0_targeted_empty",
+      "status": "complete",
+      "energies_ev": [
+        -919.2764258379365,
+        -919.2782093098476,
+        -919.2810155816513
+      ],
+      "checkpoint_changes_ev": [
+        -0.001783471911153356,
+        -0.002806271803706295
+      ],
+      "last_change_ev": -0.002806271803706295,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b0_random_empty",
+      "status": "complete",
+      "energies_ev": [
+        -919.2463756874308,
+        -919.2465793255311,
+        -919.25062261643
+      ],
+      "checkpoint_changes_ev": [
+        -0.00020363810028811713,
+        -0.004043290898835039
+      ],
+      "last_change_ev": -0.004043290898835039,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b1_targeted_empty",
+      "status": "complete",
+      "energies_ev": [
+        -919.2588793657493,
+        -919.2599358011987,
+        -919.2601219166137
+      ],
+      "checkpoint_changes_ev": [
+        -0.0010564354494135841,
+        -0.00018611541497648432
+      ],
+      "last_change_ev": -0.00018611541497648432,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b1_random_empty",
+      "status": "complete",
+      "energies_ev": [
+        -919.2489536743899,
+        -919.2614514334903,
+        -919.2629467734623
+      ],
+      "checkpoint_changes_ev": [
+        -0.012497759100369876,
+        -0.001495339972052534
+      ],
+      "last_change_ev": -0.001495339972052534,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_replay_empty",
+      "status": "complete",
+      "energies_ev": [
+        -919.2506078283834,
+        -919.2608418940077,
+        -919.2629087759817
+      ],
+      "checkpoint_changes_ev": [
+        -0.010234065624331379,
+        -0.0020668819739739774
+      ],
+      "last_change_ev": -0.0020668819739739774,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b0_targeted_empty",
+      "status": "complete",
+      "energies_ev": [
+        -919.227198318178,
+        -919.2796947561266,
+        -919.2809541222698
+      ],
+      "checkpoint_changes_ev": [
+        -0.05249643794854819,
+        -0.0012593661432447334
+      ],
+      "last_change_ev": -0.0012593661432447334,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b0_random_empty",
+      "status": "complete",
+      "energies_ev": [
+        -919.2774420412005,
+        -919.2780722054586,
+        -919.2795575567501
+      ],
+      "checkpoint_changes_ev": [
+        -0.0006301642580410771,
+        -0.001485351291535153
+      ],
+      "last_change_ev": -0.001485351291535153,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b1_targeted_empty",
+      "status": "complete",
+      "energies_ev": [
+        -919.2766545052306,
+        -919.2802156573179,
+        -919.2806592212249
+      ],
+      "checkpoint_changes_ev": [
+        -0.0035611520872862457,
+        -0.00044356390708344406
+      ],
+      "last_change_ev": -0.00044356390708344406,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b1_random_empty",
+      "status": "complete",
+      "energies_ev": [
+        -919.275993147593,
+        -919.2803516643519,
+        -919.2809793464378
+      ],
+      "checkpoint_changes_ev": [
+        -0.004358516758884434,
+        -0.0006276820859056897
+      ],
+      "last_change_ev": -0.0006276820859056897,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_replay_empty",
+      "status": "complete",
+      "energies_ev": [
+        -919.2771483199998,
+        -919.2804018552218,
+        -919.28095374232
+      ],
+      "checkpoint_changes_ev": [
+        -0.0032535352220293134,
+        -0.0005518870981404689
+      ],
+      "last_change_ev": -0.0005518870981404689,
+      "initial_target_met": true
+    }
+  ],
+  "common_bare_ev": {
+    "uio66_000000": [
+      -857.3285122486525,
+      -857.3287477575427,
+      -857.3287705445326
+    ],
+    "uio66_110111": [
+      -919.2774420412005,
+      -919.2804018552218,
+      -919.2810155816513
+    ]
+  },
+  "adsorption_components": [
+    {
+      "id": "uio66_000000_CO2_b0_targeted",
+      "design": "uio66_000000",
+      "gas": "CO2",
+      "kind": "matched",
+      "batch": 0,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3223586503226983,
+        -0.3234896734195303,
+        -0.3235579444012586
+      ],
+      "checkpoint_changes_ev": [
+        -0.0011310230968319956,
+        -6.827098172834667e-05
+      ],
+      "last_change_ev": -6.827098172834667e-05,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_b0_random",
+      "design": "uio66_000000",
+      "gas": "CO2",
+      "kind": "matched",
+      "batch": 0,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3216690064217431,
+        -0.32351392021665504,
+        -0.32391311748448004
+      ],
+      "checkpoint_changes_ev": [
+        -0.0018449137949119176,
+        -0.0003991972678250022
+      ],
+      "last_change_ev": -0.0003991972678250022,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_b1_targeted",
+      "design": "uio66_000000",
+      "gas": "CO2",
+      "kind": "matched",
+      "batch": 1,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3050647322742037,
+        -0.3058169779059057,
+        -0.32354412372693275
+      ],
+      "checkpoint_changes_ev": [
+        -0.0007522456317019532,
+        -0.01772714582102708
+      ],
+      "last_change_ev": -0.01772714582102708,
+      "initial_target_met": false
+    },
+    {
+      "id": "uio66_000000_CO2_b1_random",
+      "design": "uio66_000000",
+      "gas": "CO2",
+      "kind": "matched",
+      "batch": 1,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.32117154963360406,
+        -0.3233607504497371,
+        -0.3239924720021321
+      ],
+      "checkpoint_changes_ev": [
+        -0.0021892008161330523,
+        -0.0006317215523949926
+      ],
+      "last_change_ev": -0.0006317215523949926,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_CO2_replay",
+      "design": "uio66_000000",
+      "gas": "CO2",
+      "kind": "replay",
+      "batch": 0,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3204580688812797,
+        -0.3233192934260245,
+        -0.3235658858522896
+      ],
+      "checkpoint_changes_ev": [
+        -0.0028612245447448004,
+        -0.00024659242626512423
+      ],
+      "last_change_ev": -0.00024659242626512423,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b0_targeted",
+      "design": "uio66_000000",
+      "gas": "H2O",
+      "kind": "matched",
+      "batch": 0,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.32655151896294043,
+        -0.336214362543398,
+        -0.33672045569063513
+      ],
+      "checkpoint_changes_ev": [
+        -0.009662843580457547,
+        -0.0005060931472371522
+      ],
+      "last_change_ev": -0.0005060931472371522,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b0_random",
+      "design": "uio66_000000",
+      "gas": "H2O",
+      "kind": "matched",
+      "batch": 0,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.07184954398728038,
+        -0.07300412397229294,
+        -0.07346100612017992
+      ],
+      "checkpoint_changes_ev": [
+        -0.0011545799850125604,
+        -0.00045688214788697223
+      ],
+      "last_change_ev": -0.00045688214788697223,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b1_targeted",
+      "design": "uio66_000000",
+      "gas": "H2O",
+      "kind": "matched",
+      "batch": 1,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3244112716802583,
+        -0.32474569750423754,
+        -0.3250878823030341
+      ],
+      "checkpoint_changes_ev": [
+        -0.00033442582397924525,
+        -0.00034218479879655206
+      ],
+      "last_change_ev": -0.00034218479879655206,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_b1_random",
+      "design": "uio66_000000",
+      "gas": "H2O",
+      "kind": "matched",
+      "batch": 1,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3316138527506318,
+        -0.33626146882080477,
+        -0.3367216555321981
+      ],
+      "checkpoint_changes_ev": [
+        -0.004647616070172944,
+        -0.0004601867113933622
+      ],
+      "last_change_ev": -0.0004601867113933622,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_000000_H2O_replay",
+      "design": "uio66_000000",
+      "gas": "H2O",
+      "kind": "replay",
+      "batch": 0,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3256635362616116,
+        -0.33602102808198353,
+        -0.33621079301486745
+      ],
+      "checkpoint_changes_ev": [
+        -0.010357491820371933,
+        -0.00018976493288391794
+      ],
+      "last_change_ev": -0.00018976493288391794,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b0_targeted",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "kind": "matched",
+      "batch": 0,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.2746621608217623,
+        -0.34675630499872057,
+        -0.3600162284203492
+      ],
+      "checkpoint_changes_ev": [
+        -0.07209414417695825,
+        -0.013259923421628628
+      ],
+      "last_change_ev": -0.013259923421628628,
+      "initial_target_met": false
+    },
+    {
+      "id": "uio66_110111_CO2_b0_random",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "kind": "matched",
+      "batch": 0,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.25817826827243096,
+        -0.34866512535175787,
+        -0.3490038106128708
+      ],
+      "checkpoint_changes_ev": [
+        -0.09048685707932691,
+        -0.0003386852611129143
+      ],
+      "last_change_ev": -0.0003386852611129143,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b1_targeted",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "kind": "matched",
+      "batch": 1,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.32981704760082664,
+        -0.33614713392408646,
+        -0.33729990664777176
+      ],
+      "checkpoint_changes_ev": [
+        -0.00633008632325982,
+        -0.0011527727236853025
+      ],
+      "last_change_ev": -0.0011527727236853025,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b1_random",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "kind": "matched",
+      "batch": 1,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3356268026574156,
+        -0.3427105019317054,
+        -0.34539907428289496
+      ],
+      "checkpoint_changes_ev": [
+        -0.007083699274289756,
+        -0.0026885723511895776
+      ],
+      "last_change_ev": -0.0026885723511895776,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_replay",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "kind": "replay",
+      "batch": 1,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3357533159456665,
+        -0.3380503150220733,
+        -0.3449166055148538
+      ],
+      "checkpoint_changes_ev": [
+        -0.0022969990764067916,
+        -0.006866290492780536
+      ],
+      "last_change_ev": -0.006866290492780536,
+      "initial_target_met": false
+    },
+    {
+      "id": "uio66_110111_CO2_b0_rigid",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "kind": "rigid",
+      "batch": 0,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.2941285568955294,
+        -0.2941360684032901,
+        -0.2941362908738796
+      ],
+      "checkpoint_changes_ev": [
+        -7.511507760682434e-06,
+        -2.224705895059742e-07
+      ],
+      "last_change_ev": -2.224705895059742e-07,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_CO2_b1_rigid",
+      "design": "uio66_110111",
+      "gas": "CO2",
+      "kind": "rigid",
+      "batch": 1,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.34160702019674716,
+        -0.34368318594430036,
+        -0.34368318594430036
+      ],
+      "checkpoint_changes_ev": [
+        -0.0020761657475532047,
+        0.0
+      ],
+      "last_change_ev": 0.0,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b0_targeted",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "kind": "matched",
+      "batch": 0,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.33271728199239803,
+        -0.3579693363058247,
+        -0.3578207659312618
+      ],
+      "checkpoint_changes_ev": [
+        -0.025252054313426697,
+        0.00014857037456295075
+      ],
+      "last_change_ev": 0.00014857037456295075,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b0_random",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "kind": "matched",
+      "batch": 0,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.2667749176922989,
+        -0.35640773258695546,
+        -0.3580049715984721
+      ],
+      "checkpoint_changes_ev": [
+        -0.08963281489465658,
+        -0.001597239011516649
+      ],
+      "last_change_ev": -0.001597239011516649,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b1_targeted",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "kind": "matched",
+      "batch": 1,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.32473993576517657,
+        -0.3680216409401389,
+        -0.3692990971935721
+      ],
+      "checkpoint_changes_ev": [
+        -0.043281705174962326,
+        -0.001277456253433229
+      ],
+      "last_change_ev": -0.001277456253433229,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b1_random",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "kind": "matched",
+      "batch": 1,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3339542685918495,
+        -0.33905477483723345,
+        -0.3799021290791522
+      ],
+      "checkpoint_changes_ev": [
+        -0.00510050624538394,
+        -0.040847354241918765
+      ],
+      "last_change_ev": -0.040847354241918765,
+      "initial_target_met": false
+    },
+    {
+      "id": "uio66_110111_H2O_replay",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "kind": "replay",
+      "batch": 1,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3382139909011066,
+        -0.3791713681096205,
+        -0.3801518235956216
+      ],
+      "checkpoint_changes_ev": [
+        -0.04095737720851389,
+        -0.0009804554860011194
+      ],
+      "last_change_ev": -0.0009804554860011194,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b0_rigid",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "kind": "rigid",
+      "batch": 0,
+      "category": "targeted",
+      "Eads_or_rigid_interaction_ev": [
+        -0.26562412470699925,
+        -0.26632510960997635,
+        -0.26632510960997635
+      ],
+      "checkpoint_changes_ev": [
+        -0.0007009849029770976,
+        0.0
+      ],
+      "last_change_ev": 0.0,
+      "initial_target_met": true
+    },
+    {
+      "id": "uio66_110111_H2O_b1_rigid",
+      "design": "uio66_110111",
+      "gas": "H2O",
+      "kind": "rigid",
+      "batch": 1,
+      "category": "random",
+      "Eads_or_rigid_interaction_ev": [
+        -0.3324987908542134,
+        -0.33404600897337033,
+        -0.33404600897337033
+      ],
+      "checkpoint_changes_ev": [
+        -0.0015472181191569234,
+        0.0
+      ],
+      "last_change_ev": 0.0,
+      "initial_target_met": true
+    }
+  ],
+  "paired_differences": [
+    {
+      "design": "uio66_000000",
+      "batch": 0,
+      "category": "targeted",
+      "CO2_minus_H2O_ev": [
+        0.004192868640242153,
+        0.012724689123867705,
+        0.01316251128937651
+      ],
+      "last_change_ev": 0.0004378221655088055,
+      "both_gases_individually_stable": true,
+      "paired_target_met": true
+    },
+    {
+      "design": "uio66_000000",
+      "batch": 0,
+      "category": "random",
+      "CO2_minus_H2O_ev": [
+        -0.24981946243446274,
+        -0.2505097962443621,
+        -0.2504521113643001
+      ],
+      "last_change_ev": 5.7684880061970034e-05,
+      "both_gases_individually_stable": true,
+      "paired_target_met": true
+    },
+    {
+      "design": "uio66_000000",
+      "batch": 1,
+      "category": "targeted",
+      "CO2_minus_H2O_ev": [
+        0.019346539406054575,
+        0.018928719598331867,
+        0.0015437585761013395
+      ],
+      "last_change_ev": -0.017384961022230527,
+      "both_gases_individually_stable": false,
+      "paired_target_met": false
+    },
+    {
+      "design": "uio66_000000",
+      "batch": 1,
+      "category": "random",
+      "CO2_minus_H2O_ev": [
+        0.010442303117027762,
+        0.012900718371067654,
+        0.012729183530066024
+      ],
+      "last_change_ev": -0.0001715348410016304,
+      "both_gases_individually_stable": true,
+      "paired_target_met": true
+    },
+    {
+      "design": "uio66_110111",
+      "batch": 0,
+      "category": "targeted",
+      "CO2_minus_H2O_ev": [
+        0.058055121170635715,
+        0.01121303130710416,
+        -0.0021954624890874186
+      ],
+      "last_change_ev": -0.013408493796191578,
+      "both_gases_individually_stable": false,
+      "paired_target_met": false
+    },
+    {
+      "design": "uio66_110111",
+      "batch": 0,
+      "category": "random",
+      "CO2_minus_H2O_ev": [
+        0.00859664941986793,
+        0.007742607235197596,
+        0.00900116098560133
+      ],
+      "last_change_ev": 0.0012585537504037347,
+      "both_gases_individually_stable": true,
+      "paired_target_met": true
+    },
+    {
+      "design": "uio66_110111",
+      "batch": 1,
+      "category": "targeted",
+      "CO2_minus_H2O_ev": [
+        -0.005077111835650072,
+        0.031874507016052434,
+        0.03199919054580036
+      ],
+      "last_change_ev": 0.00012468352974792651,
+      "both_gases_individually_stable": true,
+      "paired_target_met": true
+    },
+    {
+      "design": "uio66_110111",
+      "batch": 1,
+      "category": "random",
+      "CO2_minus_H2O_ev": [
+        -0.0016725340655661114,
+        -0.003655727094471928,
+        0.03450305479625726
+      ],
+      "last_change_ev": 0.03815878189072919,
+      "both_gases_individually_stable": false,
+      "paired_target_met": false
+    }
+  ],
+  "matched_controls": [
+    {
+      "id": "uio66_000000_CO2_replay",
+      "paired_with": "uio66_000000_CO2_b0_targeted",
+      "total_energy_difference_ev": -7.941451031001634e-06,
+      "host_rmsd_A": 0.0008804970512283487,
+      "host_rmsd_Zr_translation_removed_A": 0.0008750200907281015,
+      "guest_permutation_rmsd_Zr_translation_removed_A": 0.004553014035132776,
+      "guest_axis_difference_deg": 0.03281282953636156,
+      "contacts": {
+        "nearest": [
+          [
+            2.1240208667187894,
+            8,
+            115
+          ],
+          [
+            3.066471377687459,
+            8,
+            114
+          ],
+          [
+            3.0942145227687416,
+            96,
+            115
+          ],
+          [
+            3.2297219891787203,
+            42,
+            115
+          ],
+          [
+            3.2313667072712424,
+            71,
+            115
+          ],
+          [
+            3.3972725171660687,
+            97,
+            115
+          ],
+          [
+            3.398896691852334,
+            95,
+            115
+          ],
+          [
+            3.4142801286502014,
+            57,
+            115
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 96,
+            "H": 8,
+            "acceptor": 115,
+            "HA_A": 2.1240208667187885,
+            "DHA_deg": 175.27253081047738
+          }
+        ],
+        "motif": "node:H|node:O"
+      },
+      "paired_contacts": {
+        "nearest": [
+          [
+            2.1245797544203096,
+            8,
+            115
+          ],
+          [
+            3.0664194217182286,
+            8,
+            114
+          ],
+          [
+            3.094822126069962,
+            96,
+            115
+          ],
+          [
+            3.231587553265216,
+            42,
+            115
+          ],
+          [
+            3.2319254939298085,
+            71,
+            115
+          ],
+          [
+            3.400627994281569,
+            97,
+            115
+          ],
+          [
+            3.40172114597687,
+            95,
+            115
+          ],
+          [
+            3.412180794909401,
+            57,
+            115
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 96,
+            "H": 8,
+            "acceptor": 115,
+            "HA_A": 2.124579754420309,
+            "DHA_deg": 175.35033648331458
+          }
+        ],
+        "motif": "node:H|node:O"
+      },
+      "guest_indexed_rmsd_A": 0.004391777701195342,
+      "interpretation": "Guest identical-atom swap tested; Zr translation removed. No framework symmetry or lattice-image site equivalence assumed."
+    },
+    {
+      "id": "uio66_000000_H2O_replay",
+      "paired_with": "uio66_000000_H2O_b0_targeted",
+      "total_energy_difference_ev": 0.0005096626757676859,
+      "host_rmsd_A": 0.006480543423688219,
+      "host_rmsd_Zr_translation_removed_A": 0.006615154568974063,
+      "guest_permutation_rmsd_Zr_translation_removed_A": 0.031086935958037194,
+      "guest_axis_difference_deg": 1.5985835106343784,
+      "contacts": {
+        "nearest": [
+          [
+            1.8156311854193765,
+            8,
+            114
+          ],
+          [
+            2.302420255824437,
+            8,
+            116
+          ],
+          [
+            2.330228491904808,
+            8,
+            115
+          ],
+          [
+            2.8041021430473476,
+            96,
+            114
+          ],
+          [
+            2.8928237007654403,
+            42,
+            116
+          ],
+          [
+            2.9041475832675165,
+            105,
+            116
+          ],
+          [
+            2.9900489213677237,
+            42,
+            115
+          ],
+          [
+            3.022873069879116,
+            106,
+            116
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 96,
+            "H": 8,
+            "acceptor": 114,
+            "HA_A": 1.8156311854193767,
+            "DHA_deg": 177.35236131437458
+          }
+        ],
+        "motif": "L0:O|L3:C|L3:O|node:H|node:O"
+      },
+      "paired_contacts": {
+        "nearest": [
+          [
+            1.8146752240429678,
+            8,
+            114
+          ],
+          [
+            2.3027849710500075,
+            8,
+            116
+          ],
+          [
+            2.3225716728052315,
+            8,
+            115
+          ],
+          [
+            2.803311786702702,
+            96,
+            114
+          ],
+          [
+            2.9255216899329177,
+            42,
+            116
+          ],
+          [
+            2.9327742387368603,
+            105,
+            116
+          ],
+          [
+            2.9627411861157515,
+            42,
+            115
+          ],
+          [
+            3.00312249663785,
+            97,
+            115
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 96,
+            "H": 8,
+            "acceptor": 114,
+            "HA_A": 1.8146752240429678,
+            "DHA_deg": 177.55660936117056
+          }
+        ],
+        "motif": "L3:C|L3:O|node:H|node:O"
+      },
+      "guest_indexed_rmsd_A": 0.030846076352395845,
+      "interpretation": "Guest identical-atom swap tested; Zr translation removed. No framework symmetry or lattice-image site equivalence assumed."
+    },
+    {
+      "id": "uio66_110111_CO2_replay",
+      "paired_with": "uio66_110111_CO2_b1_random",
+      "total_energy_difference_ev": 0.00048246876804114436,
+      "host_rmsd_A": 0.012636233835800302,
+      "host_rmsd_Zr_translation_removed_A": 0.012792930618312888,
+      "guest_permutation_rmsd_Zr_translation_removed_A": 0.035212169840840725,
+      "guest_axis_difference_deg": 0.7146094345796561,
+      "contacts": {
+        "nearest": [
+          [
+            2.272471271178796,
+            15,
+            126
+          ],
+          [
+            3.046251190343787,
+            118,
+            125
+          ],
+          [
+            3.0506779480016077,
+            30,
+            125
+          ],
+          [
+            3.1203919131484312,
+            30,
+            124
+          ],
+          [
+            3.203487476465996,
+            15,
+            124
+          ],
+          [
+            3.2092925356946265,
+            46,
+            126
+          ],
+          [
+            3.2307586253561986,
+            109,
+            126
+          ],
+          [
+            3.255879999244349,
+            34,
+            126
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 109,
+            "H": 15,
+            "acceptor": 126,
+            "HA_A": 2.272471271178795,
+            "DHA_deg": 168.47279514737247
+          }
+        ],
+        "motif": "L0:H|L3:H|node:H"
+      },
+      "paired_contacts": {
+        "nearest": [
+          [
+            2.285050632690324,
+            15,
+            126
+          ],
+          [
+            2.985386167491916,
+            118,
+            125
+          ],
+          [
+            3.053187478606808,
+            30,
+            125
+          ],
+          [
+            3.1305912470243964,
+            30,
+            124
+          ],
+          [
+            3.2138285097764987,
+            46,
+            126
+          ],
+          [
+            3.2140207365086453,
+            15,
+            124
+          ],
+          [
+            3.2419224952090087,
+            109,
+            126
+          ],
+          [
+            3.248694086025706,
+            34,
+            126
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 109,
+            "H": 15,
+            "acceptor": 126,
+            "HA_A": 2.285050632690324,
+            "DHA_deg": 167.93672247406928
+          }
+        ],
+        "motif": "L0:H|L3:H|node:H"
+      },
+      "guest_indexed_rmsd_A": 0.0340423286417308,
+      "interpretation": "Guest identical-atom swap tested; Zr translation removed. No framework symmetry or lattice-image site equivalence assumed."
+    },
+    {
+      "id": "uio66_110111_CO2_b0_rigid",
+      "paired_with": "uio66_110111_CO2_b0_targeted",
+      "total_energy_difference_ev": 0.08488839661163183,
+      "host_rmsd_A": 0.32729047976188963,
+      "host_rmsd_Zr_translation_removed_A": 0.32158925022083995,
+      "guest_permutation_rmsd_Zr_translation_removed_A": 2.51794328629919,
+      "guest_axis_difference_deg": 36.03804896565819,
+      "contacts": {
+        "nearest": [
+          [
+            2.661384316417355,
+            118,
+            126
+          ],
+          [
+            2.9379695825572982,
+            30,
+            124
+          ],
+          [
+            3.034989484865068,
+            30,
+            126
+          ],
+          [
+            3.2885666824105186,
+            30,
+            125
+          ],
+          [
+            3.3551844233059334,
+            7,
+            126
+          ],
+          [
+            3.408579472111914,
+            17,
+            126
+          ],
+          [
+            3.475098601302873,
+            66,
+            124
+          ],
+          [
+            3.4858705051645464,
+            59,
+            125
+          ]
+        ],
+        "hbonds": [],
+        "motif": "L0:H|L3:H"
+      },
+      "paired_contacts": {
+        "nearest": [
+          [
+            2.6876039246347188,
+            121,
+            126
+          ],
+          [
+            2.7177196733214917,
+            33,
+            126
+          ],
+          [
+            2.8519882784293165,
+            120,
+            126
+          ],
+          [
+            2.9254788921807426,
+            33,
+            124
+          ],
+          [
+            3.0274998733474705,
+            7,
+            124
+          ],
+          [
+            3.095920791421353,
+            6,
+            126
+          ],
+          [
+            3.1334715423526656,
+            119,
+            124
+          ],
+          [
+            3.168594555853499,
+            119,
+            126
+          ]
+        ],
+        "hbonds": [],
+        "motif": "L1:H|L3:H|L3:N|L4:H|L4:N"
+      },
+      "guest_indexed_rmsd_A": 2.4802010750810175,
+      "interpretation": "Shared-host rigid vs original-host flexible comparison: host relaxation, initial host conformation, mapping and reached basin are confounded. Guest identical-atom swap tested; Zr translation removed. No framework symmetry or lattice-image site equivalence assumed."
+    },
+    {
+      "id": "uio66_110111_CO2_b1_rigid",
+      "paired_with": "uio66_110111_CO2_b1_random",
+      "total_energy_difference_ev": 0.020724347403756838,
+      "host_rmsd_A": 0.23025117332694184,
+      "host_rmsd_Zr_translation_removed_A": 0.22985786003015304,
+      "guest_permutation_rmsd_Zr_translation_removed_A": 0.2704347073265332,
+      "guest_axis_difference_deg": 5.205490383024626,
+      "contacts": {
+        "nearest": [
+          [
+            2.189640404417696,
+            15,
+            126
+          ],
+          [
+            3.0841739612638714,
+            30,
+            125
+          ],
+          [
+            3.131809313273442,
+            15,
+            124
+          ],
+          [
+            3.1468104262035594,
+            30,
+            124
+          ],
+          [
+            3.1522233386796024,
+            109,
+            126
+          ],
+          [
+            3.209253412662742,
+            46,
+            126
+          ],
+          [
+            3.247783522514688,
+            34,
+            126
+          ],
+          [
+            3.3201016627670152,
+            59,
+            124
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 109,
+            "H": 15,
+            "acceptor": 126,
+            "HA_A": 2.1896404044176947,
+            "DHA_deg": 171.7810457983137
+          }
+        ],
+        "motif": "L0:H|node:H|node:O"
+      },
+      "paired_contacts": {
+        "nearest": [
+          [
+            2.285050632690324,
+            15,
+            126
+          ],
+          [
+            2.985386167491916,
+            118,
+            125
+          ],
+          [
+            3.053187478606808,
+            30,
+            125
+          ],
+          [
+            3.1305912470243964,
+            30,
+            124
+          ],
+          [
+            3.2138285097764987,
+            46,
+            126
+          ],
+          [
+            3.2140207365086453,
+            15,
+            124
+          ],
+          [
+            3.2419224952090087,
+            109,
+            126
+          ],
+          [
+            3.248694086025706,
+            34,
+            126
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 109,
+            "H": 15,
+            "acceptor": 126,
+            "HA_A": 2.285050632690324,
+            "DHA_deg": 167.93672247406928
+          }
+        ],
+        "motif": "L0:H|L3:H|node:H"
+      },
+      "guest_indexed_rmsd_A": 0.3004955859893934,
+      "interpretation": "Shared-host rigid vs original-host flexible comparison: host relaxation, initial host conformation, mapping and reached basin are confounded. Guest identical-atom swap tested; Zr translation removed. No framework symmetry or lattice-image site equivalence assumed."
+    },
+    {
+      "id": "uio66_110111_H2O_replay",
+      "paired_with": "uio66_110111_H2O_b1_random",
+      "total_energy_difference_ev": -0.0002496945164693898,
+      "host_rmsd_A": 0.011464231782026643,
+      "host_rmsd_Zr_translation_removed_A": 0.011473012407321423,
+      "guest_permutation_rmsd_Zr_translation_removed_A": 0.03146552871618962,
+      "guest_axis_difference_deg": 0.8242885225576913,
+      "contacts": {
+        "nearest": [
+          [
+            1.9806240361503287,
+            114,
+            124
+          ],
+          [
+            2.4206670221721254,
+            25,
+            126
+          ],
+          [
+            2.440491050549889,
+            48,
+            126
+          ],
+          [
+            2.459180408270574,
+            35,
+            125
+          ],
+          [
+            2.4646384678334323,
+            32,
+            125
+          ],
+          [
+            2.4762359673131336,
+            114,
+            125
+          ],
+          [
+            2.730103750135154,
+            114,
+            126
+          ],
+          [
+            2.7455519130341686,
+            64,
+            126
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 10,
+            "H": 114,
+            "acceptor": 124,
+            "HA_A": 1.980624036150329,
+            "DHA_deg": 166.30768431008818
+          }
+        ],
+        "motif": "L0:H|L1:C|L1:H|L3:C|L3:H"
+      },
+      "paired_contacts": {
+        "nearest": [
+          [
+            1.9802313973077366,
+            114,
+            124
+          ],
+          [
+            2.4181239433724984,
+            25,
+            126
+          ],
+          [
+            2.4416030713769046,
+            48,
+            126
+          ],
+          [
+            2.4452938381160068,
+            35,
+            125
+          ],
+          [
+            2.4615142863701927,
+            32,
+            125
+          ],
+          [
+            2.478799512495988,
+            114,
+            125
+          ],
+          [
+            2.7285524664875007,
+            114,
+            126
+          ],
+          [
+            2.764404002455648,
+            64,
+            126
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 10,
+            "H": 114,
+            "acceptor": 124,
+            "HA_A": 1.9802313973077372,
+            "DHA_deg": 166.2004112418476
+          }
+        ],
+        "motif": "L0:H|L1:C|L1:H|L3:C|L3:H"
+      },
+      "guest_indexed_rmsd_A": 0.030230707987540843,
+      "interpretation": "Guest identical-atom swap tested; Zr translation removed. No framework symmetry or lattice-image site equivalence assumed."
+    },
+    {
+      "id": "uio66_110111_H2O_b0_rigid",
+      "paired_with": "uio66_110111_H2O_b0_targeted",
+      "total_energy_difference_ev": 0.11050411538644767,
+      "host_rmsd_A": 0.360962651844824,
+      "host_rmsd_Zr_translation_removed_A": 0.36298981436958905,
+      "guest_permutation_rmsd_Zr_translation_removed_A": 2.1453927290764367,
+      "guest_axis_difference_deg": 91.44818146790685,
+      "contacts": {
+        "nearest": [
+          [
+            2.3699398236886466,
+            22,
+            126
+          ],
+          [
+            2.407152929059303,
+            117,
+            126
+          ],
+          [
+            2.48580424037511,
+            118,
+            124
+          ],
+          [
+            2.523724724383286,
+            33,
+            125
+          ],
+          [
+            2.553433179745448,
+            118,
+            125
+          ],
+          [
+            2.77108418550025,
+            43,
+            125
+          ],
+          [
+            2.7738355150436083,
+            119,
+            125
+          ],
+          [
+            2.8050170287955485,
+            66,
+            126
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 7,
+            "H": 118,
+            "acceptor": 124,
+            "HA_A": 2.4858042403751113,
+            "DHA_deg": 122.68958359960973
+          },
+          {
+            "donor": 124,
+            "H": 126,
+            "acceptor": 22,
+            "HA_A": 2.3699398236886466,
+            "DHA_deg": 147.5850559905312
+          }
+        ],
+        "motif": "L1:C|L1:H|L1:N|L3:H"
+      },
+      "paired_contacts": {
+        "nearest": [
+          [
+            2.069090655427413,
+            6,
+            125
+          ],
+          [
+            2.2138992404415676,
+            117,
+            124
+          ],
+          [
+            2.326533064427729,
+            120,
+            125
+          ],
+          [
+            2.327567468798506,
+            121,
+            125
+          ],
+          [
+            2.4575635026260128,
+            33,
+            126
+          ],
+          [
+            2.4591777477544716,
+            33,
+            124
+          ],
+          [
+            2.486411196190028,
+            33,
+            125
+          ],
+          [
+            2.7367879428528394,
+            117,
+            126
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 22,
+            "H": 117,
+            "acceptor": 124,
+            "HA_A": 2.2138992404415676,
+            "DHA_deg": 160.91918473401228
+          },
+          {
+            "donor": 124,
+            "H": 125,
+            "acceptor": 6,
+            "HA_A": 2.0690906554274138,
+            "DHA_deg": 164.1969931312431
+          }
+        ],
+        "motif": "L1:H|L4:H|L4:N"
+      },
+      "guest_indexed_rmsd_A": 2.2555560284549734,
+      "interpretation": "Shared-host rigid vs original-host flexible comparison: host relaxation, initial host conformation, mapping and reached basin are confounded. Guest identical-atom swap tested; Zr translation removed. No framework symmetry or lattice-image site equivalence assumed."
+    },
+    {
+      "id": "uio66_110111_H2O_b1_rigid",
+      "paired_with": "uio66_110111_H2O_b1_random",
+      "total_energy_difference_ev": 0.06486457917094413,
+      "host_rmsd_A": 0.3177452295482719,
+      "host_rmsd_Zr_translation_removed_A": 0.31214582302310157,
+      "guest_permutation_rmsd_Zr_translation_removed_A": 0.24824368970686295,
+      "guest_axis_difference_deg": 18.232427210161326,
+      "contacts": {
+        "nearest": [
+          [
+            1.9891204395010829,
+            114,
+            124
+          ],
+          [
+            2.118062697481988,
+            25,
+            126
+          ],
+          [
+            2.369990429329253,
+            35,
+            125
+          ],
+          [
+            2.4090284867355614,
+            32,
+            125
+          ],
+          [
+            2.4344499436354967,
+            114,
+            125
+          ],
+          [
+            2.445472388829396,
+            48,
+            126
+          ],
+          [
+            2.6137681180277355,
+            72,
+            125
+          ],
+          [
+            2.6447254270049974,
+            114,
+            126
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 10,
+            "H": 114,
+            "acceptor": 124,
+            "HA_A": 1.989120439501082,
+            "DHA_deg": 157.88155231014372
+          }
+        ],
+        "motif": "L0:H|L1:C|L1:H|L3:C|L3:H"
+      },
+      "paired_contacts": {
+        "nearest": [
+          [
+            1.9802313973077366,
+            114,
+            124
+          ],
+          [
+            2.4181239433724984,
+            25,
+            126
+          ],
+          [
+            2.4416030713769046,
+            48,
+            126
+          ],
+          [
+            2.4452938381160068,
+            35,
+            125
+          ],
+          [
+            2.4615142863701927,
+            32,
+            125
+          ],
+          [
+            2.478799512495988,
+            114,
+            125
+          ],
+          [
+            2.7285524664875007,
+            114,
+            126
+          ],
+          [
+            2.764404002455648,
+            64,
+            126
+          ]
+        ],
+        "hbonds": [
+          {
+            "donor": 10,
+            "H": 114,
+            "acceptor": 124,
+            "HA_A": 1.9802313973077372,
+            "DHA_deg": 166.2004112418476
+          }
+        ],
+        "motif": "L0:H|L1:C|L1:H|L3:C|L3:H"
+      },
+      "guest_indexed_rmsd_A": 0.28410817407691535,
+      "interpretation": "Shared-host rigid vs original-host flexible comparison: host relaxation, initial host conformation, mapping and reached basin are confounded. Guest identical-atom swap tested; Zr translation removed. No framework symmetry or lattice-image site equivalence assumed."
+    }
+  ],
+  "historical_start31_reproduction": {
+    "status": "available",
+    "new_minus_historical_complex_ev": 7.174053280323278e-07,
+    "maximum_indexed_displacement_A": 0.00010997809397986497,
+    "meaning": "Same0.05 start, fresh LBFGS to0.02; first-crossing coordinates vs archived0.02 endpoint."
+  },
+  "rigid_host_single_points_present": 1,
+  "shared_host_reference_audit": {
+    "valid": true,
+    "errors": [],
+    "valid_rigid_paths": [
+      "uio66_110111_CO2_b0_rigid",
+      "uio66_110111_CO2_b1_rigid",
+      "uio66_110111_H2O_b0_rigid",
+      "uio66_110111_H2O_b1_rigid"
+    ],
+    "energy_ev": -919.2620071225862,
+    "host_geometry_sha256": "d64b90a44b0bb53fd1a2c1779c034fd60c36c9e5b46e337da9c23e04ecc9a964"
+  },
+  "shared_host_paired_differences": [
+    {
+      "batch": 0,
+      "CO2_minus_H2O_ev": [
+        -0.02850443218853016,
+        -0.027810958793313745,
+        -0.02781118126390325
+      ],
+      "last_change_ev": -2.224705895059742e-07,
+      "both_gases_individually_stable": true,
+      "paired_target_met": true
+    },
+    {
+      "batch": 1,
+      "CO2_minus_H2O_ev": [
+        -0.009108229342533747,
+        -0.009637176970930028,
+        -0.009637176970930028
+      ],
+      "last_change_ev": 0.0,
+      "both_gases_individually_stable": true,
+      "paired_target_met": true
+    }
+  ],
+  "all_required_paths_complete": true,
+  "all_component_energy_targets_met": false,
+  "claim": "Numerical diagnostic only; no refit, material ranking, or UMA physical accuracy conclusion."
+}

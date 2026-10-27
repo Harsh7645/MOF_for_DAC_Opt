@@ -1,0 +1,9 @@
+pattern,configuration_index,reason,historical_fitted_rank,historical_sampled_rank,historical_split_role
+000000,0,Unfunctionalized end member; node/linker adsorption control,14,23,train
+111111,1,Fully aminated end member; historical best sampled state,5,1,train
+110111,2,"Historical fitted optimum, different from sampled optimum",1,2,train
+001001,3,Largest absolute historical fitted-vs-sampled rank disagreement (57 vs 20),57,20,test
+000110,4,Two-amino arrangement; opposite-direction rank disagreement (23 vs 56),23,56,test
+001100,5,"Third two-amino arrangement, different slots; rank disagreement (25 vs 52)",25,52,test
+000111,6,Three-amino contiguous-index pattern; matched composition with 010101,7,15,test
+010101,7,Three-amino alternating-index pattern; indices are not chemical adjacency,12,16,train

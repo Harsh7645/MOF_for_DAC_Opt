@@ -1,3 +1,37 @@
+REVIEW RESPONSE v2 - 2026-10-27; no new scientific calculations or fits.
+Read docs/PHASE3_REVIEW_RESPONSE_V2.md, docs/PHASE3_SCIENTIFIC_CLARIFICATIONS_V2.md,
+docs/MANUSCRIPT_METHODS_RESULTS_V2.md and docs/CHEMISTRY_INSPECTION_REVIEW_V2.md.
+Updated checklist: docs/PHASE3_CLOSURE_CHECKLIST_V2.md. Fixed review package:
+plans/phase3-review-response-v2/README.md (snapshot.zip and checksum receipt).
+Exact decoder/tolerances, bootstrap endpoints/23 exclusions/977 conditional fits,
+eight-pattern seeds/gas-specific failures and periodic loading limitations documented.
+Five exact checkpoints + parent/CIF;749 coordinate rows;20 OH environments;stable image labels.
+Four targeted checks pass; v1 scope and historical scientific evidence unchanged.
+PHASE 3 INCOMPLETE: Q1 source/proton correspondence and Q2 geometry adequacy OPEN;
+qualified chemistry assessment and independent final review still required.
+User-communicated findings have no supplied signed reviewer identity/qualification;
+AI response is NOT human approval. No demonstrated blocker is NOT a passed gate.
+Keep fixed snapshot immutable; record later responses separately with its hash.
+ODAC25 deferred/paused/UNSENT; DFT supplementary; no contact/compute authorized.
+
+CURRENT SCOPE REVISION - 2026-10-27; supersedes older completion gates below.
+Title: Separating Optimization Performance from Target Reliability in a Discrete MOF Design Workflow.
+Read docs/RESEARCH_SCOPE_REVISION_20261027.md, docs/PHASE3_CLOSURE_CHECKLIST_V1.md,
+docs/MANUSCRIPT_METHODS_RESULTS_V1.md and plans/phase3-methods-scope-v1/EVIDENCE_INDEX.md.
+Local preparation: six tables, seven figure pairs, saved snapshots, claim ledger and structural record.
+Reformat only: no new solver runs, fits, QE/UMA or unchanged scientific audits.
+PHASE 3 INCOMPLETE: qualified chemistry assessment AND independent final review pending;
+record reviewer/date/evidence hashes/findings/disposition; no inferred approval.
+ODAC25 formally DEFERRED extension; investigation PAUSED; request UNSENT; frozen138 intact.
+14 DFT baselines supplementary only; higher-memory access/refinement NOT a limited-scope closure dependency.
+Sc/Sh/Sg each2.0meV where applicable; test Sg directly; all-atom max vector force change0.005eV/A.
+Both successive and direct-original-baseline comparisons required. Baseline drift does not preclude
+later refined convergence. See docs/FUTURE_CONVERGENCE_RULES_V3.md; old sealed rules preserved.
+Additive descriptive only; pairwise RMSE exception, exposed13, rank failures and sampling limits retained.
+No SNN advantage, calibrated uncertainty, chemical approval or reliable material ranking.
+Phase4: review integration, citation/novelty checks, manuscript/supplement, archive and author approval.
+No computation, contacts or publication authorized. Older entries below are historical.
+
 # Repository agent instructions
 
 These are persistent project instructions, subordinate to runtime system/developer rules and current user direction. They do not replace an assistant's system prompt. Root `AGENTS.md` routes agents here.

@@ -1,0 +1,20 @@
+{
+  "test_command": "python -m pytest tests/test_odac25_parent_identity.py tests/test_odac25_acquisition.py -q -p no:cacheprovider --basetemp local/odac25-parent-identity-tests-v1",
+  "tests_passed": 10,
+  "test_seconds": 1.91,
+  "initial_test_setup_issue": "Two tmp_path fixtures failed on Windows default temp permissions; eight passed. Retried using new local temp path; all ten passed. No old temp deletion.",
+  "all_generated_audit_files_offline_byte_identical": true,
+  "rows": 138,
+  "selected_records": 275,
+  "identity_verified": 0,
+  "admitted_pairs": 0,
+  "all_range_hashes_verified": 301,
+  "frozen_targets_hash_verified": true,
+  "historical_baseline_zip_hash_unchanged": true,
+  "historical_DFT_audit_rerun": false,
+  "model_changes_this_task": false,
+  "model_fits": 0,
+  "new_EPONEE_range_bytes": 46471,
+  "full_database_downloads": 0,
+  "inference_jobs": 0
+}

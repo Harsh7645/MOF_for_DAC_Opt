@@ -1,0 +1,29 @@
+{
+  "scope": "Exploratory offline analysis; original historical fits retained. No scientific compute authorization.",
+  "sha256": {
+    "docs/ODAC25_REQUEST_STATUS.json": "cc6edd1dd8582104dd5da790ea3cb003577375491f28a4c470a2d5210dbee7be",
+    "docs/UIO66_OFFLINE_DEVELOPMENT_V1.md": "b4affa185065f082e438657e4387685be3de1abae89f3d76aa66c1dce331f9f0",
+    "plans/uio66-offline-development-v1/protocol.json": "1e92ac490fec280e0bb74ae18fbb29f21302925549a99e7f74f6621f8e8636bb",
+    "plans/uio66-offline-development-v1/results/analysis.json": "dd7e6e55ebd3b35ceca07e78032303459acc7bc19745e025aa19247473e18bb7",
+    "plans/uio66-offline-development-v1/results/bootstrap_fits.json": "9607426b82742539e6c80fa3252ca50df544a7a4317ebbaa6e0bc29ec76288fd",
+    "plans/uio66-offline-development-v1/results/coefficient_stability.png": "448eadfa0e68b80cab607152671a5fc67f0888c0e25cb132a1f64e2172c2afbd",
+    "plans/uio66-offline-development-v1/results/coefficient_stability.svg": "03fbff7cae26ae747cfa11121bbecc586d08b7096dac58b274980f16fc6c9360",
+    "plans/uio66-offline-development-v1/results/cv_folds.json": "8f9909c5e4af72e1f21a4b41856bdeae25b3e372d55e9514575f9b3df61c8927",
+    "plans/uio66-offline-development-v1/results/development_rank_stability.png": "b1820b4d0c0ee2f9049abc2ad71bfd25e968a990848ecdf13e5dbedac109fe98",
+    "plans/uio66-offline-development-v1/results/development_rank_stability.svg": "5c55786a613e4a90ad82d2c6f7d9dee3c78949ff2b41d9203ff703bd3443c33f",
+    "plans/uio66-offline-development-v1/results/exact_split.json": "333ca9b6c2694130d80c4e0e6d8243c3f47a796ead66503bd57023103d0d3d3e",
+    "plans/uio66-offline-development-v1/results/fit_and_grouped_cv.png": "07c363b7e41b277f40a7049a846fc75ff369658f12217d827127a55c93a3b09e",
+    "plans/uio66-offline-development-v1/results/fit_and_grouped_cv.svg": "d99003b9d0308e2ee5650a6d07853a3b18a4cf879403cbf0f94d215fc3632939",
+    "plans/uio66-offline-development-v1/results/historical_reproduction.json": "8b5a037a2ff97878184f98db57e31f3ed72ea1f9d16e0cfae7a937152ebf277c",
+    "plans/uio66-offline-development-v1/results/receipt.json": "24261955587b0b0baa8c8b220c200296d50f3db085ecde05f4a7c01109b8aea9",
+    "plans/uio66-offline-development-v1/results/residual_patterns.png": "e1149c11a046c226b7a5901763c1befb0b894b6da45145e5215f4471bd607889",
+    "plans/uio66-offline-development-v1/results/residual_patterns.svg": "9d37b06d18de286bbbb3886245e08949d2bc9139632bbcdaf9b6c18a0eb1bf64",
+    "plans/uio66-offline-development-v1/results/residuals_by_pattern.csv": "e0b516bfaa45cb0906cb7681e90cf436e131fd73563444d71fcdbb102c2b4857",
+    "plans/uio66-offline-development-v1/results/sampling_vs_fitting.png": "79c79288b5cbdba9302545f47909cf2b31597d066a3841615b37a445e720223d",
+    "plans/uio66-offline-development-v1/results/sampling_vs_fitting.svg": "aea3e2ba56cdbc8bec299da7ee67374d7e19a4958df3f61ebc46fd961b5c7e61",
+    "plans/uio66-offline-development-v1/validation.json": "8428d2f7d8738055c206c73069a28d0b24f7cded7124015d741b1a1dff21eb14",
+    "scripts/analyze_uio66_development.py": "d4e943c228262887b661cc48d29f8975c8f74fbdaec5e0ecaafc68c2d192663b",
+    "scripts/plot_uio66_development.py": "7b323484e8d773fb68d839ae220825548df11c077ba8483cdc6e427d7ae2ed0c",
+    "tests/test_uio66_development.py": "7cf65a84398ebb164dc5a944667119c3f9ff09d9b97d76320a712c792d26e5d9"
+  }
+}

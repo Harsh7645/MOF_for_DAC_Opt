@@ -1,3 +1,34 @@
+# Current four-phase roadmap - revised methods scope, 27 October 2026
+
+Research question: **How should discrete optimization, surrogate adequacy and
+adsorption-target reliability be assessed separately before interpreting an
+optimized MOF design physically?**
+
+[Scope/disposition record](../docs/RESEARCH_SCOPE_REVISION_20261027.md) supersedes
+older completion gates below. The [original roadmap snapshot](ROADMAP_pre_scope_20261027.md)
+is byte-preserved; a changed scope does not complete its deferred objectives.
+
+|Phase|Current deliverable and status|
+|---|---|
+|1|Formulation/constraints/synthetic recovery: completed computational scope; physical validity separate.|
+|2|SNN integration and convex control: completed integration; indefinite route remains heuristic.|
+|3|Methods evidence, structural record and manuscript foundation locally prepared. **INCOMPLETE** until qualified chemistry assessment and independent final review are documented and blocking findings resolved.|
+|4|Review integration, literature/novelty verification, final manuscript/supplement and archival reproducibility; publication requires author approval.|
+
+Central evidence: synthetic solver budgets/feasibility, six-bit fitted objective,
+additive/pairwise adequacy and development-only stability, sampling/relaxation sensitivity.
+ODAC25 is a **deferred extension** (investigation paused; request unsent; no benchmark).
+DFT baseline is exploratory supplementary evidence only. Higher-memory/refinement
+access is **not** a limited-scope closure dependency; numerical convergence remains
+unresolved. Four missing UMA host points, physical rankings and hardware studies
+are deferred, not completed. No new compute or messages authorized.
+
+[Closure checklist](../docs/PHASE3_CLOSURE_CHECKLIST_V1.md) |
+[Methods/results draft](../docs/MANUSCRIPT_METHODS_RESULTS_V1.md) |
+[Confirmed future convergence rules](../docs/FUTURE_CONVERGENCE_RULES_V3.md).
+
+## Historical roadmap below - not current completion criteria
+
 # Four-phase research roadmap
 
 Reviewed **26 October 2026** against scientific records through **10 October**.

@@ -1,0 +1,9 @@
+model,scope,MAE_meV,RMSE_meV
+additive,historical development fit,24.037279812894365,35.46001654299077
+additive,historical exposed evaluation,23.80311060499019,27.513883609504973
+additive,development leave-group-out,28.04922835315084,41.042288067168585
+additive,development repeated group CV median,29.408346062159303,42.19293248657958
+pairwise,historical development fit,17.125052528652045,22.825896382494598
+pairwise,historical exposed evaluation,30.175429889740826,41.30298819279296
+pairwise,development leave-group-out,29.507644375575467,38.551445837028744
+pairwise,development repeated group CV median,33.689592901817626,42.720515758570215

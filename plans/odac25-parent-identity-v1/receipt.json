@@ -1,0 +1,21 @@
+{
+  "input_sha256": {
+    "artifacts\\kaggle\\odac25_paired_targets_2026-09-14\\paired_targets.json": "58c5dd5bec75366e3cd95dbd7ba9d714d1ff0163a560158cf154640aed5095bf",
+    "local\\odac25-acquisition-20261026\\atom_extract_blocks.py": "8e882caf1708c1afd7948e8f757ce2b7ac43b8b45ce226a538b2daf8c295b145",
+    "local\\odac25-acquisition-20261026\\atom_extract_feats.py": "7320bf030192e9a889019321fc2d30fa6f2d6a7b3ac2d78c168b5b8f7670e5b8",
+    "local\\odac25-acquisition-20261026\\atom_lmdb_utils.py": "c38a30ca452973d19d01b1b1cf0aabf8589506bc272c3a7320c1c68a131d9bb7",
+    "local\\odac25-acquisition-20261026\\mirror_system_index.json": "f535121912a0ccff32336eb1618de70966d4db129195f2e4184ee609e9b9ce93",
+    "local\\odac25-acquisition-20261026\\selected-audit-v3-offline\\selected_records.jsonl": "8bb2649c132fac8da931845f42552df0742e73053f1caf8cedd5f07ddd262a6c",
+    "scripts\\audit_odac25_acquisition.py": "e00dafc23558fcfb30ca77039e0c7cc935ce5f14f3c9007c50f622d7cba89077",
+    "scripts\\audit_odac25_parent_identity.py": "7c6ab6fc8f4f0de8498c04854992f82c1fa7955375b3e2d6e8c2b24373761e9f",
+    "scripts\\inspect_odac25_mirror_sample.py": "e7ff1ad6d8f7558eccfb5fdb425d515c2230a4b5be46a6976e34d4049616a696"
+  },
+  "output_sha256": {
+    "corrected_pool_proposal_v1.json": "f3fcacf9e0c09e372a926fa9fb393bacc72c2b4fa116ae0d2f876febb33fa6cc",
+    "pair_status_v1.csv": "b64c2560e65056b9991bdbd4a791661125e078de06c624ee2dd4625c4004a15c",
+    "pair_status_v1.json": "dab51d01e2ba49bccc27484d13b22d2c8f6d00c55bcb8f27271f1d17482fbc5b",
+    "range_receipts.json": "02b97955089b2a9b4f75ae284f96c019c53a42704ad9f12658e795cc1a2096fe",
+    "selected_structure_diagnostics.jsonl": "4e20e380b85ae30b4d0d662d5494da54771b047ec9f46d9b7e706e011e6f0843",
+    "summary.json": "dfcd23d006d59f66a5a593794af94083fd9cbcb9ba49d8df6ce7615d63d2b3b1"
+  }
+}

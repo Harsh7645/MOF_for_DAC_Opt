@@ -1,0 +1,22 @@
+{
+  "version": "uio66-offline-development-v1",
+  "scope": "exploratory development analyses; historical fits never replaced",
+  "historical_fit": "artifacts/phase3/uio66_uma_fit/fit.json",
+  "historical_fit_sha256": "317ff1464c30fa25834f081435ca65c0022907334a5b3a070ac86590b67a558d",
+  "split": "data/design/uio66_fit_split.json",
+  "split_sha256": "333ca9b6c2694130d80c4e0e6d8243c3f47a796ead66503bd57023103d0d3d3e",
+  "development_ids": "exact original train_ids only; 51 designs in 42 frozen duplicate groups",
+  "historical_evaluation": "13 previously inspected designs; reconstruction/descriptive residuals only; no new untouched test claim",
+  "models": ["additive OLS: intercept + 6 bits", "pairwise OLS: intercept + 6 bits + 15 products"],
+  "hyperparameter_selection": "none; no regularization, new model class or selection using the historical evaluation set",
+  "residual_sign": "prediction minus saved sampled UMA target, eV",
+  "seed": 20261026,
+  "cv": {"leave_one_duplicate_group_out": true, "repeated_group_folds": 5, "repeats": 20},
+  "bootstrap_replicates": 1000,
+  "bootstrap": "draw 42 whole development groups with replacement; preserve multiplicities; reject and retain rank-deficient fit records separately for each model",
+  "ranking": "lower score preferred; only the 51 development patterns; fixed full-development OLS reference for each model; average ranks and stable ID tie-breaking for top10/argmin",
+  "sampling_sensitivity": "nested first-two versus all-four saved starts; common four-start bare reference; gas components and paired difference separately; development labels only for exploratory fits",
+  "uncertainty_limits": "resampling summaries conditional on fixed targets, not physical confidence intervals; nested-start sensitivity and within-start ranges are not calibrated sampling errors",
+  "failure_policy": "record all rank-deficient fits and incomplete CV coverage; no retries, pseudoinverse substitution or silent removal; stop on source hash/split/target inconsistency",
+  "execution": "local small-array CPU analysis only; no QE, UMA inference or downloads"
+}

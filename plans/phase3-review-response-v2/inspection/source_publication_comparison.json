@@ -1,0 +1,373 @@
+{
+  "original_source": "https://acs.figshare.com/articles/dataset/2022858",
+  "download": "https://ndownloader.figshare.com/files/3594150",
+  "publication_doi": "10.1021/jz4002345",
+  "CIF_sha256": "b6a00ed555775ff1a9620e599852e1d9140d98fc33ce5559fcfbba66d6694618",
+  "published_md5": "dc66090fa4ba6d2d1ccb52aaa8e2314c",
+  "archived_parent_sha256": "cd21327024b04a02901c9211fde709ee26fa7a6b7bf3eb671e13a5f3d11e69e4",
+  "original": {
+    "atoms": 456,
+    "composition": {
+      "Zr": 24,
+      "C": 192,
+      "H": 112,
+      "O": 128
+    },
+    "cell_A": [
+      [
+        20.8663,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        20.8663,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        20.8663
+      ]
+    ],
+    "cell_parameters": [
+      20.8663,
+      20.8663,
+      20.8663,
+      90.0,
+      90.0,
+      90.0
+    ],
+    "volume_A3": 9085.23867849025,
+    "H_with_O_within_1_3_A": [
+      {
+        "H_index": 312,
+        "O_index": 424,
+        "OH_A": 0.9723266150704141,
+        "H_position_A": [
+          1.970196046,
+          8.463162617,
+          8.463162617
+        ]
+      },
+      {
+        "H_index": 313,
+        "O_index": 425,
+        "OH_A": 0.9723266150704141,
+        "H_position_A": [
+          12.403346045999998,
+          18.896312617,
+          8.463162617
+        ]
+      },
+      {
+        "H_index": 314,
+        "O_index": 426,
+        "OH_A": 0.9723266150704141,
+        "H_position_A": [
+          12.403346045999998,
+          8.463162617,
+          18.896312617
+        ]
+      },
+      {
+        "H_index": 315,
+        "O_index": 427,
+        "OH_A": 0.9723266150704141,
+        "H_position_A": [
+          1.970196046,
+          18.896312617,
+          18.896312617
+        ]
+      },
+      {
+        "H_index": 316,
+        "O_index": 428,
+        "OH_A": 0.972447086707785,
+        "H_position_A": [
+          8.462953954,
+          1.970196046,
+          8.463162617
+        ]
+      },
+      {
+        "H_index": 317,
+        "O_index": 429,
+        "OH_A": 0.972447086707784,
+        "H_position_A": [
+          18.896103954,
+          12.403346045999998,
+          8.463162617
+        ]
+      },
+      {
+        "H_index": 318,
+        "O_index": 430,
+        "OH_A": 0.972447086707784,
+        "H_position_A": [
+          18.896103954,
+          1.970196046,
+          18.896312617
+        ]
+      },
+      {
+        "H_index": 319,
+        "O_index": 431,
+        "OH_A": 0.972447086707785,
+        "H_position_A": [
+          8.462953954,
+          12.403346045999998,
+          18.896312617
+        ]
+      },
+      {
+        "H_index": 320,
+        "O_index": 432,
+        "OH_A": 0.972447086707785,
+        "H_position_A": [
+          8.462953954,
+          8.463162617,
+          1.970196046
+        ]
+      },
+      {
+        "H_index": 321,
+        "O_index": 433,
+        "OH_A": 0.972447086707784,
+        "H_position_A": [
+          18.896103954,
+          18.896312617,
+          1.970196046
+        ]
+      },
+      {
+        "H_index": 322,
+        "O_index": 434,
+        "OH_A": 0.972447086707784,
+        "H_position_A": [
+          18.896103954,
+          8.463162617,
+          12.403346045999998
+        ]
+      },
+      {
+        "H_index": 323,
+        "O_index": 435,
+        "OH_A": 0.972447086707785,
+        "H_position_A": [
+          8.462953954,
+          18.896312617,
+          12.403346045999998
+        ]
+      },
+      {
+        "H_index": 324,
+        "O_index": 436,
+        "OH_A": 0.9725675434223743,
+        "H_position_A": [
+          1.970196046,
+          1.970196046,
+          1.970196046
+        ]
+      },
+      {
+        "H_index": 325,
+        "O_index": 437,
+        "OH_A": 0.9725675434223743,
+        "H_position_A": [
+          12.403346045999998,
+          12.403346045999998,
+          1.970196046
+        ]
+      },
+      {
+        "H_index": 326,
+        "O_index": 438,
+        "OH_A": 0.9725675434223743,
+        "H_position_A": [
+          12.403346045999998,
+          1.970196046,
+          12.403346045999998
+        ]
+      },
+      {
+        "H_index": 327,
+        "O_index": 439,
+        "OH_A": 0.9725675434223743,
+        "H_position_A": [
+          1.970196046,
+          12.403346045999998,
+          12.403346045999998
+        ]
+      }
+    ]
+  },
+  "archived_parent": {
+    "atoms": 114,
+    "composition": {
+      "Zr": 6,
+      "H": 28,
+      "C": 48,
+      "O": 32
+    },
+    "cell_A": [
+      [
+        14.754871368408203,
+        0.00019223999697715044,
+        0.00036897999234497547
+      ],
+      [
+        7.377635478973389,
+        12.778121948242188,
+        9.380999836139381e-05
+      ],
+      [
+        7.377764701843262,
+        4.259355545043945,
+        12.04727840423584
+      ]
+    ],
+    "cell_parameters": [
+      14.754871374274146,
+      14.75499596047237,
+      14.755014015717784,
+      59.99906789537797,
+      59.99724482429078,
+      59.99863696963323
+    ],
+    "volume_A3": 2271.34222472827,
+    "H_with_O_within_1_3_A": [
+      {
+        "H_index": 8,
+        "O_index": 96,
+        "OH_A": 0.9693852696902722,
+        "H_position_A": [
+          22.132366180419922,
+          12.778083801269531,
+          3.411074638366699
+        ]
+      },
+      {
+        "H_index": 15,
+        "O_index": 109,
+        "OH_A": 0.9693951728402124,
+        "H_position_A": [
+          17.540220260620117,
+          15.429564476013184,
+          10.91049575805664
+        ]
+      },
+      {
+        "H_index": 19,
+        "O_index": 100,
+        "OH_A": 0.9694163519975337,
+        "H_position_A": [
+          26.725460052490234,
+          15.430432319641113,
+          10.911027908325195
+        ]
+      },
+      {
+        "H_index": 24,
+        "O_index": 83,
+        "OH_A": 0.9694371524845493,
+        "H_position_A": [
+          22.13220977783203,
+          7.475549221038818,
+          10.910345077514648
+        ]
+      }
+    ]
+  },
+  "analysis_only_primitive": {
+    "atoms": 114,
+    "composition": {
+      "Zr": 6,
+      "C": 48,
+      "H": 28,
+      "O": 32
+    },
+    "cell_A": [
+      [
+        0.0,
+        10.433149999999998,
+        10.433149999999998
+      ],
+      [
+        10.433149999999998,
+        0.0,
+        10.433149999999998
+      ],
+      [
+        10.433149999999998,
+        10.433149999999998,
+        0.0
+      ]
+    ],
+    "cell_parameters": [
+      14.754702228272853,
+      14.754702228272853,
+      14.754702228272853,
+      60.00000000000001,
+      60.00000000000001,
+      60.00000000000001
+    ],
+    "volume_A3": 2271.309669622562,
+    "H_with_O_within_1_3_A": [
+      {
+        "H_index": 78,
+        "O_index": 106,
+        "OH_A": 0.9723266150704141,
+        "H_position_A": [
+          1.9701960459999992,
+          8.463162616999998,
+          8.463162616999998
+        ]
+      },
+      {
+        "H_index": 79,
+        "O_index": 107,
+        "OH_A": 0.972447086707785,
+        "H_position_A": [
+          8.462953953999998,
+          1.970196045999999,
+          8.463162616999998
+        ]
+      },
+      {
+        "H_index": 80,
+        "O_index": 108,
+        "OH_A": 0.9724470867077829,
+        "H_position_A": [
+          8.462953953999998,
+          8.463162616999998,
+          1.9701960459999992
+        ]
+      },
+      {
+        "H_index": 81,
+        "O_index": 109,
+        "OH_A": 0.9725675434223743,
+        "H_position_A": [
+          1.9701960459999992,
+          1.9701960459999992,
+          1.970196045999999
+        ]
+      }
+    ]
+  },
+  "spglib_version": "2.7.0",
+  "primitive_method": "to_primitive=True,no_idealize=True,symprec=0.001A; read-only comparison, not replacement geometry",
+  "same_primitive_composition": true,
+  "primitive_volume_difference_percent": 0.0014333186770354445,
+  "parser_warnings": [
+    "crystal system 'triclinic' is not interpreted for space group Spacegroup(1, setting=1). This may result in wrong setting!"
+  ],
+  "CIF_source_notes": "data_calc0; creation method GDIS; audit date 2012-12-19; P1; do not label these coordinates experimental refinement without reviewing paper/SI",
+  "unresolved": [
+    "No unique periodic atom correspondence established across source and ODAC frame7.",
+    "Proton sites/orientations and original-to-ODAC preprocessing/relaxation require expert review.",
+    "Parent comparison does not validate manually constructed amino rotamers or ordered derivatives."
+  ],
+  "preservation": "Canonical CIF, archived parent and all 21 frozen calculation geometries unchanged."
+}

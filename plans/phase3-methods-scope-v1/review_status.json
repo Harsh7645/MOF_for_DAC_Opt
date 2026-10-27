@@ -1,0 +1,27 @@
+{
+  "scope_version": "methods-scope-v1-20261027",
+  "phase3_status": "incomplete_pending_independent_reviews",
+  "independent_final_review": {
+    "status": "pending",
+    "reviewer": null,
+    "qualification_or_role": null,
+    "date": null,
+    "reviewed_package_sha256": null,
+    "findings": null,
+    "blocking_findings_resolved": null
+  },
+  "chemistry_assessment": {
+    "status": "pending",
+    "reviewer": null,
+    "qualification_or_role": null,
+    "date": null,
+    "reviewed_structure_record_sha256": null,
+    "answers_and_required_qualifications": null,
+    "blocking_findings_resolved": null
+  },
+  "approval_inference_prohibited": "Scope instruction, local checks and tests do not constitute independent final or chemistry approval.",
+  "ODAC25_extension": "deferred; investigation paused; request unsent",
+  "DFT_extension": "baseline supplementary only; further convergence deferred",
+  "new_compute_authorized": false,
+  "contact_authorized": false
+}

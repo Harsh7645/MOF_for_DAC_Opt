@@ -1,0 +1,22 @@
+{
+  "record_date": "2026-10-27",
+  "source": "User instruction beginning: Address the supplied chemistry and scientific review findings.",
+  "delivery": "chat instruction; no separate signed review supplied in this turn",
+  "external_reviewer_identity": null,
+  "external_reviewer_qualification": null,
+  "external_review_date": null,
+  "external_review_authorship_human_or_AI": "not established",
+  "qualified_human_approval_documented": false,
+  "response_authorship": "AI-assisted source inspection, drafting and offline preparation by Codex",
+  "source_finding_groups": [
+    "SNN decoding: within-slot x_B-x_A ranking, required count, deterministic ties, objective versus feasibility and tolerances",
+    "Bootstrap interpretation: endpoints, all 1000 draws, 23 deficient pairwise draws and every conditional summary",
+    "Sampling/relaxation: eight-design selection, generation, seeds, gas-specific results, failed gates and conditional independence",
+    "Claims/terminology: 64 encoded ordered patterns, coverage exclusions, periodic loading, unequal budgets, exposed 13 and RMSE exception",
+    "Exact geometry/proton packet and two open qualified-review questions",
+    "Immutable review snapshot, provenance, checksums, separate reproduction instructions, targeted checks and closure pending reviews"
+  ],
+  "source_finding_groups_are": "faithful paraphrases of user instruction, not quotations of an authenticated reviewer report",
+  "two_question_labels_Q1_Q2": "operational response labels drafted by the assistant; no reviewer answers supplied",
+  "requests_sent": false
+}
